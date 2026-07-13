@@ -24,7 +24,6 @@
       <style>
         html {
           scroll-behavior: smooth;
-          overflow-x: hidden;
         }
 
         body {
@@ -32,7 +31,7 @@
           font-family: var(--font-body);
           color: var(--text-body);
           background: var(--surface-page);
-          overflow-x: hidden;
+          overflow-x: clip;
           max-width: 100vw;
         }
 
@@ -136,7 +135,7 @@
         header,
         footer {
           max-width: 100%;
-          overflow-x: hidden;
+          overflow-x: clip;
         }
 
         /* Brand logos - constrained sizing */
@@ -867,7 +866,7 @@
         </div>
         <div style="display: flex; justify-content: center;">
           <x-import component-from-global-scope="TortoiseDesignSystem_c07074.Button" hint-size="190px,36px"
-            variant="secondary" size="md" on-click="{{ goCatalog }}">Browse catalogue →</x-import>
+            variant="secondary" size="md" on-click="{{ goDevices }}">Browse devices →</x-import>
         </div>
       </section>
 
