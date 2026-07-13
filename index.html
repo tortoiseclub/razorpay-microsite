@@ -41,7 +41,7 @@
     </a>
     <sc-if value="{{ showDesktopNav }}" hint-placeholder-val="{{ false }}">
       <nav aria-label="Sections" style="display: flex; align-items: center; gap: clamp(12px, 1.6vw, 24px);">
-        <a href="Device Catalog.dc.html" style="text-decoration: none; color: var(--ink); font-size: 13px; font-weight: 500;" style-hover="color: var(--color-primary);">Browse devices</a>
+        <a href="/catalog" style="text-decoration: none; color: var(--ink); font-size: 13px; font-weight: 500;" style-hover="color: var(--color-primary);">Browse devices</a>
         <a href="#calculator" style="text-decoration: none; color: var(--ink); font-size: 13px; font-weight: 500;" style-hover="color: var(--color-primary);">Savings calculator</a>
         <a href="#how" style="text-decoration: none; color: var(--ink); font-size: 13px; font-weight: 500;" style-hover="color: var(--color-primary);">How it works</a>
         <a href="#insurance" style="text-decoration: none; color: var(--ink); font-size: 13px; font-weight: 500;" style-hover="color: var(--color-primary);">Insurance</a>
@@ -62,7 +62,7 @@
   </div>
   <sc-if value="{{ navOpen }}" hint-placeholder-val="{{ false }}">
     <nav aria-label="Sections" style="background: var(--white); border-bottom: 1px solid var(--border-default); box-shadow: 0 12px 24px rgba(25,25,25,0.08); display: flex; flex-direction: column; padding: 8px clamp(16px, 4vw, 40px) 16px;">
-      <a href="Device Catalog.dc.html" onClick="{{ closeNav }}" style="text-decoration: none; color: var(--ink); font-size: 15px; font-weight: 500; padding: 12px 4px; border-bottom: 1px solid var(--border-hairline);">Browse devices</a>
+      <a href="/catalog" onClick="{{ closeNav }}" style="text-decoration: none; color: var(--ink); font-size: 15px; font-weight: 500; padding: 12px 4px; border-bottom: 1px solid var(--border-hairline);">Browse devices</a>
       <a href="#calculator" onClick="{{ closeNav }}" style="text-decoration: none; color: var(--ink); font-size: 15px; font-weight: 500; padding: 12px 4px; border-bottom: 1px solid var(--border-hairline);">Savings calculator</a>
       <a href="#how" onClick="{{ closeNav }}" style="text-decoration: none; color: var(--ink); font-size: 15px; font-weight: 500; padding: 12px 4px; border-bottom: 1px solid var(--border-hairline);">How it works</a>
       <a href="#insurance" onClick="{{ closeNav }}" style="text-decoration: none; color: var(--ink); font-size: 15px; font-weight: 500; padding: 12px 4px; border-bottom: 1px solid var(--border-hairline);">Insurance</a>
@@ -673,7 +673,7 @@ class Component extends DCLogic {
       toggleNav: () => this.setState({ navOpen: !s.navOpen }),
       closeNav: () => this.setState({ navOpen: false }),
       goCalc: () => this.scrollToId('calculator'),
-      goDevices: () => { window.location.href = 'Device Catalog.dc.html'; },
+      goDevices: () => { window.location.href = '/catalog'; },
       goApply: () => this.scrollToId('calculator'),
 
       // calculator inputs
