@@ -237,30 +237,78 @@ class Component extends DCLogic {
   };
 
   static DEVICES = [
-    { name: 'iPhone 16', img: 'assets/iphone-16.png', base: 79900,
-      storages: [['128 GB', 0], ['256 GB', 10000], ['512 GB', 30000]],
-      colors: [['Ultramarine', 'rgb(140,160,232)'], ['Black', 'rgb(70,74,76)'], ['Pink', 'rgb(237,212,215)'], ['White', 'rgb(238,233,204)'], ['Teal', 'rgb(214,221,224)']] },
-    { name: 'iPhone 16 Pro', img: 'assets/iphone-16-pro.png', base: 119900,
-      storages: [['128 GB', 0], ['256 GB', 10000], ['512 GB', 30000], ['1 TB', 50000]],
-      colors: [['Desert Titanium', 'rgb(238,233,204)'], ['Natural Titanium', 'rgb(214,221,224)'], ['Black Titanium', 'rgb(70,74,76)']] },
-    { name: 'iPhone 16 Pro Max', img: 'assets/iphone-16-pro-max.png', base: 144900,
-      storages: [['256 GB', 0], ['512 GB', 20000], ['1 TB', 40000]],
-      colors: [['Desert Titanium', 'rgb(238,233,204)'], ['Natural Titanium', 'rgb(214,221,224)'], ['Black Titanium', 'rgb(70,74,76)']] },
-    { name: 'iPad Pro M4', img: 'assets/ipad-pro-m4.png', base: 99900,
-      storages: [['256 GB', 0], ['512 GB', 20000], ['1 TB', 60000], ['2 TB', 100000]],
-      colors: [['Space Black', 'rgb(70,74,76)'], ['Silver', 'rgb(214,221,224)']] },
-    { name: 'iPhone 16 Plus', img: 'assets/iphone-16.png', base: 89900,
-      storages: [['128 GB', 0], ['256 GB', 10000], ['512 GB', 30000]],
-      colors: [['Ultramarine', 'rgb(140,160,232)'], ['Black', 'rgb(70,74,76)'], ['Pink', 'rgb(237,212,215)'], ['White', 'rgb(238,233,204)']] },
-    { name: 'iPhone 15', img: 'assets/iphone-16.png', base: 69900,
-      storages: [['128 GB', 0], ['256 GB', 10000], ['512 GB', 30000]],
-      colors: [['Blue', 'rgb(140,160,232)'], ['Black', 'rgb(70,74,76)'], ['Pink', 'rgb(237,212,215)']] },
-    { name: 'iPad Pro M4 13\u2033', img: 'assets/ipad-pro-m4.png', base: 129900,
-      storages: [['256 GB', 0], ['512 GB', 20000], ['1 TB', 60000]],
-      colors: [['Space Black', 'rgb(70,74,76)'], ['Silver', 'rgb(214,221,224)']] },
-    { name: 'iPad Air M2', img: 'assets/ipad-pro-m4.png', base: 59900,
-      storages: [['128 GB', 0], ['256 GB', 10000], ['512 GB', 25000]],
-      colors: [['Space Grey', 'rgb(70,74,76)'], ['Blue', 'rgb(140,160,232)'], ['Starlight', 'rgb(238,233,204)']] },
+    // Apple
+    { name: 'iPhone 17', img: 'assets/iphone-16.png', base: 66317, brand: 'Apple',
+      storages: [['256 GB', 0], ['512 GB', 8300]],
+      colors: [['Black', 'rgb(70,74,76)'], ['White', 'rgb(238,233,204)'], ['Blue', 'rgb(140,160,232)'], ['Pink', 'rgb(237,212,215)']] },
+    { name: 'iPhone 17 Pro', img: 'assets/iphone-16-pro.png', base: 87067, brand: 'Apple',
+      storages: [['256 GB', 0], ['512 GB', 8300], ['1 TB', 24900]],
+      colors: [['Natural Titanium', 'rgb(214,221,224)'], ['Black Titanium', 'rgb(70,74,76)'], ['Desert Titanium', 'rgb(238,233,204)']] },
+    { name: 'iPhone 17 Pro Max', img: 'assets/iphone-16-pro-max.png', base: 103667, brand: 'Apple',
+      storages: [['256 GB', 0], ['512 GB', 16600], ['1 TB', 33200], ['2 TB', 62250]],
+      colors: [['Natural Titanium', 'rgb(214,221,224)'], ['Black Titanium', 'rgb(70,74,76)'], ['Desert Titanium', 'rgb(238,233,204)']] },
+    // Samsung
+    { name: 'Galaxy S25', img: 'assets/samsung-galaxy.png', base: 66317, brand: 'Samsung',
+      storages: [['128 GB', 0], ['256 GB', 4980]],
+      colors: [['Phantom Black', 'rgb(45,45,45)'], ['Cream', 'rgb(245,240,225)'], ['Icy Blue', 'rgb(180,210,230)'], ['Mint', 'rgb(180,220,200)']] },
+    { name: 'Galaxy S25+', img: 'assets/samsung-galaxy.png', base: 82917, brand: 'Samsung',
+      storages: [['256 GB', 0], ['512 GB', 9960]],
+      colors: [['Phantom Black', 'rgb(45,45,45)'], ['Cream', 'rgb(245,240,225)'], ['Icy Blue', 'rgb(180,210,230)']] },
+    { name: 'Galaxy S25 Ultra', img: 'assets/samsung-galaxy.png', base: 107817, brand: 'Samsung',
+      storages: [['256 GB', 0], ['512 GB', 9960], ['1 TB', 29880]],
+      colors: [['Titanium Black', 'rgb(50,50,50)'], ['Titanium Gray', 'rgb(140,140,140)'], ['Titanium Blue', 'rgb(100,130,160)']] },
+    // Google
+    { name: 'Pixel 9', img: 'assets/pixel.png', base: 66317, brand: 'Google',
+      storages: [['128 GB', 0], ['256 GB', 8300]],
+      colors: [['Obsidian', 'rgb(60,60,60)'], ['Porcelain', 'rgb(240,235,225)'], ['Wintergreen', 'rgb(180,210,190)'], ['Peony', 'rgb(230,180,190)']] },
+    { name: 'Pixel 9 Pro', img: 'assets/pixel.png', base: 82917, brand: 'Google',
+      storages: [['128 GB', 0], ['256 GB', 4980], ['512 GB', 14940], ['1 TB', 24900]],
+      colors: [['Obsidian', 'rgb(60,60,60)'], ['Porcelain', 'rgb(240,235,225)'], ['Hazel', 'rgb(180,170,150)']] },
+    { name: 'Pixel 9 Pro XL', img: 'assets/pixel.png', base: 91217, brand: 'Google',
+      storages: [['128 GB', 0], ['256 GB', 4980], ['512 GB', 14940], ['1 TB', 24900]],
+      colors: [['Obsidian', 'rgb(60,60,60)'], ['Porcelain', 'rgb(240,235,225)'], ['Hazel', 'rgb(180,170,150)']] },
+    // OnePlus
+    { name: 'OnePlus 13', img: 'assets/oneplus.png', base: 74617, brand: 'OnePlus',
+      storages: [['12GB + 256GB', 0], ['16GB + 512GB', 8300]],
+      colors: [['Midnight Ocean', 'rgb(30,50,80)'], ['Black Eclipse', 'rgb(40,40,40)'], ['Arctic Dawn', 'rgb(235,240,245)']] },
+    { name: 'OnePlus 13R', img: 'assets/oneplus.png', base: 49717, brand: 'OnePlus',
+      storages: [['12GB + 256GB', 0], ['16GB + 512GB', 8300]],
+      colors: [['Nebula Noir', 'rgb(50,45,55)'], ['Astral Trail', 'rgb(200,210,220)']] },
+    // Xiaomi
+    { name: 'Xiaomi 15', img: 'assets/xiaomi.png', base: 64999, brand: 'Xiaomi',
+      storages: [['12GB + 256GB', 0], ['12GB + 512GB', 5000]],
+      colors: [['Black', 'rgb(45,45,45)'], ['White', 'rgb(245,245,245)'], ['Green', 'rgb(140,180,160)']] },
+    { name: 'Xiaomi 15 Ultra', img: 'assets/xiaomi.png', base: 89990, brand: 'Xiaomi',
+      storages: [['16GB + 512GB', 0], ['16GB + 1TB', 20009]],
+      colors: [['Black', 'rgb(45,45,45)'], ['White', 'rgb(245,245,245)']] },
+    // Oppo
+    { name: 'Oppo Find X8', img: 'assets/oppo.png', base: 62167, brand: 'Oppo',
+      storages: [['12GB + 256GB', 0], ['12GB + 512GB', 8300]],
+      colors: [['Space Black', 'rgb(50,50,50)'], ['Star Grey', 'rgb(180,180,185)']] },
+    { name: 'Oppo Find X8 Pro', img: 'assets/oppo.png', base: 82917, brand: 'Oppo',
+      storages: [['16GB + 256GB', 0], ['16GB + 512GB', 8300]],
+      colors: [['Space Black', 'rgb(50,50,50)'], ['Pearl White', 'rgb(240,240,245)']] },
+    // Vivo
+    { name: 'Vivo X200', img: 'assets/vivo.png', base: 66483, brand: 'Vivo',
+      storages: [['12GB + 256GB', 0], ['16GB + 512GB', 8134]],
+      colors: [['Cosmos Black', 'rgb(40,40,40)'], ['Natural Green', 'rgb(160,185,165)']] },
+    { name: 'Vivo X200 Pro', img: 'assets/vivo.png', base: 82004, brand: 'Vivo',
+      storages: [['16GB + 512GB', 0], ['16GB + 1TB', 9213]],
+      colors: [['Titanium Grey', 'rgb(130,130,135)'], ['Cosmos Black', 'rgb(40,40,40)']] },
+    // iQOO
+    { name: 'iQOO 13', img: 'assets/iqoo.png', base: 54999, brand: 'iQOO',
+      storages: [['12GB + 256GB', 0], ['16GB + 512GB', 5000], ['16GB + 1TB', 10000]],
+      colors: [['Legend', 'rgb(200,180,160)'], ['Nardo Grey', 'rgb(140,145,150)'], ['Midnight', 'rgb(35,35,40)']] },
+    { name: 'iQOO Neo 10', img: 'assets/iqoo.png', base: 34999, brand: 'iQOO',
+      storages: [['8GB + 256GB', 0], ['12GB + 256GB', 3000]],
+      colors: [['Titanium Matte', 'rgb(160,160,165)'], ['Velocity Black', 'rgb(30,30,35)']] },
+    // Motorola
+    { name: 'Motorola Edge 2026', img: 'assets/motorola.png', base: 49717, brand: 'Motorola',
+      storages: [['8GB + 128GB', 0]],
+      colors: [['Eclipse Black', 'rgb(40,40,40)'], ['Lunar Blue', 'rgb(100,120,160)']] },
+    { name: 'Motorola Razr 2026', img: 'assets/motorola.png', base: 58017, brand: 'Motorola',
+      storages: [['8GB + 256GB', 0], ['12GB + 256GB', 8300]],
+      colors: [['Koala Grey', 'rgb(170,165,160)'], ['Spritz Orange', 'rgb(230,150,100)'], ['Beach Sand', 'rgb(220,210,190)']] },
   ];
 
   state = { query: '', sel: 0, storage: 0, color: 0, slab: 30, tenure: 12, flash: false };
@@ -293,7 +341,7 @@ class Component extends DCLogic {
       boxShadow: 'inset 0 0 0 1px rgb(238,238,238), 0px 0px 0.817px 0px rgba(66,71,76,0.32), 0px 3.268px 6.536px 0px rgba(66,71,76,0.06), 0px 6.536px 19.609px 0px rgba(238,238,238,0.35)',
     };
     const cards = D.map((dev, i) => ({ dev, i }))
-      .filter(({ dev }) => !q || dev.name.toLowerCase().includes(q) || 'apple iphone ipad phone tablet'.includes(q))
+      .filter(({ dev }) => !q || dev.name.toLowerCase().includes(q) || dev.brand.toLowerCase().includes(q) || 'apple iphone samsung galaxy google pixel oneplus xiaomi mi oppo vivo iqoo motorola razr edge phone smartphone'.includes(q))
       .map(({ dev, i }) => ({
         name: dev.name,
         imgStyle: { width: 82, height: 96, background: 'url("' + dev.img + '") center / contain no-repeat', mixBlendMode: 'multiply' },
