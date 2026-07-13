@@ -1,0 +1,52 @@
+/* Tortoise type system — transcribed from the Figma "Typography" section.
+   Headings: Haffer SQ XH SemiBold (600). Body: Inter. Labels/code: IBM Plex Mono. */
+
+:root {
+  --font-heading: "Haffer SQ XH", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-body: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+
+  /* Heading scale (Haffer SQ XH, weight 600) */
+  --font-heading-sm: 14px;
+  --font-heading-base: 16px;
+  --font-heading-lg: 18px;
+  --font-heading-xl: 20px;
+  --font-heading-2xl: 24px;
+  --font-heading-3xl: 32px; /* h1 */
+
+  /* Body scale (Inter; weights 400 regular / 500 medium / 600 semibold) */
+  --font-body-xs: 12px;   /* 0.75 rem */
+  --font-body-sm: 13px;   /* 0.8125 rem */
+  --font-body-base: 14px; /* 0.875 rem */
+  --font-body-md: 16px;   /* 1 rem */
+  --font-body-lg: 18px;   /* 1.125 rem */
+
+  /* Label (IBM Plex Mono) */
+  --font-label-base: 12px;
+}
+
+/* Utility classes mirroring the file's style names */
+.font-heading-sm   { font-family: var(--font-heading); font-weight: 600; font-size: var(--font-heading-sm);   line-height: 1.4; }
+.font-heading-base { font-family: var(--font-heading); font-weight: 600; font-size: var(--font-heading-base); line-height: 1.5; }
+.font-heading-lg   { font-family: var(--font-heading); font-weight: 600; font-size: var(--font-heading-lg);   line-height: 1.45; }
+.font-heading-xl   { font-family: var(--font-heading); font-weight: 600; font-size: var(--font-heading-xl);   line-height: 1.5; }
+.font-heading-2xl  { font-family: var(--font-heading); font-weight: 600; font-size: var(--font-heading-2xl);  line-height: 1.35; }
+.font-heading-3xl  { font-family: var(--font-heading); font-weight: 600; font-size: var(--font-heading-3xl);  line-height: 1.25; }
+
+.font-body-xs-regular    { font-family: var(--font-body); font-weight: 400; font-size: var(--font-body-xs);   line-height: 1.5; }
+.font-body-sm-regular    { font-family: var(--font-body); font-weight: 400; font-size: var(--font-body-sm);   line-height: 1.5; }
+.font-body-base-regular  { font-family: var(--font-body); font-weight: 400; font-size: var(--font-body-base); line-height: 1.5; }
+.font-body-md-regular    { font-family: var(--font-body); font-weight: 400; font-size: var(--font-body-md);   line-height: 1.5; }
+.font-body-lg-regular    { font-family: var(--font-body); font-weight: 400; font-size: var(--font-body-lg);   line-height: 1.5; }
+.font-body-xs-medium     { font-family: var(--font-body); font-weight: 500; font-size: var(--font-body-xs);   line-height: 1.5; }
+.font-body-sm-medium     { font-family: var(--font-body); font-weight: 500; font-size: var(--font-body-sm);   line-height: 1.5; }
+.font-body-base-medium   { font-family: var(--font-body); font-weight: 500; font-size: var(--font-body-base); line-height: 1.5; }
+.font-body-md-medium     { font-family: var(--font-body); font-weight: 500; font-size: var(--font-body-md);   line-height: 1.5; }
+.font-body-lg-medium     { font-family: var(--font-body); font-weight: 500; font-size: var(--font-body-lg);   line-height: 1.5; }
+.font-body-xs-semibold   { font-family: var(--font-body); font-weight: 600; font-size: var(--font-body-xs);   line-height: 1.5; }
+.font-body-sm-semibold   { font-family: var(--font-body); font-weight: 600; font-size: var(--font-body-sm);   line-height: 1.5; }
+.font-body-base-semibold { font-family: var(--font-body); font-weight: 600; font-size: var(--font-body-base); line-height: 1.5; }
+.font-body-md-semibold   { font-family: var(--font-body); font-weight: 600; font-size: var(--font-body-md);   line-height: 1.5; }
+.font-body-lg-semibold   { font-family: var(--font-body); font-weight: 600; font-size: var(--font-body-lg);   line-height: 1.5; }
+
+.font-label-base { font-family: var(--font-mono); font-weight: 500; font-size: var(--font-label-base); line-height: 1.4; letter-spacing: 0; }

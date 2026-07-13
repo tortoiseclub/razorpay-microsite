@@ -1,0 +1,107 @@
+/* Tortoise brand color ramps — transcribed verbatim from the Figma "Colors" section.
+   Scale follows the file's "Green / 10" naming: 10 = darkest → 100 = lightest. */
+
+:root {
+  /* Core */
+  --ink: #191919;
+  --white: #FFFFFF;
+
+  /* Green — PRIMARY brand ramp */
+  --green-10: #114036;
+  --green-20: #167E62;
+  --green-30: #16AF8E;
+  --green-40: #2AC393;
+  --green-50: #42D499;
+  --green-60: #62E29F;
+  --green-70: #83EDA8;
+  --green-80: #A4F6B5;
+  --green-90: #C5FCC9;
+  --green-100: #E6FFE6;
+
+  /* Yellow — complementary */
+  --yellow-10: #5C3A12;
+  --yellow-20: #926120;
+  --yellow-30: #C78B2E;
+  --yellow-40: #F9B73F;
+  --yellow-50: #FEC858;
+  --yellow-60: #FFD672;
+  --yellow-70: #FFE38E;
+  --yellow-80: #FFEEAB;
+  --yellow-90: #FFF7C9;
+  --yellow-100: #FFFDE9;
+
+  /* Pink — complementary */
+  --pink-10: #5C2C5C;
+  --pink-20: #924790;
+  --pink-30: #C963BF;
+  --pink-40: #FF81EC;
+  --pink-50: #FF91EE;
+  --pink-60: #FFA2EF;
+  --pink-70: #FFB5F2;
+  --pink-80: #FFC8F4;
+  --pink-90: #FFDCF8;
+  --pink-100: #FFF1FC;
+
+  /* Coral — complementary */
+  --coral-10: #80121D;
+  --coral-20: #AA3628;
+  --coral-30: #D57046;
+  --coral-40: #FEAA6C;
+  --coral-50: #FFB079;
+  --coral-60: #FFB68A;
+  --coral-70: #FFBF9D;
+  --coral-80: #FFCBB4;
+  --coral-90: #FFDBCD;
+  --coral-100: #FFEFEA;
+
+  /* Gray — neutrals (order verbatim from the file) */
+  --gray-10: #191919;
+  --gray-20: #323232;
+  --gray-30: #4B4B4B;
+  --gray-40: #646464;
+  --gray-50: #4B4B4B;
+  --gray-60: #AFAFAF;
+  --gray-70: #CBCBCB;
+  --gray-80: #EEEEEE;
+  --gray-90: #E1E1E1;
+  --gray-100: #FAFAFA;
+
+  /* Purple — complementary */
+  --purple-10: #3F2C66;
+  --purple-20: #775DB3;
+  --purple-30: #B59CF7;
+  --purple-40: #B8A3FE;
+  --purple-50: #BBACFF;
+  --purple-60: #C1B6FF;
+  --purple-70: #C8C2FF;
+  --purple-80: #D2D0FF;
+  --purple-90: #E0E0FF;
+  --purple-100: #F1F2FF;
+
+  /* Semantic aliases */
+  --color-primary: var(--green-20);         /* #167E62 — actions, links, brand accents */
+  --color-primary-deep: var(--green-10);    /* #114036 — dark brand surfaces */
+  --color-primary-bright: var(--green-40);  /* #2AC393 — highlights on dark */
+  --color-primary-tint: var(--green-100);   /* #E6FFE6 — subtle brand wash */
+
+  --text-body: var(--ink);
+  --text-secondary: #646464;
+  --text-tertiary: #AFAFAF;
+  --text-inverse: var(--white);
+  --text-on-primary: var(--white);
+
+  --surface-page: var(--white);
+  --surface-subtle: var(--gray-100);
+  --surface-card: var(--white);
+  --surface-inverse: var(--ink);
+
+  --border-default: var(--gray-90);
+  --border-strong: var(--gray-70);
+  --border-hairline: rgba(0,0,0,0.1);
+
+  --color-success: var(--green-30);
+  --color-warning: var(--yellow-40);
+  --color-danger: var(--coral-10);
+  --color-danger-soft: var(--coral-100);
+  --color-info: var(--purple-20);
+}
