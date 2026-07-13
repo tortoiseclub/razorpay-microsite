@@ -18,8 +18,9 @@
   <link rel="stylesheet" href="_ds/tortoise-design-system-c0707453-1d0e-464d-a10c-0637062ee8ee/styles.css">
   <script src="_ds/tortoise-design-system-c0707453-1d0e-464d-a10c-0637062ee8ee/_ds_bundle.js"></script>
   <style>
-    html { scroll-behavior: smooth; }
-    body { margin: 0; font-family: var(--font-body); color: var(--text-body); background: var(--surface-page); }
+    html { scroll-behavior: smooth; overflow-x: hidden; }
+    body { margin: 0; font-family: var(--font-body); color: var(--text-body); background: var(--surface-page); overflow-x: hidden; max-width: 100vw; }
+    *, *::before, *::after { box-sizing: border-box; }
     a { color: var(--color-primary); }
     a:hover { color: var(--color-primary-deep); }
     /* range input thumbs cannot be styled inline */
@@ -29,6 +30,166 @@
     input[type="range"].tt-slider:focus-visible { outline: 2px solid var(--color-primary); }
     @keyframes tt-pulse { 0% { box-shadow: 0 0 0 0 rgba(22,126,98,0.35); } 100% { box-shadow: 0 0 0 12px rgba(22,126,98,0); } }
     @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+
+    /* ========== RESPONSIVE STYLES ========== */
+
+    /* How it Works - responsive flex */
+    .how-it-works-list {
+      display: flex !important;
+      flex-wrap: wrap !important;
+    }
+    .how-it-works-item {
+      flex: 1 1 180px;
+    }
+
+    /* Comparison table - responsive */
+    .comparison-wrapper {
+      -webkit-overflow-scrolling: touch;
+      max-width: 100%;
+    }
+    .comparison-table > div {
+      word-wrap: break-word;
+    }
+
+    /* Prevent horizontal overflow globally */
+    section, main, header, footer {
+      max-width: 100%;
+      overflow-x: hidden;
+    }
+
+    /* Brand logos - constrained sizing */
+    .brand-logos img {
+      height: 28px;
+      width: auto;
+    }
+
+    /* Insurance heading - remove fixed dimensions */
+    .insurance-heading {
+      width: auto !important;
+      height: auto !important;
+    }
+
+    /* ===== TABLET & MOBILE (768px and below) ===== */
+    @media (max-width: 768px) {
+      /* How it Works - single column stack */
+      .how-it-works-list {
+        flex-direction: column !important;
+        gap: 8px !important;
+      }
+      .how-it-works-item {
+        flex: 1 1 100% !important;
+        width: 100% !important;
+        min-width: 0 !important;
+      }
+
+      /* Brand logos - smaller on mobile */
+      .brand-logos img {
+        height: 22px;
+      }
+
+      /* Comparison table - allow horizontal scroll but reduce min-width */
+      .comparison-table {
+        min-width: 500px !important;
+        font-size: 12px !important;
+      }
+      .comparison-table > div {
+        padding: 10px 12px !important;
+      }
+
+      /* Hero badges - full width stack */
+      .hero-badges {
+        flex-direction: column !important;
+      }
+      .hero-badges > span {
+        width: 100% !important;
+        justify-content: flex-start !important;
+      }
+
+      /* Calculator tax slab buttons - 2x2 grid */
+      .tax-slab-buttons {
+        flex-wrap: wrap !important;
+      }
+      .tax-slab-buttons > button {
+        flex: 1 1 calc(50% - 4px) !important;
+        min-width: 70px !important;
+      }
+
+      /* Insurance cards - stack */
+      .insurance-cards {
+        grid-template-columns: 1fr !important;
+      }
+
+      /* Event cards - full width */
+      .event-cards {
+        grid-template-columns: 1fr !important;
+      }
+
+      /* Footer - stack on mobile */
+      footer > div {
+        flex-direction: column !important;
+        align-items: flex-start !important;
+        gap: 20px !important;
+      }
+      footer nav {
+        flex-direction: column !important;
+        gap: 12px !important;
+      }
+
+      /* Hero image - center on mobile */
+      .hero-device-image {
+        max-width: 90%;
+        margin: 0 auto;
+        display: block;
+      }
+      /* Center the savings badge on mobile */
+      .hero-savings-badge {
+        right: 10px !important;
+        left: auto !important;
+        top: -15px !important;
+        width: 90px !important;
+        height: 90px !important;
+      }
+      .hero-savings-badge span {
+        font-size: 10px !important;
+      }
+    }
+
+    /* ===== SMALL MOBILE (360px and below) ===== */
+    @media (max-width: 360px) {
+      /* Extra small screen adjustments */
+      .brand-logos img {
+        height: 18px;
+      }
+
+      /* Comparison table - minimum for very small screens */
+      .comparison-table {
+        min-width: 380px !important;
+        font-size: 11px !important;
+      }
+    }
+
+    /* ===== TOUCH-FRIENDLY IMPROVEMENTS ===== */
+    @media (hover: none) and (pointer: coarse) {
+      /* Ensure touch targets are at least 44px */
+      button, a, [role="button"], [role="radio"] {
+        min-height: 44px;
+      }
+    }
+
+    /* ===== HERO IMAGE RESPONSIVE ===== */
+    .hero-device-image {
+      max-width: 100%;
+      height: auto;
+    }
+
+    /* ===== CALCULATOR IMPROVEMENTS ===== */
+    @media (max-width: 480px) {
+      /* Price input - full width on mobile */
+      #tt-price {
+        width: 100% !important;
+        max-width: 200px;
+      }
+    }
   </style>
 </helmet>
 
@@ -113,10 +274,10 @@
 
     <!-- device lineup image -->
     <div style="position: relative;">
-      <div aria-hidden="true" style="position: absolute; top: -20px; right: -4px; width: clamp(104px, 11vw, 132px); height: clamp(104px, 11vw, 132px); border-radius: 50%; background: var(--green-10); color: var(--white); display: flex; align-items: center; justify-content: center; text-align: center; transform: rotate(8deg); z-index: 2; padding: 12px; box-sizing: border-box;">
+      <div class="hero-savings-badge" aria-hidden="true" style="position: absolute; top: -20px; right: -4px; width: clamp(104px, 11vw, 132px); height: clamp(104px, 11vw, 132px); border-radius: 50%; background: var(--green-10); color: var(--white); display: flex; align-items: center; justify-content: center; text-align: center; transform: rotate(8deg); z-index: 2; padding: 12px; box-sizing: border-box;">
         <span style="font-family: var(--font-heading); font-weight: 600; font-size: clamp(11px, 1.1vw, 13px); line-height: 1.35;">Save up to<br><span style="font-size: clamp(20px, 2.2vw, 26px); color: var(--green-60);">30%*</span><br>on your device</span>
       </div>
-      <img src="assets/devices-cover.png" alt="Smartphones, tablets, earbuds and a smartwatch available through the device leasing program" style="display: block; width: 100%; height: auto;">
+      <img class="hero-device-image" src="assets/devices-cover.png" alt="Smartphones, tablets, earbuds and a smartwatch available through the device leasing program" style="display: block; width: 100%; height: auto;">
     </div>
   </section>
 
@@ -215,23 +376,24 @@
   <!-- ============ HOW IT WORKS ============ -->
   <section id="how" data-reveal="true" style="scroll-margin-top: 80px; max-width: 1160px; margin: 0 auto; padding: clamp(48px, 6vw, 88px) clamp(16px, 4vw, 40px)">
     <h2 style="font-family: var(--font-heading); font-weight: 600; font-size: clamp(26px, 3.4vw, 38px); letter-spacing: -0.01em; margin: 0 0 32px;">How it works</h2>
-    <ol style="list-style: none; margin: 0; padding: 0; display: flex; grid-template-columns: repeat(auto-fit, minmax(min(100%, 250px), 1fr)); gap: 4px; flex-wrap: nowrap; width: 100%">
-      <li style="background: linear-gradient(180deg, #FFFFFF, #F5F5F5); border: 1px solid var(--border-hairline); padding: clamp(24px, 3vw, 36px) clamp(20px, 2.5vw, 32px); display: flex; flex-direction: column; border-color: var(--gray-90); justify-content: flex-start; align-items: stretch; width: 100%">
+    <ol class="how-it-works-list" style="list-style: none; margin: 0; padding: 0; display: flex; gap: 4px; flex-wrap: wrap; width: 100%">
+      <li class="how-it-works-item" style="background: linear-gradient(180deg, #FFFFFF, #F5F5F5); border: 1px solid var(--border-hairline); padding: clamp(24px, 3vw, 36px) clamp(20px, 2.5vw, 32px); display: flex; flex-direction: column; border-color: var(--gray-90); justify-content: flex-start; align-items: stretch; flex: 1 1 180px;">
         <span style="font-family: var(--font-heading); font-weight: 600; font-size: clamp(36px, 3.6vw, 48px); line-height: 1; color: var(--green-30); margin-bottom: clamp(24px, 4vw, 56px)">1</span>
         <div style="box-sizing: border-box; display: flex; flex-direction: column; gap: 8px"><b style="font-weight: 700">Choose your devices</b><b style="font-weight: 400">Choose from a curated range of brands on the Tortoise benefits app</b></div>
       </li>
-      <li style="background: linear-gradient(180deg, #FFFFFF, #F5F5F5); border: 1px solid var(--border-hairline); padding: clamp(24px, 3vw, 36px) clamp(20px, 2.5vw, 32px); display: flex; flex-direction: column; justify-content: flex-start; align-items: stretch; width: 100%">
+      <li class="how-it-works-item" style="background: linear-gradient(180deg, #FFFFFF, #F5F5F5); border: 1px solid var(--border-hairline); padding: clamp(24px, 3vw, 36px) clamp(20px, 2.5vw, 32px); display: flex; flex-direction: column; justify-content: flex-start; align-items: stretch; flex: 1 1 180px;">
         <span style="font-family: var(--font-heading); font-weight: 600; font-size: clamp(36px, 3.6vw, 48px); line-height: 1; color: var(--green-30); margin-bottom: clamp(24px, 4vw, 56px)">2</span>
         <div style="box-sizing: border-box; display: flex; flex-direction: column; gap: 8px"><b style="font-weight: 700">Place your request</b><span style="color: rgb(100, 100, 100); font-weight: 500">Place your device request and it will be reviewed and approved by your HR.&nbsp;</span></div>
       </li>
-      <li style="background: linear-gradient(180deg, #FFFFFF, #F5F5F5); border: 1px solid var(--border-hairline); padding: clamp(24px, 3vw, 36px) clamp(20px, 2.5vw, 32px); display: flex; flex-direction: column; justify-content: flex-start; align-items: stretch; width: 100%">
+      <li class="how-it-works-item" style="background: linear-gradient(180deg, #FFFFFF, #F5F5F5); border: 1px solid var(--border-hairline); padding: clamp(24px, 3vw, 36px) clamp(20px, 2.5vw, 32px); display: flex; flex-direction: column; justify-content: flex-start; align-items: stretch; flex: 1 1 180px;">
         <span style="font-family: var(--font-heading); font-weight: 600; font-size: clamp(36px, 3.6vw, 48px); line-height: 1; color: var(--green-30); margin-bottom: clamp(24px, 4vw, 56px)">3</span>
         <div style="box-sizing: border-box; display: flex; flex-direction: column; gap: 8px"><b style="font-weight: 700">Get it delivered</b><span style="color: rgb(100, 100, 100); font-weight: 500">Once approved your device will delivered to your provided address.</span></div>
       </li>
-      <li style="background: linear-gradient(180deg, #FFFFFF, #F5F5F5); border: 1px solid var(--border-hairline); padding: clamp(24px, 3vw, 36px) clamp(20px, 2.5vw, 32px); display: flex; flex-direction: column; justify-content: flex-start; align-items: stretch; width: 100%">
+      <li class="how-it-works-item" style="background: linear-gradient(180deg, #FFFFFF, #F5F5F5); border: 1px solid var(--border-hairline); padding: clamp(24px, 3vw, 36px) clamp(20px, 2.5vw, 32px); display: flex; flex-direction: column; justify-content: flex-start; align-items: stretch; flex: 1 1 180px;">
         <span style="font-family: var(--font-heading); font-weight: 600; font-size: clamp(36px, 3.6vw, 48px); line-height: 1; color: var(--green-30); margin-bottom: clamp(24px, 4vw, 56px)">4</span>
         <div style="box-sizing: border-box; display: flex; flex-direction: column; gap: 8px"><b style="font-weight: 700">Gets paid from pre-tax salary</b><span style="color: rgb(100, 100, 100); font-weight: 500; position: relative">Once delivered, monthly deductions will begin from your pre-tax salary for your selected tenure.</span></div>
-      </li><li style="background: linear-gradient(180deg, #FFFFFF, #F5F5F5); border: 1px solid var(--border-hairline); padding: clamp(24px, 3vw, 36px) clamp(20px, 2.5vw, 32px); display: flex; flex-direction: column; justify-content: flex-start; align-items: stretch; width: 100%">
+      </li>
+      <li class="how-it-works-item" style="background: linear-gradient(180deg, #FFFFFF, #F5F5F5); border: 1px solid var(--border-hairline); padding: clamp(24px, 3vw, 36px) clamp(20px, 2.5vw, 32px); display: flex; flex-direction: column; justify-content: flex-start; align-items: stretch; flex: 1 1 180px;">
         <span style="font-family: var(--font-heading); font-weight: 600; font-size: clamp(36px, 3.6vw, 48px); line-height: 1; color: var(--green-30); margin-bottom: clamp(24px, 4vw, 56px)">5</span>
         <div style="box-sizing: border-box; display: flex; flex-direction: column; gap: 8px"><b style="font-weight: 700">Own it with ₹1</b><span style="color: rgb(100, 100, 100); font-weight: 500; position: relative">After all the deductions the device is yours forever in ₹1</span></div>
       </li>
@@ -274,8 +436,8 @@
   <!-- ============ WHY LEASE ============ -->
   <section data-reveal="true" style="max-width: 1160px; margin: 0 auto; padding: clamp(48px, 6vw, 88px) clamp(16px, 4vw, 40px);">
     <h2 style="font-family: var(--font-heading); font-weight: 600; font-size: clamp(26px, 3.4vw, 38px); letter-spacing: -0.01em; margin: 0 0 32px;">Why lease instead of buying?</h2>
-    <div style="overflow-x: auto;">
-      <div style="min-width: 560px; display: grid; grid-template-columns: 0.9fr 1fr 1.1fr; border: 1px solid var(--border-default); border-radius: 10px; overflow: hidden;">
+    <div class="comparison-wrapper" style="overflow-x: auto;">
+      <div class="comparison-table" style="min-width: 560px; display: grid; grid-template-columns: 0.9fr 1fr 1.1fr; border: 1px solid var(--border-default); border-radius: 10px; overflow: hidden;">
         <div style="padding: 16px 20px; background: var(--surface-subtle); border-bottom: 1px solid var(--border-default);"></div>
         <div style="padding: 16px 20px; background: var(--green-10); border-bottom: 1px solid var(--border-default); font-family: var(--font-heading); font-weight: 600; font-size: 15px; color: var(--white);">Tortoise device leasing</div><div style="padding: 16px 20px; background: var(--surface-subtle); border-bottom: 1px solid var(--border-default); font-family: var(--font-heading); font-weight: 600; font-size: 15px; color: var(--text-secondary);">Buying</div>
         
@@ -310,7 +472,7 @@
   <!-- ============ TOP BRANDS ============ -->
   <section id="devices" data-reveal="true" style="scroll-margin-top: 80px; max-width: 1160px; margin: 0 auto; padding: 0 clamp(16px, 4vw, 40px) clamp(48px, 6vw, 88px); text-align: center;">
     <h2 style="font-family: var(--font-heading); font-weight: 600; font-size: clamp(26px, 3.4vw, 38px); letter-spacing: -0.01em; margin: 0 0 24px;">Top brands. Premium devices.</h2>
-    <div style="display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 12px; max-width: 860px; margin: 0 auto 28px;">
+    <div class="brand-logos" style="display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 12px; max-width: 860px; margin: 0 auto 28px;">
       <img src="assets/brands/Apple.svg" alt="Apple">
       <img src="assets/brands/Samsung.svg" alt="Samsung">
       <img src="assets/brands/Google.svg" alt="Google">
@@ -331,7 +493,7 @@
     
   <div style="max-width: 1160px; margin: 0 auto; padding: clamp(48px, 6vw, 80px) clamp(16px, 4vw, 40px); display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 420px), 1fr)); gap: clamp(28px, 4vw, 56px); align-items: center;">
       <div>
-        <h2 style="font-family: var(--font-heading); font-weight: 600; font-size: clamp(26px, 3.4vw, 38px); letter-spacing: -0.01em; margin: 0 0 8px; width: 757px; height: 52px">Insurance that has you covered</h2>
+        <h2 class="insurance-heading" style="font-family: var(--font-heading); font-weight: 600; font-size: clamp(26px, 3.4vw, 38px); letter-spacing: -0.01em; margin: 0 0 8px;">Insurance that has you covered</h2>
         <p style="font-size: 16px; color: var(--text-secondary); margin: 0 0 28px;">Comprehensive protection for complete peace of mind.</p>
         <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr)); gap: 20px; margin-bottom: 28px;">
           <div style="background: var(--white); border: 1px solid var(--border-default); border-radius: 10px; padding: 20px;">
