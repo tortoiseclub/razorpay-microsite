@@ -1,0 +1,12 @@
+{
+  "rewrites": [
+    {
+      "source": "/",
+      "destination": "/Device%20Leasing%20Microsite.dc.html"
+    },
+    {
+      "source": "/catalog",
+      "destination": "/Device%20Catalog.dc.html"
+    }
+  ]
+}
