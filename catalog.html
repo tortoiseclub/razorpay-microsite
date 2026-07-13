@@ -24,17 +24,46 @@
   </style>
 </helmet>
 
-<!-- ============ HEADER ============ -->
+<!-- ============ STICKY HEADER ============ -->
 <header style="position: sticky; top: 0; z-index: 50; background: rgba(255,255,255,0.96); backdrop-filter: blur(6px); border-bottom: 1px solid var(--border-hairline);">
-  <div style="max-width: 1440px; margin: 0 auto; padding: 0 clamp(16px, 3vw, 32px); height: 64px; display: flex; align-items: center; justify-content: space-between; gap: 16px;">
-    <a href="/" style="display: flex; align-items: baseline; gap: 10px; text-decoration: none; color: var(--ink);">
-      <span style="font-family: var(--font-heading); font-weight: 600; font-size: 20px; letter-spacing: -0.01em;">razorpay</span>
-      <span style="display: inline-flex; align-items: baseline; gap: 5px; padding-left: 10px; border-left: 1px solid var(--border-strong); font-family: var(--font-body); font-size: 11px; color: var(--text-secondary); white-space: nowrap;">powered by <span style="font-family: var(--font-heading); font-weight: 600; font-size: 13px; color: var(--color-primary);">tortoise</span></span>
+  <div style="max-width: 1160px; margin: 0 auto; padding: 0 clamp(16px, 4vw, 40px); height: 64px; display: flex; align-items: center; justify-content: space-between; gap: 16px;">
+    <a href="./index.html" style="display: flex; align-items: baseline; gap: 10px; text-decoration: none; color: var(--ink);">
+      <img src="./tortoise-razorpay-mrgc5mvm.svg" alt="tortoise-razorpay" style="max-width: 100%; height: auto; display: block; object-fit: cover">
     </a>
-    <a href="/" style="display: inline-flex; align-items: center; gap: 7px; text-decoration: none; font-size: 13px; font-weight: 500; color: var(--ink); border: 1px solid var(--border-default); border-radius: 6px; padding: 9px 14px; background: var(--white);" style-hover="background: var(--surface-subtle);">
-      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M15 5l-7 7 7 7"></path></svg>
-      Back to benefit</a>
+    <sc-if value="{{ showDesktopNav }}" hint-placeholder-val="{{ false }}">
+      <nav aria-label="Sections" style="display: flex; align-items: center; gap: clamp(12px, 1.6vw, 24px);">
+        <a href="./catalog.html" style="text-decoration: none; color: var(--color-primary); font-size: 13px; font-weight: 500;">Browse devices</a>
+        <a href="./index.html#calculator" style="text-decoration: none; color: var(--ink); font-size: 13px; font-weight: 500;" style-hover="color: var(--color-primary);">Savings calculator</a>
+        <a href="./index.html#how" style="text-decoration: none; color: var(--ink); font-size: 13px; font-weight: 500;" style-hover="color: var(--color-primary);">How it works</a>
+        <a href="./index.html#insurance" style="text-decoration: none; color: var(--ink); font-size: 13px; font-weight: 500;" style-hover="color: var(--color-primary);">Insurance</a>
+        <a href="./index.html#faqs" style="text-decoration: none; color: var(--ink); font-size: 13px; font-weight: 500;" style-hover="color: var(--color-primary);">FAQs</a>
+        <a href="./index.html#events" style="text-decoration: none; color: var(--ink); font-size: 13px; font-weight: 500;" style-hover="color: var(--color-primary);">Events</a>
+      </nav>
+    </sc-if>
+    <div style="display: flex; align-items: center; gap: 8px;">
+      <sc-if value="{{ showDesktopNav }}" hint-placeholder-val="{{ true }}">
+        <x-import component-from-global-scope="TortoiseDesignSystem_c07074.Button" hint-size="110px,36px" variant="primary" size="md" on-click="{{ goApply }}">Apply now</x-import>
+      </sc-if>
+      <sc-if value="{{ isMobile }}" hint-placeholder-val="{{ false }}">
+        <button aria-label="Menu" aria-expanded="{{ navOpen }}" onClick="{{ toggleNav }}" style="width: 44px; height: 44px; display: inline-flex; align-items: center; justify-content: center; background: var(--white); border: 1px solid var(--border-default); border-radius: 6px; cursor: pointer; color: var(--ink);">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"></path></svg>
+        </button>
+      </sc-if>
+    </div>
   </div>
+  <sc-if value="{{ navOpen }}" hint-placeholder-val="{{ false }}">
+    <nav aria-label="Sections" style="background: var(--white); border-bottom: 1px solid var(--border-default); box-shadow: 0 12px 24px rgba(25,25,25,0.08); display: flex; flex-direction: column; padding: 8px clamp(16px, 4vw, 40px) 16px;">
+      <a href="./catalog.html" onClick="{{ closeNav }}" style="text-decoration: none; color: var(--color-primary); font-size: 15px; font-weight: 500; padding: 12px 4px; border-bottom: 1px solid var(--border-hairline);">Browse devices</a>
+      <a href="./index.html#calculator" onClick="{{ closeNav }}" style="text-decoration: none; color: var(--ink); font-size: 15px; font-weight: 500; padding: 12px 4px; border-bottom: 1px solid var(--border-hairline);">Savings calculator</a>
+      <a href="./index.html#how" onClick="{{ closeNav }}" style="text-decoration: none; color: var(--ink); font-size: 15px; font-weight: 500; padding: 12px 4px; border-bottom: 1px solid var(--border-hairline);">How it works</a>
+      <a href="./index.html#insurance" onClick="{{ closeNav }}" style="text-decoration: none; color: var(--ink); font-size: 15px; font-weight: 500; padding: 12px 4px; border-bottom: 1px solid var(--border-hairline);">Insurance</a>
+      <a href="./index.html#faqs" onClick="{{ closeNav }}" style="text-decoration: none; color: var(--ink); font-size: 15px; font-weight: 500; padding: 12px 4px; border-bottom: 1px solid var(--border-hairline);">FAQs</a>
+      <a href="./index.html#events" onClick="{{ closeNav }}" style="text-decoration: none; color: var(--ink); font-size: 15px; font-weight: 500; padding: 12px 4px; border-bottom: 1px solid var(--border-hairline);">Events</a>
+      <div style="padding-top: 12px;">
+        <x-import component-from-global-scope="TortoiseDesignSystem_c07074.Button" hint-size="100%,36px" variant="primary" size="md" full-width="{{ true }}" on-click="{{ goApply }}">Apply now</x-import>
+      </div>
+    </nav>
+  </sc-if>
 </header>
 
 <main data-screen-label="Device Catalogue" style="max-width: 1440px; margin: 0 auto; padding: clamp(20px, 3vw, 40px) clamp(16px, 3vw, 32px); display: flex; flex-wrap: wrap; gap: 24px; align-items: flex-start;">
@@ -80,7 +109,7 @@
         </button>
       </div>
       <span style="font-family: var(--font-body); font-weight: 600; font-size: 14px; line-height: 22px; color: rgb(25,25,25);">{{ selName }}</span>
-      <a href="/" aria-label="Close catalogue" style="width: 24px; height: 24px; display: flex; align-items: center; justify-content: center; border-radius: 8px; background: rgb(255,255,255); box-shadow: 0 0 0 1px rgb(238,238,238), 0 1px 0 0 rgb(238,238,238); text-decoration: none;" style-hover="background: var(--surface-subtle);">
+      <a href="./index.html" aria-label="Close catalogue" style="width: 24px; height: 24px; display: flex; align-items: center; justify-content: center; border-radius: 8px; background: rgb(255,255,255); box-shadow: 0 0 0 1px rgb(238,238,238), 0 1px 0 0 rgb(238,238,238); text-decoration: none;" style-hover="background: var(--surface-subtle);">
         <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="rgb(140,140,140)" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"></path></svg>
       </a>
     </div>
