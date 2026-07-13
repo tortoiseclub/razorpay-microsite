@@ -1,234 +1,514 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<script src="./support.js"></script>
-</head>
-<body>
-<x-dc>
-<helmet>
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Device catalogue — Razorpay Device Leasing</title>
-  <link rel="stylesheet" href="_ds/tortoise-design-system-c0707453-1d0e-464d-a10c-0637062ee8ee/tokens/fonts.css">
-  <link rel="stylesheet" href="_ds/tortoise-design-system-c0707453-1d0e-464d-a10c-0637062ee8ee/tokens/colors.css">
-  <link rel="stylesheet" href="_ds/tortoise-design-system-c0707453-1d0e-464d-a10c-0637062ee8ee/tokens/typography.css">
-  <link rel="stylesheet" href="_ds/tortoise-design-system-c0707453-1d0e-464d-a10c-0637062ee8ee/tokens/layout.css">
-  <link rel="stylesheet" href="_ds/tortoise-design-system-c0707453-1d0e-464d-a10c-0637062ee8ee/tokens/fig/fig-tokens.css">
-  <link rel="stylesheet" href="_ds/tortoise-design-system-c0707453-1d0e-464d-a10c-0637062ee8ee/styles.css">
-  <script src="_ds/tortoise-design-system-c0707453-1d0e-464d-a10c-0637062ee8ee/_ds_bundle.js"></script>
-  <style>
-    body { margin: 0; font-family: var(--font-body); color: var(--text-body); background: rgb(250,250,250); }
-    a { color: var(--color-primary); }
-    a:hover { color: var(--color-primary-deep); }
-  </style>
-</helmet>
+  <script src="./support.js"></script>
+</head>
 
-<!-- ============ STICKY HEADER ============ -->
-<header style="position: sticky; top: 0; z-index: 50; background: rgba(255,255,255,0.96); backdrop-filter: blur(6px); border-bottom: 1px solid var(--border-hairline);">
-  <div style="max-width: 1160px; margin: 0 auto; padding: 0 clamp(16px, 4vw, 40px); height: 64px; display: flex; align-items: center; justify-content: space-between; gap: 16px;">
-    <a href="./index.html" style="display: flex; align-items: baseline; gap: 10px; text-decoration: none; color: var(--ink);">
-      <img src="./tortoise-razorpay-mrgc5mvm.svg" alt="tortoise-razorpay" style="max-width: 100%; height: auto; display: block; object-fit: cover">
-    </a>
-    <sc-if value="{{ showDesktopNav }}" hint-placeholder-val="{{ false }}">
-      <nav aria-label="Sections" style="display: flex; align-items: center; gap: clamp(12px, 1.6vw, 24px);">
-        <a href="./catalog.html" style="text-decoration: none; color: var(--color-primary); font-size: 13px; font-weight: 500;">Browse devices</a>
-        <a href="./index.html#calculator" style="text-decoration: none; color: var(--ink); font-size: 13px; font-weight: 500;" style-hover="color: var(--color-primary);">Savings calculator</a>
-        <a href="./index.html#how" style="text-decoration: none; color: var(--ink); font-size: 13px; font-weight: 500;" style-hover="color: var(--color-primary);">How it works</a>
-        <a href="./index.html#insurance" style="text-decoration: none; color: var(--ink); font-size: 13px; font-weight: 500;" style-hover="color: var(--color-primary);">Insurance</a>
-        <a href="./index.html#faqs" style="text-decoration: none; color: var(--ink); font-size: 13px; font-weight: 500;" style-hover="color: var(--color-primary);">FAQs</a>
-        <a href="./index.html#events" style="text-decoration: none; color: var(--ink); font-size: 13px; font-weight: 500;" style-hover="color: var(--color-primary);">Events</a>
-      </nav>
-    </sc-if>
-    <div style="display: flex; align-items: center; gap: 8px;">
-      <sc-if value="{{ showDesktopNav }}" hint-placeholder-val="{{ true }}">
-        <x-import component-from-global-scope="TortoiseDesignSystem_c07074.Button" hint-size="110px,36px" variant="primary" size="md" on-click="{{ goApply }}">Apply now</x-import>
+<body>
+  <x-dc>
+    <helmet>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Device catalogue — Razorpay Device Leasing</title>
+      <link rel="stylesheet" href="_ds/tortoise-design-system-c0707453-1d0e-464d-a10c-0637062ee8ee/tokens/fonts.css">
+      <link rel="stylesheet" href="_ds/tortoise-design-system-c0707453-1d0e-464d-a10c-0637062ee8ee/tokens/colors.css">
+      <link rel="stylesheet"
+        href="_ds/tortoise-design-system-c0707453-1d0e-464d-a10c-0637062ee8ee/tokens/typography.css">
+      <link rel="stylesheet" href="_ds/tortoise-design-system-c0707453-1d0e-464d-a10c-0637062ee8ee/tokens/layout.css">
+      <link rel="stylesheet"
+        href="_ds/tortoise-design-system-c0707453-1d0e-464d-a10c-0637062ee8ee/tokens/fig/fig-tokens.css">
+      <link rel="stylesheet" href="_ds/tortoise-design-system-c0707453-1d0e-464d-a10c-0637062ee8ee/styles.css">
+      <script src="_ds/tortoise-design-system-c0707453-1d0e-464d-a10c-0637062ee8ee/_ds_bundle.js"></script>
+      <style>
+        body {
+          margin: 0;
+          font-family: var(--font-body);
+          color: var(--text-body);
+          background: rgb(250, 250, 250);
+        }
+
+        a {
+          color: var(--color-primary);
+        }
+
+        a:hover {
+          color: var(--color-primary-deep);
+        }
+
+        /* Mobile responsive: 2 cards per row */
+        @media (max-width: 767px) {
+          .device-card-grid {
+            display: grid !important;
+            grid-template-columns: repeat(2, 1fr) !important;
+            gap: 12px !important;
+          }
+          .device-card-grid > button {
+            width: 100% !important;
+            min-width: 0 !important;
+          }
+        }
+
+      </style>
+    </helmet>
+
+    <!-- ============ STICKY HEADER ============ -->
+    <header
+      style="position: sticky; top: 0; z-index: 50; background: rgba(255,255,255,0.96); backdrop-filter: blur(6px); border-bottom: 1px solid var(--border-hairline);">
+      <div
+        style="max-width: 1160px; margin: 0 auto; padding: 0 clamp(16px, 4vw, 40px); height: 64px; display: flex; align-items: center; justify-content: space-between; gap: 16px;">
+        <a href="./index.html"
+          style="display: flex; align-items: baseline; gap: 10px; text-decoration: none; color: var(--ink);">
+          <img src="./tortoise-razorpay-mrgc5mvm.svg" alt="tortoise-razorpay"
+            style="max-width: 100%; height: auto; display: block; object-fit: cover">
+        </a>
+        <sc-if value="{{ showDesktopNav }}" hint-placeholder-val="{{ false }}">
+          <nav aria-label="Sections" style="display: flex; align-items: center; gap: clamp(12px, 1.6vw, 24px);">
+            <a href="./catalog.html"
+              style="text-decoration: none; color: var(--ink); font-size: 13px; font-weight: 500;"
+              style-hover="color: var(--color-primary);">Browse devices</a>
+            <a href="./index.html#calculator"
+              style="text-decoration: none; color: var(--ink); font-size: 13px; font-weight: 500;"
+              style-hover="color: var(--color-primary);">Savings calculator</a>
+            <a href="./index.html#how"
+              style="text-decoration: none; color: var(--ink); font-size: 13px; font-weight: 500;"
+              style-hover="color: var(--color-primary);">How it works</a>
+            <a href="./index.html#insurance"
+              style="text-decoration: none; color: var(--ink); font-size: 13px; font-weight: 500;"
+              style-hover="color: var(--color-primary);">Insurance</a>
+            <a href="./index.html#faqs"
+              style="text-decoration: none; color: var(--ink); font-size: 13px; font-weight: 500;"
+              style-hover="color: var(--color-primary);">FAQs</a>
+            <a href="./index.html#events"
+              style="text-decoration: none; color: var(--ink); font-size: 13px; font-weight: 500;"
+              style-hover="color: var(--color-primary);">Events</a>
+          </nav>
+        </sc-if>
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <sc-if value="{{ showDesktopNav }}" hint-placeholder-val="{{ true }}">
+            <x-import component-from-global-scope="TortoiseDesignSystem_c07074.Button" hint-size="110px,36px"
+              variant="primary" size="md" on-click="{{ goApply }}">Apply now</x-import>
+          </sc-if>
+          <sc-if value="{{ isMobile }}" hint-placeholder-val="{{ false }}">
+            <button aria-label="Menu" aria-expanded="{{ navOpen }}" onClick="{{ toggleNav }}"
+              style="width: 44px; height: 44px; display: inline-flex; align-items: center; justify-content: center; background: var(--white); border: 1px solid var(--border-default); border-radius: 6px; cursor: pointer; color: var(--ink);">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                stroke-linecap="round">
+                <path d="M4 7h16M4 12h16M4 17h16"></path>
+              </svg>
+            </button>
+          </sc-if>
+        </div>
+      </div>
+      <sc-if value="{{ navOpen }}" hint-placeholder-val="{{ false }}">
+        <nav aria-label="Sections"
+          style="background: var(--white); border-bottom: 1px solid var(--border-default); box-shadow: 0 12px 24px rgba(25,25,25,0.08); display: flex; flex-direction: column; padding: 8px clamp(16px, 4vw, 40px) 16px;">
+          <a href="./catalog.html" onClick="{{ closeNav }}"
+            style="text-decoration: none; color: var(--ink); font-size: 15px; font-weight: 500; padding: 12px 4px; border-bottom: 1px solid var(--border-hairline);">Browse
+            devices</a>
+          <a href="./index.html#calculator" onClick="{{ closeNav }}"
+            style="text-decoration: none; color: var(--ink); font-size: 15px; font-weight: 500; padding: 12px 4px; border-bottom: 1px solid var(--border-hairline);">Savings
+            calculator</a>
+          <a href="./index.html#how" onClick="{{ closeNav }}"
+            style="text-decoration: none; color: var(--ink); font-size: 15px; font-weight: 500; padding: 12px 4px; border-bottom: 1px solid var(--border-hairline);">How
+            it works</a>
+          <a href="./index.html#insurance" onClick="{{ closeNav }}"
+            style="text-decoration: none; color: var(--ink); font-size: 15px; font-weight: 500; padding: 12px 4px; border-bottom: 1px solid var(--border-hairline);">Insurance</a>
+          <a href="./index.html#faqs" onClick="{{ closeNav }}"
+            style="text-decoration: none; color: var(--ink); font-size: 15px; font-weight: 500; padding: 12px 4px; border-bottom: 1px solid var(--border-hairline);">FAQs</a>
+          <a href="./index.html#events" onClick="{{ closeNav }}"
+            style="text-decoration: none; color: var(--ink); font-size: 15px; font-weight: 500; padding: 12px 4px; border-bottom: 1px solid var(--border-hairline);">Events</a>
+          <div style="padding-top: 12px;">
+            <x-import component-from-global-scope="TortoiseDesignSystem_c07074.Button" hint-size="100%,36px"
+              variant="primary" size="md" full-width="{{ true }}" on-click="{{ goApply }}">Apply now</x-import>
+          </div>
+        </nav>
       </sc-if>
+    </header>
+
+    <main data-screen-label="Device Catalogue"
+      style="max-width: 1160px; margin: 0 auto; padding: clamp(20px, 3vw, 40px) clamp(16px, 3vw, 32px); display: flex; flex-wrap: wrap; gap: 24px; align-items: flex-start;">
+
+      <!-- ============ LEFT: SEARCH + CARD GRID ============ -->
+      <div style="flex: 1 1 480px; min-width: min(100%, 340px); display: flex; flex-direction: column; gap: 24px;">
+        <h1
+          style="font-family: var(--font-heading); font-weight: 600; font-size: clamp(22px, 2.6vw, 28px); letter-spacing: -0.01em; margin: 0;">
+          Select a device</h1>
+        <div class="device-card-grid" style="display: flex; flex-wrap: wrap; gap: 12px;">
+          <sc-for list="{{ cards }}" as="c" hint-placeholder-count="8">
+            <button onClick="{{ c.onClick }}" aria-pressed="{{ c.selected }}" style="{{ c.style }}">
+              <span
+                style="height: 150px; align-self: stretch; display: flex; align-items: center; justify-content: center; overflow: hidden;">
+                <span role="img" aria-label="{{ c.name }}" style="{{ c.imgStyle }}"></span>
+              </span>
+              <span style="align-self: stretch; display: flex; flex-direction: column; gap: 14px; align-items: center;">
+                <span
+                  style="font-family: var(--font-body); font-weight: 500; font-size: 14px; line-height: 20px; color: rgb(25,25,25);">{{
+                  c.name }}</span>
+                <span style="align-self: stretch; height: 1px; background: rgb(238,238,238);"></span>
+                <span
+                  style="font-family: var(--font-body); font-weight: 600; font-size: 14px; line-height: 20px; color: rgb(25,25,25); font-variant-numeric: tabular-nums;">{{
+                  c.price }}</span>
+              </span>
+            </button>
+          </sc-for>
+        </div>
+        <sc-if value="{{ noResults }}" hint-placeholder-val="{{ false }}">
+          <p style="font-size: 14px; color: var(--text-secondary); margin: 8px 0 0;">No devices match your search. Try a
+            different brand or model.</p>
+        </sc-if>
+      </div>
+
+      <!-- ============ RIGHT: CONFIG PANEL (Desktop only) ============ -->
+      <sc-if value="{{ showDesktopPanel }}" hint-placeholder-val="{{ true }}">
+      <aside id="config-panel"
+        style="flex: 1 1 466px; min-width: min(100%, 340px); max-width: 466px; margin: 0 auto; position: sticky; top: 84px; border-radius: 12px; background: rgb(255,255,255); box-shadow: inset 0 0 0 1px rgb(238,238,238), 0 1px 0 0 rgba(0,0,0,0.15); overflow: hidden; display: flex; flex-direction: column;">
+
+        <!-- panel header -->
+        <div
+          style="height: 56px; background: rgb(250,250,250); border-bottom: 1px solid rgb(238,238,238); display: flex; align-items: center; justify-content: space-between; padding: 0 16px 0 24px; gap: 12px;">
+          <div
+            style="display: flex; align-items: center; border-radius: 8px; background: rgb(255,255,255); box-shadow: 0 0 0 1px rgb(238,238,238), 0 1px 0 0 rgb(238,238,238); overflow: hidden;">
+            <button onClick="{{ prevDevice }}" aria-label="Previous device"
+              style="width: 24px; height: 24px; display: flex; align-items: center; justify-content: center; background: transparent; border: none; cursor: pointer; padding: 0;"
+              style-hover="background: var(--surface-subtle);">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="rgb(140,140,140)" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M14 6l-6 6 6 6"></path>
+              </svg>
+            </button>
+            <span style="width: 1px; height: 24px; background: rgb(238,238,238);"></span>
+            <button onClick="{{ nextDevice }}" aria-label="Next device"
+              style="width: 24px; height: 24px; display: flex; align-items: center; justify-content: center; background: transparent; border: none; cursor: pointer; padding: 0;"
+              style-hover="background: var(--surface-subtle);">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="rgb(140,140,140)" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M10 6l6 6-6 6"></path>
+              </svg>
+            </button>
+          </div>
+          <span
+            style="font-family: var(--font-body); font-weight: 600; font-size: 14px; line-height: 22px; color: rgb(25,25,25);">{{
+            selName }}</span>
+          <a href="./index.html" aria-label="Close catalogue"
+            style="width: 24px; height: 24px; display: flex; align-items: center; justify-content: center; border-radius: 8px; background: rgb(255,255,255); box-shadow: 0 0 0 1px rgb(238,238,238), 0 1px 0 0 rgb(238,238,238); text-decoration: none;"
+            style-hover="background: var(--surface-subtle);">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="rgb(140,140,140)" stroke-width="2"
+              stroke-linecap="round">
+              <path d="M6 6l12 12M18 6L6 18"></path>
+            </svg>
+          </a>
+        </div>
+
+        <!-- summary row -->
+        <div
+          style="background: rgb(255,255,255); padding: 24px; display: flex; align-items: center; justify-content: space-between; gap: 16px;">
+          <div style="display: flex; align-items: center; gap: 20px; min-width: 0;">
+            <span aria-hidden="true" style="{{ selImgStyle }}"></span>
+            <div style="display: flex; flex-direction: column; gap: 4px; min-width: 0;">
+              <span
+                style="font-family: var(--font-body); font-weight: 500; font-size: 16px; line-height: 24px; color: rgb(25,25,25);">{{
+                selName }}</span>
+              <span
+                style="font-family: var(--font-body); font-weight: 400; font-size: 14px; line-height: 20px; color: rgb(75,75,75); white-space: nowrap;">{{
+                selVariant }}</span>
+            </div>
+          </div>
+          <div style="display: flex; flex-direction: column; gap: 2px; align-items: flex-end; flex-shrink: 0;">
+            <span
+              style="font-family: var(--font-body); font-weight: 600; font-size: 16px; line-height: 24px; color: rgb(25,25,25); font-variant-numeric: tabular-nums;">{{
+              selPrice }}</span>
+            <button onClick="{{ viewBreakdown }}"
+              style="font-family: var(--font-body); font-weight: 500; font-size: 13px; line-height: 22px; color: rgb(22,126,98); background: transparent; border: none; padding: 0; cursor: pointer; border-bottom: 1px dashed rgb(100,100,100);">View
+              breakdown</button>
+          </div>
+        </div>
+
+        <!-- storage + colour -->
+        <div
+          style="background: rgb(250,250,250); border-top: 1px solid rgb(238,238,238); padding: 24px; display: flex; flex-direction: column; gap: 24px;">
+          <div style="display: flex; flex-direction: column; gap: 8px;">
+            <span
+              style="font-family: var(--font-heading); font-weight: 600; font-size: 12px; line-height: 18px; letter-spacing: 0.08em; color: rgb(100,100,100); text-transform: uppercase;">Storage</span>
+            <div role="radiogroup" aria-label="Storage" style="display: flex; flex-wrap: wrap; gap: 8px;">
+              <sc-for list="{{ storages }}" as="st" hint-placeholder-count="3">
+                <button role="radio" aria-checked="{{ st.checked }}" onClick="{{ st.onClick }}" style="{{ st.style }}">
+                  <span style="{{ st.radioStyle }}"></span>
+                  <span
+                    style="font-family: var(--font-body); font-weight: 600; font-size: 14px; line-height: 20px; color: rgb(25,25,25); white-space: nowrap;">{{
+                    st.label }}</span>
+                </button>
+              </sc-for>
+            </div>
+          </div>
+          <div style="display: flex; flex-direction: column; gap: 8px;">
+            <span
+              style="font-family: var(--font-heading); font-weight: 600; font-size: 12px; line-height: 18px; letter-spacing: 0.08em; color: rgb(100,100,100); text-transform: uppercase;">Colour</span>
+            <div role="radiogroup" aria-label="Colour" style="display: flex; flex-wrap: wrap; gap: 16px;">
+              <sc-for list="{{ colors }}" as="co" hint-placeholder-count="5">
+                <button role="radio" aria-checked="{{ co.checked }}" aria-label="{{ co.label }}"
+                  onClick="{{ co.onClick }}"
+                  style="display: flex; flex-direction: column; gap: 4px; align-items: center; background: transparent; border: none; padding: 0; cursor: pointer;">
+                  <span style="{{ co.swatchStyle }}"></span>
+                  <span style="{{ co.dotStyle }}"></span>
+                </button>
+              </sc-for>
+            </div>
+          </div>
+        </div>
+
+        <!-- effective cost + terms -->
+        <div style="display: flex; flex-direction: column;">
+          <div
+            style="background: rgb(230,255,230); border: 1px solid rgb(42,195,147); display: flex; align-items: center; justify-content: space-between; padding: 16px 24px; gap: 12px;">
+            <span
+              style="font-family: var(--font-heading); font-weight: 600; font-size: 16px; line-height: 24px; color: rgb(22,126,98);">Effective
+              cost of the device</span>
+            <span
+              style="font-family: var(--font-body); font-weight: 600; font-size: 16px; line-height: 24px; color: rgb(22,126,98); font-variant-numeric: tabular-nums;">{{
+              effective }}*</span>
+          </div>
+          <label
+            style="border: 1px solid rgb(225,225,225); border-top: none; display: flex; align-items: center; justify-content: space-between; padding: 16px 24px; gap: 12px; cursor: pointer;">
+            <span
+              style="font-family: var(--font-body); font-weight: 600; font-size: 16px; line-height: 24px; color: rgb(25,25,25);">Employee
+              tax slab</span>
+            <span style="position: relative; display: inline-flex; align-items: center; gap: 8px;">
+              <select value="{{ slab }}" onChange="{{ onSlab }}" aria-label="Employee tax slab"
+                style="appearance: none; -webkit-appearance: none; border: none; background: transparent; font-family: var(--font-body); font-weight: 600; font-size: 16px; line-height: 24px; color: rgb(25,25,25); cursor: pointer; padding-right: 26px; outline-offset: 4px;">
+                <option value="5">5%</option>
+                <option value="10">10%</option>
+                <option value="20">20%</option>
+                <option value="30">30%</option>
+              </select>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="rgb(25,25,25)" stroke-width="1.8"
+                stroke-linecap="round" stroke-linejoin="round"
+                style="position: absolute; right: 4px; pointer-events: none;">
+                <path d="M6 9l6 6 6-6"></path>
+              </svg>
+            </span>
+          </label>
+          <label
+            style="border: 1px solid rgb(225,225,225); border-top: none; display: flex; align-items: center; justify-content: space-between; padding: 16px 24px; gap: 12px; cursor: pointer;">
+            <span
+              style="font-family: var(--font-body); font-weight: 600; font-size: 16px; line-height: 24px; color: rgb(25,25,25);">Tenure</span>
+            <span style="position: relative; display: inline-flex; align-items: center; gap: 8px;">
+              <select value="{{ tenure }}" onChange="{{ onTenure }}" aria-label="Tenure"
+                style="appearance: none; -webkit-appearance: none; border: none; background: transparent; font-family: var(--font-body); font-weight: 600; font-size: 16px; line-height: 24px; color: rgb(25,25,25); cursor: pointer; padding-right: 26px; outline-offset: 4px;">
+                <option value="6">6 m</option>
+                <option value="12">12 m</option>
+              </select>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="rgb(25,25,25)" stroke-width="1.8"
+                stroke-linecap="round" stroke-linejoin="round"
+                style="position: absolute; right: 4px; pointer-events: none;">
+                <path d="M6 9l6 6 6-6"></path>
+              </svg>
+            </span>
+          </label>
+        </div>
+
+        <!-- savings summary -->
+        <div id="savings-summary" style="{{ summaryWrapStyle }}">
+          <span
+            style="font-family: var(--font-heading); font-weight: 600; font-size: 12px; line-height: 18px; letter-spacing: 0.08em; color: rgb(100,100,100); align-self: stretch; text-transform: uppercase;">Savings
+            summary</span>
+          <div style="display: flex; flex-direction: column; align-self: stretch;">
+            <div
+              style="border: 1px solid rgb(225,225,225); display: flex; align-items: center; justify-content: space-between; padding: 16px 20px; gap: 12px;">
+              <div style="display: flex; gap: 10px; align-items: flex-start;">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="rgb(255,129,236)" stroke-width="1.5"
+                  stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0; margin-top: 2px;">
+                  <rect x="3" y="5" width="18" height="16" rx="2"></rect>
+                  <path d="M3 9.5h18M8 3v4M16 3v4M9 15l2 2 4-4"></path>
+                </svg>
+                <div style="display: flex; flex-direction: column; gap: 2px;">
+                  <span
+                    style="font-family: var(--font-body); font-weight: 600; font-size: 16px; line-height: 24px; color: rgb(25,25,25);">Monthly
+                    deduction</span>
+                  <span
+                    style="font-family: var(--font-body); font-weight: 400; font-size: 12px; line-height: 18px; color: rgb(25,25,25);">{{
+                    monthlySub }}</span>
+                </div>
+              </div>
+              <span
+                style="font-family: var(--font-body); font-weight: 500; font-size: 16px; line-height: 24px; color: rgb(25,25,25); font-variant-numeric: tabular-nums;">{{
+                monthly }}</span>
+            </div>
+            <div
+              style="border: 1px solid rgb(225,225,225); border-top: none; display: flex; align-items: center; justify-content: space-between; padding: 16px 20px; gap: 12px;">
+              <div style="display: flex; gap: 10px; align-items: flex-start;">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="rgb(119,93,179)" stroke-width="1.5"
+                  stroke-linecap="round" style="flex-shrink: 0; margin-top: 2px;">
+                  <path d="M19 5 5 19"></path>
+                  <circle cx="6.5" cy="6.5" r="2.5"></circle>
+                  <circle cx="17.5" cy="17.5" r="2.5"></circle>
+                </svg>
+                <div style="display: flex; flex-direction: column; gap: 2px;">
+                  <span
+                    style="font-family: var(--font-body); font-weight: 600; font-size: 16px; line-height: 24px; color: rgb(25,25,25);">Monthly
+                    savings</span>
+                  <span
+                    style="font-family: var(--font-body); font-weight: 400; font-size: 12px; line-height: 18px; color: rgb(25,25,25);">{{
+                    monthlySaveSub }}</span>
+                </div>
+              </div>
+              <span
+                style="font-family: var(--font-body); font-weight: 500; font-size: 16px; line-height: 24px; color: rgb(25,25,25); font-variant-numeric: tabular-nums;">{{
+                monthlySave }}*</span>
+            </div>
+            <div
+              style="border: 1px solid rgb(225,225,225); border-top: none; display: flex; align-items: center; justify-content: space-between; padding: 16px 20px; gap: 12px;">
+              <div style="display: flex; gap: 10px; align-items: flex-start;">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="rgb(22,126,98)" stroke-width="1.5"
+                  stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0; margin-top: 2px;">
+                  <path d="M12 3v12m0 0l4-4m-4 4l-4-4"></path>
+                  <path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2"></path>
+                </svg>
+                <div style="display: flex; flex-direction: column; gap: 2px;">
+                  <span
+                    style="font-family: var(--font-body); font-weight: 600; font-size: 16px; line-height: 24px; color: rgb(25,25,25);">Total
+                    savings</span>
+                  <span
+                    style="font-family: var(--font-body); font-weight: 400; font-size: 12px; line-height: 18px; color: rgb(25,25,25);">{{
+                    totalSaveSub }}</span>
+                </div>
+              </div>
+              <span
+                style="font-family: var(--font-body); font-weight: 500; font-size: 16px; line-height: 24px; color: rgb(25,25,25); font-variant-numeric: tabular-nums;">{{
+                totalSave }}*</span>
+            </div>
+          </div>
+          <span
+            style="font-family: var(--font-body); font-weight: 500; font-size: 13px; line-height: 22px; color: rgb(117,117,117); text-align: center;">*This
+            is an estimate based on the tax slab you’ve selected. The actual reduction will depend on your payroll
+            structure</span>
+          <div style="align-self: stretch; padding-top: 4px;">
+            <x-import component-from-global-scope="TortoiseDesignSystem_c07074.Button" hint-size="100%,36px"
+              variant="primary" size="md" full-width="{{ true }}" on-click="{{ applyNow }}">Interested in this
+              device?</x-import>
+          </div>
+        </div>
+      </aside>
+      </sc-if>
+
+      <!-- ============ BOTTOM SHEET (Mobile only) ============ -->
       <sc-if value="{{ isMobile }}" hint-placeholder-val="{{ false }}">
-        <button aria-label="Menu" aria-expanded="{{ navOpen }}" onClick="{{ toggleNav }}" style="width: 44px; height: 44px; display: inline-flex; align-items: center; justify-content: center; background: var(--white); border: 1px solid var(--border-default); border-radius: 6px; cursor: pointer; color: var(--ink);">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"></path></svg>
-        </button>
+        <div style="{{ sheetOverlayStyle }}" onClick="{{ closeSheet }}"></div>
+        <div style="{{ sheetStyle }}">
+          <div style="width: 36px; height: 4px; background: rgb(200,200,200); border-radius: 2px; margin: 12px auto 8px;"></div>
+
+          <!-- Sheet header -->
+          <div style="padding: 8px 20px 16px; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid rgb(238,238,238);">
+            <span style="font-family: var(--font-body); font-weight: 600; font-size: 16px; color: rgb(25,25,25);">{{ selName }}</span>
+            <button onClick="{{ closeSheet }}" aria-label="Close"
+              style="width: 32px; height: 32px; display: flex; align-items: center; justify-content: center; border-radius: 50%; background: rgb(245,245,245); border: none; cursor: pointer;">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="rgb(100,100,100)" stroke-width="2" stroke-linecap="round">
+                <path d="M6 6l12 12M18 6L6 18"></path>
+              </svg>
+            </button>
+          </div>
+
+          <!-- Summary row -->
+          <div style="background: rgb(255,255,255); padding: 20px; display: flex; align-items: center; justify-content: space-between; gap: 16px;">
+            <div style="display: flex; align-items: center; gap: 16px; min-width: 0;">
+              <span aria-hidden="true" style="{{ selImgStyle }}"></span>
+              <div style="display: flex; flex-direction: column; gap: 2px; min-width: 0;">
+                <span style="font-family: var(--font-body); font-weight: 500; font-size: 15px; color: rgb(25,25,25);">{{ selName }}</span>
+                <span style="font-family: var(--font-body); font-weight: 400; font-size: 13px; color: rgb(75,75,75);">{{ selVariant }}</span>
+              </div>
+            </div>
+            <span style="font-family: var(--font-body); font-weight: 600; font-size: 16px; color: rgb(25,25,25); font-variant-numeric: tabular-nums;">{{ selPrice }}</span>
+          </div>
+
+          <!-- Storage + Colour -->
+          <div style="background: rgb(250,250,250); border-top: 1px solid rgb(238,238,238); padding: 20px; display: flex; flex-direction: column; gap: 20px;">
+            <div style="display: flex; flex-direction: column; gap: 8px;">
+              <span style="font-family: var(--font-heading); font-weight: 600; font-size: 11px; letter-spacing: 0.08em; color: rgb(100,100,100); text-transform: uppercase;">Storage</span>
+              <div role="radiogroup" aria-label="Storage" style="display: flex; flex-wrap: wrap; gap: 8px;">
+                <sc-for list="{{ storages }}" as="st" hint-placeholder-count="3">
+                  <button role="radio" aria-checked="{{ st.checked }}" onClick="{{ st.onClick }}" style="{{ st.style }}">
+                    <span style="{{ st.radioStyle }}"></span>
+                    <span style="font-family: var(--font-body); font-weight: 600; font-size: 13px; color: rgb(25,25,25); white-space: nowrap;">{{ st.label }}</span>
+                  </button>
+                </sc-for>
+              </div>
+            </div>
+            <div style="display: flex; flex-direction: column; gap: 8px;">
+              <span style="font-family: var(--font-heading); font-weight: 600; font-size: 11px; letter-spacing: 0.08em; color: rgb(100,100,100); text-transform: uppercase;">Colour</span>
+              <div role="radiogroup" aria-label="Colour" style="display: flex; flex-wrap: wrap; gap: 12px;">
+                <sc-for list="{{ colors }}" as="co" hint-placeholder-count="5">
+                  <button role="radio" aria-checked="{{ co.checked }}" aria-label="{{ co.label }}" onClick="{{ co.onClick }}"
+                    style="display: flex; flex-direction: column; gap: 4px; align-items: center; background: transparent; border: none; padding: 0; cursor: pointer;">
+                    <span style="{{ co.swatchStyle }}"></span>
+                    <span style="{{ co.dotStyle }}"></span>
+                  </button>
+                </sc-for>
+              </div>
+            </div>
+          </div>
+
+          <!-- Effective cost + terms -->
+          <div style="display: flex; flex-direction: column;">
+            <div style="background: rgb(230,255,230); border: 1px solid rgb(42,195,147); display: flex; align-items: center; justify-content: space-between; padding: 14px 20px; gap: 12px;">
+              <span style="font-family: var(--font-heading); font-weight: 600; font-size: 14px; color: rgb(22,126,98);">Effective cost</span>
+              <span style="font-family: var(--font-body); font-weight: 600; font-size: 16px; color: rgb(22,126,98); font-variant-numeric: tabular-nums;">{{ effective }}*</span>
+            </div>
+            <label style="border: 1px solid rgb(225,225,225); border-top: none; display: flex; align-items: center; justify-content: space-between; padding: 14px 20px; gap: 12px; cursor: pointer;">
+              <span style="font-family: var(--font-body); font-weight: 600; font-size: 14px; color: rgb(25,25,25);">Tax slab</span>
+              <span style="position: relative; display: inline-flex; align-items: center;">
+                <select value="{{ slab }}" onChange="{{ onSlab }}" aria-label="Tax slab"
+                  style="appearance: none; border: none; background: transparent; font-family: var(--font-body); font-weight: 600; font-size: 14px; color: rgb(25,25,25); cursor: pointer; padding-right: 22px;">
+                  <option value="5">5%</option>
+                  <option value="10">10%</option>
+                  <option value="20">20%</option>
+                  <option value="30">30%</option>
+                </select>
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="rgb(25,25,25)" stroke-width="2" stroke-linecap="round" style="position: absolute; right: 4px; pointer-events: none;">
+                  <path d="M6 9l6 6 6-6"></path>
+                </svg>
+              </span>
+            </label>
+            <label style="border: 1px solid rgb(225,225,225); border-top: none; display: flex; align-items: center; justify-content: space-between; padding: 14px 20px; gap: 12px; cursor: pointer;">
+              <span style="font-family: var(--font-body); font-weight: 600; font-size: 14px; color: rgb(25,25,25);">Tenure</span>
+              <span style="position: relative; display: inline-flex; align-items: center;">
+                <select value="{{ tenure }}" onChange="{{ onTenure }}" aria-label="Tenure"
+                  style="appearance: none; border: none; background: transparent; font-family: var(--font-body); font-weight: 600; font-size: 14px; color: rgb(25,25,25); cursor: pointer; padding-right: 22px;">
+                  <option value="6">6 m</option>
+                  <option value="12">12 m</option>
+                </select>
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="rgb(25,25,25)" stroke-width="2" stroke-linecap="round" style="position: absolute; right: 4px; pointer-events: none;">
+                  <path d="M6 9l6 6 6-6"></path>
+                </svg>
+              </span>
+            </label>
+          </div>
+
+          <!-- Savings summary (compact) -->
+          <div style="padding: 20px; display: flex; flex-direction: column; gap: 12px;">
+            <div style="display: flex; justify-content: space-between; align-items: center;">
+              <span style="font-family: var(--font-body); font-weight: 500; font-size: 14px; color: rgb(75,75,75);">Monthly deduction</span>
+              <span style="font-family: var(--font-body); font-weight: 600; font-size: 14px; color: rgb(25,25,25); font-variant-numeric: tabular-nums;">{{ monthly }}</span>
+            </div>
+            <div style="display: flex; justify-content: space-between; align-items: center;">
+              <span style="font-family: var(--font-body); font-weight: 500; font-size: 14px; color: rgb(75,75,75);">Monthly savings</span>
+              <span style="font-family: var(--font-body); font-weight: 600; font-size: 14px; color: rgb(22,126,98); font-variant-numeric: tabular-nums;">{{ monthlySave }}*</span>
+            </div>
+            <div style="display: flex; justify-content: space-between; align-items: center;">
+              <span style="font-family: var(--font-body); font-weight: 500; font-size: 14px; color: rgb(75,75,75);">Total savings</span>
+              <span style="font-family: var(--font-body); font-weight: 600; font-size: 14px; color: rgb(22,126,98); font-variant-numeric: tabular-nums;">{{ totalSave }}*</span>
+            </div>
+            <p style="font-size: 11px; color: rgb(117,117,117); margin: 4px 0 0; text-align: center;">*Estimate based on selected tax slab</p>
+            <div style="padding-top: 8px;">
+              <x-import component-from-global-scope="TortoiseDesignSystem_c07074.Button" hint-size="100%,44px"
+                variant="primary" size="md" full-width="{{ true }}" on-click="{{ goApply }}">Interested in this device?</x-import>
+            </div>
+          </div>
+        </div>
       </sc-if>
-    </div>
-  </div>
-  <sc-if value="{{ navOpen }}" hint-placeholder-val="{{ false }}">
-    <nav aria-label="Sections" style="background: var(--white); border-bottom: 1px solid var(--border-default); box-shadow: 0 12px 24px rgba(25,25,25,0.08); display: flex; flex-direction: column; padding: 8px clamp(16px, 4vw, 40px) 16px;">
-      <a href="./catalog.html" onClick="{{ closeNav }}" style="text-decoration: none; color: var(--color-primary); font-size: 15px; font-weight: 500; padding: 12px 4px; border-bottom: 1px solid var(--border-hairline);">Browse devices</a>
-      <a href="./index.html#calculator" onClick="{{ closeNav }}" style="text-decoration: none; color: var(--ink); font-size: 15px; font-weight: 500; padding: 12px 4px; border-bottom: 1px solid var(--border-hairline);">Savings calculator</a>
-      <a href="./index.html#how" onClick="{{ closeNav }}" style="text-decoration: none; color: var(--ink); font-size: 15px; font-weight: 500; padding: 12px 4px; border-bottom: 1px solid var(--border-hairline);">How it works</a>
-      <a href="./index.html#insurance" onClick="{{ closeNav }}" style="text-decoration: none; color: var(--ink); font-size: 15px; font-weight: 500; padding: 12px 4px; border-bottom: 1px solid var(--border-hairline);">Insurance</a>
-      <a href="./index.html#faqs" onClick="{{ closeNav }}" style="text-decoration: none; color: var(--ink); font-size: 15px; font-weight: 500; padding: 12px 4px; border-bottom: 1px solid var(--border-hairline);">FAQs</a>
-      <a href="./index.html#events" onClick="{{ closeNav }}" style="text-decoration: none; color: var(--ink); font-size: 15px; font-weight: 500; padding: 12px 4px; border-bottom: 1px solid var(--border-hairline);">Events</a>
-      <div style="padding-top: 12px;">
-        <x-import component-from-global-scope="TortoiseDesignSystem_c07074.Button" hint-size="100%,36px" variant="primary" size="md" full-width="{{ true }}" on-click="{{ goApply }}">Apply now</x-import>
-      </div>
-    </nav>
-  </sc-if>
-</header>
-
-<main data-screen-label="Device Catalogue" style="max-width: 1440px; margin: 0 auto; padding: clamp(20px, 3vw, 40px) clamp(16px, 3vw, 32px); display: flex; flex-wrap: wrap; gap: 24px; align-items: flex-start;">
-
-  <!-- ============ LEFT: SEARCH + CARD GRID ============ -->
-  <div style="flex: 1 1 480px; min-width: min(100%, 340px); display: flex; flex-direction: column; gap: 24px;">
-    <h1 style="font-family: var(--font-heading); font-weight: 600; font-size: clamp(22px, 2.6vw, 28px); letter-spacing: -0.01em; margin: 0;">Choose your device</h1>
-    <div style="height: 40px; border-radius: 8px; background: rgb(250,250,250); box-shadow: 0 0 0 1px rgb(238,238,238); display: flex; align-items: center; gap: 8px; padding: 6px 12px; box-sizing: border-box; background-color: var(--white);">
-      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="rgb(203,203,203)" stroke-width="1.8" stroke-linecap="round"><circle cx="10.5" cy="10.5" r="7"></circle><path d="M16 16l5 5"></path></svg>
-      <input type="text" value="{{ query }}" onChange="{{ onQuery }}" placeholder="Search by brand, category and model" aria-label="Search devices" style="flex: 1; border: none; outline: none; background: transparent; font-family: var(--font-body); font-weight: 500; font-size: 13px; color: var(--ink); min-width: 0;">
-    </div>
-    <div style="display: flex; flex-wrap: wrap; gap: 12px;">
-      <sc-for list="{{ cards }}" as="c" hint-placeholder-count="8">
-        <button onClick="{{ c.onClick }}" aria-pressed="{{ c.selected }}" style="{{ c.style }}">
-          <span style="height: 120px; align-self: stretch; display: flex; align-items: center; justify-content: center; overflow: hidden;">
-            <span role="img" aria-label="{{ c.name }}" style="{{ c.imgStyle }}"></span>
-          </span>
-          <span style="align-self: stretch; display: flex; flex-direction: column; gap: 14px; align-items: center;">
-            <span style="font-family: var(--font-body); font-weight: 500; font-size: 14px; line-height: 20px; color: rgb(25,25,25);">{{ c.name }}</span>
-            <span style="align-self: stretch; height: 1px; background: rgb(238,238,238);"></span>
-            <span style="font-family: var(--font-body); font-weight: 600; font-size: 14px; line-height: 20px; color: rgb(25,25,25); font-variant-numeric: tabular-nums;">{{ c.price }}</span>
-          </span>
-        </button>
-      </sc-for>
-    </div>
-    <sc-if value="{{ noResults }}" hint-placeholder-val="{{ false }}">
-      <p style="font-size: 14px; color: var(--text-secondary); margin: 8px 0 0;">No devices match your search. Try a different brand or model.</p>
-    </sc-if>
-  </div>
-
-  <!-- ============ RIGHT: CONFIG PANEL ============ -->
-  <aside id="config-panel" style="flex: 1 1 466px; min-width: min(100%, 340px); max-width: 466px; margin: 0 auto; position: sticky; top: 84px; border-radius: 12px; background: rgb(255,255,255); box-shadow: inset 0 0 0 1px rgb(238,238,238), 0 1px 0 0 rgba(0,0,0,0.15); overflow: hidden; display: flex; flex-direction: column;">
-
-    <!-- panel header -->
-    <div style="height: 56px; background: rgb(250,250,250); border-bottom: 1px solid rgb(238,238,238); display: flex; align-items: center; justify-content: space-between; padding: 0 16px 0 24px; gap: 12px;">
-      <div style="display: flex; align-items: center; border-radius: 8px; background: rgb(255,255,255); box-shadow: 0 0 0 1px rgb(238,238,238), 0 1px 0 0 rgb(238,238,238); overflow: hidden;">
-        <button onClick="{{ prevDevice }}" aria-label="Previous device" style="width: 24px; height: 24px; display: flex; align-items: center; justify-content: center; background: transparent; border: none; cursor: pointer; padding: 0;" style-hover="background: var(--surface-subtle);">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="rgb(140,140,140)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 6l-6 6 6 6"></path></svg>
-        </button>
-        <span style="width: 1px; height: 24px; background: rgb(238,238,238);"></span>
-        <button onClick="{{ nextDevice }}" aria-label="Next device" style="width: 24px; height: 24px; display: flex; align-items: center; justify-content: center; background: transparent; border: none; cursor: pointer; padding: 0;" style-hover="background: var(--surface-subtle);">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="rgb(140,140,140)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 6l6 6-6 6"></path></svg>
-        </button>
-      </div>
-      <span style="font-family: var(--font-body); font-weight: 600; font-size: 14px; line-height: 22px; color: rgb(25,25,25);">{{ selName }}</span>
-      <a href="./index.html" aria-label="Close catalogue" style="width: 24px; height: 24px; display: flex; align-items: center; justify-content: center; border-radius: 8px; background: rgb(255,255,255); box-shadow: 0 0 0 1px rgb(238,238,238), 0 1px 0 0 rgb(238,238,238); text-decoration: none;" style-hover="background: var(--surface-subtle);">
-        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="rgb(140,140,140)" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"></path></svg>
-      </a>
-    </div>
-
-    <!-- summary row -->
-    <div style="background: rgb(255,255,255); padding: 24px; display: flex; align-items: center; justify-content: space-between; gap: 16px;">
-      <div style="display: flex; align-items: center; gap: 20px; min-width: 0;">
-        <span aria-hidden="true" style="{{ selImgStyle }}"></span>
-        <div style="display: flex; flex-direction: column; gap: 4px; min-width: 0;">
-          <span style="font-family: var(--font-body); font-weight: 500; font-size: 16px; line-height: 24px; color: rgb(25,25,25);">{{ selName }}</span>
-          <span style="font-family: var(--font-body); font-weight: 400; font-size: 14px; line-height: 20px; color: rgb(75,75,75); white-space: nowrap;">{{ selVariant }}</span>
-        </div>
-      </div>
-      <div style="display: flex; flex-direction: column; gap: 2px; align-items: flex-end; flex-shrink: 0;">
-        <span style="font-family: var(--font-body); font-weight: 600; font-size: 16px; line-height: 24px; color: rgb(25,25,25); font-variant-numeric: tabular-nums;">{{ selPrice }}</span>
-        <button onClick="{{ viewBreakdown }}" style="font-family: var(--font-body); font-weight: 500; font-size: 13px; line-height: 22px; color: rgb(22,126,98); background: transparent; border: none; padding: 0; cursor: pointer; border-bottom: 1px dashed rgb(100,100,100);">View breakdown</button>
-      </div>
-    </div>
-
-    <!-- storage + colour -->
-    <div style="background: rgb(250,250,250); border-top: 1px solid rgb(238,238,238); padding: 24px; display: flex; flex-direction: column; gap: 24px;">
-      <div style="display: flex; flex-direction: column; gap: 8px;">
-        <span style="font-family: var(--font-heading); font-weight: 600; font-size: 12px; line-height: 18px; letter-spacing: 0.08em; color: rgb(100,100,100); text-transform: uppercase;">Storage</span>
-        <div role="radiogroup" aria-label="Storage" style="display: flex; flex-wrap: wrap; gap: 8px;">
-          <sc-for list="{{ storages }}" as="st" hint-placeholder-count="3">
-            <button role="radio" aria-checked="{{ st.checked }}" onClick="{{ st.onClick }}" style="{{ st.style }}">
-              <span style="{{ st.radioStyle }}"></span>
-              <span style="font-family: var(--font-body); font-weight: 600; font-size: 14px; line-height: 20px; color: rgb(25,25,25); white-space: nowrap;">{{ st.label }}</span>
-            </button>
-          </sc-for>
-        </div>
-      </div>
-      <div style="display: flex; flex-direction: column; gap: 8px;">
-        <span style="font-family: var(--font-heading); font-weight: 600; font-size: 12px; line-height: 18px; letter-spacing: 0.08em; color: rgb(100,100,100); text-transform: uppercase;">Colour</span>
-        <div role="radiogroup" aria-label="Colour" style="display: flex; flex-wrap: wrap; gap: 16px;">
-          <sc-for list="{{ colors }}" as="co" hint-placeholder-count="5">
-            <button role="radio" aria-checked="{{ co.checked }}" aria-label="{{ co.label }}" onClick="{{ co.onClick }}" style="display: flex; flex-direction: column; gap: 4px; align-items: center; background: transparent; border: none; padding: 0; cursor: pointer;">
-              <span style="{{ co.swatchStyle }}"></span>
-              <span style="{{ co.dotStyle }}"></span>
-            </button>
-          </sc-for>
-        </div>
-      </div>
-    </div>
-
-    <!-- effective cost + terms -->
-    <div style="display: flex; flex-direction: column;">
-      <div style="background: rgb(230,255,230); border: 1px solid rgb(42,195,147); display: flex; align-items: center; justify-content: space-between; padding: 16px 24px; gap: 12px;">
-        <span style="font-family: var(--font-heading); font-weight: 600; font-size: 16px; line-height: 24px; color: rgb(22,126,98);">Effective cost of the device</span>
-        <span style="font-family: var(--font-body); font-weight: 600; font-size: 16px; line-height: 24px; color: rgb(22,126,98); font-variant-numeric: tabular-nums;">{{ effective }}*</span>
-      </div>
-      <label style="border: 1px solid rgb(225,225,225); border-top: none; display: flex; align-items: center; justify-content: space-between; padding: 16px 24px; gap: 12px; cursor: pointer;">
-        <span style="font-family: var(--font-body); font-weight: 600; font-size: 16px; line-height: 24px; color: rgb(25,25,25);">Employee tax slab</span>
-        <span style="position: relative; display: inline-flex; align-items: center; gap: 8px;">
-          <select value="{{ slab }}" onChange="{{ onSlab }}" aria-label="Employee tax slab" style="appearance: none; -webkit-appearance: none; border: none; background: transparent; font-family: var(--font-body); font-weight: 600; font-size: 16px; line-height: 24px; color: rgb(25,25,25); cursor: pointer; padding-right: 26px; outline-offset: 4px;">
-            <option value="5">5%</option>
-            <option value="10">10%</option>
-            <option value="20">20%</option>
-            <option value="30">30%</option>
-          </select>
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="rgb(25,25,25)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="position: absolute; right: 4px; pointer-events: none;"><path d="M6 9l6 6 6-6"></path></svg>
-        </span>
-      </label>
-      <label style="border: 1px solid rgb(225,225,225); border-top: none; display: flex; align-items: center; justify-content: space-between; padding: 16px 24px; gap: 12px; cursor: pointer;">
-        <span style="font-family: var(--font-body); font-weight: 600; font-size: 16px; line-height: 24px; color: rgb(25,25,25);">Tenure</span>
-        <span style="position: relative; display: inline-flex; align-items: center; gap: 8px;">
-          <select value="{{ tenure }}" onChange="{{ onTenure }}" aria-label="Tenure" style="appearance: none; -webkit-appearance: none; border: none; background: transparent; font-family: var(--font-body); font-weight: 600; font-size: 16px; line-height: 24px; color: rgb(25,25,25); cursor: pointer; padding-right: 26px; outline-offset: 4px;">
-            <option value="6">6 m</option>
-            <option value="12">12 m</option>
-          </select>
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="rgb(25,25,25)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="position: absolute; right: 4px; pointer-events: none;"><path d="M6 9l6 6 6-6"></path></svg>
-        </span>
-      </label>
-    </div>
-
-    <!-- savings summary -->
-    <div id="savings-summary" style="{{ summaryWrapStyle }}">
-      <span style="font-family: var(--font-heading); font-weight: 600; font-size: 12px; line-height: 18px; letter-spacing: 0.08em; color: rgb(100,100,100); align-self: stretch; text-transform: uppercase;">Savings summary</span>
-      <div style="display: flex; flex-direction: column; align-self: stretch;">
-        <div style="border: 1px solid rgb(225,225,225); display: flex; align-items: center; justify-content: space-between; padding: 16px 20px; gap: 12px;">
-          <div style="display: flex; gap: 10px; align-items: flex-start;">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="rgb(255,129,236)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0; margin-top: 2px;"><rect x="3" y="5" width="18" height="16" rx="2"></rect><path d="M3 9.5h18M8 3v4M16 3v4M9 15l2 2 4-4"></path></svg>
-            <div style="display: flex; flex-direction: column; gap: 2px;">
-              <span style="font-family: var(--font-body); font-weight: 600; font-size: 16px; line-height: 24px; color: rgb(25,25,25);">Monthly deduction</span>
-              <span style="font-family: var(--font-body); font-weight: 400; font-size: 12px; line-height: 18px; color: rgb(25,25,25);">{{ monthlySub }}</span>
-            </div>
-          </div>
-          <span style="font-family: var(--font-body); font-weight: 500; font-size: 16px; line-height: 24px; color: rgb(25,25,25); font-variant-numeric: tabular-nums;">{{ monthly }}</span>
-        </div>
-        <div style="border: 1px solid rgb(225,225,225); border-top: none; display: flex; align-items: center; justify-content: space-between; padding: 16px 20px; gap: 12px;">
-          <div style="display: flex; gap: 10px; align-items: flex-start;">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="rgb(119,93,179)" stroke-width="1.5" stroke-linecap="round" style="flex-shrink: 0; margin-top: 2px;"><path d="M19 5 5 19"></path><circle cx="6.5" cy="6.5" r="2.5"></circle><circle cx="17.5" cy="17.5" r="2.5"></circle></svg>
-            <div style="display: flex; flex-direction: column; gap: 2px;">
-              <span style="font-family: var(--font-body); font-weight: 600; font-size: 16px; line-height: 24px; color: rgb(25,25,25);">Monthly savings</span>
-              <span style="font-family: var(--font-body); font-weight: 400; font-size: 12px; line-height: 18px; color: rgb(25,25,25);">{{ monthlySaveSub }}</span>
-            </div>
-          </div>
-          <span style="font-family: var(--font-body); font-weight: 500; font-size: 16px; line-height: 24px; color: rgb(25,25,25); font-variant-numeric: tabular-nums;">{{ monthlySave }}*</span>
-        </div>
-        <div style="border: 1px solid rgb(225,225,225); border-top: none; display: flex; align-items: center; justify-content: space-between; padding: 16px 20px; gap: 12px;">
-          <div style="display: flex; gap: 10px; align-items: flex-start;">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="rgb(22,126,98)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0; margin-top: 2px;"><path d="M12 3v12m0 0l4-4m-4 4l-4-4"></path><path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2"></path></svg>
-            <div style="display: flex; flex-direction: column; gap: 2px;">
-              <span style="font-family: var(--font-body); font-weight: 600; font-size: 16px; line-height: 24px; color: rgb(25,25,25);">Total savings</span>
-              <span style="font-family: var(--font-body); font-weight: 400; font-size: 12px; line-height: 18px; color: rgb(25,25,25);">{{ totalSaveSub }}</span>
-            </div>
-          </div>
-          <span style="font-family: var(--font-body); font-weight: 500; font-size: 16px; line-height: 24px; color: rgb(25,25,25); font-variant-numeric: tabular-nums;">{{ totalSave }}*</span>
-        </div>
-      </div>
-      <span style="font-family: var(--font-body); font-weight: 500; font-size: 13px; line-height: 22px; color: rgb(117,117,117); text-align: center;">*This is an estimate based on the tax slab you’ve selected. The actual reduction will depend on your payroll structure</span>
-      <div style="align-self: stretch; padding-top: 4px;">
-        <x-import component-from-global-scope="TortoiseDesignSystem_c07074.Button" hint-size="100%,36px" variant="primary" size="md" full-width="{{ true }}" on-click="{{ applyNow }}">Interested in this device?</x-import>
-      </div>
-    </div>
-  </aside>
-</main>
-</x-dc>
-<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;:{&quot;width&quot;:1280}}">
+    </main>
+  </x-dc>
+  <script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;:{&quot;width&quot;:1280}}">
 class Component extends DCLogic {
   // ===== CONFIGURATION =====
   static CONFIG = {
@@ -238,80 +518,84 @@ class Component extends DCLogic {
 
   static DEVICES = [
     // Apple
-    { name: 'iPhone 17', img: 'assets/iphone-16.png', base: 66317, brand: 'Apple',
+    { name: 'iPhone 17', img: 'https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-17.jpg', base: 66317, brand: 'Apple',
       storages: [['256 GB', 0], ['512 GB', 8300]],
       colors: [['Black', 'rgb(70,74,76)'], ['White', 'rgb(238,233,204)'], ['Blue', 'rgb(140,160,232)'], ['Pink', 'rgb(237,212,215)']] },
-    { name: 'iPhone 17 Pro', img: 'assets/iphone-16-pro.png', base: 87067, brand: 'Apple',
+    { name: 'iPhone 17 Pro', img: 'https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-17-pro.jpg', base: 87067, brand: 'Apple',
       storages: [['256 GB', 0], ['512 GB', 8300], ['1 TB', 24900]],
       colors: [['Natural Titanium', 'rgb(214,221,224)'], ['Black Titanium', 'rgb(70,74,76)'], ['Desert Titanium', 'rgb(238,233,204)']] },
-    { name: 'iPhone 17 Pro Max', img: 'assets/iphone-16-pro-max.png', base: 103667, brand: 'Apple',
+    { name: 'iPhone 17 Pro Max', img: 'https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-17-pro-max.jpg', base: 103667, brand: 'Apple',
       storages: [['256 GB', 0], ['512 GB', 16600], ['1 TB', 33200], ['2 TB', 62250]],
       colors: [['Natural Titanium', 'rgb(214,221,224)'], ['Black Titanium', 'rgb(70,74,76)'], ['Desert Titanium', 'rgb(238,233,204)']] },
     // Samsung
-    { name: 'Galaxy S25', img: 'assets/samsung-galaxy.png', base: 66317, brand: 'Samsung',
+    { name: 'Galaxy S26', img: 'https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-s26.jpg', base: 66317, brand: 'Samsung',
       storages: [['128 GB', 0], ['256 GB', 4980]],
-      colors: [['Phantom Black', 'rgb(45,45,45)'], ['Cream', 'rgb(245,240,225)'], ['Icy Blue', 'rgb(180,210,230)'], ['Mint', 'rgb(180,220,200)']] },
-    { name: 'Galaxy S25+', img: 'assets/samsung-galaxy.png', base: 82917, brand: 'Samsung',
+      colors: [['Black', 'rgb(45,45,45)'], ['White', 'rgb(245,245,245)'], ['Sky Blue', 'rgb(135,180,220)'], ['Cobalt Violet', 'rgb(100,80,140)']] },
+    { name: 'Galaxy S26+', img: 'https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-s26-plus.jpg', base: 82917, brand: 'Samsung',
       storages: [['256 GB', 0], ['512 GB', 9960]],
-      colors: [['Phantom Black', 'rgb(45,45,45)'], ['Cream', 'rgb(245,240,225)'], ['Icy Blue', 'rgb(180,210,230)']] },
-    { name: 'Galaxy S25 Ultra', img: 'assets/samsung-galaxy.png', base: 107817, brand: 'Samsung',
+      colors: [['Black', 'rgb(45,45,45)'], ['White', 'rgb(245,245,245)'], ['Sky Blue', 'rgb(135,180,220)'], ['Cobalt Violet', 'rgb(100,80,140)']] },
+    { name: 'Galaxy S26 Ultra', img: 'https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-s26-ultra.jpg', base: 107817, brand: 'Samsung',
       storages: [['256 GB', 0], ['512 GB', 9960], ['1 TB', 29880]],
-      colors: [['Titanium Black', 'rgb(50,50,50)'], ['Titanium Gray', 'rgb(140,140,140)'], ['Titanium Blue', 'rgb(100,130,160)']] },
+      colors: [['Black', 'rgb(45,45,45)'], ['White', 'rgb(245,245,245)'], ['Sky Blue', 'rgb(135,180,220)'], ['Cobalt Violet', 'rgb(100,80,140)']] },
     // Google
-    { name: 'Pixel 9', img: 'assets/pixel.png', base: 66317, brand: 'Google',
+    { name: 'Pixel 9', img: 'https://fdn2.gsmarena.com/vv/bigpic/google-pixel-9-.jpg', base: 66317, brand: 'Google',
       storages: [['128 GB', 0], ['256 GB', 8300]],
       colors: [['Obsidian', 'rgb(60,60,60)'], ['Porcelain', 'rgb(240,235,225)'], ['Wintergreen', 'rgb(180,210,190)'], ['Peony', 'rgb(230,180,190)']] },
-    { name: 'Pixel 9 Pro', img: 'assets/pixel.png', base: 82917, brand: 'Google',
+    { name: 'Pixel 9 Pro', img: 'https://fdn2.gsmarena.com/vv/bigpic/google-pixel-9-pro-.jpg', base: 82917, brand: 'Google',
       storages: [['128 GB', 0], ['256 GB', 4980], ['512 GB', 14940], ['1 TB', 24900]],
       colors: [['Obsidian', 'rgb(60,60,60)'], ['Porcelain', 'rgb(240,235,225)'], ['Hazel', 'rgb(180,170,150)']] },
-    { name: 'Pixel 9 Pro XL', img: 'assets/pixel.png', base: 91217, brand: 'Google',
+    { name: 'Pixel 9 Pro XL', img: 'https://fdn2.gsmarena.com/vv/bigpic/google-pixel-9-pro-xl-.jpg', base: 91217, brand: 'Google',
       storages: [['128 GB', 0], ['256 GB', 4980], ['512 GB', 14940], ['1 TB', 24900]],
       colors: [['Obsidian', 'rgb(60,60,60)'], ['Porcelain', 'rgb(240,235,225)'], ['Hazel', 'rgb(180,170,150)']] },
     // OnePlus
-    { name: 'OnePlus 13', img: 'assets/oneplus.png', base: 74617, brand: 'OnePlus',
+    { name: 'OnePlus 13', img: 'https://fdn2.gsmarena.com/vv/bigpic/oneplus-13.jpg', base: 74617, brand: 'OnePlus',
       storages: [['12GB + 256GB', 0], ['16GB + 512GB', 8300]],
       colors: [['Midnight Ocean', 'rgb(30,50,80)'], ['Black Eclipse', 'rgb(40,40,40)'], ['Arctic Dawn', 'rgb(235,240,245)']] },
-    { name: 'OnePlus 13R', img: 'assets/oneplus.png', base: 49717, brand: 'OnePlus',
+    { name: 'OnePlus 13R', img: 'https://fdn2.gsmarena.com/vv/bigpic/oneplus-13r.jpg', base: 49717, brand: 'OnePlus',
       storages: [['12GB + 256GB', 0], ['16GB + 512GB', 8300]],
       colors: [['Nebula Noir', 'rgb(50,45,55)'], ['Astral Trail', 'rgb(200,210,220)']] },
     // Xiaomi
-    { name: 'Xiaomi 15', img: 'assets/xiaomi.png', base: 64999, brand: 'Xiaomi',
+    { name: 'Xiaomi 15', img: 'https://fdn2.gsmarena.com/vv/bigpic/xiaomi-15.jpg', base: 64999, brand: 'Xiaomi',
       storages: [['12GB + 256GB', 0], ['12GB + 512GB', 5000]],
       colors: [['Black', 'rgb(45,45,45)'], ['White', 'rgb(245,245,245)'], ['Green', 'rgb(140,180,160)']] },
-    { name: 'Xiaomi 15 Ultra', img: 'assets/xiaomi.png', base: 89990, brand: 'Xiaomi',
+    { name: 'Xiaomi 15 Ultra', img: 'https://fdn2.gsmarena.com/vv/bigpic/xiaomi-15-ultra-.jpg', base: 89990, brand: 'Xiaomi',
       storages: [['16GB + 512GB', 0], ['16GB + 1TB', 20009]],
       colors: [['Black', 'rgb(45,45,45)'], ['White', 'rgb(245,245,245)']] },
     // Oppo
-    { name: 'Oppo Find X8', img: 'assets/oppo.png', base: 62167, brand: 'Oppo',
+    { name: 'Oppo Find X8', img: 'https://fdn2.gsmarena.com/vv/bigpic/oppo-find-x8.jpg', base: 62167, brand: 'Oppo',
       storages: [['12GB + 256GB', 0], ['12GB + 512GB', 8300]],
       colors: [['Space Black', 'rgb(50,50,50)'], ['Star Grey', 'rgb(180,180,185)']] },
-    { name: 'Oppo Find X8 Pro', img: 'assets/oppo.png', base: 82917, brand: 'Oppo',
+    { name: 'Oppo Find X8 Pro', img: 'https://fdn2.gsmarena.com/vv/bigpic/oppo-find-x8-pro.jpg', base: 82917, brand: 'Oppo',
       storages: [['16GB + 256GB', 0], ['16GB + 512GB', 8300]],
       colors: [['Space Black', 'rgb(50,50,50)'], ['Pearl White', 'rgb(240,240,245)']] },
     // Vivo
-    { name: 'Vivo X200', img: 'assets/vivo.png', base: 66483, brand: 'Vivo',
+    { name: 'Vivo X200', img: 'https://fdn2.gsmarena.com/vv/bigpic/vivo-x200.jpg', base: 66483, brand: 'Vivo',
       storages: [['12GB + 256GB', 0], ['16GB + 512GB', 8134]],
       colors: [['Cosmos Black', 'rgb(40,40,40)'], ['Natural Green', 'rgb(160,185,165)']] },
-    { name: 'Vivo X200 Pro', img: 'assets/vivo.png', base: 82004, brand: 'Vivo',
+    { name: 'Vivo X200 Pro', img: 'https://fdn2.gsmarena.com/vv/bigpic/vivo-x200-pro.jpg', base: 82004, brand: 'Vivo',
       storages: [['16GB + 512GB', 0], ['16GB + 1TB', 9213]],
       colors: [['Titanium Grey', 'rgb(130,130,135)'], ['Cosmos Black', 'rgb(40,40,40)']] },
     // iQOO
-    { name: 'iQOO 13', img: 'assets/iqoo.png', base: 54999, brand: 'iQOO',
+    { name: 'iQOO 13', img: 'https://fdn2.gsmarena.com/vv/bigpic/vivo-iqoo-13.jpg', base: 54999, brand: 'iQOO',
       storages: [['12GB + 256GB', 0], ['16GB + 512GB', 5000], ['16GB + 1TB', 10000]],
       colors: [['Legend', 'rgb(200,180,160)'], ['Nardo Grey', 'rgb(140,145,150)'], ['Midnight', 'rgb(35,35,40)']] },
-    { name: 'iQOO Neo 10', img: 'assets/iqoo.png', base: 34999, brand: 'iQOO',
-      storages: [['8GB + 256GB', 0], ['12GB + 256GB', 3000]],
-      colors: [['Titanium Matte', 'rgb(160,160,165)'], ['Velocity Black', 'rgb(30,30,35)']] },
     // Motorola
-    { name: 'Motorola Edge 2026', img: 'assets/motorola.png', base: 49717, brand: 'Motorola',
+    { name: 'Motorola Edge 2026', img: 'https://fdn2.gsmarena.com/vv/bigpic/motorola-razr-60.jpg', base: 49717, brand: 'Motorola',
       storages: [['8GB + 128GB', 0]],
       colors: [['Eclipse Black', 'rgb(40,40,40)'], ['Lunar Blue', 'rgb(100,120,160)']] },
-    { name: 'Motorola Razr 2026', img: 'assets/motorola.png', base: 58017, brand: 'Motorola',
+    { name: 'Motorola Razr 2026', img: 'https://fdn2.gsmarena.com/vv/bigpic/motorola-razr-60.jpg', base: 58017, brand: 'Motorola',
       storages: [['8GB + 256GB', 0], ['12GB + 256GB', 8300]],
       colors: [['Koala Grey', 'rgb(170,165,160)'], ['Spritz Orange', 'rgb(230,150,100)'], ['Beach Sand', 'rgb(220,210,190)']] },
   ];
 
-  state = { query: '', sel: 0, storage: 0, color: 0, slab: 30, tenure: 12, flash: false };
+  state = { query: '', sel: 0, storage: 0, color: 0, slab: 30, tenure: 12, flash: false, navOpen: false, isMobile: false, sheetOpen: false };
+
+  componentDidMount() {
+    this.mqMobile = window.matchMedia('(max-width: 767px)');
+    const sync = () => this.setState({ isMobile: this.mqMobile.matches, navOpen: this.mqMobile.matches ? this.state.navOpen : false });
+    this.mqMobile.addEventListener('change', sync);
+    sync();
+  }
 
   group(n) { return Math.round(n).toLocaleString('en-IN'); }
   rupee(n) { return '\u20B9' + this.group(n); }
@@ -334,7 +618,7 @@ class Component extends DCLogic {
 
     const q = s.query.trim().toLowerCase();
     const cardBase = {
-      width: 155.667, minHeight: 207.68, borderRadius: 8, background: 'rgb(255,255,255)',
+      width: 211, minHeight: 207.68, borderRadius: 8, background: 'rgb(255,255,255)',
       display: 'flex', flexDirection: 'column', padding: '0 0 16px', alignItems: 'center',
       border: 'none', cursor: 'pointer', boxSizing: 'border-box',
       transition: 'box-shadow 150ms cubic-bezier(0.2,0,0,1)',
@@ -347,7 +631,7 @@ class Component extends DCLogic {
         imgStyle: { width: 82, height: 96, background: 'url("' + dev.img + '") center / contain no-repeat', mixBlendMode: 'multiply' },
         price: this.rupee(dev.base),
         selected: s.sel === i,
-        onClick: () => this.setState({ sel: i, storage: 0, color: 0 }),
+        onClick: () => this.setState({ sel: i, storage: 0, color: 0, sheetOpen: s.isMobile }),
         style: s.sel === i
           ? { ...cardBase, boxShadow: 'inset 0 0 0 2px rgb(42,195,147), 0px 0px 0.817px 0px rgba(66,71,76,0.32), 0px 3.268px 6.536px 0px rgba(66,71,76,0.06), 0px 6.536px 19.609px 0px rgba(238,238,238,0.35)' }
           : cardBase,
@@ -437,9 +721,35 @@ class Component extends DCLogic {
         const el = document.getElementById('savings-summary');
         if (el) el.focus && el.focus();
       },
+
+      // header / nav
+      isMobile: s.isMobile,
+      showDesktopNav: !s.isMobile,
+      navOpen: s.isMobile && s.navOpen,
+      toggleNav: () => this.setState({ navOpen: !s.navOpen }),
+      closeNav: () => this.setState({ navOpen: false }),
+      goApply: () => window.location.href = './index.html#calculator',
+
+      // bottom sheet (mobile)
+      sheetOpen: s.sheetOpen,
+      closeSheet: () => this.setState({ sheetOpen: false }),
+      showDesktopPanel: !s.isMobile,
+      sheetOverlayStyle: {
+        position: 'fixed', inset: 0, background: 'rgba(0,0,0,0.5)', zIndex: 100,
+        opacity: s.sheetOpen ? 1 : 0, visibility: s.sheetOpen ? 'visible' : 'hidden',
+        transition: 'opacity 300ms ease, visibility 300ms ease',
+      },
+      sheetStyle: {
+        position: 'fixed', left: 0, right: 0, bottom: 0, maxHeight: '90vh',
+        background: '#fff', borderRadius: '16px 16px 0 0', zIndex: 101,
+        transform: s.sheetOpen ? 'translateY(0)' : 'translateY(100%)',
+        transition: 'transform 300ms cubic-bezier(0.32, 0.72, 0, 1)',
+        overflowY: 'auto', boxShadow: '0 -4px 24px rgba(0,0,0,0.15)',
+      },
     };
   }
 }
 </script>
 </body>
+
 </html>
