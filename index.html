@@ -912,6 +912,17 @@
                     </svg>Mechanical breakdown (manufacturer warranty)</li>
                 </ul>
               </div>
+
+              <div aria-hidden="true" style="display: flex; justify-content: center;">
+                <svg width="220" height="250" viewBox="0 0 220 250" fill="none">
+                  <path d="M110 15l85 33v62c0 55-37 100-85 122C62 210 25 165 25 110V48z"
+                    fill="var(--color-primary-tint)" stroke="var(--color-primary)" stroke-width="2"></path>
+                  <path d="M110 45l60 23v45c0 40-26 72-60 88-34-16-60-48-60-88V68z" fill="var(--white)"
+                    stroke="var(--color-primary)" stroke-width="1.5"></path>
+                  <path d="M80 120l22 22 40-46" stroke="var(--color-primary)" stroke-width="5" stroke-linecap="round"
+                    stroke-linejoin="round"></path>
+                </svg>
+              </div>
               <div
                 style="background: var(--white); border: 1px solid var(--border-default); border-radius: 10px; padding: 20px;">
                 <h3
@@ -949,20 +960,8 @@
                 </ul>
               </div>
             </div>
-            <x-import component-from-global-scope="TortoiseDesignSystem_c07074.Button" hint-size="190px,36px"
-              variant="secondary" size="md" on-click="{{ goApply }}">Read insurance guide</x-import>
+
           </div>
-          <div aria-hidden="true" style="display: flex; justify-content: center;">
-            <svg width="220" height="250" viewBox="0 0 220 250" fill="none">
-              <path d="M110 15l85 33v62c0 55-37 100-85 122C62 210 25 165 25 110V48z" fill="var(--color-primary-tint)"
-                stroke="var(--color-primary)" stroke-width="2"></path>
-              <path d="M110 45l60 23v45c0 40-26 72-60 88-34-16-60-48-60-88V68z" fill="var(--white)"
-                stroke="var(--color-primary)" stroke-width="1.5"></path>
-              <path d="M80 120l22 22 40-46" stroke="var(--color-primary)" stroke-width="5" stroke-linecap="round"
-                stroke-linejoin="round"></path>
-            </svg>
-          </div>
-        </div>
       </section>
 
       <!-- ============ EVENTS ============ -->
@@ -1155,7 +1154,7 @@
         <p style="font-size: 13px; color: var(--text-secondary); margin: 0;">Powered by <span
             style="font-family: var(--font-heading); font-weight: 600; color: var(--ink);">tortoise</span> — your
           trusted partner in device leasing.</p>
-        <nav aria-label="Footer" style="display: flex; flex-wrap: wrap; gap: 8px 20px;">
+        <!-- <nav aria-label="Footer" style="display: flex; flex-wrap: wrap; gap: 8px 20px;">
           <a href="#top" style="font-size: 13px; color: var(--text-secondary); text-decoration: none;"
             style-hover="color: var(--color-primary);">Device Leasing Policy</a>
           <a href="#insurance" style="font-size: 13px; color: var(--text-secondary); text-decoration: none;"
@@ -1166,11 +1165,11 @@
             style-hover="color: var(--color-primary);">Privacy Policy</a>
           <a href="#top" style="font-size: 13px; color: var(--text-secondary); text-decoration: none;"
             style-hover="color: var(--color-primary);">Contact Us</a>
-        </nav>
+        </nav> -->
       </div>
     </footer>
 
-    <!-- ============ EVENT MODAL (Device Upgrade Hub) ============ -->
+    <!-- ============ EVENT MODAL (Office Experience) ============ -->
     <div style="{{ eventModalOverlayStyle }}" onClick="{{ closeEventModal }}"></div>
     <div style="{{ eventModalStyle }}">
       <!-- Handle bar -->
@@ -1183,23 +1182,13 @@
 
         <!-- Header section -->
         <div style="display: flex; flex-direction: column; gap: 16px; align-items: center;">
-          <div style="display: flex; flex-direction: column; gap: 24px; align-items: center;">
-            <div style="text-align: center;">
-              <p style="font-family: var(--font-heading); font-weight: 600; font-size: 12px; line-height: 18px; letter-spacing: 0.96px; text-transform: uppercase; color: #cbcbcb; margin: 0;">Event</p>
-              <p style="font-family: var(--font-heading); font-weight: 600; font-size: 24px; line-height: 36px; color: #191919; margin: 0;">Device Upgrade Hub</p>
-            </div>
-            <div style="display: flex; flex-direction: column; gap: 8px; align-items: center;">
-              <div style="width: 36px; height: 36px; background: #eee; border: 1px solid #cbcbcb; border-radius: 8px; display: flex; align-items: center; justify-content: center;">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#646464" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"></path>
-                  <circle cx="12" cy="10" r="3"></circle>
-                </svg>
-              </div>
-              <div style="text-align: center;">
-                <p style="font-family: var(--font-body); font-weight: 600; font-size: 14px; line-height: 20px; color: #4b4b4b; margin: 0;">Biocon Park, S2, Reception Area</p>
-                <p style="font-family: var(--font-heading); font-weight: 600; font-size: 12px; line-height: 18px; letter-spacing: 0.96px; text-transform: uppercase; color: #757575; margin: 4px 0 0;">11th, 12th &amp; 13th June</p>
-              </div>
-            </div>
+          <div style="text-align: center;">
+            <p
+              style="font-family: var(--font-heading); font-weight: 600; font-size: 12px; line-height: 18px; letter-spacing: 0.96px; text-transform: uppercase; color: #cbcbcb; margin: 0;">
+              Event</p>
+            <p
+              style="font-family: var(--font-heading); font-weight: 600; font-size: 24px; line-height: 36px; color: #191919; margin: 0;">
+              Office Experience</p>
           </div>
           <div style="width: 92px; height: 1px; background: #eee;"></div>
         </div>
@@ -1208,117 +1197,161 @@
         <div style="background: #eee; border-radius: 16px; padding: 25px 16px 0; overflow: hidden;">
           <!-- Powered by Tortoise -->
           <div style="text-align: center; margin-bottom: 24px;">
-            <p style="font-family: var(--font-body); font-weight: 500; font-size: 14px; color: #646464; margin: 0 0 7px;">Office experiences powered by</p>
+            <p
+              style="font-family: var(--font-body); font-weight: 500; font-size: 14px; color: #646464; margin: 0 0 7px;">
+              Office experiences powered by</p>
             <img src="./tortoise-razorpay-mrgc5mvm.svg" alt="Tortoise" style="height: 17px; width: auto;">
           </div>
 
           <!-- Banner image -->
-          <div style="height: 280px; background: linear-gradient(135deg, #16af8e 0%, #0d8a6f 100%); border-radius: 12px; margin-bottom: 32px; display: flex; align-items: center; justify-content: center; overflow: hidden;">
-            <img src="https://www.figma.com/api/mcp/asset/f99320ba-6d8c-4c6c-a934-2183cf296442" alt="Event banner" style="width: 100%; height: 100%; object-fit: cover;">
+          <div
+            style="height: 280px; background: linear-gradient(135deg, #16af8e 0%, #0d8a6f 100%); border-radius: 12px; margin-bottom: 32px; display: flex; align-items: center; justify-content: center; overflow: hidden;">
+            <img src="https://www.figma.com/api/mcp/asset/f99320ba-6d8c-4c6c-a934-2183cf296442" alt="Event banner"
+              style="width: 100%; height: 100%; object-fit: cover;">
           </div>
 
           <!-- Quick delivery card -->
-          <div style="background: white; border-radius: 12px; padding: 24px 16px; margin-bottom: 32px; text-align: center;">
+          <div
+            style="background: white; border-radius: 12px; padding: 24px 16px; margin-bottom: 32px; text-align: center;">
             <div style="display: flex; flex-direction: column; gap: 8px; align-items: center;">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" fill="#FFD700" stroke="#FFD700" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" fill="#FFD700" stroke="#FFD700" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round" />
               </svg>
-              <p style="font-family: var(--font-heading); font-weight: 600; font-size: 20px; line-height: 30px; color: #000; margin: 0;">Enjoy quicker deliveries</p>
-              <p style="font-family: var(--font-body); font-weight: 500; font-size: 16px; line-height: 24px; color: #000; margin: 0;">Swing by our booth, order your device and get it delivered within 3 days</p>
+              <p
+                style="font-family: var(--font-heading); font-weight: 600; font-size: 20px; line-height: 30px; color: #000; margin: 0;">
+                Enjoy quicker deliveries</p>
+              <p
+                style="font-family: var(--font-body); font-weight: 500; font-size: 16px; line-height: 24px; color: #000; margin: 0;">
+                Swing by our booth, order your device and get it delivered within 3 days</p>
             </div>
             <div style="width: 100%; height: 1px; background: #eee; margin: 24px 0;"></div>
             <div style="display: flex; align-items: center; justify-content: center; gap: 4px;">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#757575" stroke-width="2">
-                <path d="M12 2v10l4 2M12 22a10 10 0 100-20 10 10 0 000 20z"/>
+                <path d="M12 2v10l4 2M12 22a10 10 0 100-20 10 10 0 000 20z" />
               </svg>
-              <p style="font-family: var(--font-heading); font-weight: 600; font-size: 12px; line-height: 18px; letter-spacing: 0.96px; text-transform: uppercase; color: #757575; margin: 0;">Ends on 13th June, 6PM</p>
+              <p
+                style="font-family: var(--font-heading); font-weight: 600; font-size: 12px; line-height: 18px; letter-spacing: 0.96px; text-transform: uppercase; color: #757575; margin: 0;">
+                Ends on 13th June, 6PM</p>
             </div>
           </div>
 
-          <!-- Devices remaining -->
+          <!-- Live inventory update -->
           <div style="text-align: center; margin-bottom: 32px;">
             <div style="width: 80px; height: 80px; margin: 0 auto 8px;">
-              <img src="https://www.figma.com/api/mcp/asset/f4b48f55-5e8c-49c3-b2a8-4f115adeec85" alt="Phone" style="width: 100%; height: 100%; object-fit: contain;">
+              <img src="https://www.figma.com/api/mcp/asset/f4b48f55-5e8c-49c3-b2a8-4f115adeec85" alt="Phone"
+                style="width: 100%; height: 100%; object-fit: contain;">
             </div>
-            <p style="font-family: var(--font-heading); font-weight: 600; font-size: 18px; line-height: 22px; color: #000; margin: 0 0 8px;">15 Devices remaining</p>
-            <p style="font-family: var(--font-body); font-weight: 500; font-size: 14px; line-height: 21px; color: #646464; margin: 0 0 8px;">Supplies are limited, so don't wait—get yours before they're gone!</p>
-            <p style="font-family: var(--font-body); font-weight: 500; font-size: 12px; line-height: 18px; color: #646464; margin: 0;">Once ordered your device will be dispatched today, and delivered in 2-3 days</p>
+            <p
+              style="font-family: var(--font-heading); font-weight: 600; font-size: 18px; line-height: 22px; color: #000; margin: 0 0 8px;">
+              Live inventory at your office</p>
+            <p
+              style="font-family: var(--font-body); font-weight: 500; font-size: 14px; line-height: 21px; color: #646464; margin: 0;">
+              Check real-time stock availability for the day and reserve your device before it's gone</p>
           </div>
 
           <!-- Device grid -->
           <div style="display: flex; flex-wrap: wrap; gap: 4px; justify-content: center; margin-bottom: 32px;">
-            <div style="width: 160px; background: white; border-radius: 8px; padding: 12px 6px; box-shadow: 0 0 1px rgba(66,71,76,0.32), 0 3px 6px rgba(66,71,76,0.06);">
+            <div
+              style="width: 160px; background: white; border-radius: 8px; padding: 12px 6px; box-shadow: 0 0 1px rgba(66,71,76,0.32), 0 3px 6px rgba(66,71,76,0.06);">
               <div style="position: relative; width: 96px; height: 96px; margin: 0 auto;">
-                <img src="https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-17.jpg" alt="iPhone 17" style="width: 100%; height: 100%; object-fit: contain; opacity: 0.4;">
-                <div style="position: absolute; top: -4px; right: -4px; width: 28px; height: 28px; background: #afafaf; border: 2px solid white; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
-                  <span style="font-family: var(--font-heading); font-weight: 600; font-size: 12px; color: #fafafa;">0</span>
+                <img src="https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-17.jpg" alt="iPhone 17"
+                  style="width: 100%; height: 100%; object-fit: contain; opacity: 0.4;">
+                <div
+                  style="position: absolute; top: -4px; right: -4px; width: 28px; height: 28px; background: #afafaf; border: 2px solid white; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+                  <span
+                    style="font-family: var(--font-heading); font-weight: 600; font-size: 12px; color: #fafafa;">0</span>
                 </div>
               </div>
-              <p style="font-family: var(--font-body); font-weight: 500; font-size: 12px; color: #191919; text-align: center; margin: 16px 0 0; opacity: 0.5;">iPhone 17</p>
+              <p
+                style="font-family: var(--font-body); font-weight: 500; font-size: 12px; color: #191919; text-align: center; margin: 16px 0 0; opacity: 0.5;">
+                iPhone 17</p>
             </div>
-            <div style="width: 160px; background: white; border-radius: 8px; padding: 12px 6px; box-shadow: 0 0 1px rgba(66,71,76,0.32), 0 3px 6px rgba(66,71,76,0.06);">
+            <div
+              style="width: 160px; background: white; border-radius: 8px; padding: 12px 6px; box-shadow: 0 0 1px rgba(66,71,76,0.32), 0 3px 6px rgba(66,71,76,0.06);">
               <div style="position: relative; width: 96px; height: 96px; margin: 0 auto;">
-                <img src="https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-17-pro.jpg" alt="iPhone 17 Pro" style="width: 100%; height: 100%; object-fit: contain;">
-                <div style="position: absolute; top: -4px; right: -4px; width: 28px; height: 28px; background: #16af8e; border: 2px solid white; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
-                  <span style="font-family: var(--font-heading); font-weight: 600; font-size: 12px; color: #e6ffe6;">2</span>
+                <img src="https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-17-pro.jpg" alt="iPhone 17 Pro"
+                  style="width: 100%; height: 100%; object-fit: contain;">
+                <div
+                  style="position: absolute; top: -4px; right: -4px; width: 28px; height: 28px; background: #16af8e; border: 2px solid white; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+                  <span
+                    style="font-family: var(--font-heading); font-weight: 600; font-size: 12px; color: #e6ffe6;">2</span>
                 </div>
               </div>
-              <p style="font-family: var(--font-body); font-weight: 500; font-size: 12px; color: #191919; text-align: center; margin: 16px 0 0;">iPhone 17 Pro</p>
+              <p
+                style="font-family: var(--font-body); font-weight: 500; font-size: 12px; color: #191919; text-align: center; margin: 16px 0 0;">
+                iPhone 17 Pro</p>
             </div>
-            <div style="width: 160px; background: white; border-radius: 8px; padding: 12px 6px; box-shadow: 0 0 1px rgba(66,71,76,0.32), 0 3px 6px rgba(66,71,76,0.06);">
+            <div
+              style="width: 160px; background: white; border-radius: 8px; padding: 12px 6px; box-shadow: 0 0 1px rgba(66,71,76,0.32), 0 3px 6px rgba(66,71,76,0.06);">
               <div style="position: relative; width: 96px; height: 96px; margin: 0 auto;">
-                <img src="https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-17-pro-max.jpg" alt="iPhone 17 Pro Max" style="width: 100%; height: 100%; object-fit: contain;">
-                <div style="position: absolute; top: -4px; right: -4px; width: 28px; height: 28px; background: #16af8e; border: 2px solid white; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
-                  <span style="font-family: var(--font-heading); font-weight: 600; font-size: 12px; color: #e6ffe6;">2</span>
+                <img src="https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-17-pro-max.jpg" alt="iPhone 17 Pro Max"
+                  style="width: 100%; height: 100%; object-fit: contain;">
+                <div
+                  style="position: absolute; top: -4px; right: -4px; width: 28px; height: 28px; background: #16af8e; border: 2px solid white; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+                  <span
+                    style="font-family: var(--font-heading); font-weight: 600; font-size: 12px; color: #e6ffe6;">2</span>
                 </div>
               </div>
-              <p style="font-family: var(--font-body); font-weight: 500; font-size: 12px; color: #191919; text-align: center; margin: 16px 0 0;">iPhone 17 Pro Max</p>
+              <p
+                style="font-family: var(--font-body); font-weight: 500; font-size: 12px; color: #191919; text-align: center; margin: 16px 0 0;">
+                iPhone 17 Pro Max</p>
             </div>
-            <div style="width: 160px; background: white; border-radius: 8px; padding: 12px 6px; box-shadow: 0 0 1px rgba(66,71,76,0.32), 0 3px 6px rgba(66,71,76,0.06);">
+            <div
+              style="width: 160px; background: white; border-radius: 8px; padding: 12px 6px; box-shadow: 0 0 1px rgba(66,71,76,0.32), 0 3px 6px rgba(66,71,76,0.06);">
               <div style="position: relative; width: 96px; height: 96px; margin: 0 auto;">
-                <img src="https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-s26-ultra.jpg" alt="Galaxy S26 Ultra" style="width: 100%; height: 100%; object-fit: contain;">
-                <div style="position: absolute; top: -4px; right: -4px; width: 28px; height: 28px; background: #16af8e; border: 2px solid white; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
-                  <span style="font-family: var(--font-heading); font-weight: 600; font-size: 12px; color: #e6ffe6;">3</span>
+                <img src="https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-s26-ultra.jpg" alt="Galaxy S26 Ultra"
+                  style="width: 100%; height: 100%; object-fit: contain;">
+                <div
+                  style="position: absolute; top: -4px; right: -4px; width: 28px; height: 28px; background: #16af8e; border: 2px solid white; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+                  <span
+                    style="font-family: var(--font-heading); font-weight: 600; font-size: 12px; color: #e6ffe6;">3</span>
                 </div>
               </div>
-              <p style="font-family: var(--font-body); font-weight: 500; font-size: 12px; color: #191919; text-align: center; margin: 16px 0 0;">Galaxy S26 Ultra</p>
+              <p
+                style="font-family: var(--font-body); font-weight: 500; font-size: 12px; color: #191919; text-align: center; margin: 16px 0 0;">
+                Galaxy S26 Ultra</p>
             </div>
           </div>
 
           <!-- View all button -->
-          <button onClick="{{ goDevices }}" style="width: 100%; background: white; border: none; border-radius: 102px; padding: 16px; display: flex; align-items: center; justify-content: center; gap: 8px; cursor: pointer; box-shadow: 0 0 1px rgba(66,71,76,0.32), 0 3px 6px rgba(66,71,76,0.06); margin-bottom: 32px;">
-            <span style="font-family: var(--font-body); font-weight: 600; font-size: 16px; color: #191919;">View all</span>
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#191919" stroke-width="2" stroke-linecap="round">
-              <path d="M6 9l6 6 6-6"/>
-            </svg>
+          <button onClick="{{ goDevices }}"
+            style="width: 100%; background: white; border: none; border-radius: 102px; padding: 16px; display: flex; align-items: center; justify-content: center; cursor: pointer; box-shadow: 0 0 1px rgba(66,71,76,0.32), 0 3px 6px rgba(66,71,76,0.06); margin-bottom: 32px;">
+            <span style="font-family: var(--font-body); font-weight: 600; font-size: 16px; color: #191919;">View
+              all</span>
           </button>
         </div>
 
         <!-- Hands-on experience card -->
-        <div style="background: white; border-radius: 12px; padding: 24px 16px; box-shadow: 0 0 1px rgba(66,71,76,0.32), 0 3px 6px rgba(66,71,76,0.06);">
+        <div
+          style="background: white; border-radius: 12px; padding: 24px 16px; box-shadow: 0 0 1px rgba(66,71,76,0.32), 0 3px 6px rgba(66,71,76,0.06);">
           <div style="text-align: center;">
-            <img src="https://www.figma.com/api/mcp/asset/1eafb271-773a-4b25-a1f2-948e6fd4f587" alt="In person discussion" style="width: 100%; max-width: 290px; height: auto; margin-bottom: 8px;">
-            <p style="font-family: var(--font-heading); font-weight: 600; font-size: 20px; line-height: 30px; color: #000; margin: 0 0 8px;">Get hands-on experience of the benefit</p>
-            <p style="font-family: var(--font-body); font-weight: 500; font-size: 16px; line-height: 24px; color: #000; margin: 0;">Our team is here to answer all your questions and clear any doubts</p>
+            <img src="https://www.figma.com/api/mcp/asset/1eafb271-773a-4b25-a1f2-948e6fd4f587"
+              alt="In person discussion" style="width: 100%; max-width: 290px; height: auto; margin-bottom: 8px;">
+            <p
+              style="font-family: var(--font-heading); font-weight: 600; font-size: 20px; line-height: 30px; color: #000; margin: 0 0 8px;">
+              Get hands-on experience of the benefit</p>
+            <p
+              style="font-family: var(--font-body); font-weight: 500; font-size: 16px; line-height: 24px; color: #000; margin: 0;">
+              Our team is here to answer all your questions and clear any doubts</p>
           </div>
         </div>
 
-        <!-- Save up to 40% card -->
+        <!-- Save up to 30% card -->
         <div style="background: #fafafa; border-radius: 12px; padding: 24px 16px; text-align: center;">
-          <div style="width: 123px; height: 123px; background: #eee; border-radius: 18px; margin: 0 auto 16px; display: flex; align-items: center; justify-content: center; overflow: hidden;">
-            <img src="https://www.figma.com/api/mcp/asset/866f6e97-02a4-464d-8e5c-c0ac61b07ed2" alt="Devices" style="width: 80%; height: auto;">
+          <div
+            style="width: 123px; height: 123px; background: #eee; border-radius: 18px; margin: 0 auto 16px; display: flex; align-items: center; justify-content: center; overflow: hidden;">
+            <img src="https://www.figma.com/api/mcp/asset/866f6e97-02a4-464d-8e5c-c0ac61b07ed2" alt="Devices"
+              style="width: 80%; height: auto;">
           </div>
-          <p style="font-family: var(--font-heading); font-weight: 600; font-size: 20px; line-height: 30px; margin: 0 0 8px;">
-            <span style="color: #2ac393;">Save upto 40%</span>
+          <p
+            style="font-family: var(--font-heading); font-weight: 600; font-size: 20px; line-height: 30px; margin: 0 0 8px;">
+            <span style="color: #2ac393;">Save upto 30%</span>
             <span style="color: #000;"> on your next device</span>
           </p>
-          <p style="font-family: var(--font-body); font-weight: 500; font-size: 14px; line-height: 20px; color: #000; margin: 0;">Visit our booth for more details</p>
-        </div>
-
-        <!-- Footer -->
-        <div style="display: flex; align-items: center; justify-content: center; gap: 12px;">
-          <p style="font-family: var(--font-heading); font-weight: 600; font-size: 24px; line-height: 30px; color: #cbcbcb; margin: 0;">See you at the booth</p>
-          <span style="font-size: 32px;">☕</span>
+          <p
+            style="font-family: var(--font-body); font-weight: 500; font-size: 14px; line-height: 20px; color: #000; margin: 0;">
+            Visit our booth for more details</p>
         </div>
       </div>
     </div>
@@ -1559,9 +1592,9 @@ class Component extends DCLogic {
         transition: 'opacity 300ms ease, visibility 300ms ease',
       },
       eventModalStyle: {
-        position: 'fixed', left: 0, right: 0, bottom: 0, maxHeight: '90vh',
+        position: 'fixed', left: '50%', bottom: 0, maxHeight: '90vh', maxWidth: 600, width: '100%',
+        transform: s.eventModalOpen ? 'translateX(-50%) translateY(0)' : 'translateX(-50%) translateY(100%)',
         background: '#fff', borderRadius: '14px 14px 0 0', zIndex: 201,
-        transform: s.eventModalOpen ? 'translateY(0)' : 'translateY(100%)',
         transition: 'transform 300ms cubic-bezier(0.32, 0.72, 0, 1)',
         overflowY: 'auto', boxShadow: '0 -4px 24px rgba(0,0,0,0.15)',
       },
