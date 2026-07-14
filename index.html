@@ -299,7 +299,7 @@
             style="max-width: 100%; height: auto; display: block; object-fit: cover">
         </a>
         <sc-if value="{{ showDesktopNav }}" hint-placeholder-val="{{ false }}">
-          <nav aria-label="Sections" style="display: flex; align-items: center; gap: clamp(12px, 1.6vw, 24px);">
+          <nav aria-label="Sections" style="display: flex; align-items: center; gap: clamp(12px, 1.6vw, 24px); margin-left: auto;">
             <a href="./catalog.html"
               style="text-decoration: none; color: var(--ink); font-size: 13px; font-weight: 500;"
               style-hover="color: var(--color-primary);">Browse devices</a>
@@ -316,10 +316,6 @@
           </nav>
         </sc-if>
         <div style="display: flex; align-items: center; gap: 8px;">
-          <sc-if value="{{ showDesktopNav }}" hint-placeholder-val="{{ true }}">
-            <x-import component-from-global-scope="TortoiseDesignSystem_c07074.Button" hint-size="110px,36px"
-              variant="primary" size="md" on-click="{{ goApply }}">Apply now</x-import>
-          </sc-if>
           <sc-if value="{{ isMobile }}" hint-placeholder-val="{{ false }}">
             <button aria-label="Menu" aria-expanded="{{ navOpen }}" onClick="{{ toggleNav }}"
               style="width: 44px; height: 44px; display: inline-flex; align-items: center; justify-content: center; background: var(--white); border: 1px solid var(--border-default); border-radius: 6px; cursor: pointer; color: var(--ink);">
@@ -349,10 +345,6 @@
             style="text-decoration: none; color: var(--ink); font-size: 15px; font-weight: 500; padding: 12px 4px; border-bottom: 1px solid var(--border-hairline);">FAQs</a>
           <a href="#events" onClick="{{ closeNav }}"
             style="text-decoration: none; color: var(--ink); font-size: 15px; font-weight: 500; padding: 12px 4px; border-bottom: 1px solid var(--border-hairline);">Events</a>
-          <div style="padding-top: 12px;">
-            <x-import component-from-global-scope="TortoiseDesignSystem_c07074.Button" hint-size="100%,36px"
-              variant="primary" size="md" full-width="{{ true }}" on-click="{{ goApply }}">Apply now</x-import>
-          </div>
         </nav>
       </sc-if>
     </header>
@@ -1025,8 +1017,6 @@
               </li>
             </ul>
             <div style="margin-top: auto;">
-              <x-import component-from-global-scope="TortoiseDesignSystem_c07074.Button" hint-size="150px,36px"
-                variant="primary" size="md" on-click="{{ goApply }}">Register now</x-import>
             </div>
           </div>
           <div
@@ -1087,7 +1077,7 @@
             </ul>
             <div style="margin-top: auto;">
               <x-import component-from-global-scope="TortoiseDesignSystem_c07074.Button" hint-size="120px,36px"
-                variant="dark" size="md" on-click="{{ openEventModal }}">Visit us</x-import>
+                variant="dark" size="md" on-click="{{ openEventModal }}">Learn more</x-import>
             </div>
           </div>
         </div>
@@ -1123,8 +1113,8 @@
           </sc-for>
         </div>
         <div style="display: flex; justify-content: center; margin-top: 24px;">
-          <x-import component-from-global-scope="TortoiseDesignSystem_c07074.Button" hint-size="140px,36px"
-            variant="ghost" size="md" on-click="{{ goApply }}">View all FAQs</x-import>
+          <!-- <x-import component-from-global-scope="TortoiseDesignSystem_c07074.Button" hint-size="140px,36px"
+            variant="ghost" size="md" on-click="{{ goApply }}">View all FAQs</x-import> -->
         </div>
       </section>
 

@@ -44,12 +44,12 @@
             grid-template-columns: repeat(2, 1fr) !important;
             gap: 12px !important;
           }
-          .device-card-grid > button {
+
+          .device-card-grid>button {
             width: 100% !important;
             min-width: 0 !important;
           }
         }
-
       </style>
     </helmet>
 
@@ -64,7 +64,7 @@
             style="max-width: 100%; height: auto; display: block; object-fit: cover">
         </a>
         <sc-if value="{{ showDesktopNav }}" hint-placeholder-val="{{ false }}">
-          <nav aria-label="Sections" style="display: flex; align-items: center; gap: clamp(12px, 1.6vw, 24px);">
+          <nav aria-label="Sections" style="display: flex; align-items: center; gap: clamp(12px, 1.6vw, 24px); margin-left: auto;">
             <a href="./catalog.html"
               style="text-decoration: none; color: var(--ink); font-size: 13px; font-weight: 500;"
               style-hover="color: var(--color-primary);">Browse devices</a>
@@ -86,10 +86,6 @@
           </nav>
         </sc-if>
         <div style="display: flex; align-items: center; gap: 8px;">
-          <sc-if value="{{ showDesktopNav }}" hint-placeholder-val="{{ true }}">
-            <x-import component-from-global-scope="TortoiseDesignSystem_c07074.Button" hint-size="110px,36px"
-              variant="primary" size="md" on-click="{{ goApply }}">Apply now</x-import>
-          </sc-if>
           <sc-if value="{{ isMobile }}" hint-placeholder-val="{{ false }}">
             <button aria-label="Menu" aria-expanded="{{ navOpen }}" onClick="{{ toggleNav }}"
               style="width: 44px; height: 44px; display: inline-flex; align-items: center; justify-content: center; background: var(--white); border: 1px solid var(--border-default); border-radius: 6px; cursor: pointer; color: var(--ink);">
@@ -162,283 +158,302 @@
 
       <!-- ============ RIGHT: CONFIG PANEL (Desktop only) ============ -->
       <sc-if value="{{ showDesktopPanel }}" hint-placeholder-val="{{ true }}">
-      <aside id="config-panel"
-        style="flex: 1 1 466px; min-width: min(100%, 340px); max-width: 466px; margin: 0 auto; position: sticky; top: 84px; border-radius: 12px; background: rgb(255,255,255); box-shadow: inset 0 0 0 1px rgb(238,238,238), 0 1px 0 0 rgba(0,0,0,0.15); overflow: hidden; display: flex; flex-direction: column;">
+        <aside id="config-panel"
+          style="flex: 1 1 466px; min-width: min(100%, 340px); max-width: 466px; margin: 0 auto; position: sticky; top: 84px; border-radius: 12px; background: rgb(255,255,255); box-shadow: inset 0 0 0 1px rgb(238,238,238), 0 1px 0 0 rgba(0,0,0,0.15); overflow: hidden; display: flex; flex-direction: column;">
 
-        <!-- panel header -->
-        <div
-          style="height: 56px; background: rgb(250,250,250); border-bottom: 1px solid rgb(238,238,238); display: flex; align-items: center; justify-content: space-between; padding: 0 16px 0 24px; gap: 12px;">
+          <!-- panel header -->
           <div
-            style="display: flex; align-items: center; border-radius: 8px; background: rgb(255,255,255); box-shadow: 0 0 0 1px rgb(238,238,238), 0 1px 0 0 rgb(238,238,238); overflow: hidden;">
-            <button onClick="{{ prevDevice }}" aria-label="Previous device"
-              style="width: 24px; height: 24px; display: flex; align-items: center; justify-content: center; background: transparent; border: none; cursor: pointer; padding: 0;"
+            style="height: 56px; background: rgb(250,250,250); border-bottom: 1px solid rgb(238,238,238); display: flex; align-items: center; justify-content: space-between; padding: 0 16px 0 24px; gap: 12px;">
+            <div
+              style="display: flex; align-items: center; border-radius: 8px; background: rgb(255,255,255); box-shadow: 0 0 0 1px rgb(238,238,238), 0 1px 0 0 rgb(238,238,238); overflow: hidden;">
+              <button onClick="{{ prevDevice }}" aria-label="Previous device"
+                style="width: 24px; height: 24px; display: flex; align-items: center; justify-content: center; background: transparent; border: none; cursor: pointer; padding: 0;"
+                style-hover="background: var(--surface-subtle);">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="rgb(140,140,140)" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M14 6l-6 6 6 6"></path>
+                </svg>
+              </button>
+              <span style="width: 1px; height: 24px; background: rgb(238,238,238);"></span>
+              <button onClick="{{ nextDevice }}" aria-label="Next device"
+                style="width: 24px; height: 24px; display: flex; align-items: center; justify-content: center; background: transparent; border: none; cursor: pointer; padding: 0;"
+                style-hover="background: var(--surface-subtle);">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="rgb(140,140,140)" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M10 6l6 6-6 6"></path>
+                </svg>
+              </button>
+            </div>
+            <span
+              style="font-family: var(--font-body); font-weight: 600; font-size: 14px; line-height: 22px; color: rgb(25,25,25);">{{
+              selName }}</span>
+            <a href="./index.html" aria-label="Close catalogue"
+              style="width: 24px; height: 24px; display: flex; align-items: center; justify-content: center; border-radius: 8px; background: rgb(255,255,255); box-shadow: 0 0 0 1px rgb(238,238,238), 0 1px 0 0 rgb(238,238,238); text-decoration: none;"
               style-hover="background: var(--surface-subtle);">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="rgb(140,140,140)" stroke-width="2"
-                stroke-linecap="round" stroke-linejoin="round">
-                <path d="M14 6l-6 6 6 6"></path>
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="rgb(140,140,140)" stroke-width="2"
+                stroke-linecap="round">
+                <path d="M6 6l12 12M18 6L6 18"></path>
               </svg>
-            </button>
-            <span style="width: 1px; height: 24px; background: rgb(238,238,238);"></span>
-            <button onClick="{{ nextDevice }}" aria-label="Next device"
-              style="width: 24px; height: 24px; display: flex; align-items: center; justify-content: center; background: transparent; border: none; cursor: pointer; padding: 0;"
-              style-hover="background: var(--surface-subtle);">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="rgb(140,140,140)" stroke-width="2"
-                stroke-linecap="round" stroke-linejoin="round">
-                <path d="M10 6l6 6-6 6"></path>
-              </svg>
-            </button>
+            </a>
           </div>
-          <span
-            style="font-family: var(--font-body); font-weight: 600; font-size: 14px; line-height: 22px; color: rgb(25,25,25);">{{
-            selName }}</span>
-          <a href="./index.html" aria-label="Close catalogue"
-            style="width: 24px; height: 24px; display: flex; align-items: center; justify-content: center; border-radius: 8px; background: rgb(255,255,255); box-shadow: 0 0 0 1px rgb(238,238,238), 0 1px 0 0 rgb(238,238,238); text-decoration: none;"
-            style-hover="background: var(--surface-subtle);">
-            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="rgb(140,140,140)" stroke-width="2"
-              stroke-linecap="round">
-              <path d="M6 6l12 12M18 6L6 18"></path>
-            </svg>
-          </a>
-        </div>
 
-        <!-- summary row -->
-        <div
-          style="background: rgb(255,255,255); padding: 24px; display: flex; align-items: center; justify-content: space-between; gap: 16px;">
-          <div style="display: flex; align-items: center; gap: 20px; min-width: 0;">
-            <span aria-hidden="true" style="{{ selImgStyle }}"></span>
-            <div style="display: flex; flex-direction: column; gap: 4px; min-width: 0;">
-              <span
-                style="font-family: var(--font-body); font-weight: 500; font-size: 16px; line-height: 24px; color: rgb(25,25,25);">{{
-                selName }}</span>
-              <span
-                style="font-family: var(--font-body); font-weight: 400; font-size: 14px; line-height: 20px; color: rgb(75,75,75); white-space: nowrap;">{{
-                selVariant }}</span>
-            </div>
-          </div>
-          <div style="display: flex; flex-direction: column; gap: 2px; align-items: flex-end; flex-shrink: 0;">
-            <span
-              style="font-family: var(--font-body); font-weight: 600; font-size: 16px; line-height: 24px; color: rgb(25,25,25); font-variant-numeric: tabular-nums;">{{
-              selPrice }}</span>
-            <button onClick="{{ viewBreakdown }}"
-              style="font-family: var(--font-body); font-weight: 500; font-size: 13px; line-height: 22px; color: rgb(22,126,98); background: transparent; border: none; padding: 0; cursor: pointer; border-bottom: 1px dashed rgb(100,100,100);">View
-              breakdown</button>
-          </div>
-        </div>
-
-        <!-- storage + colour -->
-        <div
-          style="background: rgb(250,250,250); border-top: 1px solid rgb(238,238,238); padding: 24px; display: flex; flex-direction: column; gap: 24px;">
-          <div style="display: flex; flex-direction: column; gap: 8px;">
-            <span
-              style="font-family: var(--font-heading); font-weight: 600; font-size: 12px; line-height: 18px; letter-spacing: 0.08em; color: rgb(100,100,100); text-transform: uppercase;">Storage</span>
-            <div role="radiogroup" aria-label="Storage" style="display: flex; flex-wrap: wrap; gap: 8px;">
-              <sc-for list="{{ storages }}" as="st" hint-placeholder-count="3">
-                <button role="radio" aria-checked="{{ st.checked }}" onClick="{{ st.onClick }}" style="{{ st.style }}">
-                  <span style="{{ st.radioStyle }}"></span>
-                  <span
-                    style="font-family: var(--font-body); font-weight: 600; font-size: 14px; line-height: 20px; color: rgb(25,25,25); white-space: nowrap;">{{
-                    st.label }}</span>
-                </button>
-              </sc-for>
-            </div>
-          </div>
-          <div style="display: flex; flex-direction: column; gap: 8px;">
-            <span
-              style="font-family: var(--font-heading); font-weight: 600; font-size: 12px; line-height: 18px; letter-spacing: 0.08em; color: rgb(100,100,100); text-transform: uppercase;">Colour</span>
-            <div role="radiogroup" aria-label="Colour" style="display: flex; flex-wrap: wrap; gap: 16px;">
-              <sc-for list="{{ colors }}" as="co" hint-placeholder-count="5">
-                <button role="radio" aria-checked="{{ co.checked }}" aria-label="{{ co.label }}"
-                  onClick="{{ co.onClick }}"
-                  style="display: flex; flex-direction: column; gap: 4px; align-items: center; background: transparent; border: none; padding: 0; cursor: pointer;">
-                  <span style="{{ co.swatchStyle }}"></span>
-                  <span style="{{ co.dotStyle }}"></span>
-                </button>
-              </sc-for>
-            </div>
-          </div>
-        </div>
-
-        <!-- effective cost + terms -->
-        <div style="display: flex; flex-direction: column;">
+          <!-- summary row -->
           <div
-            style="background: rgb(230,255,230); border: 1px solid rgb(42,195,147); display: flex; align-items: center; justify-content: space-between; padding: 16px 24px; gap: 12px;">
-            <span
-              style="font-family: var(--font-heading); font-weight: 600; font-size: 16px; line-height: 24px; color: rgb(22,126,98);">Effective
-              cost of the device</span>
-            <span
-              style="font-family: var(--font-body); font-weight: 600; font-size: 16px; line-height: 24px; color: rgb(22,126,98); font-variant-numeric: tabular-nums;">{{
-              effective }}*</span>
+            style="background: rgb(255,255,255); padding: 24px; display: flex; align-items: center; justify-content: space-between; gap: 16px;">
+            <div style="display: flex; align-items: center; gap: 20px; min-width: 0;">
+              <span aria-hidden="true" style="{{ selImgStyle }}"></span>
+              <div style="display: flex; flex-direction: column; gap: 4px; min-width: 0;">
+                <span
+                  style="font-family: var(--font-body); font-weight: 500; font-size: 16px; line-height: 24px; color: rgb(25,25,25);">{{
+                  selName }}</span>
+                <span
+                  style="font-family: var(--font-body); font-weight: 400; font-size: 14px; line-height: 20px; color: rgb(75,75,75); white-space: nowrap;">{{
+                  selVariant }}</span>
+              </div>
+            </div>
+            <div style="display: flex; flex-direction: column; gap: 2px; align-items: flex-end; flex-shrink: 0;">
+              <span
+                style="font-family: var(--font-body); font-weight: 600; font-size: 16px; line-height: 24px; color: rgb(25,25,25); font-variant-numeric: tabular-nums;">{{
+                selPrice }}</span>
+              <button onClick="{{ viewBreakdown }}"
+                style="font-family: var(--font-body); font-weight: 500; font-size: 13px; line-height: 22px; color: rgb(22,126,98); background: transparent; border: none; padding: 0; cursor: pointer; border-bottom: 1px dashed rgb(100,100,100);">View
+                breakdown</button>
+            </div>
           </div>
-          <label
-            style="border: 1px solid rgb(225,225,225); border-top: none; display: flex; align-items: center; justify-content: space-between; padding: 16px 24px; gap: 12px; cursor: pointer;">
-            <span
-              style="font-family: var(--font-body); font-weight: 600; font-size: 16px; line-height: 24px; color: rgb(25,25,25);">Employee
-              tax slab</span>
-            <span style="position: relative; display: inline-flex; align-items: center; gap: 8px;">
-              <select value="{{ slab }}" onChange="{{ onSlab }}" aria-label="Employee tax slab"
-                style="appearance: none; -webkit-appearance: none; border: none; background: transparent; font-family: var(--font-body); font-weight: 600; font-size: 16px; line-height: 24px; color: rgb(25,25,25); cursor: pointer; padding-right: 26px; outline-offset: 4px;">
-                <option value="5">5%</option>
-                <option value="10">10%</option>
-                <option value="20">20%</option>
-                <option value="30">30%</option>
-              </select>
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="rgb(25,25,25)" stroke-width="1.8"
-                stroke-linecap="round" stroke-linejoin="round"
-                style="position: absolute; right: 4px; pointer-events: none;">
-                <path d="M6 9l6 6 6-6"></path>
-              </svg>
-            </span>
-          </label>
-          <label
-            style="border: 1px solid rgb(225,225,225); border-top: none; display: flex; align-items: center; justify-content: space-between; padding: 16px 24px; gap: 12px; cursor: pointer;">
-            <span
-              style="font-family: var(--font-body); font-weight: 600; font-size: 16px; line-height: 24px; color: rgb(25,25,25);">Tenure</span>
-            <span style="position: relative; display: inline-flex; align-items: center; gap: 8px;">
-              <select value="{{ tenure }}" onChange="{{ onTenure }}" aria-label="Tenure"
-                style="appearance: none; -webkit-appearance: none; border: none; background: transparent; font-family: var(--font-body); font-weight: 600; font-size: 16px; line-height: 24px; color: rgb(25,25,25); cursor: pointer; padding-right: 26px; outline-offset: 4px;">
-                <option value="6">6 m</option>
-                <option value="12">12 m</option>
-              </select>
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="rgb(25,25,25)" stroke-width="1.8"
-                stroke-linecap="round" stroke-linejoin="round"
-                style="position: absolute; right: 4px; pointer-events: none;">
-                <path d="M6 9l6 6 6-6"></path>
-              </svg>
-            </span>
-          </label>
-        </div>
 
-        <!-- savings summary -->
-        <div id="savings-summary" style="{{ summaryWrapStyle }}">
-          <span
-            style="font-family: var(--font-heading); font-weight: 600; font-size: 12px; line-height: 18px; letter-spacing: 0.08em; color: rgb(100,100,100); align-self: stretch; text-transform: uppercase;">Savings
-            summary</span>
-          <div style="display: flex; flex-direction: column; align-self: stretch;">
-            <div
-              style="border: 1px solid rgb(225,225,225); display: flex; align-items: center; justify-content: space-between; padding: 16px 20px; gap: 12px;">
-              <div style="display: flex; gap: 10px; align-items: flex-start;">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="rgb(255,129,236)" stroke-width="1.5"
-                  stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0; margin-top: 2px;">
-                  <rect x="3" y="5" width="18" height="16" rx="2"></rect>
-                  <path d="M3 9.5h18M8 3v4M16 3v4M9 15l2 2 4-4"></path>
-                </svg>
-                <div style="display: flex; flex-direction: column; gap: 2px;">
-                  <span
-                    style="font-family: var(--font-body); font-weight: 600; font-size: 16px; line-height: 24px; color: rgb(25,25,25);">Monthly
-                    deduction</span>
-                  <span
-                    style="font-family: var(--font-body); font-weight: 400; font-size: 12px; line-height: 18px; color: rgb(25,25,25);">{{
-                    monthlySub }}</span>
-                </div>
-              </div>
+          <!-- storage + colour -->
+          <div
+            style="background: rgb(250,250,250); border-top: 1px solid rgb(238,238,238); padding: 24px; display: flex; flex-direction: column; gap: 24px;">
+            <div style="display: flex; flex-direction: column; gap: 8px;">
               <span
-                style="font-family: var(--font-body); font-weight: 500; font-size: 16px; line-height: 24px; color: rgb(25,25,25); font-variant-numeric: tabular-nums;">{{
-                monthly }}</span>
+                style="font-family: var(--font-heading); font-weight: 600; font-size: 12px; line-height: 18px; letter-spacing: 0.08em; color: rgb(100,100,100); text-transform: uppercase;">Storage</span>
+              <div role="radiogroup" aria-label="Storage" style="display: flex; flex-wrap: wrap; gap: 8px;">
+                <sc-for list="{{ storages }}" as="st" hint-placeholder-count="3">
+                  <button role="radio" aria-checked="{{ st.checked }}" onClick="{{ st.onClick }}"
+                    style="{{ st.style }}">
+                    <span style="{{ st.radioStyle }}"></span>
+                    <span
+                      style="font-family: var(--font-body); font-weight: 600; font-size: 14px; line-height: 20px; color: rgb(25,25,25); white-space: nowrap;">{{
+                      st.label }}</span>
+                  </button>
+                </sc-for>
+              </div>
             </div>
-            <div
-              style="border: 1px solid rgb(225,225,225); border-top: none; display: flex; align-items: center; justify-content: space-between; padding: 16px 20px; gap: 12px;">
-              <div style="display: flex; gap: 10px; align-items: flex-start;">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="rgb(119,93,179)" stroke-width="1.5"
-                  stroke-linecap="round" style="flex-shrink: 0; margin-top: 2px;">
-                  <path d="M19 5 5 19"></path>
-                  <circle cx="6.5" cy="6.5" r="2.5"></circle>
-                  <circle cx="17.5" cy="17.5" r="2.5"></circle>
-                </svg>
-                <div style="display: flex; flex-direction: column; gap: 2px;">
-                  <span
-                    style="font-family: var(--font-body); font-weight: 600; font-size: 16px; line-height: 24px; color: rgb(25,25,25);">Monthly
-                    savings</span>
-                  <span
-                    style="font-family: var(--font-body); font-weight: 400; font-size: 12px; line-height: 18px; color: rgb(25,25,25);">{{
-                    monthlySaveSub }}</span>
-                </div>
-              </div>
+            <div style="display: flex; flex-direction: column; gap: 8px;">
               <span
-                style="font-family: var(--font-body); font-weight: 500; font-size: 16px; line-height: 24px; color: rgb(25,25,25); font-variant-numeric: tabular-nums;">{{
-                monthlySave }}*</span>
-            </div>
-            <div
-              style="border: 1px solid rgb(225,225,225); border-top: none; display: flex; align-items: center; justify-content: space-between; padding: 16px 20px; gap: 12px;">
-              <div style="display: flex; gap: 10px; align-items: flex-start;">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="rgb(22,126,98)" stroke-width="1.5"
-                  stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0; margin-top: 2px;">
-                  <path d="M12 3v12m0 0l4-4m-4 4l-4-4"></path>
-                  <path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2"></path>
-                </svg>
-                <div style="display: flex; flex-direction: column; gap: 2px;">
-                  <span
-                    style="font-family: var(--font-body); font-weight: 600; font-size: 16px; line-height: 24px; color: rgb(25,25,25);">Total
-                    savings</span>
-                  <span
-                    style="font-family: var(--font-body); font-weight: 400; font-size: 12px; line-height: 18px; color: rgb(25,25,25);">{{
-                    totalSaveSub }}</span>
-                </div>
+                style="font-family: var(--font-heading); font-weight: 600; font-size: 12px; line-height: 18px; letter-spacing: 0.08em; color: rgb(100,100,100); text-transform: uppercase;">Colour</span>
+              <div role="radiogroup" aria-label="Colour" style="display: flex; flex-wrap: wrap; gap: 16px;">
+                <sc-for list="{{ colors }}" as="co" hint-placeholder-count="5">
+                  <button role="radio" aria-checked="{{ co.checked }}" aria-label="{{ co.label }}"
+                    onClick="{{ co.onClick }}"
+                    style="display: flex; flex-direction: column; gap: 4px; align-items: center; background: transparent; border: none; padding: 0; cursor: pointer;">
+                    <span style="{{ co.swatchStyle }}"></span>
+                    <span style="{{ co.dotStyle }}"></span>
+                  </button>
+                </sc-for>
               </div>
-              <span
-                style="font-family: var(--font-body); font-weight: 500; font-size: 16px; line-height: 24px; color: rgb(25,25,25); font-variant-numeric: tabular-nums;">{{
-                totalSave }}*</span>
             </div>
           </div>
-          <span
-            style="font-family: var(--font-body); font-weight: 500; font-size: 13px; line-height: 22px; color: rgb(117,117,117); text-align: center;">*This
-            is an estimate based on the tax slab you’ve selected. The actual reduction will depend on your payroll
-            structure</span>
-          <div style="align-self: stretch; padding-top: 4px;">
-            <x-import component-from-global-scope="TortoiseDesignSystem_c07074.Button" hint-size="100%,36px"
+
+          <!-- effective cost + terms -->
+          <div style="display: flex; flex-direction: column;">
+            <div
+              style="background: rgb(230,255,230); border: 1px solid rgb(42,195,147); display: flex; align-items: center; justify-content: space-between; padding: 16px 24px; gap: 12px;">
+              <span
+                style="font-family: var(--font-heading); font-weight: 600; font-size: 16px; line-height: 24px; color: rgb(22,126,98);">Effective
+                cost of the device</span>
+              <span
+                style="font-family: var(--font-body); font-weight: 600; font-size: 16px; line-height: 24px; color: rgb(22,126,98); font-variant-numeric: tabular-nums;">{{
+                effective }}*</span>
+            </div>
+            <label
+              style="border: 1px solid rgb(225,225,225); border-top: none; display: flex; align-items: center; justify-content: space-between; padding: 16px 24px; gap: 12px; cursor: pointer;">
+              <span
+                style="font-family: var(--font-body); font-weight: 600; font-size: 16px; line-height: 24px; color: rgb(25,25,25);">Employee
+                tax slab</span>
+              <span style="position: relative; display: inline-flex; align-items: center; gap: 8px;">
+                <select value="{{ slab }}" onChange="{{ onSlab }}" aria-label="Employee tax slab"
+                  style="appearance: none; -webkit-appearance: none; border: none; background: transparent; font-family: var(--font-body); font-weight: 600; font-size: 16px; line-height: 24px; color: rgb(25,25,25); cursor: pointer; padding-right: 26px; outline-offset: 4px;">
+                  <option value="5">5%</option>
+                  <option value="10">10%</option>
+                  <option value="20">20%</option>
+                  <option value="30">30%</option>
+                </select>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="rgb(25,25,25)" stroke-width="1.8"
+                  stroke-linecap="round" stroke-linejoin="round"
+                  style="position: absolute; right: 4px; pointer-events: none;">
+                  <path d="M6 9l6 6 6-6"></path>
+                </svg>
+              </span>
+            </label>
+            <label
+              style="border: 1px solid rgb(225,225,225); border-top: none; display: flex; align-items: center; justify-content: space-between; padding: 16px 24px; gap: 12px; cursor: pointer;">
+              <span
+                style="font-family: var(--font-body); font-weight: 600; font-size: 16px; line-height: 24px; color: rgb(25,25,25);">Tenure</span>
+              <span style="position: relative; display: inline-flex; align-items: center; gap: 8px;">
+                <select value="{{ tenure }}" onChange="{{ onTenure }}" aria-label="Tenure"
+                  style="appearance: none; -webkit-appearance: none; border: none; background: transparent; font-family: var(--font-body); font-weight: 600; font-size: 16px; line-height: 24px; color: rgb(25,25,25); cursor: pointer; padding-right: 26px; outline-offset: 4px;">
+                  <option value="6">6 m</option>
+                  <option value="12">12 m</option>
+                </select>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="rgb(25,25,25)" stroke-width="1.8"
+                  stroke-linecap="round" stroke-linejoin="round"
+                  style="position: absolute; right: 4px; pointer-events: none;">
+                  <path d="M6 9l6 6 6-6"></path>
+                </svg>
+              </span>
+            </label>
+          </div>
+
+          <!-- savings summary -->
+          <div id="savings-summary" style="{{ summaryWrapStyle }}">
+            <span
+              style="font-family: var(--font-heading); font-weight: 600; font-size: 12px; line-height: 18px; letter-spacing: 0.08em; color: rgb(100,100,100); align-self: stretch; text-transform: uppercase;">Savings
+              summary</span>
+            <div style="display: flex; flex-direction: column; align-self: stretch;">
+              <div
+                style="border: 1px solid rgb(225,225,225); display: flex; align-items: center; justify-content: space-between; padding: 16px 20px; gap: 12px;">
+                <div style="display: flex; gap: 10px; align-items: flex-start;">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="rgb(255,129,236)"
+                    stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                    style="flex-shrink: 0; margin-top: 2px;">
+                    <rect x="3" y="5" width="18" height="16" rx="2"></rect>
+                    <path d="M3 9.5h18M8 3v4M16 3v4M9 15l2 2 4-4"></path>
+                  </svg>
+                  <div style="display: flex; flex-direction: column; gap: 2px;">
+                    <span
+                      style="font-family: var(--font-body); font-weight: 600; font-size: 16px; line-height: 24px; color: rgb(25,25,25);">Monthly
+                      deduction</span>
+                    <span
+                      style="font-family: var(--font-body); font-weight: 400; font-size: 12px; line-height: 18px; color: rgb(25,25,25);">{{
+                      monthlySub }}</span>
+                  </div>
+                </div>
+                <span
+                  style="font-family: var(--font-body); font-weight: 500; font-size: 16px; line-height: 24px; color: rgb(25,25,25); font-variant-numeric: tabular-nums;">{{
+                  monthly }}</span>
+              </div>
+              <div
+                style="border: 1px solid rgb(225,225,225); border-top: none; display: flex; align-items: center; justify-content: space-between; padding: 16px 20px; gap: 12px;">
+                <div style="display: flex; gap: 10px; align-items: flex-start;">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="rgb(119,93,179)"
+                    stroke-width="1.5" stroke-linecap="round" style="flex-shrink: 0; margin-top: 2px;">
+                    <path d="M19 5 5 19"></path>
+                    <circle cx="6.5" cy="6.5" r="2.5"></circle>
+                    <circle cx="17.5" cy="17.5" r="2.5"></circle>
+                  </svg>
+                  <div style="display: flex; flex-direction: column; gap: 2px;">
+                    <span
+                      style="font-family: var(--font-body); font-weight: 600; font-size: 16px; line-height: 24px; color: rgb(25,25,25);">Monthly
+                      savings</span>
+                    <span
+                      style="font-family: var(--font-body); font-weight: 400; font-size: 12px; line-height: 18px; color: rgb(25,25,25);">{{
+                      monthlySaveSub }}</span>
+                  </div>
+                </div>
+                <span
+                  style="font-family: var(--font-body); font-weight: 500; font-size: 16px; line-height: 24px; color: rgb(25,25,25); font-variant-numeric: tabular-nums;">{{
+                  monthlySave }}*</span>
+              </div>
+              <div
+                style="border: 1px solid rgb(225,225,225); border-top: none; display: flex; align-items: center; justify-content: space-between; padding: 16px 20px; gap: 12px;">
+                <div style="display: flex; gap: 10px; align-items: flex-start;">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="rgb(22,126,98)" stroke-width="1.5"
+                    stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0; margin-top: 2px;">
+                    <path d="M12 3v12m0 0l4-4m-4 4l-4-4"></path>
+                    <path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2"></path>
+                  </svg>
+                  <div style="display: flex; flex-direction: column; gap: 2px;">
+                    <span
+                      style="font-family: var(--font-body); font-weight: 600; font-size: 16px; line-height: 24px; color: rgb(25,25,25);">Total
+                      savings</span>
+                    <span
+                      style="font-family: var(--font-body); font-weight: 400; font-size: 12px; line-height: 18px; color: rgb(25,25,25);">{{
+                      totalSaveSub }}</span>
+                  </div>
+                </div>
+                <span
+                  style="font-family: var(--font-body); font-weight: 500; font-size: 16px; line-height: 24px; color: rgb(25,25,25); font-variant-numeric: tabular-nums;">{{
+                  totalSave }}*</span>
+              </div>
+            </div>
+            <span
+              style="font-family: var(--font-body); font-weight: 500; font-size: 13px; line-height: 22px; color: rgb(117,117,117); text-align: center;">*This
+              is an estimate based on the tax slab you’ve selected. The actual reduction will depend on your payroll
+              structure</span>
+            <div style="align-self: stretch; padding-top: 4px;">
+              <!-- <x-import component-from-global-scope="TortoiseDesignSystem_c07074.Button" hint-size="100%,36px"
               variant="primary" size="md" full-width="{{ true }}" on-click="{{ applyNow }}">Interested in this
-              device?</x-import>
+              device?</x-import> -->
+            </div>
           </div>
-        </div>
-      </aside>
+        </aside>
       </sc-if>
 
       <!-- ============ BOTTOM SHEET (Mobile only) ============ -->
       <sc-if value="{{ isMobile }}" hint-placeholder-val="{{ false }}">
         <div style="{{ sheetOverlayStyle }}" onClick="{{ closeSheet }}"></div>
         <div style="{{ sheetStyle }}">
-          <div style="width: 36px; height: 4px; background: rgb(200,200,200); border-radius: 2px; margin: 12px auto 8px;"></div>
+          <div
+            style="width: 36px; height: 4px; background: rgb(200,200,200); border-radius: 2px; margin: 12px auto 8px;">
+          </div>
 
           <!-- Sheet header -->
-          <div style="padding: 8px 20px 16px; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid rgb(238,238,238);">
-            <span style="font-family: var(--font-body); font-weight: 600; font-size: 16px; color: rgb(25,25,25);">{{ selName }}</span>
+          <div
+            style="padding: 8px 20px 16px; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid rgb(238,238,238);">
+            <span style="font-family: var(--font-body); font-weight: 600; font-size: 16px; color: rgb(25,25,25);">{{
+              selName }}</span>
             <button onClick="{{ closeSheet }}" aria-label="Close"
               style="width: 32px; height: 32px; display: flex; align-items: center; justify-content: center; border-radius: 50%; background: rgb(245,245,245); border: none; cursor: pointer;">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="rgb(100,100,100)" stroke-width="2" stroke-linecap="round">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="rgb(100,100,100)" stroke-width="2"
+                stroke-linecap="round">
                 <path d="M6 6l12 12M18 6L6 18"></path>
               </svg>
             </button>
           </div>
 
           <!-- Summary row -->
-          <div style="background: rgb(255,255,255); padding: 20px; display: flex; align-items: center; justify-content: space-between; gap: 16px;">
+          <div
+            style="background: rgb(255,255,255); padding: 20px; display: flex; align-items: center; justify-content: space-between; gap: 16px;">
             <div style="display: flex; align-items: center; gap: 16px; min-width: 0;">
               <span aria-hidden="true" style="{{ selImgStyle }}"></span>
               <div style="display: flex; flex-direction: column; gap: 2px; min-width: 0;">
-                <span style="font-family: var(--font-body); font-weight: 500; font-size: 15px; color: rgb(25,25,25);">{{ selName }}</span>
-                <span style="font-family: var(--font-body); font-weight: 400; font-size: 13px; color: rgb(75,75,75);">{{ selVariant }}</span>
+                <span style="font-family: var(--font-body); font-weight: 500; font-size: 15px; color: rgb(25,25,25);">{{
+                  selName }}</span>
+                <span style="font-family: var(--font-body); font-weight: 400; font-size: 13px; color: rgb(75,75,75);">{{
+                  selVariant }}</span>
               </div>
             </div>
-            <span style="font-family: var(--font-body); font-weight: 600; font-size: 16px; color: rgb(25,25,25); font-variant-numeric: tabular-nums;">{{ selPrice }}</span>
+            <span
+              style="font-family: var(--font-body); font-weight: 600; font-size: 16px; color: rgb(25,25,25); font-variant-numeric: tabular-nums;">{{
+              selPrice }}</span>
           </div>
 
           <!-- Storage + Colour -->
-          <div style="background: rgb(250,250,250); border-top: 1px solid rgb(238,238,238); padding: 20px; display: flex; flex-direction: column; gap: 20px;">
+          <div
+            style="background: rgb(250,250,250); border-top: 1px solid rgb(238,238,238); padding: 20px; display: flex; flex-direction: column; gap: 20px;">
             <div style="display: flex; flex-direction: column; gap: 8px;">
-              <span style="font-family: var(--font-heading); font-weight: 600; font-size: 11px; letter-spacing: 0.08em; color: rgb(100,100,100); text-transform: uppercase;">Storage</span>
+              <span
+                style="font-family: var(--font-heading); font-weight: 600; font-size: 11px; letter-spacing: 0.08em; color: rgb(100,100,100); text-transform: uppercase;">Storage</span>
               <div role="radiogroup" aria-label="Storage" style="display: flex; flex-wrap: wrap; gap: 8px;">
                 <sc-for list="{{ storages }}" as="st" hint-placeholder-count="3">
-                  <button role="radio" aria-checked="{{ st.checked }}" onClick="{{ st.onClick }}" style="{{ st.style }}">
+                  <button role="radio" aria-checked="{{ st.checked }}" onClick="{{ st.onClick }}"
+                    style="{{ st.style }}">
                     <span style="{{ st.radioStyle }}"></span>
-                    <span style="font-family: var(--font-body); font-weight: 600; font-size: 13px; color: rgb(25,25,25); white-space: nowrap;">{{ st.label }}</span>
+                    <span
+                      style="font-family: var(--font-body); font-weight: 600; font-size: 13px; color: rgb(25,25,25); white-space: nowrap;">{{
+                      st.label }}</span>
                   </button>
                 </sc-for>
               </div>
             </div>
             <div style="display: flex; flex-direction: column; gap: 8px;">
-              <span style="font-family: var(--font-heading); font-weight: 600; font-size: 11px; letter-spacing: 0.08em; color: rgb(100,100,100); text-transform: uppercase;">Colour</span>
+              <span
+                style="font-family: var(--font-heading); font-weight: 600; font-size: 11px; letter-spacing: 0.08em; color: rgb(100,100,100); text-transform: uppercase;">Colour</span>
               <div role="radiogroup" aria-label="Colour" style="display: flex; flex-wrap: wrap; gap: 12px;">
                 <sc-for list="{{ colors }}" as="co" hint-placeholder-count="5">
-                  <button role="radio" aria-checked="{{ co.checked }}" aria-label="{{ co.label }}" onClick="{{ co.onClick }}"
+                  <button role="radio" aria-checked="{{ co.checked }}" aria-label="{{ co.label }}"
+                    onClick="{{ co.onClick }}"
                     style="display: flex; flex-direction: column; gap: 4px; align-items: center; background: transparent; border: none; padding: 0; cursor: pointer;">
                     <span style="{{ co.swatchStyle }}"></span>
                     <span style="{{ co.dotStyle }}"></span>
@@ -450,12 +465,19 @@
 
           <!-- Effective cost + terms -->
           <div style="display: flex; flex-direction: column;">
-            <div style="background: rgb(230,255,230); border: 1px solid rgb(42,195,147); display: flex; align-items: center; justify-content: space-between; padding: 14px 20px; gap: 12px;">
-              <span style="font-family: var(--font-heading); font-weight: 600; font-size: 14px; color: rgb(22,126,98);">Effective cost</span>
-              <span style="font-family: var(--font-body); font-weight: 600; font-size: 16px; color: rgb(22,126,98); font-variant-numeric: tabular-nums;">{{ effective }}*</span>
+            <div
+              style="background: rgb(230,255,230); border: 1px solid rgb(42,195,147); display: flex; align-items: center; justify-content: space-between; padding: 14px 20px; gap: 12px;">
+              <span
+                style="font-family: var(--font-heading); font-weight: 600; font-size: 14px; color: rgb(22,126,98);">Effective
+                cost</span>
+              <span
+                style="font-family: var(--font-body); font-weight: 600; font-size: 16px; color: rgb(22,126,98); font-variant-numeric: tabular-nums;">{{
+                effective }}*</span>
             </div>
-            <label style="border: 1px solid rgb(225,225,225); border-top: none; display: flex; align-items: center; justify-content: space-between; padding: 14px 20px; gap: 12px; cursor: pointer;">
-              <span style="font-family: var(--font-body); font-weight: 600; font-size: 14px; color: rgb(25,25,25);">Tax slab</span>
+            <label
+              style="border: 1px solid rgb(225,225,225); border-top: none; display: flex; align-items: center; justify-content: space-between; padding: 14px 20px; gap: 12px; cursor: pointer;">
+              <span style="font-family: var(--font-body); font-weight: 600; font-size: 14px; color: rgb(25,25,25);">Tax
+                slab</span>
               <span style="position: relative; display: inline-flex; align-items: center;">
                 <select value="{{ slab }}" onChange="{{ onSlab }}" aria-label="Tax slab"
                   style="appearance: none; border: none; background: transparent; font-family: var(--font-body); font-weight: 600; font-size: 14px; color: rgb(25,25,25); cursor: pointer; padding-right: 22px;">
@@ -464,20 +486,24 @@
                   <option value="20">20%</option>
                   <option value="30">30%</option>
                 </select>
-                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="rgb(25,25,25)" stroke-width="2" stroke-linecap="round" style="position: absolute; right: 4px; pointer-events: none;">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="rgb(25,25,25)" stroke-width="2"
+                  stroke-linecap="round" style="position: absolute; right: 4px; pointer-events: none;">
                   <path d="M6 9l6 6 6-6"></path>
                 </svg>
               </span>
             </label>
-            <label style="border: 1px solid rgb(225,225,225); border-top: none; display: flex; align-items: center; justify-content: space-between; padding: 14px 20px; gap: 12px; cursor: pointer;">
-              <span style="font-family: var(--font-body); font-weight: 600; font-size: 14px; color: rgb(25,25,25);">Tenure</span>
+            <label
+              style="border: 1px solid rgb(225,225,225); border-top: none; display: flex; align-items: center; justify-content: space-between; padding: 14px 20px; gap: 12px; cursor: pointer;">
+              <span
+                style="font-family: var(--font-body); font-weight: 600; font-size: 14px; color: rgb(25,25,25);">Tenure</span>
               <span style="position: relative; display: inline-flex; align-items: center;">
                 <select value="{{ tenure }}" onChange="{{ onTenure }}" aria-label="Tenure"
                   style="appearance: none; border: none; background: transparent; font-family: var(--font-body); font-weight: 600; font-size: 14px; color: rgb(25,25,25); cursor: pointer; padding-right: 22px;">
                   <option value="6">6 m</option>
                   <option value="12">12 m</option>
                 </select>
-                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="rgb(25,25,25)" stroke-width="2" stroke-linecap="round" style="position: absolute; right: 4px; pointer-events: none;">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="rgb(25,25,25)" stroke-width="2"
+                  stroke-linecap="round" style="position: absolute; right: 4px; pointer-events: none;">
                   <path d="M6 9l6 6 6-6"></path>
                 </svg>
               </span>
@@ -487,21 +513,35 @@
           <!-- Savings summary (compact) -->
           <div style="padding: 20px; display: flex; flex-direction: column; gap: 12px;">
             <div style="display: flex; justify-content: space-between; align-items: center;">
-              <span style="font-family: var(--font-body); font-weight: 500; font-size: 14px; color: rgb(75,75,75);">Monthly deduction</span>
-              <span style="font-family: var(--font-body); font-weight: 600; font-size: 14px; color: rgb(25,25,25); font-variant-numeric: tabular-nums;">{{ monthly }}</span>
+              <span
+                style="font-family: var(--font-body); font-weight: 500; font-size: 14px; color: rgb(75,75,75);">Monthly
+                deduction</span>
+              <span
+                style="font-family: var(--font-body); font-weight: 600; font-size: 14px; color: rgb(25,25,25); font-variant-numeric: tabular-nums;">{{
+                monthly }}</span>
             </div>
             <div style="display: flex; justify-content: space-between; align-items: center;">
-              <span style="font-family: var(--font-body); font-weight: 500; font-size: 14px; color: rgb(75,75,75);">Monthly savings</span>
-              <span style="font-family: var(--font-body); font-weight: 600; font-size: 14px; color: rgb(22,126,98); font-variant-numeric: tabular-nums;">{{ monthlySave }}*</span>
+              <span
+                style="font-family: var(--font-body); font-weight: 500; font-size: 14px; color: rgb(75,75,75);">Monthly
+                savings</span>
+              <span
+                style="font-family: var(--font-body); font-weight: 600; font-size: 14px; color: rgb(22,126,98); font-variant-numeric: tabular-nums;">{{
+                monthlySave }}*</span>
             </div>
             <div style="display: flex; justify-content: space-between; align-items: center;">
-              <span style="font-family: var(--font-body); font-weight: 500; font-size: 14px; color: rgb(75,75,75);">Total savings</span>
-              <span style="font-family: var(--font-body); font-weight: 600; font-size: 14px; color: rgb(22,126,98); font-variant-numeric: tabular-nums;">{{ totalSave }}*</span>
+              <span
+                style="font-family: var(--font-body); font-weight: 500; font-size: 14px; color: rgb(75,75,75);">Total
+                savings</span>
+              <span
+                style="font-family: var(--font-body); font-weight: 600; font-size: 14px; color: rgb(22,126,98); font-variant-numeric: tabular-nums;">{{
+                totalSave }}*</span>
             </div>
-            <p style="font-size: 11px; color: rgb(117,117,117); margin: 4px 0 0; text-align: center;">*Estimate based on selected tax slab</p>
+            <p style="font-size: 11px; color: rgb(117,117,117); margin: 4px 0 0; text-align: center;">*Estimate based on
+              selected tax slab</p>
             <div style="padding-top: 8px;">
               <x-import component-from-global-scope="TortoiseDesignSystem_c07074.Button" hint-size="100%,44px"
-                variant="primary" size="md" full-width="{{ true }}" on-click="{{ goApply }}">Interested in this device?</x-import>
+                variant="primary" size="md" full-width="{{ true }}" on-click="{{ goApply }}">Interested in this
+                device?</x-import>
             </div>
           </div>
         </div>
