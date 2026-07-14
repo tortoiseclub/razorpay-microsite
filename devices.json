@@ -1,0 +1,3797 @@
+{
+  "devices": {
+    "Apple": [
+      {
+        "name": "iPhone 13",
+        "variants": [
+          {
+            "storage": "128GB",
+            "price": "₹45,908"
+          }
+        ],
+        "images": {
+          "hero": "https://cdn.tortoise.pro/products/prod_WbIYCFsk_img_1.png",
+          "gallery": [
+            "https://cdn.tortoise.pro/products/prod_AWNsGLdg_img_1.png",
+            "https://cdn.tortoise.pro/products/prod_LsxgQYUQ_img_1.png"
+          ]
+        }
+      },
+      {
+        "name": "iPhone 14",
+        "variants": [
+          {
+            "storage": "128GB",
+            "price": "₹59,900"
+          }
+        ],
+        "images": {
+          "hero": "https://cdn.tortoise.pro/products/prod_V0xvq8lb_img_1.png",
+          "gallery": [
+            "https://storage.googleapis.com/tortoise-public-assets/product_prod_V0xvq8lb/01_61VuVU94RnL._SL1500_.jpg",
+            "https://storage.googleapis.com/tortoise-public-assets/product_prod_V0xvq8lb/02_61cecOpZrxL._SL1500_.jpg",
+            "https://storage.googleapis.com/tortoise-public-assets/product_prod_V0xvq8lb/03_71SfvBP1gBL._SL1500_.jpg",
+            "https://storage.googleapis.com/tortoise-public-assets/product_prod_V0xvq8lb/04_71G44HUh7yL._SL1500_.jpg",
+            "https://storage.googleapis.com/tortoise-public-assets/product_prod_V0xvq8lb/05_818a-pz0BvL._SL1500_.jpg",
+            "https://storage.googleapis.com/tortoise-public-assets/product_prod_V0xvq8lb/06_61YfilUZTUL._SL1500_.jpg"
+          ]
+        }
+      },
+      {
+        "name": "iPhone 14 Plus",
+        "variants": [
+          {
+            "storage": "128GB",
+            "price": "₹69,900"
+          }
+        ],
+        "images": {
+          "hero": "https://cdn.tortoise.pro/products/prod_5krpPHcP_img_1.png",
+          "gallery": [
+            "https://cdn.tortoise.pro/products/prod_JVV9l45A_img_1.png",
+            "https://cdn.tortoise.pro/products/prod_RZun0MtT_img_1.png"
+          ]
+        }
+      },
+      {
+        "name": "iPhone 15",
+        "variants": [
+          {
+            "storage": "128GB",
+            "price": "₹56,905"
+          },
+          {
+            "storage": "256GB",
+            "price": "₹66,405"
+          }
+        ],
+        "images": {
+          "hero": "https://cdn.tortoise.pro/products/prod_zmtaj2X9_img_1.png",
+          "gallery": [
+            "https://cdn.tortoise.pro/products/prod_Qw8AB79x_img_1.png",
+            "https://cdn.tortoise.pro/products/prod_0z9cysrP_img_1.png",
+            "https://cdn.tortoise.pro/products/prod_H5IhXqXd_img_1.png",
+            "https://cdn.tortoise.pro/products/prod_EbRWb6KX_img_1.png",
+            "https://cdn.tortoise.pro/products/prod_LL52NMdS_img_1.png"
+          ]
+        }
+      },
+      {
+        "name": "iPhone 15 Plus",
+        "variants": [
+          {
+            "storage": "128GB",
+            "price": "₹79,900"
+          },
+          {
+            "storage": "256GB",
+            "price": "₹82,708"
+          }
+        ],
+        "images": {
+          "hero": "https://cdn.tortoise.pro/products/prod_ob49BNlM_img_1.png",
+          "gallery": [
+            "https://cdn.tortoise.pro/products/prod_lpbostv3_img_1.png",
+            "https://cdn.tortoise.pro/products/prod_UbPsqTWr_img_1.png",
+            "https://cdn.tortoise.pro/products/prod_4KQYRzH2_img_1.png",
+            "https://cdn.tortoise.pro/products/prod_qFGelJbH_img_1.png",
+            "https://cdn.tortoise.pro/products/prod_qS7f9yTy_img_1.png"
+          ]
+        }
+      },
+      {
+        "name": "iPhone 16",
+        "variants": [
+          {
+            "storage": "128GB",
+            "price": "₹66,405"
+          },
+          {
+            "storage": "256GB",
+            "price": "₹82,708"
+          },
+          {
+            "storage": "512GB",
+            "price": "₹1,09,900"
+          }
+        ],
+        "images": {
+          "hero": "https://cdn.tortoise.pro/products/apple/myeh3hn_a.png",
+          "gallery": [
+            "https://cdn.tortoise.pro/products/apple/mye73hn_a.png",
+            "https://cdn.tortoise.pro/products/apple/myea3hn_a.png",
+            "https://cdn.tortoise.pro/products/apple/myee3hn_a.png",
+            "https://cdn.tortoise.pro/products/apple/myef3hn_a.png",
+            "https://cdn.tortoise.pro/products/apple/myek3hn_a.png",
+            "https://cdn.tortoise.pro/products/apple/myej3hn_a.png"
+          ]
+        }
+      },
+      {
+        "name": "iPhone 16 Plus",
+        "variants": [
+          {
+            "storage": "128GB",
+            "price": "₹85,405"
+          },
+          {
+            "storage": "256GB",
+            "price": "₹85,405"
+          },
+          {
+            "storage": "512GB",
+            "price": "₹1,10,308"
+          }
+        ],
+        "images": {
+          "hero": "https://cdn.tortoise.pro/products/apple/mxvw3hn_a.png",
+          "gallery": [
+            "https://cdn.tortoise.pro/products/apple/my1p3hn_a.png",
+            "https://cdn.tortoise.pro/products/apple/my253hn_a.png",
+            "https://cdn.tortoise.pro/products/apple/my1x3hn_a.png",
+            "https://cdn.tortoise.pro/products/apple/my2d3hn_a.png",
+            "https://cdn.tortoise.pro/products/apple/mxy23hn_a.png",
+            "https://cdn.tortoise.pro/products/apple/mxy13hn_a.png"
+          ]
+        }
+      },
+      {
+        "name": "iPhone 16 Pro",
+        "variants": [
+          {
+            "storage": "128GB",
+            "price": "₹1,10,308"
+          },
+          {
+            "storage": "256GB",
+            "price": "₹1,19,508"
+          },
+          {
+            "storage": "512GB",
+            "price": "₹1,37,908"
+          },
+          {
+            "storage": "1TB",
+            "price": "₹1,69,900"
+          }
+        ],
+        "images": {
+          "hero": "https://cdn.tortoise.pro/products/apple/mynx3hn_a.png",
+          "gallery": [
+            "https://cdn.tortoise.pro/products/apple/mynw3hn_a.png",
+            "https://cdn.tortoise.pro/products/apple/myng3hn_a.png",
+            "https://cdn.tortoise.pro/products/apple/mynf3hn_a.png",
+            "https://cdn.tortoise.pro/products/apple/myne3hn_a.png",
+            "https://cdn.tortoise.pro/products/apple/mynd3hn_a.png",
+            "https://cdn.tortoise.pro/products/apple/mynk3hn_a.png"
+          ]
+        }
+      },
+      {
+        "name": "iPhone 16 Pro Max",
+        "variants": [
+          {
+            "storage": "256GB",
+            "price": "₹1,33,308"
+          },
+          {
+            "storage": "512GB",
+            "price": "₹1,51,708"
+          },
+          {
+            "storage": "1TB",
+            "price": "₹1,75,655"
+          }
+        ],
+        "images": {
+          "hero": "https://cdn.tortoise.pro/products/apple/mywv3hn_a.png",
+          "gallery": [
+            "https://cdn.tortoise.pro/products/apple/myx43hn_a.png",
+            "https://cdn.tortoise.pro/products/apple/mywy3hn_a.png",
+            "https://cdn.tortoise.pro/products/apple/myx73hn_a.png",
+            "https://cdn.tortoise.pro/products/apple/myx23hn_a.png",
+            "https://cdn.tortoise.pro/products/apple/myx13hn_a.png",
+            "https://cdn.tortoise.pro/products/apple/myx03hn_a.png"
+          ]
+        }
+      },
+      {
+        "name": "iPhone 16e",
+        "variants": [
+          {
+            "storage": "128GB",
+            "price": "₹56,905"
+          },
+          {
+            "storage": "256GB",
+            "price": "₹66,405"
+          },
+          {
+            "storage": "512GB",
+            "price": "₹85,405"
+          }
+        ],
+        "images": {
+          "hero": "https://cdn.tortoise.pro/products/apple/md1q4hn_a.webp",
+          "gallery": [
+            "https://cdn.tortoise.pro/products/apple/md1r4hn_a.webp",
+            "https://cdn.tortoise.pro/products/apple/md1t4hn_a.webp",
+            "https://cdn.tortoise.pro/products/apple/md1w4hn_a.webp",
+            "https://cdn.tortoise.pro/products/apple/md1x4hn_a.webp",
+            "https://cdn.tortoise.pro/products/apple/md274hn_a.webp"
+          ]
+        }
+      },
+      {
+        "name": "iPhone 17",
+        "variants": [
+          {
+            "storage": "256GB",
+            "price": "₹78,755"
+          },
+          {
+            "storage": "512GB",
+            "price": "₹97,755"
+          }
+        ],
+        "images": {
+          "hero": "https://cdn.tortoise.pro/product_prod_rQp4lgdm/iphone_17_white_pdp_image_position_1__en-in_1.jpg",
+          "gallery": [
+            "https://cdn.tortoise.pro/product_prod_rQp4lgdm/01_iphone_17_white_pdp_image_position_3__en-in_1.jpg",
+            "https://cdn.tortoise.pro/product_prod_rQp4lgdm/02_iphone_17_white_pdp_image_position_5__en-in_1.jpg",
+            "https://cdn.tortoise.pro/product_prod_rQp4lgdm/03_iphone_17_white_pdp_image_position_6__en-in_1.jpg",
+            "https://cdn.tortoise.pro/product_prod_rQp4lgdm/04_iphone_17_white_pdp_image_position_8__en-in_1.jpg",
+            "https://cdn.tortoise.pro/product_prod_rQp4lgdm/05_iphone_17_white_pdp_image_position_7__en-in_1.jpg",
+            "https://cdn.tortoise.pro/product_prod_rQp4lgdm/06_iphone_17_white_pdp_image_position_2__en-in_1.jpg",
+            "https://cdn.tortoise.pro/product_prod_rQp4lgdm/07_iphone_17_white_pdp_image_position_4__en-in_1.jpg",
+            "https://cdn.tortoise.pro/product_prod_rQp4lgdm/08_iphone_17_white_pdp_image_position_9__en-in_1.jpg",
+            "https://cdn.tortoise.pro/product_prod_rQp4lgdm/09_iphone_17_white_pdp_image_position_10__en-in_1.jpg"
+          ],
+          "lifestyle": [
+            "https://cdn.tortoise.pro/product_prod_rQp4lgdm/01_iPhone-17-A+.jpeg",
+            "https://cdn.tortoise.pro/product_prod_rQp4lgdm/02_apple-services-2025-sept.jpg"
+          ]
+        }
+      },
+      {
+        "name": "iPhone 17 Pro",
+        "variants": [
+          {
+            "storage": "256GB",
+            "price": "₹1,28,155"
+          },
+          {
+            "storage": "512GB",
+            "price": "₹1,47,155"
+          },
+          {
+            "storage": "1TB",
+            "price": "₹1,66,155"
+          }
+        ],
+        "images": {
+          "hero": "https://cdn.tortoise.pro/product_prod_Hum6EKSx/iphone_17_pro_deep_blue_pdp_image_position_1__en-in_1.jpg",
+          "gallery": [
+            "https://cdn.tortoise.pro/product_prod_Hum6EKSx/01_0.jpg",
+            "https://cdn.tortoise.pro/product_prod_Hum6EKSx/02_iphone_17_pro_deep_blue_pdp_image_position_3__en-in_1.jpg",
+            "https://cdn.tortoise.pro/product_prod_Hum6EKSx/03_iphone_17_pro_deep_blue_pdp_image_position_5__en-in_1.jpg",
+            "https://cdn.tortoise.pro/product_prod_Hum6EKSx/04_iphone_17_pro_deep_blue_pdp_image_position_6__en-in_1.jpg",
+            "https://cdn.tortoise.pro/product_prod_Hum6EKSx/05_iphone_17_pro_deep_blue_pdp_image_position_7__en-in_1.jpg",
+            "https://cdn.tortoise.pro/product_prod_Hum6EKSx/06_iphone_17_pro_deep_blue_pdp_image_position_9__en-in_1.jpg",
+            "https://cdn.tortoise.pro/product_prod_Hum6EKSx/07_iphone_17_pro_deep_blue_pdp_image_position_4__en-in_1.jpg",
+            "https://cdn.tortoise.pro/product_prod_Hum6EKSx/08_iphone_17_pro_deep_blue_pdp_image_position_2__en-in_1.jpg",
+            "https://cdn.tortoise.pro/product_prod_Hum6EKSx/09_iphone_17_pro_deep_blue_pdp_image_position_8__en-in_1.jpg",
+            "https://cdn.tortoise.pro/product_prod_Hum6EKSx/10_iphone_17_pro_deep_blue_pdp_image_position_10__en-in_1.jpg"
+          ],
+          "lifestyle": [
+            "https://cdn.tortoise.pro/product_prod_Hum6EKSx/01_iPhone-17-Pro-Series-A+.jpeg",
+            "https://cdn.tortoise.pro/product_prod_Hum6EKSx/02_apple-services-2025-sept.jpg"
+          ]
+        }
+      },
+      {
+        "name": "iPhone 17 Pro Max",
+        "variants": [
+          {
+            "storage": "256GB",
+            "price": "₹1,42,405"
+          },
+          {
+            "storage": "512GB",
+            "price": "₹1,61,405"
+          },
+          {
+            "storage": "1TB",
+            "price": "₹1,80,405"
+          },
+          {
+            "storage": "2TB",
+            "price": "₹2,18,405"
+          }
+        ],
+        "images": {
+          "hero": "https://cdn.tortoise.pro/product_prod_qP2i9dRq/iphone_17_pro_max_deep_blue_pdp_image_position_1__en-in_2.jpg",
+          "gallery": [
+            "https://cdn.tortoise.pro/product_prod_qP2i9dRq/01_0.jpg",
+            "https://cdn.tortoise.pro/product_prod_qP2i9dRq/02_iphone_17_pro_max_deep_blue_pdp_image_position_3__en-in_2.jpg",
+            "https://cdn.tortoise.pro/product_prod_qP2i9dRq/03_iphone_17_pro_max_deep_blue_pdp_image_position_5__en-in_2.jpg",
+            "https://cdn.tortoise.pro/product_prod_qP2i9dRq/04_iphone_17_pro_max_deep_blue_pdp_image_position_6__en-in_2.jpg",
+            "https://cdn.tortoise.pro/product_prod_qP2i9dRq/05_iphone_17_pro_max_deep_blue_pdp_image_position_7__en-in_2.jpg",
+            "https://cdn.tortoise.pro/product_prod_qP2i9dRq/06_iphone_17_pro_max_deep_blue_pdp_image_position_9__en-in_2.jpg",
+            "https://cdn.tortoise.pro/product_prod_qP2i9dRq/07_iphone_17_pro_max_deep_blue_pdp_image_position_8__en-in_2.jpg",
+            "https://cdn.tortoise.pro/product_prod_qP2i9dRq/08_iphone_17_pro_max_deep_blue_pdp_image_position_2__en-in_2.jpg",
+            "https://cdn.tortoise.pro/product_prod_qP2i9dRq/09_iphone_17_pro_max_deep_blue_pdp_image_position_4__en-in_2.jpg",
+            "https://cdn.tortoise.pro/product_prod_qP2i9dRq/10_iphone_17_pro_max_deep_blue_pdp_image_position_10__en-in_2.jpg"
+          ],
+          "lifestyle": [
+            "https://cdn.tortoise.pro/product_prod_qP2i9dRq/01_iPhone-17-Pro-Series-A+.jpeg",
+            "https://cdn.tortoise.pro/product_prod_qP2i9dRq/02_apple-services-2025-sept.jpg"
+          ]
+        }
+      },
+      {
+        "name": "iPhone 17e",
+        "variants": [
+          {
+            "storage": "256GB",
+            "price": "₹61,655"
+          },
+          {
+            "storage": "512GB",
+            "price": "₹80,655"
+          }
+        ],
+        "images": {
+          "hero": "https://cdn.tortoise.pro/product_prod_ImGBdTab/black_17_e_2_.jpg",
+          "gallery": [
+            "https://cdn.tortoise.pro/product_prod_ImGBdTab/01_black_17_e_7_.jpg",
+            "https://cdn.tortoise.pro/product_prod_ImGBdTab/02_black_17_e_6_.jpg",
+            "https://cdn.tortoise.pro/product_prod_ImGBdTab/03_black_17_e_5_.jpg",
+            "https://cdn.tortoise.pro/product_prod_ImGBdTab/04_black_17_e_4_.jpg",
+            "https://cdn.tortoise.pro/product_prod_ImGBdTab/05_black_17_e_3_.jpg",
+            "https://cdn.tortoise.pro/product_prod_ImGBdTab/06_black_17_e_1_.jpg"
+          ],
+          "lifestyle": [
+            "https://cdn.tortoise.pro/product_prod_ImGBdTab/01_17eA+.jpg"
+          ]
+        }
+      },
+      {
+        "name": "iPhone Air",
+        "variants": [
+          {
+            "storage": "256GB",
+            "price": "₹1,13,905"
+          },
+          {
+            "storage": "512GB",
+            "price": "₹1,32,905"
+          },
+          {
+            "storage": "1TB",
+            "price": "₹1,51,905"
+          }
+        ],
+        "images": {
+          "hero": "https://storage.googleapis.com/tortoise-public-assets/products/Apple%20iPhone%20Air%20(256GB%2C%20Space%20Black)%20.webp",
+          "gallery": [
+            "https://storage.googleapis.com/tortoise-public-assets/product_prod_l35L20Hv/01_614MsdnfBxL._SL1500_.jpg",
+            "https://storage.googleapis.com/tortoise-public-assets/product_prod_l35L20Hv/02_61sK4bjgTmL._SL1500_.jpg",
+            "https://storage.googleapis.com/tortoise-public-assets/product_prod_l35L20Hv/03_51qDO7tXmIL._SL1500_.jpg",
+            "https://storage.googleapis.com/tortoise-public-assets/product_prod_l35L20Hv/04_71qmq2lXNuL._SL1500_.jpg",
+            "https://storage.googleapis.com/tortoise-public-assets/product_prod_l35L20Hv/05_71t3D5mhhiL._SL1500_.jpg",
+            "https://storage.googleapis.com/tortoise-public-assets/product_prod_l35L20Hv/06_61EYJi8XY1L._SL1500_.jpg",
+            "https://storage.googleapis.com/tortoise-public-assets/product_prod_l35L20Hv/07_61knPJtYRpL._SL1500_.jpg",
+            "https://storage.googleapis.com/tortoise-public-assets/product_prod_l35L20Hv/08_71OD3Vu3fXL._SL1500_.jpg",
+            "https://storage.googleapis.com/tortoise-public-assets/product_prod_l35L20Hv/09_51fOzzqRyTL._SL1500_.jpg",
+            "https://storage.googleapis.com/tortoise-public-assets/product_prod_l35L20Hv/10_71qmq2lXNuL._SL1500_.jpg",
+            "https://storage.googleapis.com/tortoise-public-assets/product_prod_l35L20Hv/11_71t3D5mhhiL._SL1500_.jpg",
+            "https://storage.googleapis.com/tortoise-public-assets/product_prod_l35L20Hv/12_61HEGoq8m6L._SL1500_.jpg",
+            "https://storage.googleapis.com/tortoise-public-assets/product_prod_l35L20Hv/13_61%2B0aSXsyGL._SL1500_.jpg",
+            "https://storage.googleapis.com/tortoise-public-assets/product_prod_l35L20Hv/14_61fvItq6e0L._SL1500_.jpg",
+            "https://storage.googleapis.com/tortoise-public-assets/product_prod_l35L20Hv/15_51pMzxQPbGL._SL1500_.jpg",
+            "https://storage.googleapis.com/tortoise-public-assets/product_prod_l35L20Hv/16_71qmq2lXNuL._SL1500_.jpg",
+            "https://storage.googleapis.com/tortoise-public-assets/product_prod_l35L20Hv/17_71t3D5mhhiL._SL1500_.jpg",
+            "https://storage.googleapis.com/tortoise-public-assets/product_prod_l35L20Hv/18_61NF66XRbIL._SL1500_.jpg",
+            "https://storage.googleapis.com/tortoise-public-assets/product_prod_l35L20Hv/19_61Ce-6B6x%2BL._SL1500_.jpg",
+            "https://storage.googleapis.com/tortoise-public-assets/product_prod_l35L20Hv/20_61izXOz7xLL._SL1500_.jpg",
+            "https://storage.googleapis.com/tortoise-public-assets/product_prod_l35L20Hv/21_51mq9k3RAFL._SL1500_.jpg",
+            "https://storage.googleapis.com/tortoise-public-assets/product_prod_l35L20Hv/22_71qmq2lXNuL._SL1500_.jpg",
+            "https://storage.googleapis.com/tortoise-public-assets/product_prod_l35L20Hv/23_71t3D5mhhiL._SL1500_.jpg",
+            "https://storage.googleapis.com/tortoise-public-assets/product_prod_l35L20Hv/24_61lyhbxf2PL._SL1500_.jpg",
+            "https://storage.googleapis.com/tortoise-public-assets/product_prod_l35L20Hv/25_61%2B0aSXsyGL._SL1500_.jpg",
+            "https://storage.googleapis.com/tortoise-public-assets/product_prod_l35L20Hv/26_61fvItq6e0L._SL1500_.jpg",
+            "https://storage.googleapis.com/tortoise-public-assets/product_prod_l35L20Hv/27_51pMzxQPbGL._SL1500_.jpg",
+            "https://storage.googleapis.com/tortoise-public-assets/product_prod_l35L20Hv/28_71qmq2lXNuL._SL1500_.jpg",
+            "https://storage.googleapis.com/tortoise-public-assets/product_prod_l35L20Hv/29_71t3D5mhhiL._SL1500_.jpg",
+            "https://storage.googleapis.com/tortoise-public-assets/product_prod_l35L20Hv/30_61NF66XRbIL._SL1500_.jpg",
+            "https://storage.googleapis.com/tortoise-public-assets/product_prod_l35L20Hv/31_61Ce-6B6x%2BL._SL1500_.jpg",
+            "https://storage.googleapis.com/tortoise-public-assets/product_prod_l35L20Hv/32_61izXOz7xLL._SL1500_.jpg",
+            "https://storage.googleapis.com/tortoise-public-assets/product_prod_l35L20Hv/33_51mq9k3RAFL._SL1500_.jpg",
+            "https://storage.googleapis.com/tortoise-public-assets/product_prod_l35L20Hv/34_71qmq2lXNuL._SL1500_.jpg",
+            "https://storage.googleapis.com/tortoise-public-assets/product_prod_l35L20Hv/35_71t3D5mhhiL._SL1500_.jpg",
+            "https://storage.googleapis.com/tortoise-public-assets/product_prod_l35L20Hv/36_61lyhbxf2PL._SL1500_.jpg",
+            "https://storage.googleapis.com/tortoise-public-assets/product_prod_l35L20Hv/37_614MsdnfBxL._SL1500_.jpg",
+            "https://storage.googleapis.com/tortoise-public-assets/product_prod_l35L20Hv/38_61sK4bjgTmL._SL1500_.jpg",
+            "https://storage.googleapis.com/tortoise-public-assets/product_prod_l35L20Hv/39_51qDO7tXmIL._SL1500_.jpg",
+            "https://storage.googleapis.com/tortoise-public-assets/product_prod_l35L20Hv/40_71qmq2lXNuL._SL1500_.jpg",
+            "https://storage.googleapis.com/tortoise-public-assets/product_prod_l35L20Hv/41_71t3D5mhhiL._SL1500_.jpg",
+            "https://storage.googleapis.com/tortoise-public-assets/product_prod_l35L20Hv/42_61EYJi8XY1L._SL1500_.jpg",
+            "https://storage.googleapis.com/tortoise-public-assets/product_prod_l35L20Hv/43_61Ce-6B6x%2BL._SL1500_.jpg",
+            "https://storage.googleapis.com/tortoise-public-assets/product_prod_l35L20Hv/44_61izXOz7xLL._SL1500_.jpg",
+            "https://storage.googleapis.com/tortoise-public-assets/product_prod_l35L20Hv/45_51mq9k3RAFL._SL1500_.jpg",
+            "https://storage.googleapis.com/tortoise-public-assets/product_prod_l35L20Hv/46_71qmq2lXNuL._SL1500_.jpg",
+            "https://storage.googleapis.com/tortoise-public-assets/product_prod_l35L20Hv/47_71t3D5mhhiL._SL1500_.jpg",
+            "https://storage.googleapis.com/tortoise-public-assets/product_prod_l35L20Hv/48_61lyhbxf2PL._SL1500_.jpg",
+            "https://storage.googleapis.com/tortoise-public-assets/product_prod_l35L20Hv/49_61%2B0aSXsyGL._SL1500_.jpg",
+            "https://storage.googleapis.com/tortoise-public-assets/product_prod_l35L20Hv/50_61fvItq6e0L._SL1500_.jpg",
+            "https://storage.googleapis.com/tortoise-public-assets/product_prod_l35L20Hv/51_51pMzxQPbGL._SL1500_.jpg",
+            "https://storage.googleapis.com/tortoise-public-assets/product_prod_l35L20Hv/52_71qmq2lXNuL._SL1500_.jpg",
+            "https://storage.googleapis.com/tortoise-public-assets/product_prod_l35L20Hv/53_71t3D5mhhiL._SL1500_.jpg",
+            "https://storage.googleapis.com/tortoise-public-assets/product_prod_l35L20Hv/54_61NF66XRbIL._SL1500_.jpg",
+            "https://storage.googleapis.com/tortoise-public-assets/product_prod_l35L20Hv/55_614MsdnfBxL._SL1500_.jpg",
+            "https://storage.googleapis.com/tortoise-public-assets/product_prod_l35L20Hv/56_61sK4bjgTmL._SL1500_.jpg",
+            "https://storage.googleapis.com/tortoise-public-assets/product_prod_l35L20Hv/57_51qDO7tXmIL._SL1500_.jpg",
+            "https://storage.googleapis.com/tortoise-public-assets/product_prod_l35L20Hv/58_71qmq2lXNuL._SL1500_.jpg",
+            "https://storage.googleapis.com/tortoise-public-assets/product_prod_l35L20Hv/59_71t3D5mhhiL._SL1500_.jpg",
+            "https://storage.googleapis.com/tortoise-public-assets/product_prod_l35L20Hv/60_61EYJi8XY1L._SL1500_.jpg",
+            "https://storage.googleapis.com/tortoise-public-assets/product_prod_l35L20Hv/61_61knPJtYRpL._SL1500_.jpg",
+            "https://storage.googleapis.com/tortoise-public-assets/product_prod_l35L20Hv/62_71OD3Vu3fXL._SL1500_.jpg",
+            "https://storage.googleapis.com/tortoise-public-assets/product_prod_l35L20Hv/63_51fOzzqRyTL._SL1500_.jpg",
+            "https://storage.googleapis.com/tortoise-public-assets/product_prod_l35L20Hv/64_71qmq2lXNuL._SL1500_.jpg",
+            "https://storage.googleapis.com/tortoise-public-assets/product_prod_l35L20Hv/65_71t3D5mhhiL._SL1500_.jpg",
+            "https://storage.googleapis.com/tortoise-public-assets/product_prod_l35L20Hv/66_61HEGoq8m6L._SL1500_.jpg",
+            "https://storage.googleapis.com/tortoise-public-assets/product_prod_l35L20Hv/67_61knPJtYRpL._SL1500_.jpg",
+            "https://storage.googleapis.com/tortoise-public-assets/product_prod_l35L20Hv/68_71OD3Vu3fXL._SL1500_.jpg",
+            "https://storage.googleapis.com/tortoise-public-assets/product_prod_l35L20Hv/69_51fOzzqRyTL._SL1500_.jpg",
+            "https://storage.googleapis.com/tortoise-public-assets/product_prod_l35L20Hv/70_71qmq2lXNuL._SL1500_.jpg",
+            "https://storage.googleapis.com/tortoise-public-assets/product_prod_l35L20Hv/71_71t3D5mhhiL._SL1500_.jpg",
+            "https://storage.googleapis.com/tortoise-public-assets/product_prod_l35L20Hv/72_61HEGoq8m6L._SL1500_.jpg"
+          ],
+          "lifestyle": [
+            "https://storage.googleapis.com/tortoise-public-assets/product_prod_l35L20Hv/01_iPhone_Air_Product_Page_Flex_Module_Avail_Amazon_Desktop_1500px__en-IN_01._CB800160424_.jpg",
+            "https://storage.googleapis.com/tortoise-public-assets/product_prod_l35L20Hv/02_iPhone_Air_Product_Page_Flex_Module_Avail_Amazon_Desktop_1500px__en-IN_02._CB800160424_.jpg",
+            "https://storage.googleapis.com/tortoise-public-assets/product_prod_l35L20Hv/03_iPhone_Air_Product_Page_Flex_Module_Avail_Amazon_Desktop_1500px__en-IN_03._CB800160424_.jpg",
+            "https://storage.googleapis.com/tortoise-public-assets/product_prod_l35L20Hv/04_iPhone_Air_Product_Page_Flex_Module_Avail_Amazon_Desktop_1500px__en-IN_04._CB800160424_.jpg",
+            "https://storage.googleapis.com/tortoise-public-assets/product_prod_l35L20Hv/05_iPhone_Air_Product_Page_Flex_Module_Avail_Amazon_Desktop_1500px__en-IN_05._CB800160424_.jpg",
+            "https://storage.googleapis.com/tortoise-public-assets/product_prod_l35L20Hv/06_iPhone_Air_Product_Page_Flex_Module_Avail_Amazon_Desktop_1500px__en-IN_06._CB800160424_.jpg",
+            "https://storage.googleapis.com/tortoise-public-assets/product_prod_l35L20Hv/07_iPhone_Air_Product_Page_Flex_Module_Avail_Amazon_Desktop_1500px__en-IN_07._CB800160424_.jpg",
+            "https://storage.googleapis.com/tortoise-public-assets/product_prod_l35L20Hv/08_iPhone_Air_Product_Page_Flex_Module_Avail_Amazon_Desktop_1500px__en-IN_08._CB800160424_.jpg",
+            "https://storage.googleapis.com/tortoise-public-assets/product_prod_l35L20Hv/09_iPhone_Air_Product_Page_Flex_Module_Avail_Amazon_Desktop_1500px__en-IN_09._CB800160424_.jpg"
+          ]
+        }
+      },
+      {
+        "name": "iPhone SE",
+        "variants": [
+          {
+            "storage": "64GB",
+            "price": "₹49,900"
+          },
+          {
+            "storage": "128GB",
+            "price": "₹54,900"
+          }
+        ],
+        "images": {
+          "hero": "https://cdn.tortoise.pro/products/apple/mmxl3hn_a.jpg",
+          "gallery": [
+            "https://cdn.tortoise.pro/products/apple/mmxh3hn_a.jpg",
+            "https://cdn.tortoise.pro/products/apple/mmxf3hn_a.jpg",
+            "https://cdn.tortoise.pro/products/apple/mmxg3hn_a.jpg",
+            "https://cdn.tortoise.pro/products/apple/mmxj3hn_a.jpg",
+            "https://cdn.tortoise.pro/products/apple/mmxk3hn_a.jpg"
+          ]
+        }
+      }
+    ],
+    "Samsung": [
+      {
+        "name": "A07 5G",
+        "variants": [
+          {
+            "ram": "6GB",
+            "storage": "128GB",
+            "price": "₹18,200"
+          }
+        ],
+        "images": {
+          "hero": "https://cdn.tortoise.pro/product_prod_4NdXUKEJ/light_green_1_.jpg",
+          "gallery": [
+            "https://cdn.tortoise.pro/product_prod_4NdXUKEJ/01_0.jpg",
+            "https://cdn.tortoise.pro/product_prod_4NdXUKEJ/02_light_green_2_.jpg",
+            "https://cdn.tortoise.pro/product_prod_4NdXUKEJ/03_light_green_5_.jpg",
+            "https://cdn.tortoise.pro/product_prod_4NdXUKEJ/04_light_green_3_.jpg",
+            "https://cdn.tortoise.pro/product_prod_4NdXUKEJ/05_light_green_4_.jpg",
+            "https://cdn.tortoise.pro/product_prod_4NdXUKEJ/06_light_green_6_.jpg",
+            "https://cdn.tortoise.pro/product_prod_4NdXUKEJ/07_light_green_7_.jpg",
+            "https://cdn.tortoise.pro/product_prod_4NdXUKEJ/08_light_green_8_.jpg",
+            "https://cdn.tortoise.pro/product_prod_4NdXUKEJ/09_light_green_9_.jpg",
+            "https://cdn.tortoise.pro/product_prod_4NdXUKEJ/10_light_green_13_.jpg",
+            "https://cdn.tortoise.pro/product_prod_4NdXUKEJ/11_light_green_11_.jpg",
+            "https://cdn.tortoise.pro/product_prod_4NdXUKEJ/12_light_green_12_.jpg",
+            "https://cdn.tortoise.pro/product_prod_4NdXUKEJ/13_light_green_14_.jpg",
+            "https://cdn.tortoise.pro/product_prod_4NdXUKEJ/14_light_green_10_.jpg"
+          ]
+        }
+      },
+      {
+        "name": "A37",
+        "variants": [
+          {
+            "ram": "8GB",
+            "storage": "128GB",
+            "price": "₹34,800"
+          },
+          {
+            "ram": "8GB",
+            "storage": "256GB",
+            "price": "₹39,900"
+          },
+          {
+            "ram": "12GB",
+            "storage": "256GB",
+            "price": "₹45,250"
+          }
+        ],
+        "images": {
+          "hero": "https://cdn.tortoise.pro/product_prod_KxNhNOzS/lavender_5__2.jpg",
+          "gallery": [
+            "https://cdn.tortoise.pro/product_prod_KxNhNOzS/01_a-37_2__1.jpg",
+            "https://cdn.tortoise.pro/product_prod_KxNhNOzS/02_a-37_3__1.jpg",
+            "https://cdn.tortoise.pro/product_prod_KxNhNOzS/03_a-37_5__1.jpg",
+            "https://cdn.tortoise.pro/product_prod_KxNhNOzS/04_a-37_4__1.jpg",
+            "https://cdn.tortoise.pro/product_prod_KxNhNOzS/05_a-37_6__1.jpg",
+            "https://cdn.tortoise.pro/product_prod_KxNhNOzS/06_a-37_8__1.jpg",
+            "https://cdn.tortoise.pro/product_prod_KxNhNOzS/07_a-37_7__1.jpg",
+            "https://cdn.tortoise.pro/product_prod_KxNhNOzS/08_a-37_9__1.jpg",
+            "https://cdn.tortoise.pro/product_prod_KxNhNOzS/09_a-37_10__1.jpg",
+            "https://cdn.tortoise.pro/product_prod_KxNhNOzS/10_a-37_11__1.jpg",
+            "https://cdn.tortoise.pro/product_prod_KxNhNOzS/11_lavender_3__2.jpg",
+            "https://cdn.tortoise.pro/product_prod_KxNhNOzS/12_lavender_2__2.jpg",
+            "https://cdn.tortoise.pro/product_prod_KxNhNOzS/13_lavender_4__2.jpg",
+            "https://cdn.tortoise.pro/product_prod_KxNhNOzS/14_lavender_1__2.jpg",
+            "https://cdn.tortoise.pro/product_prod_KxNhNOzS/15_lavender_9__2.jpg",
+            "https://cdn.tortoise.pro/product_prod_KxNhNOzS/16_lavender_6__2.jpg",
+            "https://cdn.tortoise.pro/product_prod_KxNhNOzS/17_lavender_7__2.jpg",
+            "https://cdn.tortoise.pro/product_prod_KxNhNOzS/18_lavender_8__2.jpg"
+          ]
+        }
+      },
+      {
+        "name": "A57",
+        "variants": [
+          {
+            "ram": "8GB",
+            "storage": "256GB",
+            "price": "₹48,500"
+          },
+          {
+            "ram": "12GB",
+            "storage": "256GB",
+            "price": "₹54,150"
+          }
+        ],
+        "images": {
+          "hero": "https://cdn.tortoise.pro/product_prod_HtO2DzOc/navy_5_.jpg",
+          "gallery": [
+            "https://cdn.tortoise.pro/product_prod_HtO2DzOc/01_a-57_3__1.jpg",
+            "https://cdn.tortoise.pro/product_prod_HtO2DzOc/02_a-57_4__1.jpg",
+            "https://cdn.tortoise.pro/product_prod_HtO2DzOc/03_a-57_2__1.jpg",
+            "https://cdn.tortoise.pro/product_prod_HtO2DzOc/04_a-57_6__1.jpg",
+            "https://cdn.tortoise.pro/product_prod_HtO2DzOc/05_a-57_5__1.jpg",
+            "https://cdn.tortoise.pro/product_prod_HtO2DzOc/06_a-57_7__1.jpg",
+            "https://cdn.tortoise.pro/product_prod_HtO2DzOc/07_a-57_8__1.jpg",
+            "https://cdn.tortoise.pro/product_prod_HtO2DzOc/08_a-57_11__1.jpg",
+            "https://cdn.tortoise.pro/product_prod_HtO2DzOc/09_a-57_9__1.jpg",
+            "https://cdn.tortoise.pro/product_prod_HtO2DzOc/10_a-57_10__1.jpg",
+            "https://cdn.tortoise.pro/product_prod_HtO2DzOc/11_a-57_12__1.jpg",
+            "https://cdn.tortoise.pro/product_prod_HtO2DzOc/12_navy_6_.jpg",
+            "https://cdn.tortoise.pro/product_prod_HtO2DzOc/13_navy_7_.jpg",
+            "https://cdn.tortoise.pro/product_prod_HtO2DzOc/14_navy_8_.jpg",
+            "https://cdn.tortoise.pro/product_prod_HtO2DzOc/15_navy_3_.jpg",
+            "https://cdn.tortoise.pro/product_prod_HtO2DzOc/16_navy_4_.jpg",
+            "https://cdn.tortoise.pro/product_prod_HtO2DzOc/17_navy_2_.jpg",
+            "https://cdn.tortoise.pro/product_prod_HtO2DzOc/18_navy_9_.jpg",
+            "https://cdn.tortoise.pro/product_prod_HtO2DzOc/19_navy_1_.jpg"
+          ]
+        }
+      },
+      {
+        "name": "Galaxy A04s (4GB Memory)",
+        "variants": [
+          {
+            "storage": "64GB",
+            "price": "₹8,386"
+          }
+        ],
+        "images": {
+          "hero": "https://images.samsung.com/is/image/samsung/p6pim/in/sm-a047fzkgins/gallery/in-galaxy-a04s-a047-sm-a047fzkgins-thumb-533977964"
+        }
+      },
+      {
+        "name": "Galaxy A05 (4GB RAM)",
+        "variants": [
+          {
+            "storage": "64GB",
+            "price": "₹9,187"
+          }
+        ],
+        "images": {
+          "hero": "https://images.samsung.com/is/image/samsung/p6pim/in/sm-a055fzkdins/gallery/in-galaxy-a05-sm-a055-sm-a055fzkdins-thumb-539716447"
+        }
+      },
+      {
+        "name": "Galaxy A06",
+        "variants": [
+          {
+            "ram": "4GB",
+            "storage": "64GB",
+            "price": "₹8,386"
+          },
+          {
+            "ram": "4GB",
+            "storage": "128GB",
+            "price": "₹9,187"
+          }
+        ],
+        "images": {
+          "hero": "https://images.samsung.com/is/image/samsung/p6pim/in/sm-a065flbdins/gallery/in-galaxy-a06-sm-a065-sm-a065flbdins-thumb-543189130",
+          "gallery": [
+            "https://images.samsung.com/is/image/samsung/p6pim/in/sm-a065fzkdins/gallery/in-galaxy-a06-sm-a065-sm-a065fzkdins-thumb-543189208",
+            "https://images.samsung.com/is/image/samsung/p6pim/in/sm-a065fzkgins/gallery/in-galaxy-a06-sm-a065-sm-a065fzkgins-thumb-543189227",
+            "https://images.samsung.com/is/image/samsung/p6pim/in/sm-a066bzkgins/gallery/in-galaxy-a06-5g-sm-a066-sm-a066bzkgins-thumb-545081111",
+            "https://images.samsung.com/is/image/samsung/p6pim/in/sm-a066bzagins/gallery/in-galaxy-a06-5g-sm-a066-sm-a066bzagins-thumb-545081067"
+          ]
+        }
+      },
+      {
+        "name": "Galaxy A16",
+        "variants": [
+          {
+            "ram": "6GB",
+            "storage": "128GB",
+            "price": "₹15,612"
+          },
+          {
+            "ram": "8GB",
+            "storage": "128GB",
+            "price": "₹16,906"
+          },
+          {
+            "ram": "8GB",
+            "storage": "256GB",
+            "price": "₹19,804"
+          }
+        ],
+        "images": {
+          "hero": "https://images.samsung.com/is/image/samsung/p6pim/in/sm-a166pzkhins/gallery/in-galaxy-a16-5g-sm-a166-sm-a166pzkhins-thumb-544007894",
+          "gallery": [
+            "https://images.samsung.com/is/image/samsung/p6pim/in/sm-a166pzkiins/gallery/in-galaxy-a16-5g-sm-a166-sm-a166pzkiins-thumb-544007913",
+            "https://images.samsung.com/is/image/samsung/p6pim/in/sm-a166pzkbins/gallery/in-galaxy-a-sm-a166pzkbins-front-blue-black-thumb-544389484"
+          ]
+        }
+      },
+      {
+        "name": "Galaxy A26",
+        "variants": [
+          {
+            "ram": "8GB",
+            "storage": "256GB",
+            "price": "₹25,529"
+          }
+        ],
+        "images": {
+          "hero": "https://images.samsung.com/is/image/samsung/p6pim/in/sm-a266bzklins/gallery/in-galaxy-a26-5g-sm-a266-sm-a266bzklins-thumb-545323949"
+        }
+      },
+      {
+        "name": "Galaxy A36",
+        "variants": [
+          {
+            "ram": "8GB",
+            "storage": "128GB",
+            "price": "₹23,785"
+          },
+          {
+            "ram": "8GB",
+            "storage": "256GB",
+            "price": "₹26,087"
+          },
+          {
+            "ram": "12GB",
+            "storage": "256GB",
+            "price": "₹28,389"
+          }
+        ],
+        "images": {
+          "hero": "https://cdn.tortoise.pro/product_prod_lk2OZDCQ/samsung-galaxy-a36-5g-lavender_1_.jpg",
+          "gallery": [
+            "https://cdn.tortoise.pro/product_prod_lk2OZDCQ/01_samsung-galaxy-a36-5g-lavender_2_.jpg",
+            "https://cdn.tortoise.pro/product_prod_lk2OZDCQ/02_samsung-galaxy-a36-5g-lavender_3_.jpg",
+            "https://cdn.tortoise.pro/product_prod_lk2OZDCQ/03_samsung-galaxy-a36-5g-lavender_4_.jpg",
+            "https://cdn.tortoise.pro/product_prod_lk2OZDCQ/04_samsung-galaxy-a36-5g-lavender_5_.jpg",
+            "https://cdn.tortoise.pro/product_prod_lk2OZDCQ/05_samsung-galaxy-a36-5g-lavender_6_.jpg",
+            "https://cdn.tortoise.pro/product_prod_lk2OZDCQ/06_samsung-galaxy-a36-5g-lavender_7_.jpg",
+            "https://cdn.tortoise.pro/product_prod_lk2OZDCQ/07_samsung-galaxy-a36-5g-lavender_8_.jpg",
+            "https://cdn.tortoise.pro/product_prod_lk2OZDCQ/08_samsung-galaxy-a36-5g-lavender_9_.jpg"
+          ]
+        }
+      },
+      {
+        "name": "Galaxy A56",
+        "variants": [
+          {
+            "ram": "8GB",
+            "storage": "128GB",
+            "price": "₹37,562"
+          },
+          {
+            "ram": "8GB",
+            "storage": "256GB",
+            "price": "₹40,296"
+          },
+          {
+            "ram": "12GB",
+            "storage": "256GB",
+            "price": "₹42,599"
+          }
+        ],
+        "images": {
+          "hero": "https://cdn.tortoise.pro/product_prod_HJUWZVeu/a56_black_1__1.jpg",
+          "gallery": [
+            "https://cdn.tortoise.pro/product_prod_HJUWZVeu/01_0.jpg",
+            "https://cdn.tortoise.pro/product_prod_HJUWZVeu/02_a56_green_2__5.jpg",
+            "https://cdn.tortoise.pro/product_prod_HJUWZVeu/03_a56_green_3__5.jpg",
+            "https://cdn.tortoise.pro/product_prod_HJUWZVeu/04_a56_green_4__5.jpg",
+            "https://cdn.tortoise.pro/product_prod_HJUWZVeu/05_a56_green_5__5.jpg",
+            "https://cdn.tortoise.pro/product_prod_HJUWZVeu/06_a56_black_4__1_1.jpg",
+            "https://cdn.tortoise.pro/product_prod_HJUWZVeu/07_a56_black_5__1.jpg",
+            "https://cdn.tortoise.pro/product_prod_HJUWZVeu/08_a56_black_3__1.jpg",
+            "https://cdn.tortoise.pro/product_prod_HJUWZVeu/09_a56_black_2__1.jpg"
+          ]
+        }
+      },
+      {
+        "name": "Galaxy S24",
+        "variants": [
+          {
+            "storage": "128GB",
+            "price": "₹48,600"
+          },
+          {
+            "storage": "256GB",
+            "price": "₹54,386"
+          }
+        ],
+        "images": {
+          "hero": "https://images.samsung.com/is/image/samsung/p6pim/in/sm-s921bzabins/gallery/in-galaxy-s24-492654-492654-sm-s921bzabins-thumb-541169452",
+          "gallery": [
+            "https://images.samsung.com/is/image/samsung/p6pim/in/sm-s921bzkcw01/gallery/in-galaxy-s24-527561-sm-s921bzkcw01-thumb-544102578"
+          ]
+        }
+      },
+      {
+        "name": "Galaxy S24 Ultra",
+        "variants": [
+          {
+            "storage": "256GB",
+            "price": "₹92,458"
+          },
+          {
+            "storage": "512GB",
+            "price": "₹1,00,227"
+          }
+        ],
+        "images": {
+          "hero": "https://images.samsung.com/is/image/samsung/p6pim/in/2401/gallery/in-galaxy-s24-s928-sm-s928bztqins-thumb-539573348",
+          "gallery": [
+            "https://images.samsung.com/is/image/samsung/p6pim/in/2401/gallery/in-galaxy-s24-s928-sm-s928bzkqins-thumb-539573274",
+            "https://images.samsung.com/is/image/samsung/p6pim/in/2401/gallery/in-galaxy-s24-s928-sm-s928bzkcins-thumb-539573221",
+            "https://images.samsung.com/is/image/samsung/p6pim/in/2401/gallery/in-galaxy-s24-s928-sm-s928bztcins-thumb-539573311",
+            "https://images.samsung.com/is/image/samsung/p6pim/in/sm-s928bzkcw01/gallery/in-galaxy-s24-s928-527564-sm-s928bzkcw01-thumb-544103131"
+          ]
+        }
+      },
+      {
+        "name": "Galaxy S25",
+        "variants": [
+          {
+            "storage": "256GB",
+            "price": "₹67,414"
+          }
+        ],
+        "images": {
+          "hero": "https://images.samsung.com/is/image/samsung/p6pim/in/2501/gallery/in-galaxy-s25-s931-534143-sm-s931bzkcins-thumb-544675163",
+          "gallery": [
+            "https://images.samsung.com/is/image/samsung/p6pim/in/2501/gallery/in-galaxy-s25-s931-534143-sm-s931bzdcins-thumb-544675125",
+            "https://images.samsung.com/is/image/samsung/p6pim/in/2501/gallery/in-galaxy-s25-s931-534143-sm-s931bzrcins-thumb-544789157"
+          ]
+        }
+      },
+      {
+        "name": "Galaxy S25 5G",
+        "variants": [
+          {
+            "ram": "12GB",
+            "storage": "256GB",
+            "price": "₹67,414"
+          },
+          {
+            "ram": "12GB",
+            "storage": "512GB",
+            "price": "₹77,503"
+          }
+        ],
+        "images": {
+          "hero": "https://cdn.tortoise.pro/product_prod_CBfeSz8y/237293_1_.jpg",
+          "gallery": [
+            "https://cdn.tortoise.pro/product_prod_CBfeSz8y/01_237293_2_.jpg",
+            "https://cdn.tortoise.pro/product_prod_CBfeSz8y/02_237293_3_.jpg",
+            "https://cdn.tortoise.pro/product_prod_CBfeSz8y/03_237293_4_.jpg",
+            "https://cdn.tortoise.pro/product_prod_CBfeSz8y/04_237293_5_.jpg",
+            "https://cdn.tortoise.pro/product_prod_CBfeSz8y/05_237293_6_.jpg",
+            "https://cdn.tortoise.pro/product_prod_CBfeSz8y/06_237293_7_.jpg"
+          ]
+        }
+      },
+      {
+        "name": "Galaxy S25 Ultra 5G",
+        "variants": [
+          {
+            "ram": "12GB",
+            "storage": "256GB",
+            "price": "₹1,00,227"
+          },
+          {
+            "ram": "12GB",
+            "storage": "512GB",
+            "price": "₹1,07,478"
+          }
+        ],
+        "images": {
+          "hero": "https://cdn.tortoise.pro/product_prod_fyqRhjE0/samsung-galaxy-s24-ultra-titanium-whitesilver_1__1.jpg",
+          "gallery": [
+            "https://cdn.tortoise.pro/product_prod_fyqRhjE0/01_0.jpg",
+            "https://cdn.tortoise.pro/product_prod_fyqRhjE0/02_samsung-galaxy-s24-ultra-titanium-whitesilver_2__1.jpg",
+            "https://cdn.tortoise.pro/product_prod_fyqRhjE0/03_samsung-galaxy-s24-ultra-titanium-whitesilver_3__1.jpg",
+            "https://cdn.tortoise.pro/product_prod_fyqRhjE0/04_samsung-galaxy-s24-ultra-titanium-whitesilver_4__1.jpg",
+            "https://cdn.tortoise.pro/product_prod_fyqRhjE0/05_samsung-galaxy-s24-ultra-titanium-whitesilver_5__1.jpg",
+            "https://cdn.tortoise.pro/product_prod_fyqRhjE0/06_samsung-galaxy-s24-ultra-titanium-whitesilver_6__1.jpg",
+            "https://cdn.tortoise.pro/product_prod_fyqRhjE0/07_samsung-galaxy-s24-ultra-titanium-whitesilver_8__1.jpg",
+            "https://cdn.tortoise.pro/product_prod_fyqRhjE0/08_samsung-galaxy-s24-ultra-titanium-whitesilver_7__1.jpg",
+            "https://cdn.tortoise.pro/product_prod_fyqRhjE0/09_samsung-galaxy-s24-ultra-titanium-whitesilver_9__1.jpg"
+          ]
+        }
+      },
+      {
+        "name": "Galaxy S26",
+        "variants": [
+          {
+            "ram": "12GB",
+            "storage": "256GB",
+            "price": "₹79,000"
+          },
+          {
+            "ram": "12GB",
+            "storage": "512GB",
+            "price": "₹94,500"
+          }
+        ],
+        "images": {
+          "hero": "https://cdn.tortoise.pro/product_prod_qpI9vbwg/252428_1__1.jpg",
+          "gallery": [
+            "https://cdn.tortoise.pro/product_prod_qpI9vbwg/01_252428_4__1.jpg",
+            "https://cdn.tortoise.pro/product_prod_qpI9vbwg/02_252428_3__1.jpg",
+            "https://cdn.tortoise.pro/product_prod_qpI9vbwg/03_252428_5__1.jpg",
+            "https://cdn.tortoise.pro/product_prod_qpI9vbwg/04_252428_6__1.jpg",
+            "https://cdn.tortoise.pro/product_prod_qpI9vbwg/05_252428_8__1.jpg",
+            "https://cdn.tortoise.pro/product_prod_qpI9vbwg/06_252428_10__1.jpg",
+            "https://cdn.tortoise.pro/product_prod_qpI9vbwg/07_252428_7__1.jpg"
+          ]
+        }
+      },
+      {
+        "name": "Galaxy S26 Ultra",
+        "variants": [
+          {
+            "ram": "12GB",
+            "storage": "256GB",
+            "price": "₹1,27,500"
+          },
+          {
+            "ram": "12GB",
+            "storage": "512GB",
+            "price": "₹1,39,499"
+          },
+          {
+            "ram": "16GB",
+            "storage": "1TB",
+            "price": "₹1,82,000"
+          },
+          {
+            "storage": "512GB",
+            "price": "₹1,42,500"
+          }
+        ],
+        "images": {
+          "hero": "https://cdn.tortoise.pro/product_prod_y4SiG5sW/252442_1__1.jpg",
+          "gallery": [
+            "https://cdn.tortoise.pro/product_prod_y4SiG5sW/01_252442_2__1.jpg",
+            "https://cdn.tortoise.pro/product_prod_y4SiG5sW/02_252442_7__1.jpg",
+            "https://cdn.tortoise.pro/product_prod_y4SiG5sW/03_252442_6__1.jpg",
+            "https://cdn.tortoise.pro/product_prod_y4SiG5sW/04_252442_5__1.jpg",
+            "https://cdn.tortoise.pro/product_prod_y4SiG5sW/05_252442_3__1.jpg",
+            "https://cdn.tortoise.pro/product_prod_y4SiG5sW/06_252442_8__1.jpg",
+            "https://cdn.tortoise.pro/product_prod_y4SiG5sW/07_252442_4__1.jpg"
+          ]
+        }
+      },
+      {
+        "name": "Galaxy S26+",
+        "variants": [
+          {
+            "storage": "256GB",
+            "price": "₹1,08,000"
+          },
+          {
+            "storage": "512GB",
+            "price": "₹1,28,000"
+          }
+        ],
+        "images": {
+          "hero": "https://images.samsung.com/is/image/samsung/p6pim/in/s2602/gallery/in-galaxy-s26-s947-sm-s947bzvcins-thumb-550876449",
+          "gallery": [
+            "https://images.samsung.com/is/image/samsung/p6pim/in/s2602/gallery/in-galaxy-s26-s947-sm-s947bzkbins-thumb-550876392",
+            "https://images.samsung.com/is/image/samsung/p6pim/in/s2602/gallery/in-galaxy-s26-s947-sm-s947bzkcins-thumb-550876411",
+            "https://images.samsung.com/is/image/samsung/p6pim/in/s2602/gallery/in-galaxy-s26-s947-sm-s947bzvbins-thumb-550876430"
+          ]
+        }
+      },
+      {
+        "name": "Galaxy Z Flip6",
+        "variants": [
+          {
+            "storage": "256GB",
+            "price": "₹77,800"
+          }
+        ],
+        "images": {
+          "hero": "https://images.samsung.com/is/image/samsung/p6pim/in/sm-f741blbains/gallery/in-galaxy-zflip6-f741-513517-sm-f741blbains-thumb-542848009",
+          "gallery": [
+            "https://images.samsung.com/is/image/samsung/p6pim/in/sm-f741bzsains/gallery/in-galaxy-zflip6-f741-513517-sm-f741bzsains-thumb-542848484"
+          ]
+        }
+      },
+      {
+        "name": "Galaxy Z Fold6",
+        "variants": [
+          {
+            "storage": "256GB",
+            "price": "₹1,27,579"
+          },
+          {
+            "storage": "512GB",
+            "price": "₹1,36,914"
+          }
+        ],
+        "images": {
+          "hero": "https://images.samsung.com/is/image/samsung/p6pim/in/sm-f956bzsdins/gallery/in-galaxy-z-fold6-f956-514252-sm-f956bzsdins-thumb-542845602",
+          "gallery": [
+            "https://images.samsung.com/is/image/samsung/p6pim/in/sm-f956bdbdins/gallery/in-galaxy-z-fold6-f956-514252-sm-f956bdbdins-thumb-542846059",
+            "https://images.samsung.com/is/image/samsung/p6pim/in/sm-f956bdbgins/gallery/in-galaxy-z-fold6-f956-514252-sm-f956bdbgins-thumb-542846149",
+            "https://images.samsung.com/is/image/samsung/p6pim/in/sm-f956bzsgins/gallery/in-galaxy-z-fold6-f956-514252-sm-f956bzsgins-thumb-542845716"
+          ]
+        }
+      },
+      {
+        "name": "Galaxy Z Fold7 5G",
+        "variants": [
+          {
+            "ram": "12GB",
+            "storage": "256GB",
+            "price": "₹1,61,000"
+          },
+          {
+            "ram": "12GB",
+            "storage": "512GB",
+            "price": "₹1,76,000"
+          }
+        ],
+        "images": {
+          "hero": "https://cdn.tortoise.pro/product_prod_bTEO4xBl/in-galaxy-z-fold7-f966-sm-f966bdbgins-547543120.jpg",
+          "gallery": [
+            "https://cdn.tortoise.pro/product_prod_bTEO4xBl/01_-original-imahdvvwusdmhupq_3.jpg",
+            "https://cdn.tortoise.pro/product_prod_bTEO4xBl/02_-original-imahdvvwqrzh5nnh_3.jpg",
+            "https://cdn.tortoise.pro/product_prod_bTEO4xBl/03_-original-imahdvvwwcfy2vyk_3.jpg",
+            "https://cdn.tortoise.pro/product_prod_bTEO4xBl/04_-original-imahdvvwtgbtnvpz_3.jpg",
+            "https://cdn.tortoise.pro/product_prod_bTEO4xBl/05_-original-imahdvvwmpuqb99b_3.jpg",
+            "https://cdn.tortoise.pro/product_prod_bTEO4xBl/06_-original-imahdvvwugdfuygh_1.jpg",
+            "https://cdn.tortoise.pro/product_prod_bTEO4xBl/07_in-galaxy-z-fold7-f966-sm-f966bdbgins-547543106.jpg",
+            "https://cdn.tortoise.pro/product_prod_bTEO4xBl/08_in-galaxy-z-fold7-f966-sm-f966bdbgins-547543104.jpg",
+            "https://cdn.tortoise.pro/product_prod_bTEO4xBl/09_in-galaxy-z-fold7-f966-sm-f966bdbgins-547543105.jpg",
+            "https://cdn.tortoise.pro/product_prod_bTEO4xBl/10_in-galaxy-z-fold7-f966-sm-f966bdbgins-547543107.jpg",
+            "https://cdn.tortoise.pro/product_prod_bTEO4xBl/11_in-galaxy-z-fold7-f966-sm-f966bdbgins-547543108.jpg",
+            "https://cdn.tortoise.pro/product_prod_bTEO4xBl/12_in-galaxy-z-fold7-f966-sm-f966bdbgins-547543103.jpg"
+          ]
+        }
+      },
+      {
+        "name": "SAMSUNG Galaxy A17 5G",
+        "variants": [
+          {
+            "ram": "6GB",
+            "storage": "128GB",
+            "price": "₹19,200"
+          },
+          {
+            "ram": "8GB",
+            "storage": "128GB",
+            "price": "₹21,600"
+          },
+          {
+            "ram": "8GB",
+            "storage": "256GB",
+            "price": "₹25,600"
+          }
+        ],
+        "images": {
+          "hero": "https://storage.googleapis.com/tortoise-public-assets/products/SAMSUNG%20Galaxy%20A17%205G%20(8GB%20RAM%2C%20128GB%2C%20Gray)%20.webp",
+          "gallery": [
+            "https://storage.googleapis.com/tortoise-public-assets/products/SAMSUNG%20Galaxy%20A17%205G%20(8GB%20RAM%2C%20128GB%2C%20Blue)%20.webp",
+            "https://storage.googleapis.com/tortoise-public-assets/products/SAMSUNG%20Galaxy%20A17%205G%20(8GB%20RAM%2C%20128GB%2C%20Black)%20.webp"
+          ]
+        }
+      },
+      {
+        "name": "Samsung Galaxy Z Flip7 5G",
+        "variants": [
+          {
+            "ram": "12GB",
+            "storage": "256GB",
+            "price": "₹96,500"
+          },
+          {
+            "ram": "12GB",
+            "storage": "512GB",
+            "price": "₹1,10,502"
+          }
+        ],
+        "images": {
+          "hero": "https://storage.googleapis.com/tortoise-public-assets/products/SM-F766BDBAINS.webp",
+          "gallery": [
+            "https://storage.googleapis.com/tortoise-public-assets/products/SM-F766BZKAINS.webp"
+          ]
+        }
+      }
+    ],
+    "Google": [
+      {
+        "name": "Pixel 10",
+        "variants": [
+          {
+            "ram": "12GB",
+            "storage": "256GB",
+            "price": "₹67,499"
+          }
+        ],
+        "images": {
+          "hero": "https://cdn.tortoise.pro/product_prod_oBqdUM7F/Pixel 10-indigo.png",
+          "gallery": [
+            "https://cdn.tortoise.pro/product_prod_oBqdUM7F/01_0.jpg",
+            "https://cdn.tortoise.pro/product_prod_oBqdUM7F/02_pixel_10_3__3.jpg",
+            "https://cdn.tortoise.pro/product_prod_oBqdUM7F/03_pixel_10_2__3.jpg",
+            "https://cdn.tortoise.pro/product_prod_oBqdUM7F/04_pixel_10_7__3.jpg",
+            "https://cdn.tortoise.pro/product_prod_oBqdUM7F/05_pixel_10_5__3.jpg",
+            "https://cdn.tortoise.pro/product_prod_oBqdUM7F/06_pixel_10_4__3.jpg",
+            "https://cdn.tortoise.pro/product_prod_oBqdUM7F/07_pixel_10_6__3.jpg",
+            "https://cdn.tortoise.pro/product_prod_oBqdUM7F/08_pixel_10_1__3.jpg",
+            "https://cdn.tortoise.pro/product_prod_oBqdUM7F/09_p10_indigo_back_.jpg",
+            "https://cdn.tortoise.pro/product_prod_oBqdUM7F/10_p10_indigo_double_.jpg",
+            "https://cdn.tortoise.pro/product_prod_oBqdUM7F/11_p10_indigo_right_.jpg",
+            "https://cdn.tortoise.pro/product_prod_oBqdUM7F/12_p10_indigo_back_right_.jpg",
+            "https://cdn.tortoise.pro/product_prod_oBqdUM7F/13_pixel_10_w_3_.jpg"
+          ],
+          "lifestyle": [
+            "https://cdn.tortoise.pro/product_prod_oBqdUM7F/01_pixel 10 A+.JPG"
+          ]
+        }
+      },
+      {
+        "name": "Pixel 10 Pro",
+        "variants": [
+          {
+            "ram": "16GB",
+            "storage": "256GB",
+            "price": "₹97,241"
+          }
+        ],
+        "images": {
+          "hero": "https://cdn.tortoise.pro/product_prod_z5n5N8NP/Google-Pixel-10-Pro-Porcelain.png",
+          "gallery": [
+            "https://storage.googleapis.com/tortoise-public-assets/alt_image_p10p_1.PNG"
+          ]
+        }
+      },
+      {
+        "name": "Pixel 10 Pro Fold",
+        "variants": [
+          {
+            "ram": "16GB",
+            "storage": "256GB",
+            "price": "₹1,58,499"
+          }
+        ],
+        "images": {
+          "hero": "https://cdn.tortoise.pro/product_prod_xgkolyWs/Pixel 10 Pro Fold.png"
+        }
+      },
+      {
+        "name": "Pixel 10 Pro XL",
+        "variants": [
+          {
+            "ram": "16GB",
+            "storage": "256GB",
+            "price": "₹1,10,037"
+          }
+        ],
+        "images": {
+          "hero": "https://cdn.tortoise.pro/product_prod_3ZNyw4W1/10_Pro_XL_-_Jade.png",
+          "gallery": [
+            "https://cdn.tortoise.pro/product_prod_3ZNyw4W1/01_0.jpg",
+            "https://cdn.tortoise.pro/product_prod_3ZNyw4W1/02_google_pixel_10_pro_xl_5g_16gb_ram256gb_jade_12_.jpg",
+            "https://cdn.tortoise.pro/product_prod_3ZNyw4W1/03_google_pixel_10_pro_xl_5g_16gb_ram256gb_jade_8_.jpg",
+            "https://cdn.tortoise.pro/product_prod_3ZNyw4W1/04_google_pixel_10_pro_xl_5g_16gb_ram256gb_jade_13_.jpg",
+            "https://cdn.tortoise.pro/product_prod_3ZNyw4W1/05_google_pixel_10_pro_xl_5g_16gb_ram256gb_jade_9_.jpg",
+            "https://cdn.tortoise.pro/product_prod_3ZNyw4W1/06_google_pixel_10_pro_xl_5g_16gb_ram256gb_jade_4_.jpg",
+            "https://cdn.tortoise.pro/product_prod_3ZNyw4W1/07_google_pixel_10_pro_xl_5g_16gb_ram256gb_jade_11_.jpg",
+            "https://cdn.tortoise.pro/product_prod_3ZNyw4W1/08_google_pixel_10_pro_xl_5g_16gb_ram256gb_jade_6_.jpg",
+            "https://cdn.tortoise.pro/product_prod_3ZNyw4W1/09_google_pixel_10_pro_xl_5g_16gb_ram256gb_jade_2_.jpg",
+            "https://cdn.tortoise.pro/product_prod_3ZNyw4W1/10_google_pixel_10_pro_xl_5g_16gb_ram256gb_jade_14_.jpg",
+            "https://cdn.tortoise.pro/product_prod_3ZNyw4W1/11_google_pixel_10_pro_xl_5g_16gb_ram256gb_jade_10_.jpg",
+            "https://cdn.tortoise.pro/product_prod_3ZNyw4W1/12_google_pixel_10_pro_xl_5g_16gb_ram256gb_jade_3_.jpg",
+            "https://cdn.tortoise.pro/product_prod_3ZNyw4W1/13_google_pixel_10_pro_xl_5g_16gb_ram256gb_jade_7_.jpg",
+            "https://cdn.tortoise.pro/product_prod_3ZNyw4W1/14_google_pixel_10_pro_xl_5g_16gb_ram256gb_jade_5_.jpg"
+          ],
+          "lifestyle": [
+            "https://cdn.tortoise.pro/product_prod_3ZNyw4W1/01_pixel-10-pro-xl.JPG"
+          ]
+        }
+      },
+      {
+        "name": "Pixel 10A",
+        "variants": [
+          {
+            "storage": "256GB",
+            "price": "₹46,699"
+          }
+        ],
+        "images": {
+          "hero": "https://cdn.tortoise.pro/product_prod_TI4oHNEZ/Pixel 10a-blue.png",
+          "gallery": [
+            "https://cdn.tortoise.pro/product_prod_wtLxm2vD/Pixel 10a-berry.png",
+            "https://cdn.tortoise.pro/product_prod_St6WbqAk/Pixel 10a-fog.png",
+            "https://cdn.tortoise.pro/product_prod_f6XLA0Jf/Pixel 10a-black.png"
+          ]
+        }
+      },
+      {
+        "name": "Pixel 8A",
+        "variants": [
+          {
+            "ram": "8GB",
+            "storage": "128GB",
+            "price": "₹32,100"
+          },
+          {
+            "ram": "8GB",
+            "storage": "256GB",
+            "price": "₹36,380"
+          }
+        ],
+        "images": {
+          "hero": "https://cdn.tortoise.pro/products/pixel/GA04432-IN.webp",
+          "gallery": [
+            "https://cdn.tortoise.pro/products/pixel/GA04988-IN.webp",
+            "https://cdn.tortoise.pro/products/pixel/GA05571-IN.webp"
+          ]
+        }
+      },
+      {
+        "name": "Pixel 9",
+        "variants": [
+          {
+            "ram": "12GB",
+            "storage": "256GB",
+            "price": "₹59,920"
+          }
+        ],
+        "images": {
+          "hero": "https://cdn.tortoise.pro/products/pixel/GA05842-IN.webp",
+          "gallery": [
+            "https://cdn.tortoise.pro/products/pixel/GA05844-IN.webp",
+            "https://cdn.tortoise.pro/products/pixel/GA05843-IN.webp",
+            "https://cdn.tortoise.pro/products/pixel/GA09342-IN.webp"
+          ]
+        }
+      },
+      {
+        "name": "Pixel 9 Pro Fold",
+        "variants": [
+          {
+            "ram": "16GB",
+            "storage": "256GB",
+            "price": "₹1,27,331"
+          }
+        ],
+        "images": {
+          "hero": "https://cdn.tortoise.pro/products/pixel/GA04795-IN.webp"
+        }
+      },
+      {
+        "name": "Pixel 9A",
+        "variants": [
+          {
+            "ram": "8GB",
+            "storage": "256GB",
+            "price": "₹36,999"
+          }
+        ],
+        "images": {
+          "hero": "https://cdn.tortoise.pro/product_prod_BtZ3nWyW/Pixel 9a-black.png",
+          "gallery": [
+            "https://cdn.tortoise.pro/product_prod_BtZ3nWyW/01_0.jpg",
+            "https://cdn.tortoise.pro/product_prod_BtZ3nWyW/02_r_pixel_info_1__1.jpg",
+            "https://cdn.tortoise.pro/product_prod_BtZ3nWyW/03_r_pixel_info_2__1.jpg",
+            "https://cdn.tortoise.pro/product_prod_BtZ3nWyW/04_r_pixel_info_3__1.jpg",
+            "https://cdn.tortoise.pro/product_prod_BtZ3nWyW/05_google-pixel-9a-osidian_5_.jpg",
+            "https://cdn.tortoise.pro/product_prod_BtZ3nWyW/06_google-pixel-9a-osidian_2_.jpg",
+            "https://cdn.tortoise.pro/product_prod_BtZ3nWyW/07_google-pixel-9a-osidian_6_.jpg",
+            "https://cdn.tortoise.pro/product_prod_BtZ3nWyW/08_google-pixel-9a-osidian_4_.jpg",
+            "https://cdn.tortoise.pro/product_prod_BtZ3nWyW/09_google-pixel-9a-osidian_3_.jpg",
+            "https://cdn.tortoise.pro/product_prod_BtZ3nWyW/10_r_obsidian.jpg"
+          ],
+          "lifestyle": [
+            "https://cdn.tortoise.pro/product_prod_BtZ3nWyW/01_Pixel9A.jpg"
+          ]
+        }
+      }
+    ],
+    "OnePlus": [
+      {
+        "name": "Nord 6",
+        "variants": [
+          {
+            "ram": "8GB",
+            "storage": "256GB",
+            "price": "₹44,999"
+          },
+          {
+            "ram": "12GB",
+            "storage": "256GB",
+            "price": "₹49,999"
+          }
+        ],
+        "images": {
+          "hero": "https://cdn.tortoise.pro/product_prod_lysIhJA1/nord6_black_1.webp.jpg",
+          "gallery": [
+            "https://cdn.tortoise.pro/product_prod_lysIhJA1/01_nord6_black_2.webp.jpg",
+            "https://cdn.tortoise.pro/product_prod_lysIhJA1/02_nord6_black_3.jpg"
+          ]
+        }
+      },
+      {
+        "name": "Nord CE6",
+        "variants": [
+          {
+            "ram": "8GB",
+            "storage": "128GB",
+            "price": "₹35,999"
+          },
+          {
+            "ram": "8GB",
+            "storage": "256GB",
+            "price": "₹38,999"
+          }
+        ],
+        "images": {
+          "hero": "https://cdn.tortoise.pro/product_prod_HI3Evswa/black_2_3.jpg",
+          "gallery": [
+            "https://cdn.tortoise.pro/product_prod_HI3Evswa/01_ce6_common_2__3.jpg",
+            "https://cdn.tortoise.pro/product_prod_HI3Evswa/02_ce6_common_7__3.jpg",
+            "https://cdn.tortoise.pro/product_prod_HI3Evswa/03_ce6_common_4__3.jpg",
+            "https://cdn.tortoise.pro/product_prod_HI3Evswa/04_ce6_common_8__3.jpg",
+            "https://cdn.tortoise.pro/product_prod_HI3Evswa/05_ce6_common_1__3.jpg",
+            "https://cdn.tortoise.pro/product_prod_HI3Evswa/06_ce6_common_5__3.jpg",
+            "https://cdn.tortoise.pro/product_prod_HI3Evswa/07_ce6_common_6__3.jpg",
+            "https://cdn.tortoise.pro/product_prod_HI3Evswa/08_ce6_common_3__3.jpg",
+            "https://cdn.tortoise.pro/product_prod_HI3Evswa/09_black1.webp.jpg",
+            "https://cdn.tortoise.pro/product_prod_HI3Evswa/10_black2.webp.jpg",
+            "https://cdn.tortoise.pro/product_prod_HI3Evswa/11_black3.webp.jpg"
+          ],
+          "lifestyle": [
+            "https://cdn.tortoise.pro/product_prod_HI3Evswa/01_aplus.jpg"
+          ]
+        }
+      },
+      {
+        "name": "OnePlus 13",
+        "variants": [
+          {
+            "ram": "12GB",
+            "storage": "256GB",
+            "price": "₹65,595"
+          },
+          {
+            "ram": "16GB",
+            "storage": "512GB",
+            "price": "₹72,659"
+          },
+          {
+            "ram": "24GB",
+            "storage": "1TB",
+            "price": "₹85,778"
+          }
+        ],
+        "images": {
+          "hero": "https://cdn.tortoise.pro/products/oneplus/CPH2649-5011110321.png",
+          "gallery": [
+            "https://cdn.tortoise.pro/products/oneplus/CPH2649-5011111409.png",
+            "https://cdn.tortoise.pro/products/oneplus/CPH2649-5011110320.png",
+            "https://cdn.tortoise.pro/products/oneplus/CPH2649-5011110322.png",
+            "https://cdn.tortoise.pro/products/oneplus/CPH2649-5011111414.png",
+            "https://cdn.tortoise.pro/products/oneplus/CPH2649-5011110318.png",
+            "https://cdn.tortoise.pro/products/oneplus/CPH2649-5011111620.png"
+          ]
+        }
+      },
+      {
+        "name": "OnePlus 13R",
+        "variants": [
+          {
+            "ram": "12GB",
+            "storage": "256GB",
+            "price": "₹43,393"
+          },
+          {
+            "ram": "16GB",
+            "storage": "512GB",
+            "price": "₹48,439"
+          }
+        ],
+        "images": {
+          "hero": "https://cdn.tortoise.pro/products/oneplus/CPH2649-5011111067.png",
+          "gallery": [
+            "https://cdn.tortoise.pro/products/oneplus/CPH2649-5011111066.png",
+            "https://cdn.tortoise.pro/products/oneplus/CPH2649-5011111062.png",
+            "https://cdn.tortoise.pro/products/oneplus/CPH2649-5011111063.png"
+          ]
+        }
+      },
+      {
+        "name": "OnePlus 13s",
+        "variants": [
+          {
+            "ram": "12GB",
+            "storage": "256GB",
+            "price": "₹55,502"
+          },
+          {
+            "ram": "12GB",
+            "storage": "512GB",
+            "price": "₹60,548"
+          }
+        ],
+        "images": {
+          "hero": "https://storage.googleapis.com/tortoise-public-assets/products/oneplus_13s_black_velvet.webp",
+          "gallery": [
+            "https://storage.googleapis.com/tortoise-public-assets/oneplus_13s_green_silk.webp",
+            "https://storage.googleapis.com/tortoise-public-assets/oneplus_13s_pink_satin.webp"
+          ]
+        }
+      },
+      {
+        "name": "Oneplus 15",
+        "variants": [
+          {
+            "storage": "256GB",
+            "price": "₹72,999"
+          },
+          {
+            "storage": "512GB",
+            "price": "₹79,999"
+          }
+        ],
+        "images": {
+          "hero": "https://storage.googleapis.com/tortoise-public-assets/products/OnePlus%2015%205G%20(12GB%20RAM%2C%20256GB%2C%20Ultra%20Voilet)%20.webp",
+          "gallery": [
+            "https://storage.googleapis.com/tortoise-public-assets/products/OnePlus%2015%205G%20(12GB%20RAM%2C%20256GB%2C%20Sand%20Storm)%20.webp",
+            "https://storage.googleapis.com/tortoise-public-assets/products/OnePlus%2015%205G%20(12GB%20RAM%2C%20256GB%2C%20Infinite%20Black)%20.webp"
+          ]
+        }
+      },
+      {
+        "name": "Oneplus 15R",
+        "variants": [
+          {
+            "ram": "12GB",
+            "storage": "256GB",
+            "price": "₹47,999"
+          },
+          {
+            "ram": "12GB",
+            "storage": "512GB",
+            "price": "₹52,999"
+          }
+        ],
+        "images": {
+          "hero": "https://storage.googleapis.com/tortoise-public-assets/OnePlus%2015R%205G%20(12GB%20RAM%2C%20512GB%2C%20Charcoal%20Black)%20.webp",
+          "gallery": [
+            "https://storage.googleapis.com/tortoise-public-assets/OnePlus%2015R%205G%20(12GB%20RAM%2C%20512GB%2C%20Mint%20Breeze)%20.webp",
+            "https://storage.googleapis.com/tortoise-public-assets/OnePlus%2015R%205G%20(12GB%20RAM%2C%20256GB%2C%20Electric%20Violet)%20.webp"
+          ]
+        }
+      },
+      {
+        "name": "OnePlus Nord 4",
+        "variants": [
+          {
+            "ram": "8GB",
+            "storage": "256GB",
+            "price": "₹28,256"
+          }
+        ],
+        "images": {
+          "hero": "https://cdn.tortoise.pro/products/oneplus/op_5011110277.png",
+          "gallery": [
+            "https://cdn.tortoise.pro/products/oneplus/op_5011110276.png",
+            "https://cdn.tortoise.pro/products/oneplus/op_5011110275.png"
+          ]
+        }
+      },
+      {
+        "name": "OnePlus Nord 5 5G",
+        "variants": [
+          {
+            "ram": "8GB",
+            "storage": "256GB",
+            "price": "₹32,291"
+          },
+          {
+            "ram": "12GB",
+            "storage": "256GB",
+            "price": "₹32,291"
+          },
+          {
+            "ram": "12GB",
+            "storage": "512GB",
+            "price": "₹38,346"
+          }
+        ],
+        "images": {
+          "hero": "https://storage.googleapis.com/tortoise-public-assets/products/oneplus_nord5_phantom_grey.webp",
+          "gallery": [
+            "https://storage.googleapis.com/tortoise-public-assets/product_prod_RORcab9l/01_61OtOTTpzxL._SL1500_.jpg",
+            "https://storage.googleapis.com/tortoise-public-assets/product_prod_RORcab9l/02_51b3Qdn4pCL._SL1500_.jpg",
+            "https://storage.googleapis.com/tortoise-public-assets/product_prod_RORcab9l/03_71%2B3R0i8woL._SL1500_.jpg",
+            "https://storage.googleapis.com/tortoise-public-assets/product_prod_RORcab9l/04_5154jDYzzkL._SL1500_.jpg",
+            "https://storage.googleapis.com/tortoise-public-assets/product_prod_RORcab9l/05_414coi%2BreML._SL1500_.jpg",
+            "https://storage.googleapis.com/tortoise-public-assets/product_prod_RORcab9l/06_61SAzRvqPwL._SL1500_.jpg"
+          ]
+        }
+      },
+      {
+        "name": "OnePlus Nord CE4",
+        "variants": [
+          {
+            "ram": "8GB",
+            "storage": "128GB",
+            "price": "₹23,210"
+          }
+        ],
+        "images": {
+          "hero": "https://cdn.tortoise.pro/products/oneplus/op_5011110020.png",
+          "gallery": [
+            "https://cdn.tortoise.pro/products/oneplus/op_5011110021.png"
+          ]
+        }
+      },
+      {
+        "name": "OnePlus Nord CE4 Lite",
+        "variants": [
+          {
+            "ram": "8GB",
+            "storage": "128GB",
+            "price": "₹17,154"
+          }
+        ],
+        "images": {
+          "hero": "https://cdn.tortoise.pro/products/oneplus/op_5011110200.png",
+          "gallery": [
+            "https://cdn.tortoise.pro/products/oneplus/op_5011110204.png",
+            "https://cdn.tortoise.pro/products/oneplus/op_5011110206.png"
+          ]
+        }
+      },
+      {
+        "name": "OnePlus Nord CE5 5G",
+        "variants": [
+          {
+            "ram": "8GB",
+            "storage": "128GB",
+            "price": "₹25,226"
+          },
+          {
+            "ram": "8GB",
+            "storage": "256GB",
+            "price": "₹27,244"
+          },
+          {
+            "ram": "12GB",
+            "storage": "256GB",
+            "price": "₹29,263"
+          }
+        ],
+        "images": {
+          "hero": "https://storage.googleapis.com/tortoise-public-assets/products/oneplus_nord_ce5_nexus_blue.webp",
+          "gallery": [
+            "https://storage.googleapis.com/tortoise-public-assets/product_prod_a7Q0EoMT/01_616ZzloUDIL._SL1500_.jpg",
+            "https://storage.googleapis.com/tortoise-public-assets/product_prod_a7Q0EoMT/02_51YvibovIuL._SL1500_.jpg",
+            "https://storage.googleapis.com/tortoise-public-assets/product_prod_a7Q0EoMT/03_71b3H4Rg%2B%2BL._SL1500_.jpg",
+            "https://storage.googleapis.com/tortoise-public-assets/product_prod_a7Q0EoMT/04_71Tw2jpOPNL._SL1500_.jpg",
+            "https://storage.googleapis.com/tortoise-public-assets/product_prod_a7Q0EoMT/05_51DSeUgbqCL._SL1500_.jpg",
+            "https://storage.googleapis.com/tortoise-public-assets/product_prod_a7Q0EoMT/06_51fxPK247yL._SL1500_.jpg",
+            "https://storage.googleapis.com/tortoise-public-assets/product_prod_a7Q0EoMT/07_41Pg4t69BTL._SL1500_.jpg",
+            "https://storage.googleapis.com/tortoise-public-assets/product_prod_a7Q0EoMT/08_41laQKF8n2L._SL1500_.jpg",
+            "https://storage.googleapis.com/tortoise-public-assets/product_prod_a7Q0EoMT/09_61xq7LYgaQL._SL1500_.jpg"
+          ]
+        }
+      }
+    ],
+    "Xiaomi": [
+      {
+        "name": "REDMI 14C 5G",
+        "variants": [
+          {
+            "storage": "64GB",
+            "price": "₹8,236"
+          },
+          {
+            "storage": "128GB",
+            "price": "₹9,152"
+          }
+        ],
+        "images": {
+          "hero": "https://storage.googleapis.com/tortoise-public-assets/REDMI%2014C%205G%20Starlight%20BLue.webp",
+          "gallery": [
+            "https://storage.googleapis.com/tortoise-public-assets/REDMI%2014C%205G%20Stardust%20Purple.webp",
+            "https://storage.googleapis.com/tortoise-public-assets/Redmi%2014C%205G%20Stargaze%20Black.webp"
+          ]
+        }
+      },
+      {
+        "name": "Redmi 15",
+        "variants": [
+          {
+            "ram": "6GB",
+            "storage": "128GB",
+            "price": "₹20,499"
+          },
+          {
+            "ram": "8GB",
+            "storage": "128GB",
+            "price": "₹22,499"
+          },
+          {
+            "ram": "8GB",
+            "storage": "256GB",
+            "price": "₹24,499"
+          }
+        ],
+        "images": {
+          "hero": "https://cdn.tortoise.pro/product_prod_rp32kwhT/redmi-15-5g-white_1__2_1.jpg",
+          "gallery": [
+            "https://cdn.tortoise.pro/product_prod_rp32kwhT/01_0.jpg",
+            "https://cdn.tortoise.pro/product_prod_rp32kwhT/02_redmi-15-5g-white_2__2_1.jpg",
+            "https://cdn.tortoise.pro/product_prod_rp32kwhT/03_redmi-15-5g-white_5__2_1.jpg",
+            "https://cdn.tortoise.pro/product_prod_rp32kwhT/04_redmi-15-5g-white_11__2_1.jpg",
+            "https://cdn.tortoise.pro/product_prod_rp32kwhT/05_redmi-15-5g-white_4__2_1.jpg",
+            "https://cdn.tortoise.pro/product_prod_rp32kwhT/06_redmi-15-5g-white_3__2_1.jpg",
+            "https://cdn.tortoise.pro/product_prod_rp32kwhT/07_redmi-15-5g-white_8__2_1.jpg",
+            "https://cdn.tortoise.pro/product_prod_rp32kwhT/08_redmi-15-5g-white_9__2_1.jpg",
+            "https://cdn.tortoise.pro/product_prod_rp32kwhT/09_redmi-15-5g-white_7__2_1.jpg",
+            "https://cdn.tortoise.pro/product_prod_rp32kwhT/10_redmi-15-5g-white_10__2_1.jpg"
+          ],
+          "lifestyle": [
+            "https://cdn.tortoise.pro/product_prod_rp32kwhT/01_redmi-15-5g.jpg"
+          ]
+        }
+      },
+      {
+        "name": "Redmi 15C",
+        "variants": [
+          {
+            "ram": "4GB",
+            "storage": "128GB",
+            "price": "₹16,999"
+          },
+          {
+            "ram": "6GB",
+            "storage": "128GB",
+            "price": "₹18,999"
+          },
+          {
+            "ram": "8GB",
+            "storage": "128GB",
+            "price": "₹20,999"
+          }
+        ],
+        "images": {
+          "hero": "https://cdn.tortoise.pro/product_prod_eRy3FWM4/248695_1__3.jpg",
+          "gallery": [
+            "https://cdn.tortoise.pro/product_prod_eRy3FWM4/01_248695_3__3.jpg",
+            "https://cdn.tortoise.pro/product_prod_eRy3FWM4/02_248695_4__3.jpg",
+            "https://cdn.tortoise.pro/product_prod_eRy3FWM4/03_248695_5__3.jpg",
+            "https://cdn.tortoise.pro/product_prod_eRy3FWM4/04_248695_2__3.jpg",
+            "https://cdn.tortoise.pro/product_prod_eRy3FWM4/05_248695_6__3.jpg",
+            "https://cdn.tortoise.pro/product_prod_eRy3FWM4/06_248695_7__3.jpg",
+            "https://cdn.tortoise.pro/product_prod_eRy3FWM4/07_248695_8__3.jpg",
+            "https://cdn.tortoise.pro/product_prod_eRy3FWM4/08_248695_10__3.jpg",
+            "https://cdn.tortoise.pro/product_prod_eRy3FWM4/09_248695_9__3.jpg"
+          ],
+          "lifestyle": [
+            "https://cdn.tortoise.pro/product_prod_eRy3FWM4/01_Redmi 15C 5G A+.jpg"
+          ]
+        }
+      },
+      {
+        "name": "Redmi A5",
+        "variants": [
+          {
+            "ram": "3GB",
+            "storage": "64GB",
+            "price": "₹8,999"
+          },
+          {
+            "ram": "4GB",
+            "storage": "128GB",
+            "price": "₹9,999"
+          }
+        ],
+        "images": {
+          "hero": "https://cdn.tortoise.pro/product_prod_1Fwvhutq/redmi-a5-gold_1__1.jpg",
+          "gallery": [
+            "https://cdn.tortoise.pro/product_prod_1Fwvhutq/01_redmi-a5-gold_4__1.jpg",
+            "https://cdn.tortoise.pro/product_prod_1Fwvhutq/02_redmi-a5-gold_5__1.jpg",
+            "https://cdn.tortoise.pro/product_prod_1Fwvhutq/03_redmi-a5-gold_8__1.jpg",
+            "https://cdn.tortoise.pro/product_prod_1Fwvhutq/04_redmi-a5-gold_3__1.jpg",
+            "https://cdn.tortoise.pro/product_prod_1Fwvhutq/05_redmi-a5-gold_2__1.jpg",
+            "https://cdn.tortoise.pro/product_prod_1Fwvhutq/06_redmi-a5-gold_6__1.jpg",
+            "https://cdn.tortoise.pro/product_prod_1Fwvhutq/07_redmi-a5-gold_7__1.jpg",
+            "https://cdn.tortoise.pro/product_prod_1Fwvhutq/08_redmi-a5-gold_10__1.jpg",
+            "https://cdn.tortoise.pro/product_prod_1Fwvhutq/09_redmi-a5-gold_11__1.jpg",
+            "https://cdn.tortoise.pro/product_prod_1Fwvhutq/10_redmi-a5-gold_9__1.jpg"
+          ]
+        }
+      },
+      {
+        "name": "REDMI NOTE 14 5G",
+        "variants": [
+          {
+            "storage": "128GB",
+            "price": "₹15,101"
+          },
+          {
+            "storage": "256GB",
+            "price": "₹16,931"
+          }
+        ],
+        "images": {
+          "hero": "https://storage.googleapis.com/tortoise-public-assets/REDMI%20NOTE%2014%205G%20Crimson%20Art.webp",
+          "gallery": [
+            "https://storage.googleapis.com/tortoise-public-assets/REDMI%20NOTE%2014%205G%20Ivy%20Green.webp",
+            "https://storage.googleapis.com/tortoise-public-assets/REDMI%20NOTE%2014%205G%20Phantom%20Purple.webp",
+            "https://storage.googleapis.com/tortoise-public-assets/REDMI%20NOTE%2014%205G%20Titan%20Black.webp",
+            "https://storage.cloud.google.com/tortoise-public-assets/REDMI%20NOTE%2014%205G%20Mystique%20White.webp"
+          ]
+        }
+      },
+      {
+        "name": "REDMI NOTE 14 Pro 5G",
+        "variants": [
+          {
+            "storage": "128GB",
+            "price": "₹20,135"
+          },
+          {
+            "storage": "256GB",
+            "price": "₹21,965"
+          }
+        ],
+        "images": {
+          "hero": "https://storage.googleapis.com/tortoise-public-assets/Redmi%20Note%2014%20Pro%205G%20Champange%20Gold.webp",
+          "gallery": [
+            "https://storage.googleapis.com/tortoise-public-assets/Redmi%20Note%2014%20Pro%205G%20Ivy%20Green.webp",
+            "https://storage.googleapis.com/tortoise-public-assets/Redmi%20Note%2014%20Pro%205G%20Phantom%20Purple.webp",
+            "https://storage.googleapis.com/tortoise-public-assets/Redmi%20Note%2014%20Pro%205G%20Titan%20Black.webp"
+          ]
+        }
+      },
+      {
+        "name": "REDMI NOTE 14 Pro+ 5G",
+        "variants": [
+          {
+            "storage": "128GB",
+            "price": "₹24,711"
+          },
+          {
+            "storage": "256GB",
+            "price": "₹26,541"
+          },
+          {
+            "storage": "512GB",
+            "price": "₹29,287"
+          }
+        ],
+        "images": {
+          "hero": "https://storage.googleapis.com/tortoise-public-assets/REDMI%20NOTE%2014PRO%2B%205G%20Titan%20Black.webp",
+          "gallery": [
+            "https://storage.googleapis.com/tortoise-public-assets/REDMI%20NOTE%2014PRO%2B%205G%20Phantom%20Purple.webp",
+            "https://storage.googleapis.com/tortoise-public-assets/REDMI%20NOTE%2014PRO%2B%205G%20Spectre%20Blue.webp"
+          ]
+        }
+      },
+      {
+        "name": "Redmi Note 15",
+        "variants": [
+          {
+            "storage": "128GB",
+            "price": "₹26,999"
+          },
+          {
+            "storage": "256GB",
+            "price": "₹29,999"
+          }
+        ],
+        "images": {
+          "hero": "https://cdn.tortoise.pro/product_prod_G4viReEt/250991_1_.jpg",
+          "gallery": [
+            "https://cdn.tortoise.pro/product_prod_G4viReEt/01_250991_5_.jpg",
+            "https://cdn.tortoise.pro/product_prod_G4viReEt/02_250991_6_.jpg",
+            "https://cdn.tortoise.pro/product_prod_G4viReEt/03_250991_8_.jpg",
+            "https://cdn.tortoise.pro/product_prod_G4viReEt/04_250991_12_.jpg",
+            "https://cdn.tortoise.pro/product_prod_G4viReEt/05_250991_13_.jpg",
+            "https://cdn.tortoise.pro/product_prod_G4viReEt/06_250991_7_.jpg",
+            "https://cdn.tortoise.pro/product_prod_G4viReEt/07_250991_3_.jpg",
+            "https://cdn.tortoise.pro/product_prod_G4viReEt/08_250991_4_.jpg",
+            "https://cdn.tortoise.pro/product_prod_G4viReEt/09_250991_9_.jpg",
+            "https://cdn.tortoise.pro/product_prod_G4viReEt/10_250991_14_.jpg",
+            "https://cdn.tortoise.pro/product_prod_G4viReEt/11_250991_10_.jpg",
+            "https://cdn.tortoise.pro/product_prod_G4viReEt/12_250991_15_.jpg",
+            "https://cdn.tortoise.pro/product_prod_G4viReEt/13_250991_2_.jpg",
+            "https://cdn.tortoise.pro/product_prod_G4viReEt/14_250991_11_.jpg"
+          ],
+          "lifestyle": [
+            "https://cdn.tortoise.pro/product_prod_G4viReEt/01_Redmi Note 15 5g.jpg"
+          ]
+        }
+      },
+      {
+        "name": "Redmi Note 15 Pro",
+        "variants": [
+          {
+            "storage": "128GB",
+            "price": "₹31,999"
+          },
+          {
+            "storage": "256GB",
+            "price": "₹34,999"
+          }
+        ],
+        "images": {
+          "hero": "https://cdn.tortoise.pro/product_prod_EtPeZpb7/redmi_note_15_pro_5g_silver_ash_1__1.jpg",
+          "gallery": [
+            "https://cdn.tortoise.pro/product_prod_EtPeZpb7/01_redmi_note_15_pro_5g_silver_ash_2__1.jpg",
+            "https://cdn.tortoise.pro/product_prod_EtPeZpb7/02_redmi_note_15_pro_5g_silver_ash_3__1.jpg",
+            "https://cdn.tortoise.pro/product_prod_EtPeZpb7/03_redmi_note_15_pro_5g_silver_ash_5__1.jpg",
+            "https://cdn.tortoise.pro/product_prod_EtPeZpb7/04_redmi_note_15_pro_5g_silver_ash_4__1.jpg",
+            "https://cdn.tortoise.pro/product_prod_EtPeZpb7/05_redmi_note_15_pro_5g_silver_ash_7__1.jpg",
+            "https://cdn.tortoise.pro/product_prod_EtPeZpb7/06_redmi_note_15_pro_5g_silver_ash_6__1.jpg",
+            "https://cdn.tortoise.pro/product_prod_EtPeZpb7/07_redmi_note_15_pro_5g_silver_ash_8__1.jpg",
+            "https://cdn.tortoise.pro/product_prod_EtPeZpb7/08_redmi_note_15_pro_5g_silver_ash_9__1.jpg",
+            "https://cdn.tortoise.pro/product_prod_EtPeZpb7/09_redmi_note_15_pro_5g_silver_ash_10__1.jpg",
+            "https://cdn.tortoise.pro/product_prod_EtPeZpb7/10_redmi_note_15_pro_5g_silver_ash_11__1.jpg"
+          ],
+          "lifestyle": [
+            "https://cdn.tortoise.pro/product_prod_EtPeZpb7/01_Redmi Note 15 Pro 5G A+.jpg"
+          ]
+        }
+      },
+      {
+        "name": "Redmi Note 15 Pro+",
+        "variants": [
+          {
+            "ram": "8GB",
+            "storage": "256GB",
+            "price": "₹39,999"
+          },
+          {
+            "ram": "12GB",
+            "storage": "256GB",
+            "price": "₹41,999"
+          },
+          {
+            "ram": "12GB",
+            "storage": "512GB",
+            "price": "₹44,999"
+          }
+        ],
+        "images": {
+          "hero": "https://cdn.tortoise.pro/product_prod_cm9j2kuT/black_1__4_1.jpg",
+          "gallery": [
+            "https://cdn.tortoise.pro/product_prod_cm9j2kuT/01_black_5__3.jpg",
+            "https://cdn.tortoise.pro/product_prod_cm9j2kuT/02_black_3__4.jpg",
+            "https://cdn.tortoise.pro/product_prod_cm9j2kuT/03_black_8__3.jpg",
+            "https://cdn.tortoise.pro/product_prod_cm9j2kuT/04_black_11__2.jpg",
+            "https://cdn.tortoise.pro/product_prod_cm9j2kuT/05_black_2__4.jpg",
+            "https://cdn.tortoise.pro/product_prod_cm9j2kuT/06_black_7__3.jpg",
+            "https://cdn.tortoise.pro/product_prod_cm9j2kuT/07_black_4__3.jpg",
+            "https://cdn.tortoise.pro/product_prod_cm9j2kuT/08_black_6__3.jpg",
+            "https://cdn.tortoise.pro/product_prod_cm9j2kuT/09_black_10__2.jpg",
+            "https://cdn.tortoise.pro/product_prod_cm9j2kuT/10_black_9__4.jpg"
+          ],
+          "lifestyle": [
+            "https://cdn.tortoise.pro/product_prod_cm9j2kuT/01_REDMI Note 15 ProA++.jpg"
+          ]
+        }
+      }
+    ],
+    "OPPO": [
+      {
+        "name": "A6 5G",
+        "variants": [
+          {
+            "ram": "4GB",
+            "storage": "128GB",
+            "price": "₹23,999"
+          },
+          {
+            "ram": "6GB",
+            "storage": "128GB",
+            "price": "₹25,999"
+          },
+          {
+            "ram": "6GB",
+            "storage": "256GB",
+            "price": "₹27,999"
+          }
+        ],
+        "images": {
+          "hero": "https://cdn.tortoise.pro/product_prod_wC2bDrd1/a65g_sapphireblue_01.jpg",
+          "gallery": [
+            "https://cdn.tortoise.pro/product_prod_wC2bDrd1/01_a65g_sapphireblue_02.jpg",
+            "https://cdn.tortoise.pro/product_prod_wC2bDrd1/02_a65g_sapphireblue_03.jpg",
+            "https://cdn.tortoise.pro/product_prod_wC2bDrd1/03_a65g_sapphireblue_04.jpg",
+            "https://cdn.tortoise.pro/product_prod_wC2bDrd1/04_a65g_sapphireblue_05.jpg",
+            "https://cdn.tortoise.pro/product_prod_wC2bDrd1/05_a65g_sapphireblue_06.jpg",
+            "https://cdn.tortoise.pro/product_prod_wC2bDrd1/06_a65g_sapphireblue_07.jpg",
+            "https://cdn.tortoise.pro/product_prod_wC2bDrd1/07_a65g_sapphireblue_08.jpg",
+            "https://cdn.tortoise.pro/product_prod_wC2bDrd1/08_a65g_sapphireblue_09.jpg",
+            "https://cdn.tortoise.pro/product_prod_wC2bDrd1/09_a65g_sapphireblue_10.jpg",
+            "https://cdn.tortoise.pro/product_prod_wC2bDrd1/10_a65g_sapphireblue_11.jpg",
+            "https://cdn.tortoise.pro/product_prod_wC2bDrd1/11_a65g_sapphireblue_12.jpg",
+            "https://cdn.tortoise.pro/product_prod_wC2bDrd1/12_a65g_sapphireblue_13.jpg",
+            "https://cdn.tortoise.pro/product_prod_wC2bDrd1/13_a65g_sapphireblue_14.jpg",
+            "https://cdn.tortoise.pro/product_prod_wC2bDrd1/14_a65g_sapphireblue_15.jpg",
+            "https://cdn.tortoise.pro/product_prod_wC2bDrd1/15_a65g_sapphireblue_16.jpg",
+            "https://cdn.tortoise.pro/product_prod_wC2bDrd1/16_a65g_sapphireblue_17.jpg",
+            "https://cdn.tortoise.pro/product_prod_wC2bDrd1/17_a65g_sapphireblue_18.jpg",
+            "https://cdn.tortoise.pro/product_prod_wC2bDrd1/18_a65g_sapphireblue_19.jpg"
+          ],
+          "lifestyle": [
+            "https://cdn.tortoise.pro/product_prod_wC2bDrd1/01_Oppo A6 5GA+.jpg"
+          ]
+        }
+      },
+      {
+        "name": "A6 Pro",
+        "variants": [
+          {
+            "ram": "8GB",
+            "storage": "128GB",
+            "price": "₹28,999"
+          },
+          {
+            "ram": "8GB",
+            "storage": "256GB",
+            "price": "₹31,999"
+          }
+        ],
+        "images": {
+          "hero": "https://cdn.tortoise.pro/product_prod_qEPUgwPW/aurora_gold_1_.jpg",
+          "gallery": [
+            "https://cdn.tortoise.pro/product_prod_qEPUgwPW/01_aurora_gold_2_.jpg",
+            "https://cdn.tortoise.pro/product_prod_qEPUgwPW/02_aurora_gold_3_.jpg",
+            "https://cdn.tortoise.pro/product_prod_qEPUgwPW/03_aurora_gold_4_.jpg",
+            "https://cdn.tortoise.pro/product_prod_qEPUgwPW/04_aurora_gold_5_.jpg",
+            "https://cdn.tortoise.pro/product_prod_qEPUgwPW/05_aurora_gold_6_.jpg",
+            "https://cdn.tortoise.pro/product_prod_qEPUgwPW/06_aurora_gold_7_.jpg",
+            "https://cdn.tortoise.pro/product_prod_qEPUgwPW/07_aurora_gold_8_.jpg",
+            "https://cdn.tortoise.pro/product_prod_qEPUgwPW/08_aurora_gold_9_.jpg",
+            "https://cdn.tortoise.pro/product_prod_qEPUgwPW/09_aurora_gold_10_.jpg",
+            "https://cdn.tortoise.pro/product_prod_qEPUgwPW/10_aurora_gold_11_.jpg",
+            "https://cdn.tortoise.pro/product_prod_qEPUgwPW/11_aurora_gold_12_.jpg",
+            "https://cdn.tortoise.pro/product_prod_qEPUgwPW/12_aurora_gold_13_.jpg",
+            "https://cdn.tortoise.pro/product_prod_qEPUgwPW/13_aurora_gold_14_.jpg",
+            "https://cdn.tortoise.pro/product_prod_qEPUgwPW/14_aurora_gold_15_.jpg",
+            "https://cdn.tortoise.pro/product_prod_qEPUgwPW/15_aurora_gold_16_.jpg",
+            "https://cdn.tortoise.pro/product_prod_qEPUgwPW/16_aurora_gold_17_.jpg",
+            "https://cdn.tortoise.pro/product_prod_qEPUgwPW/17_aurora_gold_18_.jpg"
+          ],
+          "lifestyle": [
+            "https://cdn.tortoise.pro/product_prod_qEPUgwPW/01_OPPO A6 PRO APLUS.jpg"
+          ]
+        }
+      },
+      {
+        "name": "A6x 5G",
+        "variants": [
+          {
+            "ram": "4GB",
+            "storage": "64GB",
+            "price": "₹12,999"
+          },
+          {
+            "ram": "4GB",
+            "storage": "128GB",
+            "price": "₹18,999"
+          },
+          {
+            "ram": "6GB",
+            "storage": "128GB",
+            "price": "₹20,999"
+          }
+        ],
+        "images": {
+          "hero": "https://cdn.tortoise.pro/product_prod_qfdZnvpQ/a6x5g_iceblue_01_2.jpg",
+          "gallery": [
+            "https://cdn.tortoise.pro/product_prod_qfdZnvpQ/01_a6x5g_iceblue_02_2.jpg",
+            "https://cdn.tortoise.pro/product_prod_qfdZnvpQ/02_a6x5g_iceblue_03_2.jpg",
+            "https://cdn.tortoise.pro/product_prod_qfdZnvpQ/03_a6x5g_iceblue_04_2.jpg",
+            "https://cdn.tortoise.pro/product_prod_qfdZnvpQ/04_a6x5g_iceblue_05_2.jpg",
+            "https://cdn.tortoise.pro/product_prod_qfdZnvpQ/05_a6x5g_iceblue_06_2.jpg",
+            "https://cdn.tortoise.pro/product_prod_qfdZnvpQ/06_a6x5g_iceblue_07_2.jpg",
+            "https://cdn.tortoise.pro/product_prod_qfdZnvpQ/07_a6x5g_iceblue_08_2.jpg",
+            "https://cdn.tortoise.pro/product_prod_qfdZnvpQ/08_a6x5g_iceblue_09_2.jpg",
+            "https://cdn.tortoise.pro/product_prod_qfdZnvpQ/09_a6x5g_iceblue_10_2.jpg",
+            "https://cdn.tortoise.pro/product_prod_qfdZnvpQ/10_a6x5g_iceblue_11_2.jpg",
+            "https://cdn.tortoise.pro/product_prod_qfdZnvpQ/11_a6x5g_iceblue_12_2.jpg",
+            "https://cdn.tortoise.pro/product_prod_qfdZnvpQ/12_a6x5g_iceblue_13_2.jpg",
+            "https://cdn.tortoise.pro/product_prod_qfdZnvpQ/13_a6x5g_iceblue_14_2.jpg",
+            "https://cdn.tortoise.pro/product_prod_qfdZnvpQ/14_a6x5g_iceblue_15_2.jpg",
+            "https://cdn.tortoise.pro/product_prod_qfdZnvpQ/15_a6x5g_iceblue_16_2.jpg"
+          ],
+          "lifestyle": [
+            "https://cdn.tortoise.pro/product_prod_qfdZnvpQ/01_OPPOA6x5G aplus.jpg"
+          ]
+        }
+      },
+      {
+        "name": "F31 5G",
+        "variants": [
+          {
+            "ram": "8GB",
+            "storage": "128GB",
+            "price": "₹26,999"
+          },
+          {
+            "ram": "8GB",
+            "storage": "256GB",
+            "price": "₹28,999"
+          }
+        ],
+        "images": {
+          "hero": "https://cdn.tortoise.pro/product_prod_BQUCd608/midnight_blue_1__1.jpg",
+          "gallery": [
+            "https://cdn.tortoise.pro/product_prod_BQUCd608/01_midnight_blue_7__1.jpg",
+            "https://cdn.tortoise.pro/product_prod_BQUCd608/02_midnight_blue_10__1.jpg",
+            "https://cdn.tortoise.pro/product_prod_BQUCd608/03_midnight_blue_2__1.jpg",
+            "https://cdn.tortoise.pro/product_prod_BQUCd608/04_midnight_blue_9__1.jpg",
+            "https://cdn.tortoise.pro/product_prod_BQUCd608/05_midnight_blue_3__1.jpg",
+            "https://cdn.tortoise.pro/product_prod_BQUCd608/06_midnight_blue_5__1.jpg",
+            "https://cdn.tortoise.pro/product_prod_BQUCd608/07_midnight_blue_8__1.jpg",
+            "https://cdn.tortoise.pro/product_prod_BQUCd608/08_midnight_blue_12__1.jpg",
+            "https://cdn.tortoise.pro/product_prod_BQUCd608/09_midnight_blue_6__1.jpg",
+            "https://cdn.tortoise.pro/product_prod_BQUCd608/10_midnight_blue_4__1.jpg",
+            "https://cdn.tortoise.pro/product_prod_BQUCd608/11_f31-5g_midnight-blue_2.jpg",
+            "https://cdn.tortoise.pro/product_prod_BQUCd608/12_f31-5g_midnight-blue_3.jpg",
+            "https://cdn.tortoise.pro/product_prod_BQUCd608/13_f31-5g_midnight-blue_6.jpg",
+            "https://cdn.tortoise.pro/product_prod_BQUCd608/14_f31-5g_midnight-blue_5.jpg",
+            "https://cdn.tortoise.pro/product_prod_BQUCd608/15_f31-5g_midnight-blue_4.jpg",
+            "https://cdn.tortoise.pro/product_prod_BQUCd608/16_f31-5g_midnight-blue_7.jpg"
+          ],
+          "lifestyle": [
+            "https://cdn.tortoise.pro/product_prod_BQUCd608/01_oppo-f31-aplus-update.jpeg"
+          ]
+        }
+      },
+      {
+        "name": "F31 PRO 5G",
+        "variants": [
+          {
+            "ram": "8GB",
+            "storage": "128GB",
+            "price": "₹27,999"
+          },
+          {
+            "ram": "8GB",
+            "storage": "256GB",
+            "price": "₹29,999"
+          },
+          {
+            "ram": "12GB",
+            "storage": "256GB",
+            "price": "₹31,999"
+          }
+        ],
+        "images": {
+          "hero": "https://cdn.tortoise.pro/product_prod_FTu5J1aP/f31-pro-5g_desert-gold_1_1.jpg",
+          "gallery": [
+            "https://cdn.tortoise.pro/product_prod_FTu5J1aP/01_f31-pro-5g_desert-gold_2_1.jpg",
+            "https://cdn.tortoise.pro/product_prod_FTu5J1aP/02_f31-pro-5g_desert-gold_3_1.jpg",
+            "https://cdn.tortoise.pro/product_prod_FTu5J1aP/03_f31-pro-5g_desert-gold_4_1.jpg",
+            "https://cdn.tortoise.pro/product_prod_FTu5J1aP/04_f31-pro-5g_desert-gold_7_1.jpg",
+            "https://cdn.tortoise.pro/product_prod_FTu5J1aP/05_f31-pro-5g_desert-gold_5_1.jpg",
+            "https://cdn.tortoise.pro/product_prod_FTu5J1aP/06_f31-pro-5g_desert-gold_6_1.jpg"
+          ],
+          "lifestyle": [
+            "https://cdn.tortoise.pro/product_prod_FTu5J1aP/01_oppo-f31-pro-aplus-update.jpeg"
+          ]
+        }
+      },
+      {
+        "name": "F31 Pro+",
+        "variants": [
+          {
+            "ram": "8GB",
+            "storage": "256GB",
+            "price": "₹32,999"
+          },
+          {
+            "ram": "12GB",
+            "storage": "256GB",
+            "price": "₹34,999"
+          }
+        ],
+        "images": {
+          "hero": "https://cdn.tortoise.pro/product_prod_8jB7NN7A/f31-pro_-5g_gemstone-blue_1.jpg",
+          "gallery": [
+            "https://cdn.tortoise.pro/product_prod_8jB7NN7A/01_f31-pro_-5g_gemstone-blue_2.jpg",
+            "https://cdn.tortoise.pro/product_prod_8jB7NN7A/02_f31-pro_-5g_gemstone-blue_3.jpg",
+            "https://cdn.tortoise.pro/product_prod_8jB7NN7A/03_f31-pro_-5g_gemstone-blue_7.jpg",
+            "https://cdn.tortoise.pro/product_prod_8jB7NN7A/04_f31-pro_-5g_gemstone-blue_4.jpg",
+            "https://cdn.tortoise.pro/product_prod_8jB7NN7A/05_f31-pro_-5g_gemstone-blue_5.jpg",
+            "https://cdn.tortoise.pro/product_prod_8jB7NN7A/06_f31-pro_-5g_gemstone-blue_6.jpg"
+          ],
+          "lifestyle": [
+            "https://cdn.tortoise.pro/product_prod_8jB7NN7A/01_oppo-f31-pro-plus-aplus-update.jpeg"
+          ]
+        }
+      },
+      {
+        "name": "F33 5G",
+        "variants": [
+          {
+            "ram": "6GB",
+            "storage": "128GB",
+            "price": "₹34,299"
+          },
+          {
+            "ram": "8GB",
+            "storage": "128GB",
+            "price": "₹36,259"
+          },
+          {
+            "ram": "8GB",
+            "storage": "256GB",
+            "price": "₹39,199"
+          }
+        ],
+        "images": {
+          "hero": "https://cdn.tortoise.pro/product_prod_EamZTuMn/f33_0_1_2.jpg",
+          "gallery": [
+            "https://cdn.tortoise.pro/product_prod_EamZTuMn/01_f33_1_1_2.jpg",
+            "https://cdn.tortoise.pro/product_prod_EamZTuMn/02_f33_3_1_2.jpg",
+            "https://cdn.tortoise.pro/product_prod_EamZTuMn/03_f33_5_1_2.jpg",
+            "https://cdn.tortoise.pro/product_prod_EamZTuMn/04_f33_4_1_2.jpg",
+            "https://cdn.tortoise.pro/product_prod_EamZTuMn/05_f33_7_1_2.jpg",
+            "https://cdn.tortoise.pro/product_prod_EamZTuMn/06_f33_6_1_2.jpg",
+            "https://cdn.tortoise.pro/product_prod_EamZTuMn/07_f33_9_1_2.jpg",
+            "https://cdn.tortoise.pro/product_prod_EamZTuMn/08_f33_10_1_2.jpg",
+            "https://cdn.tortoise.pro/product_prod_EamZTuMn/09_f33_8_1_2.jpg",
+            "https://cdn.tortoise.pro/product_prod_EamZTuMn/10_f33_11_1_2.jpg",
+            "https://cdn.tortoise.pro/product_prod_EamZTuMn/11_f33_12_1_2.jpg",
+            "https://cdn.tortoise.pro/product_prod_EamZTuMn/12_f33_13_1_2.jpg",
+            "https://cdn.tortoise.pro/product_prod_EamZTuMn/13_f33_14_1_2.jpg",
+            "https://cdn.tortoise.pro/product_prod_EamZTuMn/14_f33_16_1_2.jpg",
+            "https://cdn.tortoise.pro/product_prod_EamZTuMn/15_f33_15_1_2.jpg",
+            "https://cdn.tortoise.pro/product_prod_EamZTuMn/16_pr_img_f33_green_6_1.jpg"
+          ],
+          "lifestyle": [
+            "https://cdn.tortoise.pro/product_prod_EamZTuMn/01_Oppo-F33-A+.jpg"
+          ]
+        }
+      },
+      {
+        "name": "F33 Pro 5G",
+        "variants": [
+          {
+            "storage": "128GB",
+            "price": "₹37,239"
+          },
+          {
+            "storage": "256GB",
+            "price": "₹40,179"
+          }
+        ],
+        "images": {
+          "hero": "https://cdn.tortoise.pro/product_prod_di7ipwFt/starry_blue_1_.jpg",
+          "gallery": [
+            "https://cdn.tortoise.pro/product_prod_di7ipwFt/01_starry_blue_5_.jpg",
+            "https://cdn.tortoise.pro/product_prod_di7ipwFt/02_starry_blue_4_.jpg",
+            "https://cdn.tortoise.pro/product_prod_di7ipwFt/03_starry_blue_2_.jpg",
+            "https://cdn.tortoise.pro/product_prod_di7ipwFt/04_starry_blue_3_.jpg",
+            "https://cdn.tortoise.pro/product_prod_di7ipwFt/05_starry_blue_6_.jpg",
+            "https://cdn.tortoise.pro/product_prod_di7ipwFt/06_starry_blue_7_.jpg",
+            "https://cdn.tortoise.pro/product_prod_di7ipwFt/07_starry_blue_8_.jpg",
+            "https://cdn.tortoise.pro/product_prod_di7ipwFt/08_starry_blue_10_.jpg",
+            "https://cdn.tortoise.pro/product_prod_di7ipwFt/09_starry_blue_9_.jpg",
+            "https://cdn.tortoise.pro/product_prod_di7ipwFt/10_starry_blue_11_.jpg",
+            "https://cdn.tortoise.pro/product_prod_di7ipwFt/11_starry_blue_12_.jpg",
+            "https://cdn.tortoise.pro/product_prod_di7ipwFt/12_starry_blue_13_.jpg",
+            "https://cdn.tortoise.pro/product_prod_di7ipwFt/13_starry_blue_14_.jpg",
+            "https://cdn.tortoise.pro/product_prod_di7ipwFt/14_starry_blue_15_.jpg",
+            "https://cdn.tortoise.pro/product_prod_di7ipwFt/15_starry_blue_16_.jpg",
+            "https://cdn.tortoise.pro/product_prod_di7ipwFt/16_starry_blue_17_.jpg"
+          ],
+          "lifestyle": [
+            "https://cdn.tortoise.pro/product_prod_di7ipwFt/01_Oppo-F33-Pro-A+.jpg"
+          ]
+        }
+      },
+      {
+        "name": "Find X9",
+        "variants": [
+          {
+            "ram": "12GB",
+            "storage": "256GB",
+            "price": "₹74,999"
+          }
+        ],
+        "images": {
+          "hero": "https://cdn.tortoise.pro/product_prod_Xog6ZBwW/x9_black_2__1.jpg",
+          "gallery": [
+            "https://cdn.tortoise.pro/product_prod_Xog6ZBwW/01_x9_black_4__1.jpg",
+            "https://cdn.tortoise.pro/product_prod_Xog6ZBwW/02_x9_black_6__1.jpg",
+            "https://cdn.tortoise.pro/product_prod_Xog6ZBwW/03_x9_black_8__1.jpg",
+            "https://cdn.tortoise.pro/product_prod_Xog6ZBwW/04_x9_black_7__1.jpg",
+            "https://cdn.tortoise.pro/product_prod_Xog6ZBwW/05_x9_black_5__1.jpg",
+            "https://cdn.tortoise.pro/product_prod_Xog6ZBwW/06_x9_black_9__1.jpg",
+            "https://cdn.tortoise.pro/product_prod_Xog6ZBwW/07_x9_black_11__1.jpg",
+            "https://cdn.tortoise.pro/product_prod_Xog6ZBwW/08_x9_black_12__1.jpg",
+            "https://cdn.tortoise.pro/product_prod_Xog6ZBwW/09_x9_black_13__1.jpg",
+            "https://cdn.tortoise.pro/product_prod_Xog6ZBwW/10_x9_black_10__1.jpg",
+            "https://cdn.tortoise.pro/product_prod_Xog6ZBwW/11_x9_black_14__1.jpg",
+            "https://cdn.tortoise.pro/product_prod_Xog6ZBwW/12_x9_black_15__1.jpg",
+            "https://cdn.tortoise.pro/product_prod_Xog6ZBwW/13_x9_black_16__1.jpg",
+            "https://cdn.tortoise.pro/product_prod_Xog6ZBwW/14_x9_black_17__1.jpg",
+            "https://cdn.tortoise.pro/product_prod_Xog6ZBwW/15_x9_black_18__1.jpg",
+            "https://cdn.tortoise.pro/product_prod_Xog6ZBwW/16_x9_black_3__1.jpg",
+            "https://cdn.tortoise.pro/product_prod_Xog6ZBwW/17_x9_black_19__1.jpg",
+            "https://cdn.tortoise.pro/product_prod_Xog6ZBwW/18_x9_black_22__1.jpg",
+            "https://cdn.tortoise.pro/product_prod_Xog6ZBwW/19_x9_black_21__1.jpg",
+            "https://cdn.tortoise.pro/product_prod_Xog6ZBwW/20_x9_black_20__1.jpg",
+            "https://cdn.tortoise.pro/product_prod_Xog6ZBwW/21_x9_black_23__1.jpg",
+            "https://cdn.tortoise.pro/product_prod_Xog6ZBwW/22_x9_black_24__1.jpg",
+            "https://cdn.tortoise.pro/product_prod_Xog6ZBwW/23_x9_black_25__1.jpg",
+            "https://cdn.tortoise.pro/product_prod_Xog6ZBwW/24_x9_black_1__1.jpg"
+          ],
+          "lifestyle": [
+            "https://cdn.tortoise.pro/product_prod_Xog6ZBwW/01_FindX9 aplus.JPG"
+          ]
+        }
+      },
+      {
+        "name": "Find X9 Pro",
+        "variants": [
+          {
+            "ram": "16GB",
+            "storage": "512GB",
+            "price": "₹1,06,000"
+          }
+        ],
+        "images": {
+          "hero": "https://cdn.tortoise.pro/product_prod_vCPhhtGX/x9_pro_silk_white_2_.jpg",
+          "gallery": [
+            "https://cdn.tortoise.pro/product_prod_vCPhhtGX/01_x9_pro_silk_white_15_.jpg",
+            "https://cdn.tortoise.pro/product_prod_vCPhhtGX/02_x9_pro_silk_white_16_.jpg",
+            "https://cdn.tortoise.pro/product_prod_vCPhhtGX/03_x9_pro_silk_white_18_.jpg",
+            "https://cdn.tortoise.pro/product_prod_vCPhhtGX/04_x9_pro_silk_white_17_.jpg",
+            "https://cdn.tortoise.pro/product_prod_vCPhhtGX/05_x9_pro_silk_white_19_.jpg",
+            "https://cdn.tortoise.pro/product_prod_vCPhhtGX/06_x9_pro_silk_white_20_.jpg",
+            "https://cdn.tortoise.pro/product_prod_vCPhhtGX/07_x9_pro_silk_white_24_.jpg",
+            "https://cdn.tortoise.pro/product_prod_vCPhhtGX/08_x9_pro_silk_white_23_.jpg",
+            "https://cdn.tortoise.pro/product_prod_vCPhhtGX/09_x9_pro_silk_white_21_.jpg",
+            "https://cdn.tortoise.pro/product_prod_vCPhhtGX/10_x9_pro_silk_white_22_.jpg",
+            "https://cdn.tortoise.pro/product_prod_vCPhhtGX/11_x9_pro_silk_white_25_.jpg",
+            "https://cdn.tortoise.pro/product_prod_vCPhhtGX/12_x9_pro_silk_white_1_.jpg",
+            "https://cdn.tortoise.pro/product_prod_vCPhhtGX/13_x9_pro_silk_white_3_.jpg",
+            "https://cdn.tortoise.pro/product_prod_vCPhhtGX/14_x9_pro_silk_white_4_.jpg",
+            "https://cdn.tortoise.pro/product_prod_vCPhhtGX/15_x9_pro_silk_white_5_.jpg",
+            "https://cdn.tortoise.pro/product_prod_vCPhhtGX/16_x9_pro_silk_white_6_.jpg",
+            "https://cdn.tortoise.pro/product_prod_vCPhhtGX/17_x9_pro_silk_white_7_.jpg",
+            "https://cdn.tortoise.pro/product_prod_vCPhhtGX/18_x9_pro_silk_white_8_.jpg",
+            "https://cdn.tortoise.pro/product_prod_vCPhhtGX/19_x9_pro_silk_white_9_.jpg",
+            "https://cdn.tortoise.pro/product_prod_vCPhhtGX/20_x9_pro_silk_white_10_.jpg",
+            "https://cdn.tortoise.pro/product_prod_vCPhhtGX/21_x9_pro_silk_white_11_.jpg",
+            "https://cdn.tortoise.pro/product_prod_vCPhhtGX/22_x9_pro_silk_white_12_.jpg",
+            "https://cdn.tortoise.pro/product_prod_vCPhhtGX/23_x9_pro_silk_white_14_.jpg",
+            "https://cdn.tortoise.pro/product_prod_vCPhhtGX/24_x9_pro_silk_white_13_.jpg"
+          ],
+          "lifestyle": [
+            "https://cdn.tortoise.pro/product_prod_vCPhhtGX/01_Oppo Find X9 Pro aplus.jpg"
+          ]
+        }
+      },
+      {
+        "name": "Find X9 Ultra",
+        "variants": [
+          {
+            "ram": "12GB",
+            "storage": "512GB",
+            "price": "₹1,66,599"
+          }
+        ],
+        "images": {
+          "hero": "https://cdn.tortoise.pro/product_prod_49r4bcfo/tundra_umber_1_.jpg",
+          "gallery": [
+            "https://cdn.tortoise.pro/product_prod_49r4bcfo/01_tundra_umber_2_.jpg",
+            "https://cdn.tortoise.pro/product_prod_49r4bcfo/02_tundra_umber_3_.jpg",
+            "https://cdn.tortoise.pro/product_prod_49r4bcfo/03_tundra_umber_4_.jpg",
+            "https://cdn.tortoise.pro/product_prod_49r4bcfo/04_tundra_umber_5_.jpg",
+            "https://cdn.tortoise.pro/product_prod_49r4bcfo/05_tundra_umber_6_.jpg",
+            "https://cdn.tortoise.pro/product_prod_49r4bcfo/06_tundra_umber_7_.jpg",
+            "https://cdn.tortoise.pro/product_prod_49r4bcfo/07_tundra_umber_8_.jpg",
+            "https://cdn.tortoise.pro/product_prod_49r4bcfo/08_tundra_umber_9_.jpg",
+            "https://cdn.tortoise.pro/product_prod_49r4bcfo/09_tundra_umber_10_.jpg",
+            "https://cdn.tortoise.pro/product_prod_49r4bcfo/10_tundra_umber_11_.jpg",
+            "https://cdn.tortoise.pro/product_prod_49r4bcfo/11_tundra_umber_12_.jpg",
+            "https://cdn.tortoise.pro/product_prod_49r4bcfo/12_tundra_umber_13_.jpg",
+            "https://cdn.tortoise.pro/product_prod_49r4bcfo/13_tundra_umber_14_.jpg",
+            "https://cdn.tortoise.pro/product_prod_49r4bcfo/14_tundra_umber_16_.jpg",
+            "https://cdn.tortoise.pro/product_prod_49r4bcfo/15_tundra_umber_17_.jpg",
+            "https://cdn.tortoise.pro/product_prod_49r4bcfo/16_tundra_umber_15_.jpg",
+            "https://cdn.tortoise.pro/product_prod_49r4bcfo/17_tundra_umber_18_.jpg"
+          ],
+          "lifestyle": [
+            "https://cdn.tortoise.pro/product_prod_49r4bcfo/01_Oppo-Find-X9-Ultra.jpg"
+          ]
+        }
+      },
+      {
+        "name": "Find X9S",
+        "variants": [
+          {
+            "ram": "12GB",
+            "storage": "256GB",
+            "price": "₹78,399"
+          },
+          {
+            "ram": "12GB",
+            "storage": "512GB",
+            "price": "₹88,199"
+          }
+        ],
+        "images": {
+          "hero": "https://cdn.tortoise.pro/product_prod_jHHzWvfg/sunset_orange_1_.jpg",
+          "gallery": [
+            "https://cdn.tortoise.pro/product_prod_jHHzWvfg/01_sunset_orange_2_.jpg",
+            "https://cdn.tortoise.pro/product_prod_jHHzWvfg/02_sunset_orange_3_.jpg",
+            "https://cdn.tortoise.pro/product_prod_jHHzWvfg/03_sunset_orange_4_.jpg",
+            "https://cdn.tortoise.pro/product_prod_jHHzWvfg/04_sunset_orange_5_.jpg",
+            "https://cdn.tortoise.pro/product_prod_jHHzWvfg/05_sunset_orange_7_.jpg",
+            "https://cdn.tortoise.pro/product_prod_jHHzWvfg/06_sunset_orange_6_.jpg",
+            "https://cdn.tortoise.pro/product_prod_jHHzWvfg/07_sunset_orange_8_.jpg",
+            "https://cdn.tortoise.pro/product_prod_jHHzWvfg/08_sunset_orange_9_.jpg",
+            "https://cdn.tortoise.pro/product_prod_jHHzWvfg/09_sunset_orange_10_.jpg",
+            "https://cdn.tortoise.pro/product_prod_jHHzWvfg/10_sunset_orange_11_.jpg",
+            "https://cdn.tortoise.pro/product_prod_jHHzWvfg/11_sunset_orange_12_.jpg",
+            "https://cdn.tortoise.pro/product_prod_jHHzWvfg/12_sunset_orange_13_.jpg",
+            "https://cdn.tortoise.pro/product_prod_jHHzWvfg/13_sunset_orange_15_.jpg",
+            "https://cdn.tortoise.pro/product_prod_jHHzWvfg/14_sunset_orange_16_.jpg",
+            "https://cdn.tortoise.pro/product_prod_jHHzWvfg/15_sunset_orange_14_.jpg",
+            "https://cdn.tortoise.pro/product_prod_jHHzWvfg/16_sunset_orange_17_.jpg"
+          ],
+          "lifestyle": [
+            "https://cdn.tortoise.pro/product_prod_jHHzWvfg/01_Oppo-Find-X9s.jpg"
+          ]
+        }
+      },
+      {
+        "name": "Reno 15",
+        "variants": [
+          {
+            "ram": "8GB",
+            "storage": "256GB",
+            "price": "₹47,039"
+          },
+          {
+            "ram": "12GB",
+            "storage": "256GB",
+            "price": "₹49,979"
+          },
+          {
+            "ram": "12GB",
+            "storage": "512GB",
+            "price": "₹53,999"
+          }
+        ],
+        "images": {
+          "hero": "https://cdn.tortoise.pro/product_prod_nVZbEs4i/reno15_glacier_white_1_.jpg",
+          "gallery": [
+            "https://cdn.tortoise.pro/product_prod_nVZbEs4i/01_0.jpg",
+            "https://cdn.tortoise.pro/product_prod_nVZbEs4i/02_reno15_glacier_white_2_.jpg",
+            "https://cdn.tortoise.pro/product_prod_nVZbEs4i/03_reno15_glacier_white_5_.jpg",
+            "https://cdn.tortoise.pro/product_prod_nVZbEs4i/04_reno15_glacier_white_3_.jpg",
+            "https://cdn.tortoise.pro/product_prod_nVZbEs4i/05_reno15_glacier_white_4_.jpg",
+            "https://cdn.tortoise.pro/product_prod_nVZbEs4i/06_reno15_glacier_white_7_.jpg",
+            "https://cdn.tortoise.pro/product_prod_nVZbEs4i/07_reno15_glacier_white_6_.jpg",
+            "https://cdn.tortoise.pro/product_prod_nVZbEs4i/08_reno15_glacier_white_9_.jpg",
+            "https://cdn.tortoise.pro/product_prod_nVZbEs4i/09_reno15_glacier_white_10_.jpg",
+            "https://cdn.tortoise.pro/product_prod_nVZbEs4i/10_reno15_glacier_white_8_.jpg",
+            "https://cdn.tortoise.pro/product_prod_nVZbEs4i/11_reno15_glacier_white_13_.jpg",
+            "https://cdn.tortoise.pro/product_prod_nVZbEs4i/12_reno15_glacier_white_14_.jpg",
+            "https://cdn.tortoise.pro/product_prod_nVZbEs4i/13_reno15_glacier_white_11_.jpg",
+            "https://cdn.tortoise.pro/product_prod_nVZbEs4i/14_reno15_glacier_white_12_.jpg",
+            "https://cdn.tortoise.pro/product_prod_nVZbEs4i/15_reno15_glacier_white_15_.jpg",
+            "https://cdn.tortoise.pro/product_prod_nVZbEs4i/16_reno15_glacier_white_16_.jpg",
+            "https://cdn.tortoise.pro/product_prod_nVZbEs4i/17_reno15_glacier_white_17_.jpg",
+            "https://cdn.tortoise.pro/product_prod_nVZbEs4i/18_reno15_glacier_white_18_.jpg",
+            "https://cdn.tortoise.pro/product_prod_nVZbEs4i/19_reno15_glacier_white_19_.jpg",
+            "https://cdn.tortoise.pro/product_prod_nVZbEs4i/20_reno15_glacier_white_20_.jpg",
+            "https://cdn.tortoise.pro/product_prod_nVZbEs4i/21_reno15_glacier_white_22_.jpg",
+            "https://cdn.tortoise.pro/product_prod_nVZbEs4i/22_reno15_glacier_white_23_.jpg",
+            "https://cdn.tortoise.pro/product_prod_nVZbEs4i/23_reno15_glacier_white_21_.jpg",
+            "https://cdn.tortoise.pro/product_prod_nVZbEs4i/24_reno15_glacier_white_24_.jpg"
+          ],
+          "lifestyle": [
+            "https://cdn.tortoise.pro/product_prod_nVZbEs4i/01_Reno15A+.jpg"
+          ]
+        }
+      },
+      {
+        "name": "Reno 15 Pro",
+        "variants": [
+          {
+            "ram": "12GB",
+            "storage": "256GB",
+            "price": "₹66,639"
+          },
+          {
+            "ram": "12GB",
+            "storage": "512GB",
+            "price": "₹71,539"
+          }
+        ],
+        "images": {
+          "hero": "https://cdn.tortoise.pro/product_prod_pQj0mWYU/reno15-pro_01_1_1.jpg",
+          "gallery": [
+            "https://cdn.tortoise.pro/product_prod_pQj0mWYU/01_reno15-pro_03_1_1.jpg",
+            "https://cdn.tortoise.pro/product_prod_pQj0mWYU/02_reno15-pro_02_1_1.jpg",
+            "https://cdn.tortoise.pro/product_prod_pQj0mWYU/03_reno15-pro_04_1_1.jpg",
+            "https://cdn.tortoise.pro/product_prod_pQj0mWYU/04_reno15-pro_05_1_1.jpg",
+            "https://cdn.tortoise.pro/product_prod_pQj0mWYU/05_reno15-pro_06_1_1.jpg",
+            "https://cdn.tortoise.pro/product_prod_pQj0mWYU/06_reno15-pro_07_1_1.jpg",
+            "https://cdn.tortoise.pro/product_prod_pQj0mWYU/07_reno15-pro_08_1_1.jpg",
+            "https://cdn.tortoise.pro/product_prod_pQj0mWYU/08_reno15-pro_12_1_1.jpg",
+            "https://cdn.tortoise.pro/product_prod_pQj0mWYU/09_reno15-pro_10_1_1.jpg",
+            "https://cdn.tortoise.pro/product_prod_pQj0mWYU/10_reno15-pro_11_1_1.jpg",
+            "https://cdn.tortoise.pro/product_prod_pQj0mWYU/11_reno15-pro_09_1_1.jpg",
+            "https://cdn.tortoise.pro/product_prod_pQj0mWYU/12_reno15-pro_13_1_1.jpg",
+            "https://cdn.tortoise.pro/product_prod_pQj0mWYU/13_reno15-pro_14_1_1.jpg",
+            "https://cdn.tortoise.pro/product_prod_pQj0mWYU/14_reno15-pro_15_1_1.jpg",
+            "https://cdn.tortoise.pro/product_prod_pQj0mWYU/15_reno15-pro_16_1_1.jpg",
+            "https://cdn.tortoise.pro/product_prod_pQj0mWYU/16_reno15-pro_17_1_1.jpg",
+            "https://cdn.tortoise.pro/product_prod_pQj0mWYU/17_reno15-pro_18_1_1.jpg",
+            "https://cdn.tortoise.pro/product_prod_pQj0mWYU/18_reno15-pro_20_1_1.jpg",
+            "https://cdn.tortoise.pro/product_prod_pQj0mWYU/19_reno15-pro_21_1_1.jpg",
+            "https://cdn.tortoise.pro/product_prod_pQj0mWYU/20_reno15-pro_19_1_1.jpg",
+            "https://cdn.tortoise.pro/product_prod_pQj0mWYU/21_reno15-pro_22_1_1.jpg"
+          ],
+          "lifestyle": [
+            "https://cdn.tortoise.pro/product_prod_pQj0mWYU/01_Reno15 ProA+.jpg"
+          ]
+        }
+      }
+    ],
+    "Vivo": [
+      {
+        "name": "V70 5G",
+        "variants": [
+          {
+            "ram": "8GB",
+            "price": "₹52,919"
+          },
+          {
+            "ram": "12GB",
+            "price": "₹56,599"
+          }
+        ],
+        "images": {
+          "hero": "https://cdn.tortoise.pro/product_prod_cKv5Ybrp/yellow_1__1.jpg",
+          "gallery": [
+            "https://cdn.tortoise.pro/product_prod_cKv5Ybrp/01_yellow_4_.jpg",
+            "https://cdn.tortoise.pro/product_prod_cKv5Ybrp/02_yellow_3_.jpg",
+            "https://cdn.tortoise.pro/product_prod_cKv5Ybrp/03_yellow_2_.jpg",
+            "https://cdn.tortoise.pro/product_prod_cKv5Ybrp/04_yellow_7_.jpg",
+            "https://cdn.tortoise.pro/product_prod_cKv5Ybrp/05_yellow_5_.jpg",
+            "https://cdn.tortoise.pro/product_prod_cKv5Ybrp/06_yellow_6_.jpg",
+            "https://cdn.tortoise.pro/product_prod_cKv5Ybrp/07_yellow_8_.jpg",
+            "https://cdn.tortoise.pro/product_prod_cKv5Ybrp/08_yellow_9_.jpg",
+            "https://cdn.tortoise.pro/product_prod_cKv5Ybrp/09_yellow_10_.jpg",
+            "https://cdn.tortoise.pro/product_prod_cKv5Ybrp/10_yellow_13_.jpg",
+            "https://cdn.tortoise.pro/product_prod_cKv5Ybrp/11_yellow_11_.jpg",
+            "https://cdn.tortoise.pro/product_prod_cKv5Ybrp/12_yellow_12_.jpg",
+            "https://cdn.tortoise.pro/product_prod_cKv5Ybrp/13_yellow_14_.jpg",
+            "https://cdn.tortoise.pro/product_prod_cKv5Ybrp/14_yellow_16_.jpg",
+            "https://cdn.tortoise.pro/product_prod_cKv5Ybrp/15_yellow_15_.jpg",
+            "https://cdn.tortoise.pro/product_prod_cKv5Ybrp/16_yellow_17_.jpg",
+            "https://cdn.tortoise.pro/product_prod_cKv5Ybrp/17_yellow_19_.jpg",
+            "https://cdn.tortoise.pro/product_prod_cKv5Ybrp/18_yellow_18_.jpg",
+            "https://cdn.tortoise.pro/product_prod_cKv5Ybrp/19_yellow_20_.jpg"
+          ],
+          "lifestyle": [
+            "https://cdn.tortoise.pro/product_prod_cKv5Ybrp/01_vivo v70 A+.jpg"
+          ]
+        }
+      },
+      {
+        "name": "V70 Elite",
+        "variants": [
+          {
+            "ram": "8GB",
+            "storage": "256GB",
+            "price": "₹57,819"
+          },
+          {
+            "ram": "12GB",
+            "storage": "256GB",
+            "price": "₹62,719"
+          }
+        ],
+        "images": {
+          "hero": "https://cdn.tortoise.pro/product_prod_LSxGfdQz/black_1__6_7.jpg",
+          "gallery": [
+            "https://cdn.tortoise.pro/product_prod_LSxGfdQz/01_black_2__6_7.jpg",
+            "https://cdn.tortoise.pro/product_prod_LSxGfdQz/02_black_5__5_7.jpg",
+            "https://cdn.tortoise.pro/product_prod_LSxGfdQz/03_black_4__5_7.jpg",
+            "https://cdn.tortoise.pro/product_prod_LSxGfdQz/04_black_3__6_7.jpg",
+            "https://cdn.tortoise.pro/product_prod_LSxGfdQz/05_black_6__4_7.jpg",
+            "https://cdn.tortoise.pro/product_prod_LSxGfdQz/06_black_7__4_7.jpg",
+            "https://cdn.tortoise.pro/product_prod_LSxGfdQz/07_black_8__5_7.jpg",
+            "https://cdn.tortoise.pro/product_prod_LSxGfdQz/08_black_10__4_7.jpg",
+            "https://cdn.tortoise.pro/product_prod_LSxGfdQz/09_black_9__6_7.jpg",
+            "https://cdn.tortoise.pro/product_prod_LSxGfdQz/10_black_11__4_7.jpg",
+            "https://cdn.tortoise.pro/product_prod_LSxGfdQz/11_black_12__1_7.jpg",
+            "https://cdn.tortoise.pro/product_prod_LSxGfdQz/12_black_14__1_7.jpg",
+            "https://cdn.tortoise.pro/product_prod_LSxGfdQz/13_black_15__1_5.jpg",
+            "https://cdn.tortoise.pro/product_prod_LSxGfdQz/14_black_13__1_7.jpg",
+            "https://cdn.tortoise.pro/product_prod_LSxGfdQz/15_black_16__1_5.jpg",
+            "https://cdn.tortoise.pro/product_prod_LSxGfdQz/16_black_18__1_5.jpg",
+            "https://cdn.tortoise.pro/product_prod_LSxGfdQz/17_black_17__1_5.jpg",
+            "https://cdn.tortoise.pro/product_prod_LSxGfdQz/18_black_19__1_5.jpg",
+            "https://cdn.tortoise.pro/product_prod_LSxGfdQz/19_black_20__3.jpg",
+            "https://cdn.tortoise.pro/product_prod_LSxGfdQz/20_black_21__1.jpg"
+          ],
+          "lifestyle": [
+            "https://cdn.tortoise.pro/product_prod_LSxGfdQz/01_vivo v70 elite aplus.jpg"
+          ]
+        }
+      },
+      {
+        "name": "V70 FE",
+        "variants": [
+          {
+            "ram": "8GB",
+            "storage": "128GB",
+            "price": "₹41,159"
+          },
+          {
+            "ram": "8GB",
+            "storage": "256GB",
+            "price": "₹45,079"
+          },
+          {
+            "ram": "12GB",
+            "storage": "256GB",
+            "price": "₹46,059"
+          }
+        ],
+        "images": {
+          "hero": "https://cdn.tortoise.pro/product_prod_MT2c0QMy/1_167_2.jpg",
+          "gallery": [
+            "https://cdn.tortoise.pro/product_prod_MT2c0QMy/01_2.1_2.jpg",
+            "https://cdn.tortoise.pro/product_prod_MT2c0QMy/02_2_146_2.jpg",
+            "https://cdn.tortoise.pro/product_prod_MT2c0QMy/03_4_120_2.jpg",
+            "https://cdn.tortoise.pro/product_prod_MT2c0QMy/04_3_129_2.jpg",
+            "https://cdn.tortoise.pro/product_prod_MT2c0QMy/05_5_112_2.jpg",
+            "https://cdn.tortoise.pro/product_prod_MT2c0QMy/06_6_105_6.jpg",
+            "https://cdn.tortoise.pro/product_prod_MT2c0QMy/07_7_92_5.jpg"
+          ],
+          "lifestyle": [
+            "https://cdn.tortoise.pro/product_prod_MT2c0QMy/01_V70 FE.jpg"
+          ]
+        }
+      },
+      {
+        "name": "Vivo T5X",
+        "variants": [
+          {
+            "ram": "6GB",
+            "storage": "128GB",
+            "price": "₹22,699"
+          },
+          {
+            "ram": "8GB",
+            "storage": "128GB",
+            "price": "₹24,699"
+          },
+          {
+            "ram": "8GB",
+            "storage": "256GB",
+            "price": "₹26,699"
+          }
+        ],
+        "images": {
+          "hero": "https://cdn.tortoise.pro/product_prod_765TM8A3/green_4__4.jpg",
+          "gallery": [
+            "https://cdn.tortoise.pro/product_prod_765TM8A3/01_254371_3__1.jpg",
+            "https://cdn.tortoise.pro/product_prod_765TM8A3/02_254371_4__1.jpg",
+            "https://cdn.tortoise.pro/product_prod_765TM8A3/03_254371_6__1.jpg",
+            "https://cdn.tortoise.pro/product_prod_765TM8A3/04_254371_5__1.jpg",
+            "https://cdn.tortoise.pro/product_prod_765TM8A3/05_254371_2__1.jpg",
+            "https://cdn.tortoise.pro/product_prod_765TM8A3/06_254371_7__1.jpg",
+            "https://cdn.tortoise.pro/product_prod_765TM8A3/07_254371_8__1.jpg",
+            "https://cdn.tortoise.pro/product_prod_765TM8A3/08_254371_9__1.jpg",
+            "https://cdn.tortoise.pro/product_prod_765TM8A3/09_254371_10__1.jpg",
+            "https://cdn.tortoise.pro/product_prod_765TM8A3/10_254371_11__1.jpg",
+            "https://cdn.tortoise.pro/product_prod_765TM8A3/11_254371_12__1.jpg",
+            "https://cdn.tortoise.pro/product_prod_765TM8A3/12_254371_13__1.jpg",
+            "https://cdn.tortoise.pro/product_prod_765TM8A3/13_254371_14__1.jpg",
+            "https://cdn.tortoise.pro/product_prod_765TM8A3/14_green_5__4.jpg",
+            "https://cdn.tortoise.pro/product_prod_765TM8A3/15_green_3__4.jpg",
+            "https://cdn.tortoise.pro/product_prod_765TM8A3/16_green_6__1_1.jpg",
+            "https://cdn.tortoise.pro/product_prod_765TM8A3/17_green_7__1_1.jpg",
+            "https://cdn.tortoise.pro/product_prod_765TM8A3/18_green_1__4.jpg",
+            "https://cdn.tortoise.pro/product_prod_765TM8A3/19_green_8__3.jpg"
+          ],
+          "lifestyle": [
+            "https://cdn.tortoise.pro/product_prod_765TM8A3/01_VIVO T5x aplus.jpg"
+          ]
+        }
+      },
+      {
+        "name": "VIVO V60",
+        "variants": [
+          {
+            "storage": "128GB",
+            "price": "₹33,255"
+          },
+          {
+            "storage": "256GB",
+            "price": "₹35,053"
+          },
+          {
+            "storage": "512GB",
+            "price": "₹41,345"
+          }
+        ],
+        "images": {
+          "hero": "https://storage.googleapis.com/tortoise-public-assets/VIVO%20V60%20Mist%20Gray.webp",
+          "gallery": [
+            "https://storage.googleapis.com/tortoise-public-assets/VIVO%20V60%20Moonlit%20Blue.webp",
+            "https://storage.googleapis.com/tortoise-public-assets/VIVO%20V60%20Auspicious%20Gold.webp"
+          ]
+        }
+      },
+      {
+        "name": "VIVO X200",
+        "variants": [
+          {
+            "storage": "256GB",
+            "price": "₹58,928"
+          }
+        ],
+        "images": {
+          "hero": "https://storage.googleapis.com/tortoise-public-assets/VIVO%20X200%20Natural%20green.webp",
+          "gallery": [
+            "https://storage.googleapis.com/tortoise-public-assets/VIVO%20X200%20Cosmos%20Black.webp"
+          ]
+        }
+      },
+      {
+        "name": "VIVO X200 PRO",
+        "variants": [
+          {
+            "storage": "512GB",
+            "price": "₹84,050"
+          }
+        ],
+        "images": {
+          "hero": "https://storage.googleapis.com/tortoise-public-assets/VIVO%20X200%20PRO%20Cosmos%20Black.jpg"
+        }
+      },
+      {
+        "name": "VIVO X300",
+        "variants": [
+          {
+            "ram": "12GB",
+            "storage": "256GB",
+            "price": "₹72,999"
+          },
+          {
+            "ram": "12GB",
+            "storage": "512GB",
+            "price": "₹79,999"
+          },
+          {
+            "ram": "16GB",
+            "storage": "512GB",
+            "price": "₹84,279"
+          }
+        ],
+        "images": {
+          "hero": "https://storage.googleapis.com/tortoise-public-assets/vivo%20X300%205G%20(12GB%20RAM%2C%20256GB%2C%20Elite%20Black)%20.webp",
+          "gallery": [
+            "https://storage.googleapis.com/tortoise-public-assets/vivo%20X300%205G%20(12GB%20RAM%2C%20256GB%2C%20Mist%20Blue)%20.webp",
+            "https://storage.googleapis.com/tortoise-public-assets/vivo%20X300%205G%20(12GB%20RAM%2C%20256GB%2C%20Summit%20Red)%20.webp"
+          ]
+        }
+      },
+      {
+        "name": "VIVO X300 Pro",
+        "variants": [
+          {
+            "ram": "16GB",
+            "storage": "512GB",
+            "price": "₹1,07,999"
+          }
+        ],
+        "images": {
+          "hero": "https://storage.googleapis.com/tortoise-public-assets/vivo%20X300%20Pro%205G%20(16GB%20RAM%2C%20512GB%2C%20Elite%20Black)%20%20.webp",
+          "gallery": [
+            "https://storage.googleapis.com/tortoise-public-assets/vivo%20X300%20Pro%205G%20(16GB%20RAM%2C%20512GB%2C%20Dune%20Gold)%20%20.webp"
+          ]
+        }
+      },
+      {
+        "name": "Vivo Y11",
+        "variants": [
+          {
+            "storage": "64GB",
+            "price": "₹16,659"
+          },
+          {
+            "storage": "128GB",
+            "price": "₹18,619"
+          }
+        ],
+        "images": {
+          "hero": "https://cdn.tortoise.pro/product_prod_awGb8XM9/11.webp_1_2.jpg",
+          "gallery": [
+            "https://cdn.tortoise.pro/product_prod_awGb8XM9/01_33.webp_5.jpg",
+            "https://cdn.tortoise.pro/product_prod_awGb8XM9/02_22.webp_1_2.jpg",
+            "https://cdn.tortoise.pro/product_prod_awGb8XM9/03_55.webp_1_2.jpg",
+            "https://cdn.tortoise.pro/product_prod_awGb8XM9/04_66.webp_1_2.jpg",
+            "https://cdn.tortoise.pro/product_prod_awGb8XM9/05_77.webp_1_2.jpg",
+            "https://cdn.tortoise.pro/product_prod_awGb8XM9/06_88.webp_1_2.jpg"
+          ],
+          "lifestyle": [
+            "https://cdn.tortoise.pro/product_prod_awGb8XM9/01_vivo Y11 A+.jpg"
+          ]
+        }
+      },
+      {
+        "name": "VIVO Y19E",
+        "variants": [
+          {
+            "storage": "64GB",
+            "price": "₹8,621"
+          }
+        ],
+        "images": {
+          "hero": "https://storage.googleapis.com/tortoise-public-assets/VIVO%20Y19E%20Magestic%20Green.webp",
+          "gallery": [
+            "https://storage.googleapis.com/tortoise-public-assets/VIVO%20Y19E%20Titanium%20Silver.webp"
+          ]
+        }
+      },
+      {
+        "name": "Vivo Y21",
+        "variants": [
+          {
+            "ram": "4GB",
+            "price": "₹20,579"
+          },
+          {
+            "ram": "6GB",
+            "price": "₹23,519"
+          },
+          {
+            "ram": "8GB",
+            "price": "₹25,480"
+          }
+        ],
+        "images": {
+          "hero": "https://cdn.tortoise.pro/product_prod_DuxgmhYi/11.webp.jpg",
+          "gallery": [
+            "https://cdn.tortoise.pro/product_prod_DuxgmhYi/01_22.webp.jpg",
+            "https://cdn.tortoise.pro/product_prod_DuxgmhYi/02_44.webp.jpg",
+            "https://cdn.tortoise.pro/product_prod_DuxgmhYi/03_55.webp.jpg",
+            "https://cdn.tortoise.pro/product_prod_DuxgmhYi/04_66.webp.jpg",
+            "https://cdn.tortoise.pro/product_prod_DuxgmhYi/05_77.webp.jpg",
+            "https://cdn.tortoise.pro/product_prod_DuxgmhYi/06_88.webp.jpg"
+          ],
+          "lifestyle": [
+            "https://cdn.tortoise.pro/product_prod_DuxgmhYi/01_vivo Y21 A+.jpg"
+          ]
+        }
+      },
+      {
+        "name": "VIVO Y29",
+        "variants": [
+          {
+            "storage": "128GB",
+            "price": "₹12,673"
+          }
+        ],
+        "images": {
+          "hero": "https://storage.googleapis.com/tortoise-public-assets/Y29%205G%20Diamond%20Black.webp",
+          "gallery": [
+            "https://storage.googleapis.com/tortoise-public-assets/Y29%205G%20Glacier%20Blue.webp",
+            "https://storage.googleapis.com/tortoise-public-assets/Y29%205G%20Titanium%20Gold.webp"
+          ]
+        }
+      },
+      {
+        "name": "VIVO Y31 Pro",
+        "variants": [
+          {
+            "storage": "128GB",
+            "price": "₹18,500"
+          },
+          {
+            "storage": "256GB",
+            "price": "₹20,500"
+          }
+        ],
+        "images": {
+          "hero": "https://storage.googleapis.com/tortoise-public-assets/Y31%20Pro%205G%20Dreamy%20White.webp",
+          "gallery": [
+            "https://storage.googleapis.com/tortoise-public-assets/Y31%20Pro%205G%20Mocha%20Brown.webp"
+          ]
+        }
+      },
+      {
+        "name": "VIVO Y400 PRO",
+        "variants": [
+          {
+            "storage": "128GB",
+            "price": "₹23,493"
+          },
+          {
+            "storage": "256GB",
+            "price": "₹25,291"
+          }
+        ],
+        "images": {
+          "hero": "https://storage.googleapis.com/tortoise-public-assets/Y400%20Pro%205G%20Freestyle%20white.webp",
+          "gallery": [
+            "https://storage.googleapis.com/tortoise-public-assets/Y400%20Pro%205G%20Fest%20Gold.webp",
+            "https://storage.googleapis.com/tortoise-public-assets/Y400%20Pro%205G%20Nebule%20Purple.webp"
+          ]
+        }
+      },
+      {
+        "name": "X300 FE",
+        "variants": [
+          {
+            "ram": "12GB",
+            "storage": "256GB",
+            "price": "₹85,259"
+          },
+          {
+            "ram": "12GB",
+            "storage": "512GB",
+            "price": "₹95,059"
+          }
+        ],
+        "images": {
+          "hero": "https://cdn.tortoise.pro/product_prod_QtNCDEbF/purple_1__1_14.jpg",
+          "gallery": [
+            "https://cdn.tortoise.pro/product_prod_QtNCDEbF/01_purple_4__1_11.jpg",
+            "https://cdn.tortoise.pro/product_prod_QtNCDEbF/02_purple_3__1_11.jpg",
+            "https://cdn.tortoise.pro/product_prod_QtNCDEbF/03_purple_2__1_11.jpg",
+            "https://cdn.tortoise.pro/product_prod_QtNCDEbF/04_purple_5__1_9.jpg",
+            "https://cdn.tortoise.pro/product_prod_QtNCDEbF/05_purple_6__1_9.jpg",
+            "https://cdn.tortoise.pro/product_prod_QtNCDEbF/06_purple_8__1_7.jpg",
+            "https://cdn.tortoise.pro/product_prod_QtNCDEbF/07_purple_9__1_7.jpg",
+            "https://cdn.tortoise.pro/product_prod_QtNCDEbF/08_purple_7__1_7.jpg",
+            "https://cdn.tortoise.pro/product_prod_QtNCDEbF/09_purple_10__1_7.jpg",
+            "https://cdn.tortoise.pro/product_prod_QtNCDEbF/10_purple_11__1_7.jpg",
+            "https://cdn.tortoise.pro/product_prod_QtNCDEbF/11_purple_12__1_7.jpg",
+            "https://cdn.tortoise.pro/product_prod_QtNCDEbF/12_purple_13__1_7.jpg",
+            "https://cdn.tortoise.pro/product_prod_QtNCDEbF/13_purple_14__1_7.jpg",
+            "https://cdn.tortoise.pro/product_prod_QtNCDEbF/14_purple_15__1_7.jpg",
+            "https://cdn.tortoise.pro/product_prod_QtNCDEbF/15_purple_16__1_4.jpg",
+            "https://cdn.tortoise.pro/product_prod_QtNCDEbF/16_purple_17__1_4.jpg",
+            "https://cdn.tortoise.pro/product_prod_QtNCDEbF/17_purple_18__1_4.jpg",
+            "https://cdn.tortoise.pro/product_prod_QtNCDEbF/18_purple_19__1_2.jpg",
+            "https://cdn.tortoise.pro/product_prod_QtNCDEbF/19_purple_20_.jpg",
+            "https://cdn.tortoise.pro/product_prod_QtNCDEbF/20_purple_21_.jpg",
+            "https://cdn.tortoise.pro/product_prod_QtNCDEbF/21_purple_22_.jpg"
+          ],
+          "lifestyle": [
+            "https://cdn.tortoise.pro/product_prod_QtNCDEbF/01_x300 fe A+.jpg"
+          ]
+        }
+      },
+      {
+        "name": "X300 Ultra",
+        "variants": [
+          {
+            "ram": "16GB",
+            "storage": "512GB",
+            "price": "₹1,51,999"
+          }
+        ],
+        "images": {
+          "hero": "https://cdn.tortoise.pro/product_prod_MwAZkPoD/black_1__6_14.jpg",
+          "gallery": [
+            "https://cdn.tortoise.pro/product_prod_MwAZkPoD/01_black_5__5_10.jpg",
+            "https://cdn.tortoise.pro/product_prod_MwAZkPoD/02_black_2__6_14.jpg",
+            "https://cdn.tortoise.pro/product_prod_MwAZkPoD/03_black_4__5_14.jpg",
+            "https://cdn.tortoise.pro/product_prod_MwAZkPoD/04_black_3__6_15.jpg",
+            "https://cdn.tortoise.pro/product_prod_MwAZkPoD/05_black_6__4_11.jpg",
+            "https://cdn.tortoise.pro/product_prod_MwAZkPoD/06_black_7__4_10.jpg",
+            "https://cdn.tortoise.pro/product_prod_MwAZkPoD/07_black_8__5_11.jpg",
+            "https://cdn.tortoise.pro/product_prod_MwAZkPoD/08_black_10__4_11.jpg",
+            "https://cdn.tortoise.pro/product_prod_MwAZkPoD/09_black_9__6_11.jpg",
+            "https://cdn.tortoise.pro/product_prod_MwAZkPoD/10_black_11__4_11.jpg",
+            "https://cdn.tortoise.pro/product_prod_MwAZkPoD/11_black_12__1_11.jpg",
+            "https://cdn.tortoise.pro/product_prod_MwAZkPoD/12_black_13__1_11.jpg",
+            "https://cdn.tortoise.pro/product_prod_MwAZkPoD/13_black_14__2.jpg",
+            "https://cdn.tortoise.pro/product_prod_MwAZkPoD/14_black_15__1_9.jpg",
+            "https://cdn.tortoise.pro/product_prod_MwAZkPoD/15_black_16__1_9.jpg"
+          ],
+          "lifestyle": [
+            "https://cdn.tortoise.pro/product_prod_MwAZkPoD/01_x300 ultra A+.jpg"
+          ]
+        }
+      },
+      {
+        "name": "Y31 5G",
+        "variants": [
+          {
+            "ram": "4GB",
+            "storage": "128GB",
+            "price": "₹14,500"
+          },
+          {
+            "ram": "6GB",
+            "storage": "128GB",
+            "price": "₹25,479"
+          }
+        ],
+        "images": {
+          "hero": "https://cdn.tortoise.pro/product_prod_qu4suE35/vivo-y31-5g-diamond-green_1_.jpg",
+          "gallery": [
+            "https://cdn.tortoise.pro/product_prod_qu4suE35/01_vivo-y31-5g-diamond-green_2_.jpg",
+            "https://cdn.tortoise.pro/product_prod_qu4suE35/02_vivo-y31-5g-diamond-green_4_.jpg",
+            "https://cdn.tortoise.pro/product_prod_qu4suE35/03_vivo-y31-5g-diamond-green_3_.jpg",
+            "https://cdn.tortoise.pro/product_prod_qu4suE35/04_vivo-y31-5g-diamond-green_5_.jpg",
+            "https://cdn.tortoise.pro/product_prod_qu4suE35/05_vivo-y31-5g-diamond-green_7_.jpg",
+            "https://cdn.tortoise.pro/product_prod_qu4suE35/06_vivo-y31-5g-diamond-green_6_.jpg",
+            "https://cdn.tortoise.pro/product_prod_qu4suE35/07_vivo-y31-5g-diamond-green_8_.jpg"
+          ],
+          "lifestyle": [
+            "https://cdn.tortoise.pro/product_prod_qu4suE35/01_READY.jpg"
+          ]
+        }
+      },
+      {
+        "name": "Y400",
+        "variants": [
+          {
+            "storage": "128GB",
+            "price": "₹31,359"
+          },
+          {
+            "storage": "256GB",
+            "price": "₹34,299"
+          }
+        ],
+        "images": {
+          "hero": "https://cdn.tortoise.pro/product_prod_vsxFgMSW/vivo_y400_5g_green_1__1.jpg",
+          "gallery": [
+            "https://cdn.tortoise.pro/product_prod_vsxFgMSW/01_vivo_y400_5g_green_2__1.jpg",
+            "https://cdn.tortoise.pro/product_prod_vsxFgMSW/02_vivo_y400_5g_green_5__1.jpg",
+            "https://cdn.tortoise.pro/product_prod_vsxFgMSW/03_vivo_y400_5g_green_3__1.jpg",
+            "https://cdn.tortoise.pro/product_prod_vsxFgMSW/04_vivo_y400_5g_green_4__1.jpg",
+            "https://cdn.tortoise.pro/product_prod_vsxFgMSW/05_vivo_y400_5g_green_6__1.jpg",
+            "https://cdn.tortoise.pro/product_prod_vsxFgMSW/06_vivo_y400_5g_green_7__1.jpg"
+          ],
+          "lifestyle": [
+            "https://cdn.tortoise.pro/product_prod_vsxFgMSW/01_vivo-y400-5g-aplus (1).jpeg",
+            "https://cdn.tortoise.pro/product_prod_vsxFgMSW/02_vivo-y400-5g-aplus (2).jpeg",
+            "https://cdn.tortoise.pro/product_prod_vsxFgMSW/03_vivo-y400-5g-aplus (3).jpeg",
+            "https://cdn.tortoise.pro/product_prod_vsxFgMSW/04_vivo-y400-5g-aplus (4).jpeg",
+            "https://cdn.tortoise.pro/product_prod_vsxFgMSW/05_vivo-y400-5g-aplus (5).jpeg",
+            "https://cdn.tortoise.pro/product_prod_vsxFgMSW/06_vivo-y400-5g-aplus (6).jpeg",
+            "https://cdn.tortoise.pro/product_prod_vsxFgMSW/07_vivo-y400-5g-aplus (7).jpeg",
+            "https://cdn.tortoise.pro/product_prod_vsxFgMSW/08_vivo-y400-5g-aplus (8).jpeg",
+            "https://cdn.tortoise.pro/product_prod_vsxFgMSW/09_vivo-y400-5g-aplus (9).jpeg",
+            "https://cdn.tortoise.pro/product_prod_vsxFgMSW/10_vivo-y400-5g-aplus (10).jpeg",
+            "https://cdn.tortoise.pro/product_prod_vsxFgMSW/11_vivo-y400-5g-aplus (11).jpeg"
+          ]
+        }
+      },
+      {
+        "name": "Y51 Pro",
+        "variants": [
+          {
+            "ram": "8GB",
+            "storage": "128GB",
+            "price": "₹30,379"
+          },
+          {
+            "ram": "8GB",
+            "storage": "256GB",
+            "price": "₹33,319"
+          }
+        ],
+        "images": {
+          "hero": "https://cdn.tortoise.pro/product_prod_APsCir2b/321844_0_szc1nzebx_1.jpg",
+          "gallery": [
+            "https://cdn.tortoise.pro/product_prod_APsCir2b/01_vivo_y51_5g_festival_red_front_left_45_view_1_1.jpg",
+            "https://cdn.tortoise.pro/product_prod_APsCir2b/02_vivo_y51_5g_festival_red_back_right_45_view_1_1.jpg",
+            "https://cdn.tortoise.pro/product_prod_APsCir2b/03_vivo_y51_5g_festival_red_front_right_45_view_1_1.jpg",
+            "https://cdn.tortoise.pro/product_prod_APsCir2b/04_vivo_y51_5g_festival_red_back_left_45_view_1_1.jpg",
+            "https://cdn.tortoise.pro/product_prod_APsCir2b/05_vivo_y51_5g_festival_red_front_1_1.jpg",
+            "https://cdn.tortoise.pro/product_prod_APsCir2b/06_vivo_y51_5g_festival_red_back_1_1.jpg",
+            "https://cdn.tortoise.pro/product_prod_APsCir2b/07_vivo_y51_5g_festival_red_left_1_1.jpg",
+            "https://cdn.tortoise.pro/product_prod_APsCir2b/08_vivo_y51_5g_festival_red_right_1_1.jpg",
+            "https://cdn.tortoise.pro/product_prod_APsCir2b/09_vivo_y51_5g_festival_red_lower_1_1.jpg",
+            "https://cdn.tortoise.pro/product_prod_APsCir2b/10_vivo_y51_5g_festival_red_top_1_1.jpg",
+            "https://cdn.tortoise.pro/product_prod_APsCir2b/11_321844_7_0ihpsusc3_1.jpg"
+          ]
+        }
+      }
+    ],
+    "iQOO": [
+      {
+        "name": "iQOO 15",
+        "variants": [
+          {
+            "ram": "12GB",
+            "storage": "256GB",
+            "price": "₹73,500"
+          },
+          {
+            "ram": "16GB",
+            "storage": "512GB",
+            "price": "₹80,500"
+          }
+        ],
+        "images": {
+          "hero": "https://storage.googleapis.com/tortoise-public-assets/iQOO%2015%2016GB%2B512GB%20Legend.webp",
+          "gallery": [
+            "https://storage.googleapis.com/tortoise-public-assets/iQOO%2015%2016GB%2B512GB%20Alpha.webp"
+          ]
+        }
+      },
+      {
+        "name": "iQOO Neo 10R",
+        "variants": [
+          {
+            "ram": "8GB",
+            "storage": "128GB",
+            "price": "₹26,999"
+          },
+          {
+            "ram": "8GB",
+            "storage": "256GB",
+            "price": "₹28,999"
+          },
+          {
+            "ram": "12GB",
+            "storage": "256GB",
+            "price": "₹30,999"
+          }
+        ],
+        "images": {
+          "hero": "https://storage.googleapis.com/tortoise-public-assets/Neo%2010R%2012GB%2B256GB%20Raging%20Blue%20.webp",
+          "gallery": [
+            "https://storage.googleapis.com/tortoise-public-assets/Neo%2010R%2012GB%2B256GB%20MoonKnight.webp"
+          ]
+        }
+      },
+      {
+        "name": "IQOO Z10 LITE",
+        "variants": [
+          {
+            "storage": "64GB",
+            "price": "₹17,999"
+          },
+          {
+            "storage": "128GB",
+            "price": "₹12,999"
+          },
+          {
+            "storage": "256GB",
+            "price": "₹14,999"
+          }
+        ],
+        "images": {
+          "hero": "https://storage.googleapis.com/tortoise-public-assets/Z10%20Lite%205G%204GB%2B128GB%20Cyber%20Green%20.webp",
+          "gallery": [
+            "https://storage.googleapis.com/tortoise-public-assets/Z10%20Lite%205G%204GB%2B128GB%20Titanium%20Blue%20%20.webp"
+          ]
+        }
+      },
+      {
+        "name": "IQOO Z10 R",
+        "variants": [
+          {
+            "storage": "128GB",
+            "price": "₹23,499"
+          },
+          {
+            "storage": "256GB",
+            "price": "₹24,499"
+          }
+        ],
+        "images": {
+          "hero": "https://storage.googleapis.com/tortoise-public-assets/Z10R%205G%208GB%2B128GB%20Aquamarine%20%20.webp",
+          "gallery": [
+            "https://storage.googleapis.com/tortoise-public-assets/Z10R%205G%208GB%2B256GB%20Moonstone%20%20.webp"
+          ]
+        }
+      },
+      {
+        "name": "IQOO Z10X",
+        "variants": [
+          {
+            "storage": "128GB",
+            "price": "₹14,999"
+          },
+          {
+            "storage": "256GB",
+            "price": "₹17,999"
+          }
+        ],
+        "images": {
+          "hero": "https://storage.googleapis.com/tortoise-public-assets/Z10x%205G%208GB%2B128GB%20Ultramarine%20.webp",
+          "gallery": [
+            "https://storage.googleapis.com/tortoise-public-assets/Z10x%205G%208GB%2B128GB%20Titanium%20%20.webp"
+          ]
+        }
+      }
+    ],
+    "Motorola": [
+      {
+        "name": "Motorola Edge 50",
+        "variants": [
+          {
+            "ram": "8GB",
+            "storage": "256GB",
+            "price": "₹21,126"
+          }
+        ],
+        "images": {
+          "hero": "https://storage.googleapis.com/tortoise-public-assets/products/Edge%2050%20Koala%20Grey.png",
+          "gallery": [
+            "https://storage.googleapis.com/tortoise-public-assets/products/Edge%2050%20Jungle%20Green.png",
+            "https://storage.googleapis.com/tortoise-public-assets/products/Edge%2050%20Peach%20Fuzz.png"
+          ]
+        }
+      },
+      {
+        "name": "Motorola Edge 50 Fusion",
+        "variants": [
+          {
+            "ram": "8GB",
+            "storage": "128GB",
+            "price": "₹18,420"
+          },
+          {
+            "ram": "12GB",
+            "storage": "256GB",
+            "price": "₹20,166"
+          }
+        ],
+        "images": {
+          "hero": "https://storage.googleapis.com/tortoise-public-assets/products/Edge%2050%20Fusion%20Marshmellow%20Blue.png",
+          "gallery": [
+            "https://storage.googleapis.com/tortoise-public-assets/products/Edge%2050%20Fusion%20Hot%20Pink.png",
+            "https://storage.googleapis.com/tortoise-public-assets/products/Edge%2050%20Fusion%20Forest%20Blue.png"
+          ]
+        }
+      },
+      {
+        "name": "Motorola Edge 50 Neo",
+        "variants": [
+          {
+            "ram": "8GB",
+            "storage": "256GB",
+            "price": "₹20,166"
+          }
+        ],
+        "images": {
+          "hero": "https://storage.googleapis.com/tortoise-public-assets/products/Pantone%20Poinciana.png",
+          "gallery": [
+            "https://storage.googleapis.com/tortoise-public-assets/products/Edge%2050%20Neo%20Pantone%20Grisallie.png",
+            "https://storage.googleapis.com/tortoise-public-assets/products/Edge%2050%20Neo%20Pantone%20Latte.png",
+            "https://storage.googleapis.com/tortoise-public-assets/products/Edge%2050%20Neo%20Panton%20Mocha%20Mouse.png",
+            "https://storage.googleapis.com/tortoise-public-assets/products/Edge%2050%20Neo%20Pantone%20Nautical%20Blue.png"
+          ]
+        }
+      },
+      {
+        "name": "Motorola Edge 50 Pro",
+        "variants": [
+          {
+            "ram": "8GB",
+            "storage": "256GB",
+            "price": "₹26,888"
+          },
+          {
+            "ram": "12GB",
+            "storage": "256GB",
+            "price": "₹28,809"
+          }
+        ],
+        "images": {
+          "hero": "https://storage.googleapis.com/tortoise-public-assets/products/Edge%2050%20Pro%20Moonlight%20pearl.png",
+          "gallery": [
+            "https://storage.googleapis.com/tortoise-public-assets/products/Edge%2050%20Pro%20Black%20Beauty.png",
+            "https://storage.googleapis.com/tortoise-public-assets/products/Edge%2050%20Pro%20Caneel%20Bay.png",
+            "https://storage.googleapis.com/tortoise-public-assets/products/Edge%2050%20Pro%20Luxe%20Lavender.png"
+          ]
+        }
+      },
+      {
+        "name": "Motorola Edge 50 Ultra",
+        "variants": [
+          {
+            "ram": "12GB",
+            "storage": "512GB",
+            "price": "₹48,016"
+          }
+        ],
+        "images": {
+          "hero": "https://storage.googleapis.com/tortoise-public-assets/products/Edge%2050%20Ultra%20Nordic%20Wood.png",
+          "gallery": [
+            "https://storage.googleapis.com/tortoise-public-assets/products/Edge%2050%20Ultra%20Forest%20Grey.png"
+          ]
+        }
+      },
+      {
+        "name": "Motorola Edge 60",
+        "variants": [
+          {
+            "ram": "12GB",
+            "storage": "256GB",
+            "price": "₹24,968"
+          }
+        ],
+        "images": {
+          "hero": "https://storage.googleapis.com/tortoise-public-assets/products/Edge%2060%20Pantone%20Shamrock.png",
+          "gallery": [
+            "https://storage.googleapis.com/tortoise-public-assets/products/Edge%2060%20Pantone%20Gibraltar%20Sea.png"
+          ]
+        }
+      },
+      {
+        "name": "Motorola Edge 60 Fusion",
+        "variants": [
+          {
+            "ram": "8GB",
+            "storage": "256GB",
+            "price": "₹22,087"
+          },
+          {
+            "ram": "12GB",
+            "storage": "256GB",
+            "price": "₹24,008"
+          }
+        ],
+        "images": {
+          "hero": "https://storage.googleapis.com/tortoise-public-assets/products/edge%2060%20fusion%20Pantone%20Zephyr.png",
+          "gallery": [
+            "https://storage.googleapis.com/tortoise-public-assets/products/edge%2060%20fusion%20Pantone%20Zephyr%20.png",
+            "https://storage.googleapis.com/tortoise-public-assets/products/edge%2060%20fusion%20Pantone%20Amazonite.png",
+            "https://storage.googleapis.com/tortoise-public-assets/products/edge%2060%20fusion%20Pantone%20Slipstream%20.png"
+          ]
+        }
+      },
+      {
+        "name": "Motorola Edge 60 Pro",
+        "variants": [
+          {
+            "ram": "8",
+            "storage": "256GB",
+            "price": "₹28,809"
+          },
+          {
+            "ram": "12",
+            "storage": "256GB",
+            "price": "₹32,651"
+          },
+          {
+            "ram": "16",
+            "storage": "512GB",
+            "price": "₹36,492"
+          }
+        ],
+        "images": {
+          "hero": "https://cdn.tortoise.pro/product_prod_vR9wjRC4/moto-edge-60-pro-ecom-render-01-Walnut-.png",
+          "gallery": [
+            "https://cdn.tortoise.pro/product_prod_vR9wjRC4/01_moto-edge-60-pro-ecom-render-02-Walnut-.png",
+            "https://cdn.tortoise.pro/product_prod_vR9wjRC4/02_moto-edge-60-pro-ecom-render-03-Walnut-.png",
+            "https://cdn.tortoise.pro/product_prod_vR9wjRC4/03_moto-edge-60-pro-ecom-render-04-Walnut-.png",
+            "https://cdn.tortoise.pro/product_prod_vR9wjRC4/04_moto-edge-60-pro-ecom-render-05-Walnut-.png",
+            "https://cdn.tortoise.pro/product_prod_vR9wjRC4/05_moto-edge-60-pro-ecom-render-06-Walnut-.png"
+          ]
+        }
+      },
+      {
+        "name": "Motorola Edge 60 Stylus",
+        "variants": [
+          {
+            "ram": "8GB",
+            "storage": "256GB",
+            "price": "₹22,087"
+          }
+        ],
+        "images": {
+          "hero": "https://storage.googleapis.com/tortoise-public-assets/products/%20Edge%2060%20Stylus%20PANTONE%20Gibraltar%20Sea.png",
+          "gallery": [
+            "https://storage.googleapis.com/tortoise-public-assets/products/%20Edge%2060%20Stylus%20%20PANTONE%20Surf%20the%20Web.png"
+          ]
+        }
+      },
+      {
+        "name": "Motorola Edge 70",
+        "variants": [
+          {
+            "ram": "8",
+            "storage": "256GB",
+            "price": "₹30,500"
+          }
+        ],
+        "images": {
+          "hero": "https://cdn.tortoise.pro/product_prod_FMBHFL76/moto-edge-70-pdp-ecom-render-06-color2-.png",
+          "gallery": [
+            "https://cdn.tortoise.pro/product_prod_FMBHFL76/01_moto-edge-70-pdp-ecom-render-02-color2--1.png",
+            "https://cdn.tortoise.pro/product_prod_FMBHFL76/02_moto-edge-70-pdp-ecom-render-02-color2-.png",
+            "https://cdn.tortoise.pro/product_prod_FMBHFL76/03_moto-edge-70-pdp-ecom-render-03-color2-.png",
+            "https://cdn.tortoise.pro/product_prod_FMBHFL76/04_moto-edge-70-pdp-ecom-render-05-color2-.png"
+          ]
+        }
+      },
+      {
+        "name": "Motorola Edge 70 Fusion",
+        "variants": [
+          {
+            "ram": "8",
+            "storage": "128GB",
+            "price": "₹31,500"
+          },
+          {
+            "ram": "8",
+            "storage": "256GB",
+            "price": "₹33,500"
+          },
+          {
+            "ram": "12",
+            "storage": "256GB",
+            "price": "₹35,500"
+          }
+        ],
+        "images": {
+          "hero": "https://cdn.tortoise.pro/product_prod_i5K8bpXl/motorola-edge-70-fusion-pdp-ecom-render-06-color2-orzkzajg.png",
+          "gallery": [
+            "https://cdn.tortoise.pro/product_prod_i5K8bpXl/01_motorola-edge-70-fusion-pdp-ecom-render-02-color2-8361ss97.png",
+            "https://cdn.tortoise.pro/product_prod_i5K8bpXl/02_motorola-edge-70-fusion-pdp-ecom-render-04-color2-z6y6yj54.png",
+            "https://cdn.tortoise.pro/product_prod_i5K8bpXl/03_motorola-edge-70-fusion-pdp-ecom-render-05-color2-1qb40b2e.png"
+          ]
+        }
+      },
+      {
+        "name": "Motorola Edge 70 Pro",
+        "variants": [
+          {
+            "ram": "8",
+            "storage": "256GB",
+            "price": "₹40,500"
+          }
+        ],
+        "images": {
+          "hero": "https://cdn.tortoise.pro/product_prod_n5R5pHRi/moto-edge-70-pro-Lite-IN-pdp-ecom-render-06-color2-.png",
+          "gallery": [
+            "https://cdn.tortoise.pro/product_prod_n5R5pHRi/01_moto-edge-70-pro-Lite-IN-pdp-ecom-render-02-color2-.png",
+            "https://cdn.tortoise.pro/product_prod_n5R5pHRi/02_moto-edge-70-pro-Lite-IN-pdp-ecom-render-04-color2-.png",
+            "https://cdn.tortoise.pro/product_prod_n5R5pHRi/03_moto-edge-70-pro-Lite-IN-pdp-ecom-render-05-color2-.png"
+          ]
+        }
+      },
+      {
+        "name": "Motorola G05",
+        "variants": [
+          {
+            "ram": "4GB",
+            "storage": "64GB",
+            "price": "₹7,077"
+          }
+        ],
+        "images": {
+          "hero": "https://storage.googleapis.com/tortoise-public-assets/products/G05%20Plum%20Red.png",
+          "gallery": [
+            "https://storage.googleapis.com/tortoise-public-assets/products/G05%20Forest%20Green.png"
+          ]
+        }
+      },
+      {
+        "name": "Motorola G35",
+        "variants": [
+          {
+            "ram": "4GB",
+            "storage": "128GB",
+            "price": "₹9,694"
+          }
+        ],
+        "images": {
+          "hero": "https://storage.googleapis.com/tortoise-public-assets/products/G35%20Guava%20red.webp",
+          "gallery": [
+            "https://storage.googleapis.com/tortoise-public-assets/products/G35%20Midnight%20Black.png",
+            "https://storage.googleapis.com/tortoise-public-assets/products/G35%20Leaf%20Green.png"
+          ]
+        }
+      },
+      {
+        "name": "Motorola G45 5G",
+        "variants": [
+          {
+            "ram": "4GB",
+            "storage": "128GB",
+            "price": "₹10,664"
+          },
+          {
+            "ram": "8GB",
+            "storage": "128GB",
+            "price": "₹11,633"
+          }
+        ],
+        "images": {
+          "hero": "https://storage.googleapis.com/tortoise-public-assets/products/G45%205G%20Moss.png",
+          "gallery": [
+            "https://storage.googleapis.com/tortoise-public-assets/products/G45%205G%20Dahlia%20Purple.png",
+            "https://storage.googleapis.com/tortoise-public-assets/products/G45%205G%20Pink%20Lavender.png",
+            "https://storage.googleapis.com/tortoise-public-assets/products/%20G45%205G%20Brilliant%20Green.png",
+            "https://storage.googleapis.com/tortoise-public-assets/products/G45%205G%20Viva%20Magneta.png",
+            "https://storage.googleapis.com/tortoise-public-assets/products/G45%205G%20Brilliant%20Blue.png"
+          ]
+        }
+      },
+      {
+        "name": "Motorola G64 5G",
+        "variants": [
+          {
+            "ram": "8GB",
+            "storage": "128GB",
+            "price": "₹13,572"
+          },
+          {
+            "ram": "12GB",
+            "storage": "256GB",
+            "price": "₹15,511"
+          }
+        ],
+        "images": {
+          "hero": "https://storage.googleapis.com/tortoise-public-assets/products/G64%205G%20Berry%20Red.png",
+          "gallery": [
+            "https://storage.googleapis.com/tortoise-public-assets/products/G64%205G%20Ice%20Lilac%20.png",
+            "https://storage.googleapis.com/tortoise-public-assets/products/G64%205G%20Pearl%20Blue.png",
+            "https://storage.googleapis.com/tortoise-public-assets/products/G64%205G%20Mint%20Green.png"
+          ]
+        }
+      },
+      {
+        "name": "Motorola G67 Power",
+        "variants": [
+          {
+            "ram": "8",
+            "storage": "128GB",
+            "price": "₹17,500"
+          }
+        ],
+        "images": {
+          "hero": "https://cdn.tortoise.pro/product_prod_TdH4SpVs/motorola-g-67-power-pdp-ecom-render-06-color2-.png",
+          "gallery": [
+            "https://cdn.tortoise.pro/product_prod_TdH4SpVs/01_motorola-g-67-power-pdp-ecom-render-02-color2-.png",
+            "https://cdn.tortoise.pro/product_prod_TdH4SpVs/02_motorola-g-67-power-pdp-ecom-render-02-color2--1.png",
+            "https://cdn.tortoise.pro/product_prod_TdH4SpVs/03_motorola-g-67-power-pdp-ecom-render-03-color2-.png",
+            "https://cdn.tortoise.pro/product_prod_TdH4SpVs/04_motorola-g-67-power-pdp-ecom-render-05-color2-.png"
+          ]
+        }
+      },
+      {
+        "name": "Motorola G85 5G",
+        "variants": [
+          {
+            "ram": "8GB",
+            "storage": "128GB",
+            "price": "₹16,481"
+          },
+          {
+            "ram": "12GB",
+            "storage": "256GB",
+            "price": "₹18,420"
+          }
+        ],
+        "images": {
+          "hero": "https://storage.googleapis.com/tortoise-public-assets/products/G85%205G%20Urban%20Grey.png",
+          "gallery": [
+            "https://storage.googleapis.com/tortoise-public-assets/products/G85%205G%20Olive%20Green.png",
+            "https://storage.googleapis.com/tortoise-public-assets/products/G85%205G%20Viva%20Magneta.png",
+            "https://storage.googleapis.com/tortoise-public-assets/products/G85%205G%20Cobalt%20Blue.png"
+          ]
+        }
+      },
+      {
+        "name": "Motorola G86 Power 5G",
+        "variants": [
+          {
+            "ram": "8GB",
+            "storage": "128GB",
+            "price": "₹17,451"
+          }
+        ],
+        "images": {
+          "hero": "https://storage.googleapis.com/tortoise-public-assets/products/%20G86%20Power%205G%20Pantone%20Cosmic%20Sky.png",
+          "gallery": [
+            "https://storage.googleapis.com/tortoise-public-assets/products/%20G86%20Power%205G%20Pantone%20Golden%20Cypress.png"
+          ]
+        }
+      },
+      {
+        "name": "Motorola G96 5G",
+        "variants": [
+          {
+            "ram": "8",
+            "storage": "128GB",
+            "price": "₹17,451"
+          },
+          {
+            "ram": "8",
+            "storage": "256GB",
+            "price": "₹19,390"
+          }
+        ],
+        "images": {
+          "hero": "https://cdn.tortoise.pro/product_prod_XEcxADtW/moto-g96-5g-ecom-render-01-color-4-.png",
+          "gallery": [
+            "https://cdn.tortoise.pro/product_prod_XEcxADtW/01_12342805_Noida-Primary-Image-11.png",
+            "https://cdn.tortoise.pro/product_prod_XEcxADtW/02_moto-g96-5g-ecom-render-03-color-4-.png",
+            "https://cdn.tortoise.pro/product_prod_XEcxADtW/03_moto-g96-5g-ecom-render-04-color-4-.png",
+            "https://cdn.tortoise.pro/product_prod_XEcxADtW/04_moto-g96-5g-ecom-render-05-color-4-.png"
+          ]
+        }
+      },
+      {
+        "name": "Motorola Razr 50",
+        "variants": [
+          {
+            "ram": "8GB",
+            "storage": "256GB",
+            "price": "₹52,818"
+          }
+        ],
+        "images": {
+          "hero": "https://storage.googleapis.com/tortoise-public-assets/products/Razr%2050%20Beach%20sand.webp",
+          "gallery": [
+            "https://storage.googleapis.com/tortoise-public-assets/products/Razr%2050%20Spritz%20orang.webp",
+            "https://storage.googleapis.com/tortoise-public-assets/products/Razr%2050%20Koala%20Grey.webp"
+          ]
+        }
+      },
+      {
+        "name": "Motorola Razr 50 Ultra",
+        "variants": [
+          {
+            "ram": "12GB",
+            "storage": "512GB",
+            "price": "₹76,826"
+          }
+        ],
+        "images": {
+          "hero": "https://storage.googleapis.com/tortoise-public-assets/products/Razr%2050%20Ultra%20Midnight%20Blue.png",
+          "gallery": [
+            "https://storage.googleapis.com/tortoise-public-assets/products/Razr%2050%20Ultra%20Peach%20Fuzz.png",
+            "https://storage.googleapis.com/tortoise-public-assets/products/Razr%2050%20Ultra%20Spring%20Green.png"
+          ]
+        }
+      },
+      {
+        "name": "Motorola Razr 60",
+        "variants": [
+          {
+            "ram": "8GB",
+            "storage": "256GB",
+            "price": "₹48,016"
+          }
+        ],
+        "images": {
+          "hero": "https://storage.googleapis.com/tortoise-public-assets/products/Razr%2060%20PANTONE%20Lightest%20Sky.png",
+          "gallery": [
+            "https://storage.googleapis.com/tortoise-public-assets/products/Razr%2060%20PANTONE%20Spring%20Bud.png",
+            "https://storage.googleapis.com/tortoise-public-assets/products/Razr%2060%20PANTONE%20Gibraltar%20Sea%20.png",
+            "https://storage.googleapis.com/tortoise-public-assets/products/Razr%2060%20%20Pantone%20Ice%20melt%20Swarovski.png"
+          ]
+        }
+      },
+      {
+        "name": "Motorola Razr 60 Ultra",
+        "variants": [
+          {
+            "ram": "16GB",
+            "storage": "512GB",
+            "price": "₹96,033"
+          }
+        ],
+        "images": {
+          "hero": "https://storage.googleapis.com/tortoise-public-assets/products/Razr%2060%20Ultra%20PANTONE%20Scarab.png",
+          "gallery": [
+            "https://storage.googleapis.com/tortoise-public-assets/products/Razr%2060%20Ultra%20PANTONE%20Mountain%20Trail.png",
+            "https://storage.googleapis.com/tortoise-public-assets/products/Razr%2060%20Ultra%20PANTONE%20Rio%20red.png"
+          ]
+        }
+      },
+      {
+        "name": "Motorola Signature",
+        "variants": [
+          {
+            "ram": "16GB",
+            "storage": "1TB",
+            "price": "₹69,999"
+          },
+          {
+            "ram": "12",
+            "storage": "256GB",
+            "price": "₹60,500"
+          },
+          {
+            "ram": "16",
+            "storage": "512GB",
+            "price": "₹64,999"
+          }
+        ],
+        "images": {
+          "hero": "https://cdn.tortoise.pro/product_prod_SW1B3oH3/motorola-Signature-pdp-ecom-render-06-color1-c70gq7b2.png",
+          "gallery": [
+            "https://cdn.tortoise.pro/product_prod_SW1B3oH3/01_motorola-Signature-pdp-ecom-render-01-color1-kqtoimof.png",
+            "https://cdn.tortoise.pro/product_prod_SW1B3oH3/02_motorola-Signature-pdp-ecom-render-02-color1-0mkfhlwb.png",
+            "https://cdn.tortoise.pro/product_prod_SW1B3oH3/03_motorola-Signature-pdp-ecom-render-05-color1-3bh28cww.png"
+          ]
+        }
+      }
+    ],
+    "Nothing": [
+      {
+        "name": "4A Pro",
+        "variants": [
+          {
+            "ram": "8GB",
+            "storage": "128GB",
+            "price": "₹49,999"
+          },
+          {
+            "ram": "8GB",
+            "storage": "256GB",
+            "price": "₹52,999"
+          },
+          {
+            "ram": "12GB",
+            "storage": "256GB",
+            "price": "₹55,999"
+          }
+        ],
+        "images": {
+          "hero": "https://cdn.tortoise.pro/product_prod_lHWJsns2/1_162_2.jpg",
+          "gallery": [
+            "https://cdn.tortoise.pro/product_prod_lHWJsns2/01_2_142_4.jpg",
+            "https://cdn.tortoise.pro/product_prod_lHWJsns2/02_3_125_4.jpg",
+            "https://cdn.tortoise.pro/product_prod_lHWJsns2/03_4_117_4.jpg",
+            "https://cdn.tortoise.pro/product_prod_lHWJsns2/04_5_109_4.jpg",
+            "https://cdn.tortoise.pro/product_prod_lHWJsns2/05_6_104_3.jpg",
+            "https://cdn.tortoise.pro/product_prod_lHWJsns2/06_7_91.jpg",
+            "https://cdn.tortoise.pro/product_prod_lHWJsns2/07_8_70_3.jpg",
+            "https://cdn.tortoise.pro/product_prod_lHWJsns2/08_9_58_3.jpg"
+          ],
+          "lifestyle": [
+            "https://cdn.tortoise.pro/product_prod_lHWJsns2/01_Nothing 4a Pro A+.jpg"
+          ]
+        }
+      },
+      {
+        "name": "Nothing 3",
+        "variants": [
+          {
+            "storage": "256GB",
+            "price": "₹79,500"
+          },
+          {
+            "storage": "512GB",
+            "price": "₹89,500"
+          }
+        ],
+        "images": {
+          "hero": "https://storage.googleapis.com/tortoise-public-assets/products/Nothing%20Phone%203%205G%20(12GB%20RAM%2C%20256GB%2C%20Black)%20%20.webp",
+          "gallery": [
+            "https://storage.googleapis.com/tortoise-public-assets/products/Nothing%20Phone%203%205G%20(12GB%20RAM%2C%20256GB%2C%20White)%20%20.webp"
+          ]
+        }
+      },
+      {
+        "name": "Nothing 3a",
+        "variants": [
+          {
+            "storage": "128GB",
+            "price": "₹24,500"
+          },
+          {
+            "storage": "256GB",
+            "price": "₹26,400"
+          }
+        ],
+        "images": {
+          "hero": "https://storage.googleapis.com/tortoise-public-assets/products/Nothing%20Phone%203a%205G%20(8GB%20RAM%2C%20128GB%2C%20Blue)%20.webp",
+          "gallery": [
+            "https://storage.googleapis.com/tortoise-public-assets/products/Nothing%20Phone%203a%205G%20(8GB%20RAM%2C%20128GB%2C%20Black)%20.webp",
+            "https://storage.googleapis.com/tortoise-public-assets/products/Nothing%20Phone%203a%205G%20(8GB%20RAM%2C%20128GB%2C%20White)%20.webp"
+          ]
+        }
+      },
+      {
+        "name": "Nothing 3A Lite",
+        "variants": [
+          {
+            "ram": "8GB",
+            "storage": "128GB",
+            "price": "₹22,999"
+          },
+          {
+            "ram": "8GB",
+            "storage": "256GB",
+            "price": "₹24,999"
+          }
+        ],
+        "images": {
+          "hero": "https://storage.googleapis.com/tortoise-public-assets/products/3a-black.jpg",
+          "gallery": [
+            "https://storage.googleapis.com/tortoise-public-assets/products/3a-white.jpg"
+          ]
+        }
+      },
+      {
+        "name": "Nothing 3a Pro",
+        "variants": [
+          {
+            "storage": "128GB",
+            "price": "₹29,500"
+          },
+          {
+            "storage": "256GB",
+            "price": "₹31,500"
+          }
+        ],
+        "images": {
+          "hero": "https://storage.googleapis.com/tortoise-public-assets/products/Nothing%20Phone%203a%20Pro%205G%20(8GB%20RAM%2C%20128GB%2C%20Black)%20%20.webp",
+          "gallery": [
+            "https://storage.googleapis.com/tortoise-public-assets/products/Nothing%20Phone%203a%20Pro%205G%20(8GB%20RAM%2C%20128GB%2C%20Grey)%20%20.webp"
+          ]
+        }
+      },
+      {
+        "name": "Nothing 4A",
+        "variants": [
+          {
+            "ram": "8GB",
+            "storage": "128GB",
+            "price": "₹31,999"
+          },
+          {
+            "ram": "8GB",
+            "storage": "256GB",
+            "price": "₹34,999"
+          },
+          {
+            "ram": "12GB",
+            "storage": "256GB",
+            "price": "₹37,999"
+          }
+        ],
+        "images": {
+          "hero": "https://storage.googleapis.com/tortoise-public-assets/products/4a-black.webp",
+          "gallery": [
+            "https://storage.googleapis.com/tortoise-public-assets/products/4a-white.webp",
+            "https://storage.googleapis.com/tortoise-public-assets/products/4a-blue.webp"
+          ]
+        }
+      },
+      {
+        "name": "Nothing CMF 2 Pro",
+        "variants": [
+          {
+            "storage": "128GB",
+            "price": "₹18,100"
+          },
+          {
+            "storage": "256GB",
+            "price": "₹19,900"
+          }
+        ],
+        "images": {
+          "hero": "https://storage.googleapis.com/tortoise-public-assets/Nothing%20CMF%20Phone%202%20Pro%205G%20(8GB%20RAM%2C%20128GB%2C%20Black)%20.webp",
+          "gallery": [
+            "https://storage.googleapis.com/tortoise-public-assets/Nothing%20CMF%20Phone%202%20Pro%205G%20(8GB%20RAM%2C%20128GB%2C%20Orange)%20.webp"
+          ]
+        }
+      }
+    ]
+  },
+  "metadata": {
+    "generated_date": "2026-07-14",
+    "currency_note": "Prices from supplier channels in INR — Apple: radius, Android: ila_marketing (channel listing preferred, else SupplierProduct.price)",
+    "image_source": "Product.image_url / Product.extras.alt_images / content_images",
+    "visibility": "public",
+    "skipped_products": 38,
+    "price_source_counts": {
+      "channel_listing": 294,
+      "supplier_product": 499
+    },
+    "device_count": 141,
+    "brand_count": 10
+  }
+}

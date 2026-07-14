@@ -131,6 +131,13 @@
         <h1
           style="font-family: var(--font-heading); font-weight: 600; font-size: clamp(22px, 2.6vw, 28px); letter-spacing: -0.01em; margin: 0;">
           Select a device</h1>
+        <sc-if value="{{ loading }}" hint-placeholder-val="{{ false }}">
+          <p style="font-size: 14px; color: var(--text-secondary); margin: 0;">Loading catalogue…</p>
+        </sc-if>
+        <sc-if value="{{ loadError }}" hint-placeholder-val="{{ false }}">
+          <p style="font-size: 14px; color: var(--text-secondary); margin: 0;">Couldn’t load the device catalogue. Refresh
+            to try again.</p>
+        </sc-if>
         <div class="device-card-grid" style="display: flex; flex-wrap: wrap; gap: 12px;">
           <sc-for list="{{ cards }}" as="c" hint-placeholder-count="8">
             <button onClick="{{ c.onClick }}" aria-pressed="{{ c.selected }}" style="{{ c.style }}">
@@ -239,20 +246,22 @@
                 </sc-for>
               </div>
             </div>
-            <div style="display: flex; flex-direction: column; gap: 8px;">
-              <span
-                style="font-family: var(--font-heading); font-weight: 600; font-size: 12px; line-height: 18px; letter-spacing: 0.08em; color: rgb(100,100,100); text-transform: uppercase;">Colour</span>
-              <div role="radiogroup" aria-label="Colour" style="display: flex; flex-wrap: wrap; gap: 16px;">
-                <sc-for list="{{ colors }}" as="co" hint-placeholder-count="5">
-                  <button role="radio" aria-checked="{{ co.checked }}" aria-label="{{ co.label }}"
-                    onClick="{{ co.onClick }}"
-                    style="display: flex; flex-direction: column; gap: 4px; align-items: center; background: transparent; border: none; padding: 0; cursor: pointer;">
-                    <span style="{{ co.swatchStyle }}"></span>
-                    <span style="{{ co.dotStyle }}"></span>
-                  </button>
-                </sc-for>
+            <sc-if value="{{ showColors }}" hint-placeholder-val="{{ false }}">
+              <div style="display: flex; flex-direction: column; gap: 8px;">
+                <span
+                  style="font-family: var(--font-heading); font-weight: 600; font-size: 12px; line-height: 18px; letter-spacing: 0.08em; color: rgb(100,100,100); text-transform: uppercase;">Colour</span>
+                <div role="radiogroup" aria-label="Colour" style="display: flex; flex-wrap: wrap; gap: 16px;">
+                  <sc-for list="{{ colors }}" as="co" hint-placeholder-count="5">
+                    <button role="radio" aria-checked="{{ co.checked }}" aria-label="{{ co.label }}"
+                      onClick="{{ co.onClick }}"
+                      style="display: flex; flex-direction: column; gap: 4px; align-items: center; background: transparent; border: none; padding: 0; cursor: pointer;">
+                      <span style="{{ co.swatchStyle }}"></span>
+                      <span style="{{ co.dotStyle }}"></span>
+                    </button>
+                  </sc-for>
+                </div>
               </div>
-            </div>
+            </sc-if>
           </div>
 
           <!-- effective cost + terms -->
@@ -447,20 +456,22 @@
                 </sc-for>
               </div>
             </div>
-            <div style="display: flex; flex-direction: column; gap: 8px;">
-              <span
-                style="font-family: var(--font-heading); font-weight: 600; font-size: 11px; letter-spacing: 0.08em; color: rgb(100,100,100); text-transform: uppercase;">Colour</span>
-              <div role="radiogroup" aria-label="Colour" style="display: flex; flex-wrap: wrap; gap: 12px;">
-                <sc-for list="{{ colors }}" as="co" hint-placeholder-count="5">
-                  <button role="radio" aria-checked="{{ co.checked }}" aria-label="{{ co.label }}"
-                    onClick="{{ co.onClick }}"
-                    style="display: flex; flex-direction: column; gap: 4px; align-items: center; background: transparent; border: none; padding: 0; cursor: pointer;">
-                    <span style="{{ co.swatchStyle }}"></span>
-                    <span style="{{ co.dotStyle }}"></span>
-                  </button>
-                </sc-for>
+            <sc-if value="{{ showColors }}" hint-placeholder-val="{{ false }}">
+              <div style="display: flex; flex-direction: column; gap: 8px;">
+                <span
+                  style="font-family: var(--font-heading); font-weight: 600; font-size: 11px; letter-spacing: 0.08em; color: rgb(100,100,100); text-transform: uppercase;">Colour</span>
+                <div role="radiogroup" aria-label="Colour" style="display: flex; flex-wrap: wrap; gap: 12px;">
+                  <sc-for list="{{ colors }}" as="co" hint-placeholder-count="5">
+                    <button role="radio" aria-checked="{{ co.checked }}" aria-label="{{ co.label }}"
+                      onClick="{{ co.onClick }}"
+                      style="display: flex; flex-direction: column; gap: 4px; align-items: center; background: transparent; border: none; padding: 0; cursor: pointer;">
+                      <span style="{{ co.swatchStyle }}"></span>
+                      <span style="{{ co.dotStyle }}"></span>
+                    </button>
+                  </sc-for>
+                </div>
               </div>
-            </div>
+            </sc-if>
           </div>
 
           <!-- Effective cost + terms -->
@@ -554,103 +565,175 @@ class Component extends DCLogic {
   static CONFIG = {
     CESS: 0.04,        // 4% health & education cess on tax savings
     BUYBACK_AMOUNT: 1, // ₹ to own the device at lease end
+    DEVICES_URL: './devices.json',
   };
 
-  static DEVICES = [
-    // Apple
-    { name: 'iPhone 17', img: 'https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-17.jpg', base: 66317, brand: 'Apple',
-      storages: [['256 GB', 0], ['512 GB', 8300]],
-      colors: [['Black', 'rgb(70,74,76)'], ['White', 'rgb(238,233,204)'], ['Blue', 'rgb(140,160,232)'], ['Pink', 'rgb(237,212,215)']] },
-    { name: 'iPhone 17 Pro', img: 'https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-17-pro.jpg', base: 87067, brand: 'Apple',
-      storages: [['256 GB', 0], ['512 GB', 8300], ['1 TB', 24900]],
-      colors: [['Natural Titanium', 'rgb(214,221,224)'], ['Black Titanium', 'rgb(70,74,76)'], ['Desert Titanium', 'rgb(238,233,204)']] },
-    { name: 'iPhone 17 Pro Max', img: 'https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-17-pro-max.jpg', base: 103667, brand: 'Apple',
-      storages: [['256 GB', 0], ['512 GB', 16600], ['1 TB', 33200], ['2 TB', 62250]],
-      colors: [['Natural Titanium', 'rgb(214,221,224)'], ['Black Titanium', 'rgb(70,74,76)'], ['Desert Titanium', 'rgb(238,233,204)']] },
-    // Samsung
-    { name: 'Galaxy S26', img: 'https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-s26.jpg', base: 66317, brand: 'Samsung',
-      storages: [['128 GB', 0], ['256 GB', 4980]],
-      colors: [['Black', 'rgb(45,45,45)'], ['White', 'rgb(245,245,245)'], ['Sky Blue', 'rgb(135,180,220)'], ['Cobalt Violet', 'rgb(100,80,140)']] },
-    { name: 'Galaxy S26+', img: 'https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-s26-plus.jpg', base: 82917, brand: 'Samsung',
-      storages: [['256 GB', 0], ['512 GB', 9960]],
-      colors: [['Black', 'rgb(45,45,45)'], ['White', 'rgb(245,245,245)'], ['Sky Blue', 'rgb(135,180,220)'], ['Cobalt Violet', 'rgb(100,80,140)']] },
-    { name: 'Galaxy S26 Ultra', img: 'https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-s26-ultra.jpg', base: 107817, brand: 'Samsung',
-      storages: [['256 GB', 0], ['512 GB', 9960], ['1 TB', 29880]],
-      colors: [['Black', 'rgb(45,45,45)'], ['White', 'rgb(245,245,245)'], ['Sky Blue', 'rgb(135,180,220)'], ['Cobalt Violet', 'rgb(100,80,140)']] },
-    // Google
-    { name: 'Pixel 9', img: 'https://fdn2.gsmarena.com/vv/bigpic/google-pixel-9-.jpg', base: 66317, brand: 'Google',
-      storages: [['128 GB', 0], ['256 GB', 8300]],
-      colors: [['Obsidian', 'rgb(60,60,60)'], ['Porcelain', 'rgb(240,235,225)'], ['Wintergreen', 'rgb(180,210,190)'], ['Peony', 'rgb(230,180,190)']] },
-    { name: 'Pixel 9 Pro', img: 'https://fdn2.gsmarena.com/vv/bigpic/google-pixel-9-pro-.jpg', base: 82917, brand: 'Google',
-      storages: [['128 GB', 0], ['256 GB', 4980], ['512 GB', 14940], ['1 TB', 24900]],
-      colors: [['Obsidian', 'rgb(60,60,60)'], ['Porcelain', 'rgb(240,235,225)'], ['Hazel', 'rgb(180,170,150)']] },
-    { name: 'Pixel 9 Pro XL', img: 'https://fdn2.gsmarena.com/vv/bigpic/google-pixel-9-pro-xl-.jpg', base: 91217, brand: 'Google',
-      storages: [['128 GB', 0], ['256 GB', 4980], ['512 GB', 14940], ['1 TB', 24900]],
-      colors: [['Obsidian', 'rgb(60,60,60)'], ['Porcelain', 'rgb(240,235,225)'], ['Hazel', 'rgb(180,170,150)']] },
-    // OnePlus
-    { name: 'OnePlus 13', img: 'https://fdn2.gsmarena.com/vv/bigpic/oneplus-13.jpg', base: 74617, brand: 'OnePlus',
-      storages: [['12GB + 256GB', 0], ['16GB + 512GB', 8300]],
-      colors: [['Midnight Ocean', 'rgb(30,50,80)'], ['Black Eclipse', 'rgb(40,40,40)'], ['Arctic Dawn', 'rgb(235,240,245)']] },
-    { name: 'OnePlus 13R', img: 'https://fdn2.gsmarena.com/vv/bigpic/oneplus-13r.jpg', base: 49717, brand: 'OnePlus',
-      storages: [['12GB + 256GB', 0], ['16GB + 512GB', 8300]],
-      colors: [['Nebula Noir', 'rgb(50,45,55)'], ['Astral Trail', 'rgb(200,210,220)']] },
-    // Xiaomi
-    { name: 'Xiaomi 15', img: 'https://fdn2.gsmarena.com/vv/bigpic/xiaomi-15.jpg', base: 64999, brand: 'Xiaomi',
-      storages: [['12GB + 256GB', 0], ['12GB + 512GB', 5000]],
-      colors: [['Black', 'rgb(45,45,45)'], ['White', 'rgb(245,245,245)'], ['Green', 'rgb(140,180,160)']] },
-    { name: 'Xiaomi 15 Ultra', img: 'https://fdn2.gsmarena.com/vv/bigpic/xiaomi-15-ultra-.jpg', base: 89990, brand: 'Xiaomi',
-      storages: [['16GB + 512GB', 0], ['16GB + 1TB', 20009]],
-      colors: [['Black', 'rgb(45,45,45)'], ['White', 'rgb(245,245,245)']] },
-    // Oppo
-    { name: 'Oppo Find X8', img: 'https://fdn2.gsmarena.com/vv/bigpic/oppo-find-x8.jpg', base: 62167, brand: 'Oppo',
-      storages: [['12GB + 256GB', 0], ['12GB + 512GB', 8300]],
-      colors: [['Space Black', 'rgb(50,50,50)'], ['Star Grey', 'rgb(180,180,185)']] },
-    { name: 'Oppo Find X8 Pro', img: 'https://fdn2.gsmarena.com/vv/bigpic/oppo-find-x8-pro.jpg', base: 82917, brand: 'Oppo',
-      storages: [['16GB + 256GB', 0], ['16GB + 512GB', 8300]],
-      colors: [['Space Black', 'rgb(50,50,50)'], ['Pearl White', 'rgb(240,240,245)']] },
-    // Vivo
-    { name: 'Vivo X200', img: 'https://fdn2.gsmarena.com/vv/bigpic/vivo-x200.jpg', base: 66483, brand: 'Vivo',
-      storages: [['12GB + 256GB', 0], ['16GB + 512GB', 8134]],
-      colors: [['Cosmos Black', 'rgb(40,40,40)'], ['Natural Green', 'rgb(160,185,165)']] },
-    { name: 'Vivo X200 Pro', img: 'https://fdn2.gsmarena.com/vv/bigpic/vivo-x200-pro.jpg', base: 82004, brand: 'Vivo',
-      storages: [['16GB + 512GB', 0], ['16GB + 1TB', 9213]],
-      colors: [['Titanium Grey', 'rgb(130,130,135)'], ['Cosmos Black', 'rgb(40,40,40)']] },
-    // iQOO
-    { name: 'iQOO 13', img: 'https://fdn2.gsmarena.com/vv/bigpic/vivo-iqoo-13.jpg', base: 54999, brand: 'iQOO',
-      storages: [['12GB + 256GB', 0], ['16GB + 512GB', 5000], ['16GB + 1TB', 10000]],
-      colors: [['Legend', 'rgb(200,180,160)'], ['Nardo Grey', 'rgb(140,145,150)'], ['Midnight', 'rgb(35,35,40)']] },
-    // Motorola
-    { name: 'Motorola Edge 2026', img: 'https://fdn2.gsmarena.com/vv/bigpic/motorola-razr-60.jpg', base: 49717, brand: 'Motorola',
-      storages: [['8GB + 128GB', 0]],
-      colors: [['Eclipse Black', 'rgb(40,40,40)'], ['Lunar Blue', 'rgb(100,120,160)']] },
-    { name: 'Motorola Razr 2026', img: 'https://fdn2.gsmarena.com/vv/bigpic/motorola-razr-60.jpg', base: 58017, brand: 'Motorola',
-      storages: [['8GB + 256GB', 0], ['12GB + 256GB', 8300]],
-      colors: [['Koala Grey', 'rgb(170,165,160)'], ['Spritz Orange', 'rgb(230,150,100)'], ['Beach Sand', 'rgb(220,210,190)']] },
-  ];
+  static parsePrice(raw) {
+    const digits = String(raw == null ? '' : raw).replace(/[^\d]/g, '');
+    return digits ? parseInt(digits, 10) : 0;
+  }
 
-  state = { query: '', sel: 0, storage: 0, color: 0, slab: 30, tenure: 12, flash: false, navOpen: false, isMobile: false, sheetOpen: false };
+  static formatCapacity(raw) {
+    return String(raw || '')
+      .trim()
+      .replace(/\s+/g, '')
+      .replace(/(\d+)(GB|TB)/gi, (_, n, unit) => n + unit.toUpperCase());
+  }
+
+  static variantLabel(variant) {
+    const storage = Component.formatCapacity(variant.storage);
+    const ram = Component.formatCapacity(variant.ram);
+    if (ram && storage) return ram + ' + ' + storage;
+    return storage || ram || 'Standard';
+  }
+
+  static normalizeCatalog(payload) {
+    const byBrand = (payload && payload.devices) || {};
+    const devices = [];
+    Object.keys(byBrand).forEach((brand) => {
+      (byBrand[brand] || []).forEach((item) => {
+        const variants = (item.variants || [])
+          .map((variant) => ({
+            label: Component.variantLabel(variant),
+            price: Component.parsePrice(variant.price),
+          }))
+          .filter((variant) => variant.price > 0)
+          .sort((a, b) => a.price - b.price);
+        if (!variants.length) return;
+        const colors = Array.isArray(item.colors) ? item.colors : [];
+        devices.push({
+          name: item.name,
+          brand,
+          img: (item.images && item.images.hero) || '',
+          base: variants[0].price,
+          storages: variants.map((variant) => [variant.label, variant.price]),
+          colors,
+        });
+      });
+    });
+    return devices;
+  }
+
+  state = {
+    devices: [],
+    loading: true,
+    loadError: false,
+    query: '',
+    sel: 0,
+    storage: 0,
+    color: 0,
+    slab: 30,
+    tenure: 12,
+    flash: false,
+    navOpen: false,
+    isMobile: false,
+    sheetOpen: false,
+  };
 
   componentDidMount() {
     this.mqMobile = window.matchMedia('(max-width: 767px)');
     const sync = () => this.setState({ isMobile: this.mqMobile.matches, navOpen: this.mqMobile.matches ? this.state.navOpen : false });
     this.mqMobile.addEventListener('change', sync);
     sync();
+    this.loadDevices();
+  }
+
+  loadDevices() {
+    fetch(Component.CONFIG.DEVICES_URL)
+      .then((res) => {
+        if (!res.ok) throw new Error('Failed to load devices');
+        return res.json();
+      })
+      .then((payload) => {
+        const devices = Component.normalizeCatalog(payload);
+        if (!devices.length) throw new Error('Empty catalogue');
+        this.setState({ devices, loading: false, loadError: false, sel: 0, storage: 0, color: 0 });
+      })
+      .catch(() => {
+        this.setState({ devices: [], loading: false, loadError: true });
+      });
   }
 
   group(n) { return Math.round(n).toLocaleString('en-IN'); }
   rupee(n) { return '\u20B9' + this.group(n); }
 
   price() {
-    const d = Component.DEVICES[this.state.sel];
-    return d.base + d.storages[this.state.storage][1];
+    const d = this.state.devices[this.state.sel];
+    if (!d) return 0;
+    const variant = d.storages[this.state.storage] || d.storages[0];
+    return variant ? variant[1] : d.base;
+  }
+
+  emptyRenderVals(s) {
+    return {
+      loading: s.loading,
+      loadError: s.loadError,
+      query: s.query,
+      onQuery: (e) => this.setState({ query: e.target.value }),
+      cards: [],
+      noResults: false,
+      showColors: false,
+      selName: s.loading ? 'Loading…' : 'Catalogue unavailable',
+      selImgStyle: { width: 54, height: 54, flexShrink: 0 },
+      selVariant: '',
+      selPrice: '—',
+      prevDevice: () => {},
+      nextDevice: () => {},
+      storages: [],
+      colors: [],
+      effective: '—',
+      slab: String(s.slab),
+      onSlab: (e) => this.setState({ slab: parseInt(e.target.value, 10) }),
+      tenure: String(s.tenure),
+      onTenure: (e) => this.setState({ tenure: parseInt(e.target.value, 10) }),
+      monthly: '—',
+      monthlySub: '',
+      monthlySave: '—',
+      monthlySaveSub: '',
+      totalSave: '—',
+      totalSaveSub: '',
+      summaryWrapStyle: {
+        display: 'flex', flexDirection: 'column', gap: 8, padding: '24px', alignItems: 'center',
+        background: 'transparent',
+        transition: 'background 400ms cubic-bezier(0.2,0,0,1)',
+      },
+      viewBreakdown: () => {},
+      applyNow: () => {},
+      isMobile: s.isMobile,
+      showDesktopNav: !s.isMobile,
+      navOpen: s.isMobile && s.navOpen,
+      toggleNav: () => this.setState({ navOpen: !s.navOpen }),
+      closeNav: () => this.setState({ navOpen: false }),
+      goApply: () => window.location.href = './index.html#calculator',
+      sheetOpen: s.sheetOpen,
+      closeSheet: () => this.setState({ sheetOpen: false }),
+      showDesktopPanel: !s.isMobile && !s.loading && !s.loadError,
+      sheetOverlayStyle: {
+        position: 'fixed', inset: 0, background: 'rgba(0,0,0,0.5)', zIndex: 100,
+        opacity: 0, visibility: 'hidden',
+        transition: 'opacity 300ms ease, visibility 300ms ease',
+      },
+      sheetStyle: {
+        position: 'fixed', left: 0, right: 0, bottom: 0, maxHeight: '90vh',
+        background: '#fff', borderRadius: '16px 16px 0 0', zIndex: 101,
+        transform: 'translateY(100%)',
+        transition: 'transform 300ms cubic-bezier(0.32, 0.72, 0, 1)',
+        overflowY: 'auto', boxShadow: '0 -4px 24px rgba(0,0,0,0.15)',
+      },
+    };
   }
 
   renderVals() {
-    const D = Component.DEVICES;
     const C = Component.CONFIG;
     const s = this.state;
-    const d = D[s.sel];
-    const price = this.price();
+    const D = s.devices;
+    if (!D.length) return this.emptyRenderVals(s);
+
+    const sel = Math.min(s.sel, D.length - 1);
+    const d = D[sel];
+    const storageIdx = Math.min(s.storage, d.storages.length - 1);
+    const colorIdx = d.colors.length ? Math.min(s.color, d.colors.length - 1) : 0;
+    const price = (d.storages[storageIdx] || d.storages[0])[1];
     const monthly = price / s.tenure;
     const monthlySave = monthly * (s.slab / 100) * (1 + C.CESS);
     const totalSave = monthlySave * s.tenure;
@@ -665,14 +748,14 @@ class Component extends DCLogic {
       boxShadow: 'inset 0 0 0 1px rgb(238,238,238), 0px 0px 0.817px 0px rgba(66,71,76,0.32), 0px 3.268px 6.536px 0px rgba(66,71,76,0.06), 0px 6.536px 19.609px 0px rgba(238,238,238,0.35)',
     };
     const cards = D.map((dev, i) => ({ dev, i }))
-      .filter(({ dev }) => !q || dev.name.toLowerCase().includes(q) || dev.brand.toLowerCase().includes(q) || 'apple iphone samsung galaxy google pixel oneplus xiaomi mi oppo vivo iqoo motorola razr edge phone smartphone'.includes(q))
+      .filter(({ dev }) => !q || dev.name.toLowerCase().includes(q) || dev.brand.toLowerCase().includes(q))
       .map(({ dev, i }) => ({
         name: dev.name,
         imgStyle: { width: 82, height: 96, background: 'url("' + dev.img + '") center / contain no-repeat', mixBlendMode: 'multiply' },
         price: this.rupee(dev.base),
-        selected: s.sel === i,
+        selected: sel === i,
         onClick: () => this.setState({ sel: i, storage: 0, color: 0, sheetOpen: s.isMobile }),
-        style: s.sel === i
+        style: sel === i
           ? { ...cardBase, boxShadow: 'inset 0 0 0 2px rgb(42,195,147), 0px 0px 0.817px 0px rgba(66,71,76,0.32), 0px 3.268px 6.536px 0px rgba(66,71,76,0.06), 0px 6.536px 19.609px 0px rgba(238,238,238,0.35)' }
           : cardBase,
       }));
@@ -686,45 +769,53 @@ class Component extends DCLogic {
     };
     const storages = d.storages.map(([label], i) => ({
       label,
-      checked: s.storage === i,
+      checked: storageIdx === i,
       onClick: () => this.setState({ storage: i }),
-      style: s.storage === i
+      style: storageIdx === i
         ? { ...selBase, boxShadow: 'inset 0 0 0 2px rgb(22,175,142), 0px 2px 0px 0px rgba(0,0,0,0.04)' }
         : selBase,
-      radioStyle: s.storage === i
+      radioStyle: storageIdx === i
         ? { width: 16, height: 16, borderRadius: '50%', boxSizing: 'border-box', border: '5px solid rgb(22,175,142)', background: 'rgb(255,255,255)', flexShrink: 0 }
         : { width: 16, height: 16, borderRadius: '50%', boxSizing: 'border-box', border: '1px solid rgb(203,203,203)', background: 'rgb(255,255,255)', flexShrink: 0 },
     }));
 
     const colors = d.colors.map(([label, val], i) => ({
       label,
-      checked: s.color === i,
+      checked: colorIdx === i,
       onClick: () => this.setState({ color: i }),
       swatchStyle: {
         width: 40, height: 40, borderRadius: '50%', background: val,
-        boxShadow: s.color === i
+        boxShadow: colorIdx === i
           ? 'inset 0 0 0 2px rgb(255,255,255), inset 0px 3px 3px 0px rgba(0,0,0,0.2), 0 0 0 1px rgb(203,203,203)'
           : 'inset 0 0 0 1px rgba(0,0,0,0.1)',
         transition: 'box-shadow 150ms cubic-bezier(0.2,0,0,1)',
       },
       dotStyle: {
         width: 8, height: 8, borderRadius: '50%',
-        background: s.color === i ? 'rgb(25,25,25)' : 'transparent',
+        background: colorIdx === i ? 'rgb(25,25,25)' : 'transparent',
       },
     }));
 
+    const storageLabel = d.storages[storageIdx][0];
+    const selVariant = d.colors.length
+      ? d.colors[colorIdx][0] + ' \u2022 ' + storageLabel
+      : storageLabel;
+
     return {
+      loading: false,
+      loadError: false,
       query: s.query,
       onQuery: (e) => this.setState({ query: e.target.value }),
       cards,
-      noResults: cards.length === 0,
+      noResults: !s.loading && cards.length === 0,
+      showColors: colors.length > 0,
 
       selName: d.name,
       selImgStyle: { width: 54, height: 54, background: 'url("' + d.img + '") center / contain no-repeat', mixBlendMode: 'multiply', flexShrink: 0 },
-      selVariant: d.colors[s.color][0] + ' \u2022 ' + d.storages[s.storage][0],
+      selVariant,
       selPrice: this.rupee(price),
-      prevDevice: () => this.setState({ sel: (s.sel - 1 + D.length) % D.length, storage: 0, color: 0 }),
-      nextDevice: () => this.setState({ sel: (s.sel + 1) % D.length, storage: 0, color: 0 }),
+      prevDevice: () => this.setState({ sel: (sel - 1 + D.length) % D.length, storage: 0, color: 0 }),
+      nextDevice: () => this.setState({ sel: (sel + 1) % D.length, storage: 0, color: 0 }),
 
       storages,
       colors,
