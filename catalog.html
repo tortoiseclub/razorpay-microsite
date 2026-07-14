@@ -37,6 +37,21 @@
           color: var(--color-primary-deep);
         }
 
+        .device-thumb {
+          width: 82px;
+          height: 96px;
+          object-fit: contain;
+          object-position: center;
+          display: block;
+          mix-blend-mode: multiply;
+        }
+
+        .device-thumb--sm {
+          width: 54px;
+          height: 54px;
+          flex-shrink: 0;
+        }
+
         /* Mobile responsive: 2 cards per row */
         @media (max-width: 767px) {
           .device-card-grid {
@@ -143,7 +158,8 @@
             <button onClick="{{ c.onClick }}" aria-pressed="{{ c.selected }}" style="{{ c.style }}">
               <span
                 style="height: 150px; align-self: stretch; display: flex; align-items: center; justify-content: center; overflow: hidden;">
-                <span role="img" aria-label="{{ c.name }}" style="{{ c.imgStyle }}"></span>
+                <img class="device-thumb" src="{{ c.img }}" alt="{{ c.name }}" width="82" height="96" loading="lazy"
+                  decoding="async">
               </span>
               <span style="align-self: stretch; display: flex; flex-direction: column; gap: 14px; align-items: center;">
                 <span
@@ -208,7 +224,8 @@
           <div
             style="background: rgb(255,255,255); padding: 24px; display: flex; align-items: center; justify-content: space-between; gap: 16px;">
             <div style="display: flex; align-items: center; gap: 20px; min-width: 0;">
-              <span aria-hidden="true" style="{{ selImgStyle }}"></span>
+              <img class="device-thumb device-thumb--sm" src="{{ selImg }}" alt="" width="54" height="54"
+                decoding="async">
               <div style="display: flex; flex-direction: column; gap: 4px; min-width: 0;">
                 <span
                   style="font-family: var(--font-body); font-weight: 500; font-size: 16px; line-height: 24px; color: rgb(25,25,25);">{{
@@ -425,7 +442,8 @@
           <div
             style="background: rgb(255,255,255); padding: 20px; display: flex; align-items: center; justify-content: space-between; gap: 16px;">
             <div style="display: flex; align-items: center; gap: 16px; min-width: 0;">
-              <span aria-hidden="true" style="{{ selImgStyle }}"></span>
+              <img class="device-thumb device-thumb--sm" src="{{ selImg }}" alt="" width="54" height="54"
+                decoding="async">
               <div style="display: flex; flex-direction: column; gap: 2px; min-width: 0;">
                 <span style="font-family: var(--font-body); font-weight: 500; font-size: 15px; color: rgb(25,25,25);">{{
                   selName }}</span>
@@ -674,7 +692,7 @@ class Component extends DCLogic {
       noResults: false,
       showColors: false,
       selName: s.loading ? 'Loading…' : 'Catalogue unavailable',
-      selImgStyle: { width: 54, height: 54, flexShrink: 0 },
+      selImg: '',
       selVariant: '',
       selPrice: '—',
       prevDevice: () => {},
@@ -751,7 +769,7 @@ class Component extends DCLogic {
       .filter(({ dev }) => !q || dev.name.toLowerCase().includes(q) || dev.brand.toLowerCase().includes(q))
       .map(({ dev, i }) => ({
         name: dev.name,
-        imgStyle: { width: 82, height: 96, background: 'url("' + dev.img + '") center / contain no-repeat', mixBlendMode: 'multiply' },
+        img: dev.img,
         price: this.rupee(dev.base),
         selected: sel === i,
         onClick: () => this.setState({ sel: i, storage: 0, color: 0, sheetOpen: s.isMobile }),
@@ -811,7 +829,7 @@ class Component extends DCLogic {
       showColors: colors.length > 0,
 
       selName: d.name,
-      selImgStyle: { width: 54, height: 54, background: 'url("' + d.img + '") center / contain no-repeat', mixBlendMode: 'multiply', flexShrink: 0 },
+      selImg: d.img,
       selVariant,
       selPrice: this.rupee(price),
       prevDevice: () => this.setState({ sel: (sel - 1 + D.length) % D.length, storage: 0, color: 0 }),
